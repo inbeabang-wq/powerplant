@@ -202,6 +202,63 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .tbm-foot a:hover{background:var(--cyan,#60A5FA);color:#06223f;}
 .tbm-empty{color:var(--t3,#7c8db0);font-size:14px;text-align:center;padding:30px;}
 </style>
+<script>
+/* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
+// 정답 선택
+function iqPick(el, ans){
+  try{
+    var ul = el.parentNode;
+    [].forEach.call(ul.children, function(li){ li.classList.remove('correct','wrong'); });
+    [].forEach.call(ul.children, function(li){
+      if(li.getAttribute('data-letter')===ans) li.classList.add('correct');
+    });
+    if(el.getAttribute('data-letter')!==ans) el.classList.add('wrong');
+  }catch(e){}
+}
+// 정답·해설 토글 (구조 비의존: 가장 가까운 .iqreveal 안에서 .iqexp 검색)
+function iqToggle(btn){
+  try{
+    var wrap = btn.closest ? btn.closest('.iqreveal') : btn.parentNode;
+    var exp = wrap ? wrap.querySelector('.iqexp') : btn.nextElementSibling;
+    if(!exp) return;
+    exp.classList.toggle('show');
+    btn.textContent = exp.classList.contains('show') ? '해설 접기' : '정답·해설 보기';
+  }catch(e){}
+}
+// 교재 보기 모달
+function tbmOpen(btn){
+  try{
+    var sec = btn.closest ? btn.closest('section') : null;
+    if(!sec){ var p=btn; while(p && p.tagName!=='SECTION'){p=p.parentNode;} sec=p; }
+    if(!sec) return;
+    var h3 = sec.querySelector('h3');
+    var title = h3 ? (h3.childNodes[0] ? h3.childNodes[0].textContent.trim() : h3.textContent.trim()) : '교재 내용';
+    var enEl = h3 ? h3.querySelector('.cen, .en') : null;
+    document.getElementById('tbmTitle').textContent = title;
+    document.getElementById('tbmEn').textContent = enEl ? enEl.textContent.trim() : '';
+    var body = document.getElementById('tbmBody');
+    body.innerHTML = '';
+    var texts = sec.querySelectorAll('.comp-text');
+    var figs = sec.querySelectorAll('.fig');
+    if(texts.length===0 && figs.length===0){
+      body.innerHTML = '<div class="tbm-empty">이 주제의 교재 본문이 없습니다. 아래 버튼으로 전체 위치를 확인하세요.</div>';
+    } else {
+      [].forEach.call(texts, function(tx){ body.appendChild(tx.cloneNode(true)); });
+      [].forEach.call(figs, function(fg){ body.appendChild(fg.cloneNode(true)); });
+    }
+    var goto = document.getElementById('tbmGoto');
+    goto.onclick = function(e){ e.preventDefault(); tbmClose(); sec.scrollIntoView({behavior:'smooth',block:'start'}); };
+    document.getElementById('tbmOverlay').classList.add('show');
+    document.body.style.overflow='hidden';
+  }catch(e){}
+}
+function tbmClose(){
+  var o=document.getElementById('tbmOverlay');
+  if(o) o.classList.remove('show');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){ if(e.key==='Escape')tbmClose(); });
+</script>
 </head>
 <body>
 <button class="menu-btn" onclick="document.querySelector('.side').classList.toggle('open')">☰ 목차</button>
@@ -2393,21 +2450,7 @@ function doSearch(q){
 
 
 
-// ===== 섹션 연계 기출문제 인터랙션 =====
-function iqPick(el, ans){
-  var ul = el.parentNode;
-  [].forEach.call(ul.children, function(li){ li.classList.remove('correct','wrong'); });
-  [].forEach.call(ul.children, function(li){
-    if(li.getAttribute('data-letter')===ans) li.classList.add('correct');
-  });
-  if(el.getAttribute('data-letter')!==ans) el.classList.add('wrong');
-}
-function iqToggle(btn){
-  var exp = btn.nextElementSibling;
-  exp.classList.toggle('show');
-  btn.textContent = exp.classList.contains('show') ? '해설 접기' : '정답·해설 보기';
-}
-
+// (기출 인터랙션 핸들러는 head에 정의됨)
 </script>
 
 <script>
@@ -2459,42 +2502,6 @@ function iqToggle(btn){
     </div>
   </div>
 </div>
-<script>
-// ===== 교재 보기 모달 =====
-function tbmOpen(btn){
-  var sec = btn.closest('section');
-  if(!sec){ return; }
-  var sid = sec.id;
-  // 제목
-  var h3 = sec.querySelector('h3');
-  var title = h3 ? h3.childNodes[0].textContent.trim() : '교재 내용';
-  var enEl = h3 ? h3.querySelector('.cen, .en') : null;
-  document.getElementById('tbmTitle').textContent = title;
-  document.getElementById('tbmEn').textContent = enEl ? enEl.textContent.trim() : '';
-  // 본문: comp-text + fig 복사
-  var body = document.getElementById('tbmBody');
-  body.innerHTML = '';
-  var texts = sec.querySelectorAll('.comp-text');
-  var figs = sec.querySelectorAll('.fig');
-  if(texts.length===0 && figs.length===0){
-    body.innerHTML = '<div class="tbm-empty">이 주제의 교재 본문이 없습니다. 아래 버튼으로 전체 위치를 확인하세요.</div>';
-  } else {
-    texts.forEach(function(tx){ body.appendChild(tx.cloneNode(true)); });
-    figs.forEach(function(fg){ body.appendChild(fg.cloneNode(true)); });
-  }
-  // 이동 버튼
-  document.getElementById('tbmGoto').onclick = function(e){
-    e.preventDefault(); tbmClose();
-    sec.scrollIntoView({behavior:'smooth',block:'start'});
-  };
-  document.getElementById('tbmOverlay').classList.add('show');
-  document.body.style.overflow='hidden';
-}
-function tbmClose(){
-  document.getElementById('tbmOverlay').classList.remove('show');
-  document.body.style.overflow='';
-}
-document.addEventListener('keydown',function(e){ if(e.key==='Escape')tbmClose(); });
-</script>
+
 </body>
 </html>
