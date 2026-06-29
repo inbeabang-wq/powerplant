@@ -381,6 +381,21 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
     </div>
     <ul class="toc" id="toc">
 <li><a href="#s-types" data-target="s-types">엔진의 종류 <span class="en">Types of Engines</span></a></li>
+      <li><a href="#s-th-energy" data-target="s-th-energy">에너지 변환 <span class="en">Energy Transformation</span></a></li>
+      <li><a href="#s-th-cv" data-target="s-th-cv">정적 사이클 <span class="en">Constant-Volume Cycle</span></a></li>
+      <li><a href="#s-th-otto" data-target="s-th-otto">4행정 5사건 사이클 (오토 사이클) <span class="en">Four-Stroke, Five-Event Cycle</span></a></li>
+      <li><a href="#s-th-overlap" data-target="s-th-overlap">밸브 오버랩과 타이밍 <span class="en">Valve Overlap &amp; Timing</span></a></li>
+      <li><a href="#s-th-twostroke" data-target="s-th-twostroke">2행정 사이클 <span class="en">Two-Stroke Cycle</span></a></li>
+      <li><a href="#s-th-work" data-target="s-th-work">일과 동력 <span class="en">Work and Power</span></a></li>
+      <li><a href="#s-th-hp" data-target="s-th-hp">마력: 지시·마찰·제동 <span class="en">Indicated, Friction, Brake Horsepower</span></a></li>
+      <li><a href="#s-th-torque" data-target="s-th-torque">토크와 토크미터 <span class="en">Torque and Torquemeter</span></a></li>
+      <li><a href="#s-th-factors" data-target="s-th-factors">엔진 출력 결정 요소 <span class="en">Factors Affecting Engine Power</span></a></li>
+      <li><a href="#s-th-thermal" data-target="s-th-thermal">열효율 <span class="en">Thermal Efficiency</span></a></li>
+      <li><a href="#s-th-volumetric" data-target="s-th-volumetric">체적효율 <span class="en">Volumetric Efficiency</span></a></li>
+      <li><a href="#s-th-mechanical" data-target="s-th-mechanical">기계효율 <span class="en">Mechanical Efficiency</span></a></li>
+      <li><a href="#s-th-displacement" data-target="s-th-displacement">피스톤 변위 <span class="en">Piston Displacement</span></a></li>
+      <li><a href="#s-th-compratio" data-target="s-th-compratio">압축비 <span class="en">Compression Ratio</span></a></li>
+      <li><a href="#s-th-detonation" data-target="s-th-detonation">디토네이션 <span class="en">Detonation</span></a></li>
 <li><a href="#s-crankshaft" data-target="s-crankshaft">크랭크샤프트 <span class="en">Crankshaft</span></a></li>
 <li><a href="#s-conrod" data-target="s-conrod">커넥팅 로드 <span class="en">Connecting Rod</span></a></li>
 <li><a href="#s-piston" data-target="s-piston">피스톤 <span class="en">Piston</span></a></li>
@@ -478,6 +493,142 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
         </div>
       </div>
     </section>
+
+    <section id="s-th-energy" class="comp">
+      <div class="comp-head">
+        <h3>에너지 변환</h3><span class="comp-en">Energy Transformation</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>항공기 엔진의 목적은 연료 속 화학에너지를 열에너지로, 다시 유용한 기계적 일로 변환하는 것이다.<span class="en-text">The purpose of an aircraft engine is to convert the chemical energy in fuel into heat energy, then into useful mechanical work.</span></p><p>왕복엔진과 가스터빈엔진의 근본적 차이는 열을 가하는 방식이다. 왕복엔진은 정적(定積) 사이클(constant-volume), 가스터빈은 정압(定壓) 사이클(constant-pressure)로 에너지를 방출한다.<span class="en-text">The basic difference is how heat is added: a reciprocating engine uses a constant-volume cycle, while a gas turbine uses a constant-pressure cycle.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-cv" class="comp">
+      <div class="comp-head">
+        <h3>정적 사이클</h3><span class="comp-en">Constant-Volume Cycle</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>정적 원리로 작동하는 왕복엔진에는 2행정(two-stroke)과 4행정(four-stroke) 두 종류가 있다. 작동 원리는 본질적으로 같으며, 차이는 1사이클을 완성하는 데 필요한 크랭크샤프트 회전수에 있다.<span class="en-text">Two types operate on the constant-volume principle: two-stroke and four-stroke. The principle is essentially the same; the difference is the number of crankshaft revolutions needed to complete the cycle.</span></p><p>4행정 엔진이 항공기 동력으로 가장 널리 쓰이지만, 2행정 엔진은 초경량기(ultralight)와 소형 키트 항공기 동력으로 인기를 얻고 있다.<span class="en-text">The four-stroke engine is most widely used for aircraft, while two-stroke engines are popular for ultralights and small kit aircraft.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-otto" class="comp">
+      <div class="comp-head">
+        <h3>4행정 5사건 사이클 (오토 사이클)</h3><span class="comp-en">Four-Stroke, Five-Event Cycle</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>왕복엔진의 작동을 설명하는 에너지 방출 사이클이 오토 사이클(Otto cycle), 즉 4행정 5사건 사이클이다. 4행정은 흡입(intake)·압축(compression)·동력(power)·배기(exhaust)이고, 5사건은 여기에 점화(ignition)를 더한 것이다.<span class="en-text">The Otto cycle describes how a reciprocating engine works. The four strokes are intake, compression, power, and exhaust; the five events add ignition.</span></p><p>흡입행정에서 피스톤이 내려가며 부피가 증가하지만 압력은 비교적 일정하다(PV선도 A-B). 압축행정에서 두 밸브가 닫히고 부피가 줄며 압력이 상승한다(B-C).<span class="en-text">On the intake stroke the volume increases while pressure stays relatively constant (A-B). On compression both valves close, volume decreases, and pressure rises (B-C).</span></p><p>상사점(TDC) 약 20° 전 점화플러그가 점화하여 압축된 혼합기가 부드럽고 점진적으로 연소한다. 연소가 만든 고압이 동력행정에서 피스톤을 밀어내며, 이 구간(C-D)에서만 유용한 일이 이루어진다.<span class="en-text">About 20° before TDC the spark plug fires and the mixture burns smoothly. The high pressure drives the piston down on the power stroke (C-D) — the only useful work in the cycle.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-overlap" class="comp">
+      <div class="comp-head">
+        <h3>밸브 오버랩과 타이밍</h3><span class="comp-en">Valve Overlap &amp; Timing</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>왕복엔진에서 사건은 순간적으로 일어나지 않는다. 혼합기와 배기가스는 질량(관성)을 가지므로 흐름을 시작·정지하는 데 시간이 필요하다. 그래서 밸브는 피스톤이 정확히 상·하사점에 있을 때 여닫히지 않는다.<span class="en-text">Events do not occur instantaneously. The fuel-air charge and exhaust gases have mass (inertia), so valves do not open or close exactly at top or bottom dead center.</span></p><p>흡기밸브는 배기행정 끝 상사점 약 15° 전에 열리고, 배기밸브는 흡입행정에서 상사점 약 15° 후까지 열려 있다. 이렇게 두 밸브가 동시에 열려 있는 구간을 밸브 오버랩(valve overlap)이라 한다.<span class="en-text">The intake valve opens about 15° before TDC, and the exhaust valve stays open until about 15° after TDC. This period when both valves are open is called valve overlap.</span></p><p>밸브 오버랩은 배기가스의 관성을 이용해 신선한 혼합기를 실린더로 끌어들여 체적효율과 냉각을 향상시킨다. 흡기밸브는 하사점을 지나 압축행정 약 60°까지 열려 있어 최대한 많은 혼합기를 받아들인다.<span class="en-text">Valve overlap uses the inertia of exiting exhaust gases to help draw in the fresh charge, improving volumetric efficiency and cooling. The intake valve stays open about 60° past bottom center to admit as much charge as possible.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-twostroke" class="comp">
+      <div class="comp-head">
+        <h3>2행정 사이클</h3><span class="comp-en">Two-Stroke Cycle</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>2행정 엔진은 가장 단순한 형태의 왕복엔진으로, 피스톤이 한 번 오르내리는(2행정) 동안 1사이클을 완성한다. 모든 하강행정이 동력행정이라 보통 고RPM으로 작동한다.<span class="en-text">The two-stroke engine is the simplest reciprocating engine, completing a cycle in one up-and-down piston movement. Every downward stroke is a power stroke, so it runs at high RPM.</span></p><p>2행정 엔진에는 두 가지 고유 문제가 있다: 냉각 곤란(매 행정이 동력행정이라 냉각 간격이 없음)과 점화플러그 오손(연료에 오일을 섞어 윤활하므로). 크랭크케이스 압축식과 블로워(과급)식 두 종류가 있다.<span class="en-text">Two inherent problems exist: cooling difficulty (no cooling interval) and spark plug fouling (oil mixed with fuel). Two types use crankcase compression or a blower (supercharger).</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-work" class="comp">
+      <div class="comp-head">
+        <h3>일과 동력</h3><span class="comp-en">Work and Power</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>일(Work)은 힘(파운드)과 그 힘이 작용한 거리(피트 또는 인치)의 곱이다(일 = 힘 × 거리). 일의 측정에는 시간이 포함되지 않는다.<span class="en-text">Work is the product of force (pounds) and the distance through which it acts (feet or inches): Work = Force × Distance. Time is not involved in measuring work.</span></p><p>동력(Power)은 일을 하는 시간율, 즉 단위 시간당 한 일이다. 같은 일이라도 빨리 하면 더 큰 동력이 필요하다. 미국에서는 동력을 분당 피트파운드 또는 마력(horsepower)으로 측정한다.<span class="en-text">Power is the time rate of doing work. The same work done faster requires more power. In the US, power is measured in foot-pounds per minute or horsepower.</span></p><p>1마력(HP)은 1분에 33,000 피트파운드, 또는 1초에 550 피트파운드의 일에 해당한다.<span class="en-text">One horsepower equals 33,000 foot-pounds of work per minute, or 550 foot-pounds per second.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-hp" class="comp">
+      <div class="comp-head">
+        <h3>마력: 지시·마찰·제동</h3><span class="comp-en">Indicated, Friction, Brake Horsepower</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>왕복엔진에는 세 가지 마력이 있다: 지시마력(IHP), 제동마력(BHP), 마찰마력(FHP). 관계식은 IHP = FHP + BHP 이다.<span class="en-text">There are three types: indicated (IHP), brake (BHP), and friction (FHP) horsepower. The relationship is IHP = FHP + BHP.</span></p><p>지시마력(IHP)은 실린더 내부에서 발생하는 이론상 마력으로, 직접 측정할 수 없고 피스톤 면적·평균유효압력(MEP)·행정·RPM 등으로 계산한다.<span class="en-text">Indicated horsepower is the theoretical power developed inside the cylinders; it cannot be measured directly but is calculated from piston area, mean effective pressure (MEP), stroke, and RPM.</span></p><p>마찰마력(FHP)은 엔진 내부 부품을 움직이고 흡입·압축·배기를 수행하는 데 쓰이는 마력으로, IHP와 BHP의 차이다. 제동마력(BHP)은 프로펠러축에 실제 전달되는 마력으로, 다이나모미터(dynamometer)로 토크를 측정해 구한다.<span class="en-text">Friction horsepower drives the internal parts and performs intake/compression/exhaust; it is the difference between IHP and BHP. Brake horsepower is the actual power delivered to the propeller shaft, measured with a dynamometer.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-torque" class="comp">
+      <div class="comp-head">
+        <h3>토크와 토크미터</h3><span class="comp-en">Torque and Torquemeter</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>토크(Torque)는 회전을 일으키거나 일으키려는 힘이다. 제동평균유효압력(BMEP)은 동력행정 중 실린더 내부의 이론상 평균압력으로, 엔진이 내는 토크와 관계되며 제동마력을 알면 계산할 수 있다.<span class="en-text">Torque is a force that produces or tries to produce rotation. Brake mean effective pressure (BMEP) is the theoretical average cylinder pressure during the power stroke; it relates to engine torque and can be calculated from brake horsepower.</span></p><p>대형 왕복엔진(구형 폭격기·여객기)에는 토크미터(torquemeter)가 있어, 프로펠러 감속기어와 엔진 노즈 사이 유압실린더가 토크 반력을 측정해 BMEP를 psi로 지시했다.<span class="en-text">Large reciprocating engines on older bombers and airliners used a torquemeter — hydraulic cylinders between the propeller reduction gear and the engine nose measured the torque reaction and indicated BMEP in psi.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-factors" class="comp">
+      <div class="comp-head">
+        <h3>엔진 출력 결정 요소</h3><span class="comp-en">Factors Affecting Engine Power</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>엔진 출력은 조종사가 제어할 수 없는 세 고정값(보어·행정·실린더 수)과 상수(33,000), 그리고 조종사가 제어할 수 있는 두 변수(엔진 RPM, BMEP)로 결정된다.<span class="en-text">Engine power is determined by three fixed values (bore, stroke, number of cylinders), a constant (33,000), and two variables the pilot controls (engine RPM and BMEP).</span></p><p>고정피치 프로펠러 엔진은 스로틀이 RPM을 제어하고 프로펠러 부하가 매니폴드 압력을 결정한다. 정속 프로펠러 엔진은 프로펠러 피치로 RPM을, 스로틀로 매니폴드 압력(따라서 BMEP)을 제어한다.<span class="en-text">With a fixed-pitch propeller, the throttle controls RPM and the propeller load sets manifold pressure. With a constant-speed propeller, propeller pitch controls RPM and the throttle controls manifold pressure (thus BMEP).</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-thermal" class="comp">
+      <div class="comp-head">
+        <h3>열효율</h3><span class="comp-en">Thermal Efficiency</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>열효율(Thermal efficiency)은 연료의 전체 열에너지 잠재력 대비 실제로 생산된 유용한 일의 비율이다. 왕복엔진은 연료 에너지의 약 1/3(약 31%)만 유용한 일로 변환하는 비효율적 장치다.<span class="en-text">Thermal efficiency is the ratio of useful work produced to the total potential heat energy of the fuel. A reciprocating engine converts only about one-third (~31%) of the fuel's energy into useful work.</span></p><p>에너지의 약 절반은 배기로, 약 12%는 실린더(냉각·오일)로, 약 6%는 압축과 부품 구동(마찰)으로 손실된다. 제동 열효율(BTE)은 연소된 연료 열량 대비 프로펠러축이 한 일의 비율로 계산한다.<span class="en-text">About half the energy is lost out the exhaust, ~12% through the cylinder (cooling/oil), and ~6% to compression and friction. Brake thermal efficiency (BTE) is the ratio of work done by the propeller shaft to the heat energy of the fuel burned.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-volumetric" class="comp">
+      <div class="comp-head">
+        <h3>체적효율</h3><span class="comp-en">Volumetric Efficiency</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>체적효율(Volumetric efficiency)은 실린더에 실제로 들어간 혼합기 부피를 같은 대기조건에서 실린더가 담을 수 있는 부피(1실린더 변위)로 나눈 비율이다. 엔진의 '호흡' 능력을 나타낸다.<span class="en-text">Volumetric efficiency is the ratio of the charge actually taken into the cylinder to the volume the cylinder could hold under the same conditions. It expresses the engine's ability to breathe.</span></p><p>부적절한 밸브타이밍, 흡입계통의 급한 굴곡, 높은 기화기 공기온도, 더러운 에어필터, 막힌 배기계통은 체적효율을 떨어뜨린다. 적절한 밸브 오버랩은 체적효율을 높인다.<span class="en-text">Improper valve timing, sharp induction bends, high carburetor air temperature, a dirty air filter, and a restricted exhaust all reduce volumetric efficiency. Adequate valve overlap increases it.</span></p><p>무과급(자연흡기, naturally aspirated) 엔진은 체적효율이 100%를 넘을 수 없지만, 과급기(supercharger)는 공기를 미리 압축하므로 과급 엔진의 체적효율은 100%를 초과할 수 있다.<span class="en-text">A naturally aspirated engine can never reach 100% volumetric efficiency, but a supercharger compresses the air first, so a supercharged engine can exceed 100%.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-mechanical" class="comp">
+      <div class="comp-head">
+        <h3>기계효율</h3><span class="comp-en">Mechanical Efficiency</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>기계효율(Mechanical efficiency)은 실린더 내부에서 발생한 동력 대비 프로펠러축에 전달된 동력의 비율, 즉 제동마력을 지시마력으로 나눈 값이다.<span class="en-text">Mechanical efficiency is the ratio of power delivered to the propeller shaft to the power developed inside the cylinders — brake horsepower divided by indicated horsepower.</span></p><p>항공기 왕복엔진은 기계적으로 매우 효율적이며, 90%의 기계효율은 비교적 흔하다.<span class="en-text">Aircraft reciprocating engines are mechanically quite efficient; a mechanical efficiency of 90% is relatively common.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-displacement" class="comp">
+      <div class="comp-head">
+        <h3>피스톤 변위</h3><span class="comp-en">Piston Displacement</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>피스톤 변위(Piston displacement)는 크랭크샤프트 1회전 동안 모든 실린더의 피스톤이 쓸고 지나간 총 부피다(피스톤 면적 × 행정 × 실린더 수). 미국에서는 입방인치(cubic inch)로 표시한다.<span class="en-text">Piston displacement is the total volume swept by all pistons during one crankshaft revolution (piston area × stroke × number of cylinders). In the US it is expressed in cubic inches.</span></p><p>일반적으로 변위가 클수록 출력이 크다. 보어와 행정이 같은 '스퀘어(square)' 엔진은 마모율과 토크 곡선의 균형이 우수하며, 현대 엔진은 대개 행정이 보어보다 짧은 '언더스퀘어(under-square)'로 효율적인 토크를 낸다.<span class="en-text">Generally, greater displacement means more power. A 'square' engine (equal bore and stroke) balances wear and torque well; most modern engines are 'under-square' (shorter stroke) for efficient torque.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-compratio" class="comp">
+      <div class="comp-head">
+        <h3>압축비</h3><span class="comp-en">Compression Ratio</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>압축비(Compression ratio)는 피스톤이 하사점에 있을 때 피스톤 위 실린더 부피를, 상사점에 있을 때의 부피(연소실 공간)로 나눈 비율이다.<span class="en-text">Compression ratio is the ratio of the cylinder volume above the piston at bottom dead center to the volume at top dead center (the combustion chamber space).</span></p><p>압축비를 높이면 엔진이 더 많은 열에너지를 유용한 일로 변환하고, 실린더 벽으로의 열손실이 줄어 실린더가 더 차갑게 작동한다. 압축비가 높을수록, 매니폴드 압력이 높을수록 더 큰 출력을 낼 수 있다.<span class="en-text">Raising the compression ratio converts more heat energy into useful work and reduces heat loss to the cylinder walls, so the cylinder runs cooler. Higher compression ratio and higher manifold pressure allow more power.</span></p></div>
+      </div>
+    </section>
+
+    <section id="s-th-detonation" class="comp">
+      <div class="comp-head">
+        <h3>디토네이션</h3><span class="comp-en">Detonation</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-text"><p>압축비와 매니폴드 압력에는 실용적 한계가 있는데, 이를 결정하는 것이 연료의 디토네이션 특성이다. 압축은 혼합기를 가열하며, 폭발할 만큼 뜨거워질 수 있다. 이 통제 불능의 폭발이 디토네이션(detonation)이다.<span class="en-text">There is a practical limit to compression ratio and manifold pressure, set by the fuel's detonation characteristics. Compression heats the charge, which can get hot enough to explode — this uncontrolled explosion is detonation.</span></p><p>정상 연소의 화염전파는 초당 25~100피트인데, 디토네이션 화염전파는 초당 약 4,000~9,000피트로 저성능 폭약에 맞먹는다. 이런 충격파는 실린더 내부에 심한 충격력을 가해 신속히 제거하지 않으면 엔진 내부 손상을 일으킨다.<span class="en-text">Normal flame-front travel is 25–100 ft/sec, but detonation travels at ~4,000–9,000 ft/sec, comparable to low-order explosives. These shock waves severely stress the cylinder and cause internal engine damage if not eliminated quickly.</span></p><p>디토네이션은 엔진에 지정된 것보다 낮은 옥탄가(octane rating)나 퍼포먼스 넘버의 연료를 사용할 때 발생할 수 있다.<span class="en-text">Detonation may be caused by using fuel with a lower octane rating or performance number than specified for the engine.</span></p></div>
+      </div>
+    </section>
+
     <section id="s-crankshaft" class="comp">
       <div class="comp-head">
         <h3>크랭크샤프트</h3><span class="comp-en">Crankshaft</span>
