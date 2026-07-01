@@ -265,6 +265,13 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
   line-height:1.6;}
 @media(max-width:640px){.ilb-hint{display:none;}.ilb-btn{width:42px;height:42px;}}
 
+
+.figgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:14px}
+.figgal{background:#0b1220;border:1px solid #1e293b;border-radius:10px;padding:8px;margin:0}
+.figgal img{width:100%;border-radius:6px;cursor:zoom-in;background:#fff}
+.figgal figcaption{font-size:12px;color:#94a3b8;margin-top:6px;line-height:1.4}
+.figpdf{color:#FBBF24}
+
 </style>
 <script>
 /* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
@@ -395,6 +402,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
       <li><a href="#s-liquid-cooled" data-target="s-liquid-cooled">액랭식 엔진 <span class="en">Liquid-Cooled Engines</span></a></li>
 <li><a href="#s-turbine-cooling" data-target="s-turbine-cooling">터빈엔진 냉각 <span class="en">Turbine Engine Cooling</span></a></li>
 <li><a href="#s-oral" data-target="s-oral" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px;">🗣 구술시험 <span class="en">Oral Exam</span></a></li>
+        <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
   <main class="main">
@@ -2545,6 +2553,74 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 </div>
 <div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 21</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
 </div></section>
+        <section id="s-faa-figures" class="comp">
+          <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 6)</span></h3></div>
+          <div class="comp-body">
+            <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 59개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 59 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>
+            <div class="figgrid">
+              <figure class="fig figgal"><img src="images/ch06_fig6-1.jpg" alt="fig6-1" loading="lazy"><figcaption>Figure 6-1. Two moving surfaces in direct contact create excessive  friction. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-2.jpg" alt="fig6-2" loading="lazy"><figcaption>Figure 6-2. Oil film acts as a cushion between two moving surfaces. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-3.jpg" alt="fig6-3" loading="lazy"><figcaption>Figure 6-3. Grade designations for aviation oils. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-4.jpg" alt="fig6-4" loading="lazy"><figcaption>Figure 6-4. Oil system schematic. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-5.jpg" alt="fig6-5" loading="lazy"><figcaption>Figure 6-5. Oil tank with hopper. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-6.jpg" alt="fig6-6" loading="lazy"><figcaption>Figure 6-6. Engine oil pump and associated units. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-7.jpg" alt="fig6-7" loading="lazy"><figcaption>Figure 6-7. Housing filter element type oil filter. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-8.jpg" alt="fig6-8" loading="lazy"><figcaption>Figure 6-8. Full flow spin-on filter. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-9.jpg" alt="fig6-9" loading="lazy"><figcaption>Figure 6-9. Cutaway view of a filter. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-10.jpg" alt="fig6-10" loading="lazy"><figcaption>Figure 6-10. Oil pressure adjustment screw. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-11.jpg" alt="fig6-11" loading="lazy"><figcaption>Figure 6-11. Oil cooler. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-12.jpg" alt="fig6-12" loading="lazy"><figcaption>Figure 6-12. Control valve with surge protection. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-13.jpg" alt="fig6-13" loading="lazy"><figcaption>Figure 6-13. Floating control thermostat. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-14.jpg" alt="fig6-14" loading="lazy"><figcaption>Figure 6-14. Dual oil cooler system. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-15.jpg" alt="fig6-15" loading="lazy"><figcaption>Figure 6-15. Oil circulation through the engine. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-16.jpg" alt="fig6-16" loading="lazy"><figcaption>Figure 6-16. Basic wet-sump oil system. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-17.jpg" alt="fig6-17" loading="lazy"><figcaption>Figure 6-17. Wet-sump system’s sump with intake tube running  through it. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-18.jpg" alt="fig6-18" loading="lazy"><figcaption>Figure 6-18. Oil system perspective. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-19.jpg" alt="fig6-19" loading="lazy"><figcaption>Figure 6-19. Oil tank drain. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-20.jpg" alt="fig6-20" loading="lazy"><figcaption>Figure 6-20. Disconnect oil lines. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-21.jpg" alt="fig6-21" loading="lazy"><figcaption>Figure 6-21. Removal of securing straps. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-22.jpg" alt="fig6-22" loading="lazy"><figcaption>Figure 6-22. Filling an oil tank. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-23.jpg" alt="fig6-23" loading="lazy"><figcaption>Figure 6-23. Checking oil level with dipstick. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-24.jpg" alt="fig6-24" loading="lazy"><figcaption>Figure 6-24. Oil cooler. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-25.jpg" alt="fig6-25" loading="lazy"><figcaption>Figure 6-25. Removing oil temperature bulb. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-26.jpg" alt="fig6-26" loading="lazy"><figcaption>Figure 6-26. Oil pressure screen (A) and scavenge oil screen assembly (B). <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-27.jpg" alt="fig6-27" loading="lazy"><figcaption>Figure 6-27. Oil pressure relief valve adjustment. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-28.jpg" alt="fig6-28" loading="lazy"><figcaption>Figure 6-28. Oil sump screen. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-29.jpg" alt="fig6-29" loading="lazy"><figcaption>Figure 6-29. Cutting open a spin-on type oil filter using a special filter cutter. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-30.jpg" alt="fig6-30" loading="lazy"><figcaption>Figure 6-30. Oil system troubleshooting procedures. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-31.jpg" alt="fig6-31" loading="lazy"><figcaption>Figure 6-31. Oil tank. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-32.jpg" alt="fig6-32" loading="lazy"><figcaption>Figure 6-32. Cutaway view of gear oil pump. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-33.jpg" alt="fig6-33" loading="lazy"><figcaption>Figure 6-33. Typical gerotor pumping elements. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-34.jpg" alt="fig6-34" loading="lazy"><figcaption>Figure 6-34. Turbine oil filter element. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-36.jpg" alt="fig6-36" loading="lazy"><figcaption>Figure 6-36. Last-chance filter before spray nozzle.  Figure 6-37.  Pressure regulating <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-38.jpg" alt="fig6-38" loading="lazy"><figcaption>Figure 6-38. Pressure relief valve. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-39.jpg" alt="fig6-39" loading="lazy"><figcaption>Figure 6-39. Oil nozzles spray lubricate on bearings. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-40.jpg" alt="fig6-40" loading="lazy"><figcaption>Figure 6-40. Oil indicating system. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-41.jpg" alt="fig6-41" loading="lazy"><figcaption>Figure 6-41. Typical thermostatic bypass valve. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-42.jpg" alt="fig6-42" loading="lazy"><figcaption>Figure 6-42. Air oil cooler. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-43.jpg" alt="fig6-43" loading="lazy"><figcaption>Figure 6-43. Fuel-oil heat exchanger cooler. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-44.jpg" alt="fig6-44" loading="lazy"><figcaption>Figure 6-44. Chip detector. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-45.jpg" alt="fig6-45" loading="lazy"><figcaption>Figure 6-45. Typical turbine dry-sump pressure regulated lubrication system. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-46.jpg" alt="fig6-46" loading="lazy"><figcaption>Figure 6-46. Typical turbine dry-sump variable pressure lubrication system. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-47.jpg" alt="fig6-47" loading="lazy"><figcaption>Figure 6-47. Typical turbine wet-sump system. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-48.jpg" alt="fig6-48" loading="lazy"><figcaption>Figure 6-48. Oil filter housing.  3.	 A magnetic drain plug may be provided to drain the <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-49.jpg" alt="fig6-49" loading="lazy"><figcaption>Figure 6-49. Diesel liquid-cooled aircraft engine.  Figure 6-50.  Cylinder baffle and de <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-51.jpg" alt="fig6-51" loading="lazy"><figcaption>Figure 6-51. Regulating the cooling airflow. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-52.jpg" alt="fig6-52" loading="lazy"><figcaption>Figure 6-52. Augmentor. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-53.jpg" alt="fig6-53" loading="lazy"><figcaption>Figure 6-53. Engine cooling and exhaust system. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-54.jpg" alt="fig6-54" loading="lazy"><figcaption>Figure 6-54. Small aircraft cowl flaps. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-55.jpg" alt="fig6-55" loading="lazy"><figcaption>Figure 6-55. Differential air cooling. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-56.jpg" alt="fig6-56" loading="lazy"><figcaption>Figure 6-56. A cylinder head and fins. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-57.jpg" alt="fig6-57" loading="lazy"><figcaption>Figure 6-57. Cylinder head baffle and deflector system. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-58.jpg" alt="fig6-58" loading="lazy"><figcaption>Figure 6-58. Bayonet type CHT probe. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-59.jpg" alt="fig6-59" loading="lazy"><figcaption>Figure 6-59. Gasket type CHT probe. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-60.jpg" alt="fig6-60" loading="lazy"><figcaption>Figure 6-60. EGT probe in exhaust stack. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-61.jpg" alt="fig6-61" loading="lazy"><figcaption>Figure 6-61. Accessory zone cooling. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+              <figure class="fig figgal"><img src="images/ch06_fig6-62.jpg" alt="fig6-62" loading="lazy"><figcaption>Figure 6-62. Typical engine insulation blanket. <span class="figpdf">(FAA-H-8083-32B)</span></figcaption></figure>
+            </div>
+          </div>
+        </section>
+
 
       
       <div class="no-result" id="noresult">검색 결과가 없습니다.</div>
