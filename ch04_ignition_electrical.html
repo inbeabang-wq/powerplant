@@ -278,6 +278,14 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .figgal figcaption{font-size:12px;color:#94a3b8;margin-top:6px;line-height:1.4}
 .figpdf{color:#FBBF24}
 
+
+/* 홈 플로팅 버튼 (항상 보임) */
+.home-fab{position:fixed;top:14px;right:14px;z-index:200;background:var(--gold,#FBBF24);color:#0F172A;
+  border:none;border-radius:22px;padding:9px 16px;font-weight:700;font-size:13px;font-family:'Noto Sans KR',sans-serif;
+  cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.4);text-decoration:none;display:inline-flex;align-items:center;gap:5px;}
+.home-fab:hover{background:#e8c766;}
+.menu-btn{z-index:201 !important;}
+@media(min-width:881px){.home-fab{top:16px;right:16px;}}
 </style>
 <script>
 /* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
@@ -390,6 +398,8 @@ function figRefToggle(el){
 
 </head>
 <body>
+<a class="home-fab" href="index.html">🏠 전체목차</a>
+
 <button class="menu-btn" onclick="document.querySelector('.side').classList.toggle('open')">☰ 목차</button>
 <div class="layout">
   <aside class="side">
