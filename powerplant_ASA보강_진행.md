@@ -35,3 +35,15 @@ ch03(배기), ch05(시동), ch06(냉각+도면2), ch09(화재+도면2)
 - ch07 프로펠러 ← 19 PROPELLERS
 - ch10 정비·운용 ← 09·15 OPERATION&MAINTENANCE
 - 계기 ← 16 INSTRUMENTS / 윤활 ← 03 LUBRICATION
+
+## 추가 완료 (세션 계속 2)
+- ✅ ch04 점화·전기 — E-gap·리치·열범위·마그네토점검·스태거드 (05 IGNITION)
+- ✅ ch07 프로펠러 — 정속 3상태·거버너·페더링 (19 PROPELLERS)
+
+## 완료 총 6개 챕터
+ch03 배기, ch04 점화, ch05 시동, ch06 냉각(도면2), ch07 프로펠러, ch09 화재(도면2)
+
+## 남은 3개 챕터 (큰 교재, 텍스트)
+- ch01 엔진 ← 02 THEORY&CONSTRUCTION(29MB) + 10 터빈(27MB)
+- ch02 연료 ← 04 FUEL METERING&INDUCTION(28MB) + 12 터빈연료(10MB)
+- ch10 정비·운용 ← 09 OPERATION&MAINTENANCE(23MB) + 15 터빈(8.6MB)

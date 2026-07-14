@@ -278,6 +278,15 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .fig-missing{margin:14px 0;}
 .fig-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:110px;padding:24px 16px;border:1.5px dashed rgba(96,165,250,.4);border-radius:10px;background:rgba(96,165,250,.05);color:#93b4e8;font-size:15px;font-weight:600;text-align:center;}
 .fig-ph-en{font-size:11.5px;color:#7c8db0;font-weight:400;font-style:italic;}
+
+/* 반응형 이미지 보정 - 모든 화면에서 잘림 방지 */
+.comp-text img, .fig img, .fig-page img, figure img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+}
+.fig, .fig-page, figure { max-width: 100%; overflow: hidden; }
+.src-badge{display:inline-block;margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#34D399;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);border-radius:5px;padding:2px 7px;vertical-align:middle;}
 </style>
 <script>
 /* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
@@ -411,7 +420,9 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <li><a href="#s-turboprop" data-target="s-turboprop">터보프롭 프로펠러 제어 <span class="en">Turboprop Propeller Control</span></a></li>
 <li><a href="#s-hydromatic" data-target="s-hydromatic">하이드로매틱 프로펠러 <span class="en">Hamilton Standard Hydromatic</span></a></li>
 <li><a href="#s-oral" data-target="s-oral" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px;">🗣 구술시험 <span class="en">Oral Exam</span></a></li>
-        <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
+        <li><a href="#s-prop-forces-detail" data-target="s-prop-forces-detail">프로펠러 작용력·P-factor <span class="en">Prop Forces</span></a></li>
+<li><a href="#s-cs-prop-detail" data-target="s-cs-prop-detail">정속·거버너·페더링 상세 <span class="en">Constant-Speed Detail</span></a></li>
+<li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
   <main class="main">
@@ -2704,7 +2715,31 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 </div>
 <div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 18</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
 </div></section>
-        <section id="s-faa-figures" class="comp">
+            <section id="s-prop-forces-detail" class="comp">
+      <div class="comp-head"><h3>프로펠러 작용력 5종과 비대칭 하중</h3><span class="comp-en">Propeller Forces & Asymmetrical Loading</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p>프로펠러에는 <b>5가지 힘</b>이 작용합니다. 셋은 구조를 강하고 무겁게 하지만 쓸모가 없고, 둘(비틀림 힘)은 피치 변경 기구에 유용합니다.<span class="en-text">Five forces act on a propeller: three require it to be strong/heavy with no useful function; two twisting forces are useful for pitch change.</span></p>
+<p><b>① 원심력(centrifugal force)</b> — 가장 큰 힘. 블레이드를 허브에서 바깥으로 당김(허브 접합부 인장). <b>② 추력 굽힘력(thrust bending)</b> — 추력이 블레이드 팁을 앞으로 굽힘. <b>③ 토크 굽힘력(torque bending)</b> — 공기저항이 블레이드를 회전 반대로 굽힘.<span class="en-text">① Centrifugal force (largest) pulls blades outward. ② Thrust bending force bends tips forward. ③ Torque bending force bends blades against rotation.</span></p>
+<p><b>④ 공력 비틀림력(ATF, aerodynamic twisting force)</b> — 압력중심이 피치변경축 앞에 있어 블레이드를 <b>고피치(high pitch)</b>로 비틀려 함. <b>⑤ 원심 비틀림력(CTF, centrifugal twisting force)</b> — 원심력이 블레이드를 회전면과 같은 평면으로 돌려 <b>저피치(low pitch)</b>로 비틀려 함. CTF가 ATF보다 커서, 무카운터웨이트 프로펠러는 CTF로 저피치가 됩니다.<span class="en-text">④ Aerodynamic twisting force (ATF) twists blades toward high pitch. ⑤ Centrifugal twisting force (CTF) twists toward low pitch; CTF is greater, so noncounterweight props go to low pitch.</span></p>
+<p><b>비대칭 하중(P-factor)</b> — 미국제 엔진은 대개 시계방향 회전(액세서리측 기준). 고받음각 상승 시, <b>내려가는 블레이드(우측)</b>가 올라가는 블레이드보다 받음각·속도가 커져 추력이 커집니다. 이 불균형이 기수를 <b>왼쪽으로 요잉</b>시킵니다.<span class="en-text">P-factor: with a clockwise-rotating engine at high AoA, the descending (right) blade has a greater AoA/speed and more thrust, yawing the nose left.</span></p>
+<p><b>팁 속도(tip speed)</b> — 프로펠러 소음의 약 절반은 팁이 <b>음속에 근접</b>할 때 발생하는 진동입니다. 천음속 영역에서 팁이 작동하면 소음·효율 저하가 생기므로, 팁 속도를 제한하기 위해 프로펠러 지름·RPM을 설계합니다.<span class="en-text">Tip speed: about half of prop noise comes from tips nearing the speed of sound. Transonic tips cause noise and efficiency loss, so diameter/RPM are limited.</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.19 Propellers, p.666–668<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.666–668</span></p>
+      </div></div>
+    </section>
+
+        <section id="s-cs-prop-detail" class="comp">
+      <div class="comp-head"><h3>정속 프로펠러 작동·거버너·페더링 상세</h3><span class="comp-en">Constant-Speed Operation Detail</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p><b>정속 프로펠러(constant-speed)</b>는 거버너가 블레이드 각을 조절해 조종사가 설정한 RPM을 유지합니다. 세 가지 작동 상태가 있습니다.<span class="en-text">A constant-speed propeller uses a governor to vary blade angle and hold the pilot-set RPM. It has three operating conditions.</span></p>
+<p><b>온스피드(on-speed)</b> — 설정 RPM 유지, 파일럿 밸브가 오일 통로를 막아 피치 고정. <b>언더스피드(underspeed)</b> — RPM이 낮으면 거버너가 프로펠러에서 오일을 빼고, 원심 비틀림력·스프링·가스압이 피스톤을 밀어 <b>저피치(low pitch)</b>로 → RPM 상승. <b>오버스피드(overspeed)</b> — RPM이 높으면 거버너가 오일을 보내 피스톤을 밀어 <b>고피치(high pitch)</b>로 → 공기부하 증가로 RPM 하강.<span class="en-text">On-speed: RPM held, pilot valve blocks oil. Underspeed: governor drains oil, and centrifugal twisting force/spring/gas moves blades to low pitch (RPM rises). Overspeed: governor sends oil to high pitch (air load rises, RPM drops).</span></p>
+<p><b>거버너 구성</b> — ① <b>기어펌프</b>가 엔진오일압을 승압해 피스톤을 구동 ② <b>플라이웨이트(flyweight)</b>가 원심력으로 파일럿 밸브를 올림 ③ <b>스피더 스프링(speeder spring)</b>이 플라이웨이트 토를 눌러 균형. 조종사가 프로펠러 레버로 <b>조정 웜(worm)</b>을 돌려 스피더 스프링 압축을 바꾸면 설정 RPM이 변합니다.<span class="en-text">Governor: a gear pump boosts oil pressure; flyweights raise the pilot valve by centrifugal force; the speeder spring opposes them. The prop lever turns an adjusting worm to change speeder-spring compression and thus the set RPM.</span></p>
+<p><b>카운터웨이트식 vs 무카운터웨이트식</b> — 카운터웨이트 프로펠러는 오일압이 <b>저피치</b>로, 원심력이 <b>고피치(페더)</b>로. 무카운터웨이트(예 McCauley·Hartzell 소형)는 오일압이 <b>고피치</b>로, 스프링·원심비틀림력이 <b>저피치</b>로 작동해 방향이 반대입니다.<span class="en-text">Counterweight props: oil to low pitch, centrifugal force to high pitch (feather). Non-counterweight props (small McCauley/Hartzell): oil to high pitch, spring/twisting force to low pitch—opposite.</span></p>
+<p><b>페더링(feathering)</b> — 엔진 정지 시 블레이드를 기류와 평행(약 90°)으로 세워 항력·풍차회전(windmilling)을 없앰. 다발기 필수. <b>하이드로매틱(Hamilton Standard)</b>은 페더 버튼→홀딩코일→전동펌프로 고압오일 공급. 언페더는 역방향 오일. <b>역피치(reversing)</b> 정속 프로펠러는 블레이드를 음(-)의 각으로 돌려 착륙 후 제동(베타 영역).<span class="en-text">Feathering aligns blades with the airflow (~90°) to kill drag/windmilling—essential on multi-engine. The Hamilton Standard Hydromatic uses a feather button, holding coil, and electric pump. Reversing props rotate blades to negative angles for landing braking (beta range).</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.19 Propellers, p.676–689<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.676–689</span></p>
+      </div></div>
+    </section>
+
+    <section id="s-faa-figures" class="comp">
           <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 7)</span></h3></div>
           <div class="comp-body">
             <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 54개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 54 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>

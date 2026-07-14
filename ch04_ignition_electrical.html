@@ -290,6 +290,15 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .fig-missing{margin:14px 0;}
 .fig-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:110px;padding:24px 16px;border:1.5px dashed rgba(96,165,250,.4);border-radius:10px;background:rgba(96,165,250,.05);color:#93b4e8;font-size:15px;font-weight:600;text-align:center;}
 .fig-ph-en{font-size:11.5px;color:#7c8db0;font-weight:400;font-style:italic;}
+
+/* 반응형 이미지 보정 - 모든 화면에서 잘림 방지 */
+.comp-text img, .fig img, .fig-page img, figure img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+}
+.fig, .fig-page, figure { max-width: 100%; overflow: hidden; }
+.src-badge{display:inline-block;margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#34D399;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);border-radius:5px;padding:2px 7px;vertical-align:middle;}
 </style>
 <script>
 /* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
@@ -438,7 +447,8 @@ function figRefToggle(el){
 <li><a href="#s-terminal-connector" data-target="s-terminal-connector">터미널 · 커넥터 <span class="en">Terminals & Connectors</span></a></li>
 <li><a href="#s-bonding" data-target="s-bonding">본딩 · 그라운딩 · 컨듀잇 <span class="en">Bonding, Grounding & Conduit</span></a></li>
 <li><a href="#s-oral" data-target="s-oral" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px;">🗣 구술시험 <span class="en">Oral Exam</span></a></li>
-        <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
+        <li><a href="#s-ignition-detail-asa" data-target="s-ignition-detail-asa">점화 정량·정비 상세 <span class="en">Ignition Specs</span></a></li>
+<li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
   <main class="main">
@@ -4029,7 +4039,19 @@ function figRefToggle(el){
 </div>
 <div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 54</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
 </div></section>
-        <section id="s-faa-figures" class="comp">
+            <section id="s-ignition-detail-asa" class="comp">
+      <div class="comp-head"><h3>점화계통 정량 기준과 정비 상세</h3><span class="comp-en">Ignition Specs & Servicing Detail</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p><b>이중 점화(dual ignition)</b> — 14 CFR §33.37에 따라 모든 인증 왕복엔진은 실린더당 2개 스파크플러그 + 독립 전원 2계통 필수. 두 지점 점화로 연소가 빠르고 완전해져 최대 출력·최저 온도를 냅니다.<span class="en-text">Per §33.37, every certified recip engine needs dual ignition: two plugs per cylinder and two independent circuits. Two ignition points give faster, complete combustion.</span></p>
+<p><b>E-gap(효율 간극) 각</b> — 자석이 중립 위치를 <b>몇 도 지난</b> 지점에서 브레이커 포인트가 열리도록 타이밍한 위치. 이때 1차 전류 차단으로 자속이 급붕괴해 최대 2차 전압 유도. <b>내부 타이밍</b>은 자석을 E-gap에 두고 포인트가 막 열리게 조정하는 것입니다.<span class="en-text">The E-gap (efficiency gap) is where the breaker points open, a few degrees past neutral, for maximum induced voltage. Internal timing sets the points to just open at E-gap.</span></p>
+<p><b>임펄스 커플링 vs Shower of Sparks</b> — 시동 시 <b>뜨겁고 지연된(retarded) 스파크</b> 필요(조기 점화는 킥백 유발). 임펄스 커플링은 스프링으로 자석을 순간 고속 회전. Shower of Sparks는 인덕션 바이브레이터가 맥동 DC를 리타드 브레이커 포인트로 보냄. <b>보상 캠(compensated cam)</b>은 대형 방사형 엔진에서 실린더별 로브를 다르게 갈아, 각 피스톤이 상사점에서 같은 <b>선형 거리</b>일 때 점화되게 합니다.<span class="en-text">Starting needs a hot, retarded spark (early spark causes kickback). Impulse couplings spring-spin the magnet; Shower of Sparks uses an induction vibrator to retard points. A compensated cam (large radials) has a differently ground lobe per cylinder.</span></p>
+<p><b>스파크플러그 리치(reach)</b> — 18mm 플러그는 <b>롱리치 13/16인치</b>, <b>숏리치 1/2인치</b>. 잘못 쓰면 나사 손상·카본 축적. <b>열범위(heat range)</b> — 인슐레이터 팁을 아이들 시 <b>900°F 이상</b>, 최대출력 시 <b>1,300°F 이하</b>로 유지. 핫플러그(긴 팁, 저온 엔진용), 콜드플러그(짧은 팁, 고온 엔진용). <b>파인와이어</b>는 백금·이리듐(하이브리드=백금 중심+이리듐 접지).<span class="en-text">18mm plugs: long-reach 13/16", short-reach 1/2". Heat range keeps the tip above 900°F at idle and below 1,300°F at max power. Hot plugs (long tip) for cool engines, cold plugs (short tip) for hot engines. Fine-wire uses platinum/iridium.</span></p>
+<p><b>마그네토 점검(run-up)</b> — 1,700RPM에서 BOTH→R→BOTH→L→BOTH. RPM 강하는 <b>150RPM 이하</b>, 두 마그네토 차이는 <b>50RPM 이하</b>. 강하 없음은 P-lead 미접지(스위치 결함) 의심 → 아이들에서 OFF 안전점검. <b>스태거드 타이밍</b>: 배기밸브측 플러그가 흡기측보다 먼저 점화(희박 혼합기 보상). 재장착 시 플러그를 다음 실린더로 옮겨(top↔bottom) 전극 마모 균등화.<span class="en-text">Mag check at 1,700 RPM: drop ≤150 RPM, difference ≤50 RPM. No drop suggests an ungrounded P-lead. Staggered timing fires the exhaust-side plug first. Rotate plugs to the next cylinder (top↔bottom) on reinstall to even electrode wear.</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.5 Ignition Systems, p.201–242<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.201–242</span></p>
+      </div></div>
+    </section>
+
+    <section id="s-faa-figures" class="comp">
           <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 4)</span></h3></div>
           <div class="comp-body">
             <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 123개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 123 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>
