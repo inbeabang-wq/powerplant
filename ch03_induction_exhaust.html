@@ -284,6 +284,15 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .fig-missing{margin:14px 0;}
 .fig-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:110px;padding:24px 16px;border:1.5px dashed rgba(96,165,250,.4);border-radius:10px;background:rgba(96,165,250,.05);color:#93b4e8;font-size:15px;font-weight:600;text-align:center;}
 .fig-ph-en{font-size:11.5px;color:#7c8db0;font-weight:400;font-style:italic;}
+
+/* 반응형 이미지 보정 - 모든 화면에서 잘림 방지 */
+.comp-text img, .fig img, .fig-page img, figure img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+}
+.fig, .fig-page, figure { max-width: 100%; overflow: hidden; }
+.src-badge{display:inline-block;margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#34D399;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);border-radius:5px;padding:2px 7px;vertical-align:middle;}
 </style>
 <script>
 /* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
@@ -418,7 +427,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <li><a href="#s-afterburner" data-target="s-afterburner">애프터버너 · 추력증강 <span class="en">Afterburning / Thrust Augmentation</span></a></li>
 <li><a href="#s-noise-emission" data-target="s-noise-emission">소음억제 · 배기규제 <span class="en">Noise Suppression & Emissions</span></a></li>
 <li><a href="#s-oral" data-target="s-oral" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px;">🗣 구술시험 <span class="en">Oral Exam</span></a></li>
-        <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
+        <li><a href="#s-exhaust-detail-asa" data-target="s-exhaust-detail-asa">배기 스택·덕트·검사 <span class="en">Exhaust Detail</span></a></li>
+<li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
   <main class="main">
@@ -2208,7 +2218,18 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 </div>
 <div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 41</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
 </div></section>
-        <section id="s-faa-figures" class="comp">
+            <section id="s-exhaust-detail-asa" class="comp">
+      <div class="comp-head"><h3>배기 스택·덕트·검사 상세</h3><span class="comp-en">Exhaust Stacks, Ducts & Inspection Detail</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p>연료 열에너지의 <b>약 50%</b>가 배기로 손실됩니다. 배기계통은 배압(back pressure)을 최소화하면서, 찬 공기가 뜨거운 배기밸브에 직접 닿아 <b>휘는 것(warp)</b>을 막고 소음을 줄여야 합니다.<span class="en-text">About 50% of fuel heat is lost through exhaust. The system must minimize back pressure while protecting hot exhaust valves from cold-air warping and reducing noise.</span></p>
+<p><b>배기 스택 발전</b> — 1930년대 <b>숏 스택(short stack)</b>은 배압은 낮췄으나 소음·밸브 휨 문제. <b>베이어닛(bayonet, 핀치슬롯) 스택</b>은 긴 슬릿으로 배기하며, 위를 흐르는 공기가 저압을 만들어 배출을 돕고 찬 공기의 밸브 접촉을 막아 휨과 소음을 줄였습니다. 방사형 엔진은 <b>컬렉터 링(collector ring)</b>으로 전 실린더 배기를 모아 테일파이프로 배출합니다.<span class="en-text">Short stacks (1930s) cut back pressure but caused noise and valve warping. Bayonet (pinched-slot) stacks vent through a long slot; airflow creates low pressure aiding exit and preventing valve warp. Radial engines use a collector ring.</span></p>
+<p><b>가열 덕트 3종</b> — <b>CAT</b>(흑색 네오프렌, 찬공기용, −65°F~300°F), <b>SCAT</b>(적색 실리콘, 더운공기용, ~450°F), <b>SCEET</b>(2겹, ~500°F). 카뷰레터·객실 히트는 머플러 슈라우드에서 열을 얻어 SCAT으로 히트박스에 전달됩니다.<span class="en-text">Ducting: CAT (black neoprene, cold air, −65°F–300°F), SCAT (red silicone, hot air, ~450°F), SCEET (two-ply, ~500°F). Carburetor/cabin heat draws from a muffler shroud via SCAT.</span></p>
+<p><b>검사 주의</b> — 100시간·연차 검사 시 슈라우드를 벗기고 전 계통 점검. <b>연필(탄소)·아연도금 금속 접촉 금지</b> — 고온에서 강에 침투해 균열 유발. 누설은 <b>깃털모양 회색·검댕 줄무늬</b>로 나타남. 클램프는 과조임 금지(팽창 시 볼트 파단). 진공청소기 배출측으로 가압 후 비눗물로 기포 확인. CO는 무색·무취·무미이며 헤모글로빈이 산소보다 CO를 <b>더 잘 흡수</b> — 누적 중독되므로 CO 검출기 필수.<span class="en-text">Inspection: remove shrouds; NO lead pencil or galvanized contact (infuses into steel, cracks). Leaks show as gray/sooty feather streaks. Don't overtighten clamps. Pressure-check with a vacuum cleaner + soapy water. CO is colorless/odorless; hemoglobin absorbs it preferentially—use CO detectors.</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.6 Exhaust Systems, p.247–256<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.247–256</span></p>
+      </div></div>
+    </section>
+
+    <section id="s-faa-figures" class="comp">
           <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 3)</span></h3></div>
           <div class="comp-body">
             <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 52개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 52 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>
