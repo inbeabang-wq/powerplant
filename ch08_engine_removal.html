@@ -155,6 +155,15 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .fig-missing{margin:14px 0;}
 .fig-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:110px;padding:24px 16px;border:1.5px dashed rgba(96,165,250,.4);border-radius:10px;background:rgba(96,165,250,.05);color:#93b4e8;font-size:15px;font-weight:600;text-align:center;}
 .fig-ph-en{font-size:11.5px;color:#7c8db0;font-weight:400;font-style:italic;}
+
+/* 반응형 이미지 보정 - 모든 화면에서 잘림 방지 */
+.comp-text img, .fig img, .fig-page img, figure img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+}
+.fig, .fig-page, figure { max-width: 100%; overflow: hidden; }
+.src-badge{display:inline-block;margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#34D399;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);border-radius:5px;padding:2px 7px;vertical-align:middle;}
 </style>
 </head>
 <body>
@@ -186,7 +195,8 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       <li><a href="#s-autofeather-nts" data-target="s-autofeather-nts">오토페더·NTS 계통 <span class="en">Autofeather &amp; NTS System</span></a></li>
 <li><a href="#s-preservation" data-target="s-preservation">엔진 보존 · 보관 <span class="en">Engine Preservation & Storage</span></a></li>
 <li><a href="#s-shipping-storage" data-target="s-shipping-storage">수송용기 · 보관 점검 <span class="en">Shipping Containers & Stored Engine Inspection</span></a></li>
-        <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
+        <li><a href="#s-removal-detail-asa" data-target="s-removal-detail-asa">탈·장착 실무 상세 <span class="en">Removal Detail</span></a></li>
+<li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
   <main class="main">
@@ -288,7 +298,19 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       <div class="comp-body"><div class="comp-text"><p>엔진 수송용기(Shipping container)는 충격·습기로부터 엔진을 보호한다.</p><p>습도지시계(Humidity indicator)로 내부 상태를 점검.</p><p>보관 엔진은 주기적으로 건조제·방청 상태를 점검·갱신한다.</p></div><div class="hb-block" id="hb-s-shipping-storage"><div class="hb-head" onclick="this.parentNode.classList.toggle('open')">📖 핸드북 원문 정리 (FAA-H-8083-32B p.348)<span class="hb-toggle">▼</span></div><div class="hb-body"><div class="hb-en">For protection, engines are sealed in plastic or foil envelopes and packed in wooden shipping cases or pressurized metal containers. The container may include a humidity indicator and desiccant. Stored engines are inspected periodically — checking the humidity indicator and the preservation condition — and re-preserved if the protection has degraded, to prevent corrosion before the engine returns to service.</div><div class="hb-ko">보호를 위해 엔진을 플라스틱·포일 봉투로 밀봉하고 목재 운송 케이스나 가압 금속 컨테이너에 포장한다. 컨테이너에는 습도 지시계와 건조제가 들어갈 수 있다. 보관 엔진은 주기적으로 점검하며 — 습도 지시계와 방청 상태 확인 — 보호가 저하되면 재방청하여, 엔진이 사용 복귀하기 전 부식을 막는다.</div><a class="hb-pdflink" href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_powerplant_handbook.pdf#page=348" target="_blank" rel="noopener">📄 핸드북 PDF p.348 원문 보기</a></div></div><figure class="fig fig-missing"><div class="fig-ph">📐 도면 준비 중<span class="fig-ph-en">Reference image under review — see the FAA handbook PDF link above</span></div><figcaption>FAA-H-8083-32B p.348 · 실물 참고 이미지</figcaption></figure>
       </div>
     </section>
-        <section id="s-faa-figures" class="comp">
+            <section id="s-removal-detail-asa" class="comp">
+      <div class="comp-head"><h3>엔진 탈·장착 실무 상세</h3><span class="comp-en">Removal & Installation Detail</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p><b>탈착 준비</b> — 삼륜식 소형기는 엔진 제거 시 극도로 <b>테일이 무거워지므로</b>, 반드시 꼬리를 적절한 스탠드로 지지합니다. 배터리를 분리하고 연료 선택밸브를 OFF. 카울링을 벗겨 손상 없는 랙에 보관.<span class="en-text">Prep: small tricycle-gear aircraft become extremely tail-heavy without the engine, so support the tail on a stand. Disconnect the battery, set the fuel selector OFF, and store the cowling safely.</span></p>
+<p><b>배관 처리</b> — 연료 스트레이너·오일 섬프·오일 쿨러를 배유하고, 분리한 연료·오일 라인은 <b>전용 플러그·캡</b>으로 막습니다. <b>마스킹 테이프나 덕트 테이프로 감지 말 것</b> — 접착제 잔류물이 계통을 오염시킵니다.<span class="en-text">Drain the strainer, sump, and oil cooler; cap open fuel/oil lines with proper plugs. Do NOT wrap line ends with masking or duct tape—adhesive residue contaminates the system.</span></p>
+<p><b>프로펠러·부속 분리</b> — 정속 프로펠러 허브는 비닐로 덮어 이물질 차단, 프로펠러 샤프트 끝도 덮음. 조종실 연결(스로틀·믹스처·계기라인·전기배선)을 모두 분리 후, 크랭크케이스 <b>리프팅 아이(lifting eye)</b>에 호이스트를 걸어 마운트 볼트를 풀고 들어냅니다.<span class="en-text">Cover constant-speed prop hubs and the prop shaft against debris. After disconnecting all cockpit connections (throttle, mixture, instrument lines, wiring), attach the hoist to the crankcase lifting eye and remove the mount bolts.</span></p>
+<p><b>장착 후 예비오일(preoil)</b> — 엔진 최대 마모는 <b>최초 시동 시</b> 베어링에 오일이 닿기 전 발생. 반드시 압력오일러로 오일을 강제 순환시켜 오일압 게이지 연결부로 흘러나올 때까지 예비오일링. 압력오일러가 없으면 실린더당 플러그 1개를 빼고 오일압 표시될 때까지 스타터로 크랭킹.<span class="en-text">Post-install preoil: the greatest wear occurs at first start before oil reaches the bearings. Force oil through with a pressure oiler until it flows from the oil-pressure gauge port, or crank with one plug removed per cylinder.</span></p>
+<p><b>엔진 보존(preservation)</b> — 장기 보관 시 습기로 실린더벽·부품이 부식됩니다. 방청유 분무, 흡습제(desiccant) 플러그 장착, 흡·배기구 밀봉으로 보존. 나이트라이드 실린더는 특히 녹에 취약해 보존이 중요합니다.<span class="en-text">Preservation: moisture corrodes cylinder walls during long storage. Spray preservative oil, install desiccant plugs, and seal intake/exhaust. Nitrided cylinders are especially rust-prone.</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.9 Removal & Installation, p.338–340<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.338–340</span></p>
+      </div></div>
+    </section>
+
+    <section id="s-faa-figures" class="comp">
           <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 8)</span></h3></div>
           <div class="comp-body">
             <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 20개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 20 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>

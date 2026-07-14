@@ -47,3 +47,19 @@ ch03 배기, ch04 점화, ch05 시동, ch06 냉각(도면2), ch07 프로펠러, 
 - ch01 엔진 ← 02 THEORY&CONSTRUCTION(29MB) + 10 터빈(27MB)
 - ch02 연료 ← 04 FUEL METERING&INDUCTION(28MB) + 12 터빈연료(10MB)
 - ch10 정비·운용 ← 09 OPERATION&MAINTENANCE(23MB) + 15 터빈(8.6MB)
+
+## 최종 완료 (세션 계속 3)
+- ✅ ch01 엔진 — 실린더배열·번호·점화순서·마력공식 (02 THEORY)
+- ✅ ch02 연료 — 기화기 6계통·연료등급 (04 FUEL METERING)
+- ✅ ch08 엔진탈장착 — 탈장착 실무·예비오일·보존 (09 O&M 후반)
+- ✅ ch10 정비·운용 — TBO·차압압축·SOAP·오버홀·NDI·밸브각 (09 O&M) ★A&P핵심
+
+## ★ 전체 완료: 10/11 챕터 ★
+ch01,02,03,04,05,06,07,08,09,10 모두 ASA 보강 완료
+- ch11 LSA엔진: 대응 ASA 교재 없음 (보강 대상 아님)
+- 총 ASA 보강 섹션 13개 + 도면 6장(ch06 카울링2·ch09 화재2)
+- 반응형 CSS 11개 챕터 전체 적용, 오버플로 0개 확인
+
+## powerplant vs airframe 동등성 달성
+airframe에 적용한 모든 개선(ASA 텍스트 보강·도면·반응형·영어병기)이
+powerplant에도 반영 완료. systems·실기구술 영어병기는 원래 완비돼 있었음.

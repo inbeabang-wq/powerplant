@@ -299,6 +299,15 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .fig-missing{margin:14px 0;}
 .fig-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:110px;padding:24px 16px;border:1.5px dashed rgba(96,165,250,.4);border-radius:10px;background:rgba(96,165,250,.05);color:#93b4e8;font-size:15px;font-weight:600;text-align:center;}
 .fig-ph-en{font-size:11.5px;color:#7c8db0;font-weight:400;font-style:italic;}
+
+/* 반응형 이미지 보정 - 모든 화면에서 잘림 방지 */
+.comp-text img, .fig img, .fig-page img, figure img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+}
+.fig, .fig-page, figure { max-width: 100%; overflow: hidden; }
+.src-badge{display:inline-block;margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#34D399;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);border-radius:5px;padding:2px 7px;vertical-align:middle;}
 </style>
 <script>
 /* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
@@ -442,7 +451,8 @@ function figRefToggle(el){
 <li><a href="#s-turbine-maint" data-target="s-turbine-maint">터빈엔진 정비 · 연소실 검사 <span class="en">Turbine Engine Maintenance</span></a></li>
 <li><a href="#s-turbine-operation" data-target="s-turbine-operation">터빈엔진 운용 · 계기 · 고장탐구 <span class="en">Turbine Operation, Instruments & Troubleshooting</span></a></li>
 <li><a href="#s-oral" data-target="s-oral" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px;">🗣 구술시험 <span class="en">Oral Exam</span></a></li>
-        <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
+        <li><a href="#s-overhaul-ndi-asa" data-target="s-overhaul-ndi-asa">오버홀·검사·정비 기준 <span class="en">Overhaul & NDI</span></a></li>
+<li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
   <main class="main">
@@ -3636,7 +3646,20 @@ function figRefToggle(el){
 </div>
 <div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 24</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
 </div></section>
-        <section id="s-faa-figures" class="comp">
+            <section id="s-overhaul-ndi-asa" class="comp">
+      <div class="comp-head"><h3>오버홀·검사·정비 핵심 기준 (A&P 필수)</h3><span class="comp-en">Overhaul, NDI & Maintenance Specs</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p><b>TBO(Time Between Overhauls)</b> — 제조사 권장 오버홀 간격. <b>강제 아님</b>(사설 소유자는 초과 가능, 일부 상업운영자만 필수). 자주 안 날면 오히려 습기·산 축적으로 TBO가 단축됩니다. 현대 엔진은 1,400~2,000시간 이상.<span class="en-text">TBO is a recommended (not mandatory) overhaul interval; private owners may exceed it. Flying infrequently shortens TBO due to moisture/acid. Modern engines reach 1,400–2,000+ hours.</span></p>
+<p><b>차압 압축시험(differential compression)</b> — <b>80psi</b> 입력, 허용 차이 <b>25%</b>(즉 <b>60psi 미만</b>이면 의심). 누설음 위치로 진단: <b>흡기밸브</b>=기화기/인젝터 입구, <b>배기밸브</b>=배기 스택, <b>피스톤 링</b>=크랭크케이스 브리더/오일 필러. 반드시 <b>상사점</b>에서 측정(프로펠러 안전 주의).<span class="en-text">Differential compression: 80 psi input, 25% max difference (below 60 psi is questionable). Leak location: intake valve=carb inlet, exhaust valve=exhaust stack, rings=crankcase breather. Measure at top dead center.</span></p>
+<p><b>오일 분석(SOAP)</b> — 오일을 전기아크로 태워 분광분석, 금속 <b>증가 추세</b>가 중요(절대량 아님). 금속별 출처: <b>알루미늄</b>=피스톤, <b>강/철</b>=캠·링·기어, <b>청동</b>=부싱, <b>배빗(babbitt)</b>=베어링 인서트, <b>크롬</b>=피스톤링·실린더벽.<span class="en-text">SOAP burns oil in an arc for spectrometric analysis; the growth trend matters (not absolute amount). Sources: aluminum=pistons, steel=cam/rings/gears, bronze=bushings, babbitt=bearing inserts, chromium=rings/walls.</span></p>
+<p><b>오버홀 3종</b> — <b>탑 오버홀</b>: 실린더만(크랭크케이스 미개방, TBO 연장 불가). <b>메이저 오버홀</b>: 완전분해·검사·수리, 시간은 <b>계속 누적</b>(SMOH만 0). <b>리빌드(rebuild)</b>: §91.421에 따라 <b>제조사만</b> 가능, <b>제로타임</b> 로그북 발행.<span class="en-text">Top overhaul: cylinders only (no TBO extension). Major overhaul: full teardown, total time continues (only SMOH resets). Rebuild (§91.421): only the manufacturer, issues a zero-time logbook.</span></p>
+<p><b>비파괴검사(NDI)</b> — <b>자분탐상(magnetic particle)</b>: 강 부품용. <b>원형 자화(circular)</b>는 <b>길이방향(lengthwise)</b> 결함을, <b>종방향 자화(longitudinal)</b>는 <b>가로방향(crosswise)</b> 결함을 잘 검출. 연속법/잔류법. <b>형광침투탐상(fluorescent penetrant)</b>: 비철(크랭크케이스·헤드), <b>표면 개구 결함</b>만, 유화제(emulsifier)로 여분 침투액 제거.<span class="en-text">NDI: magnetic particle (steel) — circular magnetization finds lengthwise faults, longitudinal finds crosswise. Fluorescent penetrant (nonferrous) detects surface-breaking faults; an emulsifier removes excess penetrant.</span></p>
+<p><b>밸브·실린더 정비</b> — 밸브 연삭각: <b>흡기 30°</b>(유동 좋음), <b>배기 45°</b>(밀봉·카본방지). 밸브시트는 <b>0.5°~1° 간섭각(interference angle)</b>. 페더에지(featheredge)는 과열→조기점화 유발. 실린더 보어 색코드: 크롬=주황, 나이트라이드=청, 리치: 롱=황·숏=회/청. 체계적 고장탐구 4원칙: ①작동원리 파악 ②관찰 ③분할 ④명백한 것 먼저.<span class="en-text">Valve grinding: intake 30°, exhaust 45°; seat interference angle 0.5–1°. Featheredge causes preignition. Cylinder color codes: chrome=orange, nitride=blue. Troubleshooting rules: know operation, observe, divide, check the obvious first.</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.9 Operation & Maintenance, p.285–340<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.285–340</span></p>
+      </div></div>
+    </section>
+
+    <section id="s-faa-figures" class="comp">
           <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 10)</span></h3></div>
           <div class="comp-body">
             <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 72개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 72 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>

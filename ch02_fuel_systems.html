@@ -296,6 +296,15 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .fig-missing{margin:14px 0;}
 .fig-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:110px;padding:24px 16px;border:1.5px dashed rgba(96,165,250,.4);border-radius:10px;background:rgba(96,165,250,.05);color:#93b4e8;font-size:15px;font-weight:600;text-align:center;}
 .fig-ph-en{font-size:11.5px;color:#7c8db0;font-weight:400;font-style:italic;}
+
+/* 반응형 이미지 보정 - 모든 화면에서 잘림 방지 */
+.comp-text img, .fig img, .fig-page img, figure img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+}
+.fig, .fig-page, figure { max-width: 100%; overflow: hidden; }
+.src-badge{display:inline-block;margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#34D399;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);border-radius:5px;padding:2px 7px;vertical-align:middle;}
 </style>
 <script>
 /* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
@@ -442,7 +451,9 @@ function figRefToggle(el){
 <li><a href="#s-fuel-nozzle" data-target="s-fuel-nozzle">연료노즐 <span class="en">Fuel Nozzle</span></a></li>
       <li><a href="#s-injection-nozzle-detail" data-target="s-injection-nozzle-detail">연료분사 노즐 (에어블리드형) <span class="en">Fuel Injection Nozzle (Air Bleed Type)</span></a></li>
 <li><a href="#s-oral" data-target="s-oral" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px;">🗣 구술시험 <span class="en">Oral Exam</span></a></li>
-        <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
+        <li><a href="#s-energy-mixture-detail" data-target="s-energy-mixture-detail">에너지·열효율·혼합비 <span class="en">Energy & Mixture</span></a></li>
+<li><a href="#s-carb-systems-asa" data-target="s-carb-systems-asa">기화기 6계통·연료등급 <span class="en">Carburetor Systems</span></a></li>
+<li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
   <main class="main">
@@ -3106,7 +3117,30 @@ function figRefToggle(el){
 </div>
 <div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 40</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
 </div></section>
-        <section id="s-faa-figures" class="comp">
+            <section id="s-energy-mixture-detail" class="comp">
+      <div class="comp-head"><h3>에너지 변환·열효율·혼합비 상세</h3><span class="comp-en">Energy, Efficiency & Mixture Ratio</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p>왕복엔진은 매우 비효율적입니다 — 연료 열에너지의 <b>1/3 미만</b>만 유용한 일로 변환됩니다. <b>열효율(thermal efficiency)</b>은 실제 한 일을 연료가 낼 수 있는 일로 나눈 값입니다.<span class="en-text">A reciprocating engine is very inefficient—less than one-third of fuel heat becomes useful work. Thermal efficiency = work done ÷ potential work of the fuel.</span></p>
+<p><b>비연료소비율(SFC, specific fuel consumption)</b> — 제동마력(BHP)당 시간당 소비 연료 파운드 수. 열효율보다 엔진 효율을 <b>명확히</b> 비교할 수 있는 지표로, 값이 <b>낮을수록</b> 효율적입니다.<span class="en-text">Specific fuel consumption (SFC) = pounds of fuel per hour per brake horsepower; a clearer efficiency measure than thermal efficiency—lower is better.</span></p>
+<p><b>화학량론 혼합비(stoichiometric)</b> — 연소 후 산소·탄소가 남지 않는 이론 완전연소비로, 공연비 <b>약 15:1</b>(연공비 0.067). 최대 열을 방출해 <b>배기가스온도(EGT)가 최고</b>가 됩니다.<span class="en-text">Stoichiometric mixture (~15:1 air-fuel, 0.067 fuel-air) burns completely, releasing max heat and the highest EGT.</span></p>
+<p><b>실용 혼합비</b> — <b>최량출력(best-power)</b> 혼합비는 약 <b>12:1</b>(약간 농후)로 최대 출력을 냅니다. <b>최량경제(best-economy)</b> 혼합비는 약 <b>16:1</b>(약간 희박)로 연료소비를 최소화합니다. 화학량론비는 EGT가 최고라 그 부근을 <b>피크 EGT</b>라 하며, 실제 운항은 피크의 농후측(rich of peak) 또는 희박측(lean of peak)에서 합니다.<span class="en-text">Best-power mixture (~12:1, slightly rich) gives max power; best-economy (~16:1, slightly lean) minimizes fuel burn. Stoichiometric = peak EGT; operations run rich- or lean-of-peak.</span></p>
+<p><b>혼합비와 이상연소</b> — 과도한 희박 혼합비는 연소 지연으로 <b>디토네이션(detonation)</b>·과열을 유발할 수 있고, 농후 혼합비는 냉각 효과가 있으나 연료 낭비·점화플러그 오염을 부릅니다. 고출력에서 <b>출력증강(power enrichment)</b> 계통이 혼합비를 농후하게 해 냉각·디토네이션 방지에 기여합니다.<span class="en-text">Over-lean mixtures can cause detonation/overheating; rich mixtures cool but waste fuel and foul plugs. At high power the power-enrichment system enriches the mixture to cool and prevent detonation.</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.4 Fuel Metering, p.127–133<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.127–133</span></p>
+      </div></div>
+    </section>
+
+        <section id="s-carb-systems-asa" class="comp">
+      <div class="comp-head"><h3>부동식 기화기 6계통과 연료 등급 상세</h3><span class="comp-en">Float Carburetor Systems & Fuel Grades</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p><b>부동식 기화기(float carburetor)</b>는 6개 계통으로 구성됩니다. ① <b>메인 계량계통</b>: 벤투리 저압이 메인 제트로 연료를 뽑아냄 ② <b>메인 에어블리드(air bleed)</b>: 방출노즐에 공기를 섞어 <b>유화(emulsify)</b>, 유량 증가 시 혼합비가 점진적으로 희박해지도록 보정(에어블리드 없으면 급격히 농후).<span class="en-text">A float carburetor has six systems: main metering (venturi low pressure pulls fuel through the main jet); main air bleed (emulsifies fuel and progressively leans the mixture as airflow rises).</span></p>
+<p>③ <b>아이들링 계통</b>: 스로틀을 닫으면 벤투리 유속이 낮아 메인노즐이 작동 못하므로, 스로틀판 <b>가장자리 저압</b>에서 연료를 뽑는 별도 아이들 방출구 사용. ④ <b>가속 계통</b>: 스로틀 급개 시 공기는 즉시 늘지만 무거운 연료는 지연되므로, <b>가속펌프(accelerating pump)</b>가 여분 연료를 순간 분사해 일시적 희박을 방지.<span class="en-text">Idling: a separate idle discharge uses low pressure at the throttle-plate edge when the venturi is too slow. Acceleration: an accelerating pump injects extra fuel to prevent a lean stumble on rapid throttle opening.</span></p>
+<p>⑤ <b>혼합비 조절계통</b>: 고도 상승 시 공기밀도 감소로 혼합비가 농후해지므로, 조종사가 <b>믹스처 컨트롤</b>로 연료를 줄여 보정(수동/자동). ⑥ <b>출력증강(이코노마이저·파워엔리치먼트)</b>: 순항은 경제혼합비로, 최대출력 시 여분 연료를 추가해 실린더를 냉각하고 데토네이션을 방지.<span class="en-text">Mixture control: leans fuel as altitude reduces air density. Economizer/power enrichment: adds extra fuel at high power to cool cylinders and prevent detonation.</span></p>
+<p><b>연료 특성</b> — <b>증기압(vapor pressure)</b>: 연료 증발을 막는 데 필요한 압력, 높으면 <b>베이퍼록</b> 위험. <b>옥탄가/퍼포먼스 넘버</b>: 안티노크성 지표(100 초과는 퍼포먼스 넘버). <b>임계 압력·온도</b> 초과 시 액화 불가. <b>등급 색상</b>: 80=적, 100LL=청, 100=녹. <b>올바른 등급 사용 필수</b> — 낮은 등급은 데토네이션, 높은 등급도 문제 유발.<span class="en-text">Fuel: vapor pressure (too high risks vapor lock); octane/performance number (anti-knock; above 100 is performance number); grade colors 80=red, 100LL=blue, 100=green. Using the wrong grade causes detonation.</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.4 Fuel Metering, p.135–154<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.135–154</span></p>
+      </div></div>
+    </section>
+
+    <section id="s-faa-figures" class="comp">
           <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 2)</span></h3></div>
           <div class="comp-body">
             <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 64개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 64 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>

@@ -285,6 +285,14 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .fig-missing{margin:14px 0;}
 .fig-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:110px;padding:24px 16px;border:1.5px dashed rgba(96,165,250,.4);border-radius:10px;background:rgba(96,165,250,.05);color:#93b4e8;font-size:15px;font-weight:600;text-align:center;}
 .fig-ph-en{font-size:11.5px;color:#7c8db0;font-weight:400;font-style:italic;}
+
+/* 반응형 이미지 보정 - 모든 화면에서 잘림 방지 */
+.comp-text img, .fig img, .fig-page img, figure img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box;
+}
+.fig, .fig-page, figure { max-width: 100%; overflow: hidden; }
 </style>
 <script>
 /* ===== 통합 인터랙션 핸들러 (견고 버전) ===== */
@@ -434,7 +442,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <li><a href="#s-turbofan" data-target="s-turbofan">터보팬·추력 <span class="en">Turbofan & Thrust</span></a></li>
 
     <li><a href="#s-oral" data-target="s-oral" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px;">🗣 구술시험 <span class="en">Oral Exam</span></a></li>
-        <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
+        <li><a href="#s-config-firing-asa" data-target="s-config-firing-asa">실린더배열·점화순서 <span class="en">Config & Firing</span></a></li>
+<li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
   <main class="main">
@@ -2794,7 +2803,19 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 </div>
 <div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 47</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
 </div></section>
-        <section id="s-faa-figures" class="comp">
+            <section id="s-config-firing-asa" class="comp">
+      <div class="comp-head"><h3>실린더 배열·번호·점화순서 상세</h3><span class="comp-en">Configuration, Numbering & Firing Order</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
+      <div class="comp-body"><div class="comp-text">
+<p><b>실린더 배열</b> — <b>직렬(in-line)</b>: 좁은 전면적, 냉각 어려움. <b>V형</b>: 짧고 강성, 고출력. <b>방사형(radial)</b>: 홀수 실린더/열, 우수한 출력대중량비, 전면적 큼. <b>수평대향(opposed)</b>: 현대 경항공기 표준, 낮고 매끄러운 카울, 진동 적음.<span class="en-text">Cylinder arrangements: in-line (small frontal area, hard to cool), V (short, rigid, high power), radial (odd cylinders per row, great power-to-weight), horizontally opposed (modern GA standard, smooth, low vibration).</span></p>
+<p><b>실린더 번호</b> — <b>방사형</b>: 상단(12시)이 1번, 회전방향으로 순번. <b>대향형</b>: 제조사별 상이(Continental은 후방이 1번, Lycoming은 전방이 1번). <b>점화순서</b>는 인접 실린더가 연속 점화하지 않도록 설계해 진동·과열을 방지.<span class="en-text">Numbering: radial starts at top (12 o'clock) as #1; opposed varies by maker (Continental rear=#1, Lycoming front=#1). Firing order avoids consecutive adjacent cylinders to reduce vibration.</span></p>
+<p><b>대표 점화순서</b> — 4기통 대향: <b>1-3-2-4</b>. 6기통 대향: <b>1-6-3-2-5-4</b>. 9기통 방사형(단열 홀수): <b>1-3-5-7-9-2-4-6-8</b>(한 칸 건너뛰기). 방사형은 항상 홀수 실린더라야 점화가 균등합니다.<span class="en-text">Firing orders: 4-cyl opposed 1-3-2-4; 6-cyl opposed 1-6-3-2-5-4; 9-cyl radial 1-3-5-7-9-2-4-6-8 (skip one). Radials always have an odd number of cylinders per row for even firing.</span></p>
+<p><b>마력 공식</b> — <b>지시마력(IHP)</b> = PLANK/33,000 (P=지시평균유효압, L=행정, A=면적, N=회전수, K=실린더수). <b>제동마력(BHP)</b> = IHP − 마찰마력(FHP). <b>기계효율</b> = BHP/IHP. <b>체적효율</b> = 실제흡입 체적/피스톤변위(과급 없으면 100% 미만).<span class="en-text">IHP = PLANK/33,000; BHP = IHP − FHP; mechanical efficiency = BHP/IHP; volumetric efficiency = actual intake volume ÷ piston displacement (under 100% unless supercharged).</span></p>
+<p><b>압축비·점화 타이밍</b> — 압축비 = (실린더체적+연소실체적)/연소실체적. 높을수록 열효율↑이나 데토네이션 위험↑. <b>밸브 오버랩(valve overlap)</b>: 흡·배기 밸브가 동시에 열리는 구간, 체적효율·냉각 향상.<span class="en-text">Compression ratio = (cylinder + combustion-chamber volume) ÷ combustion-chamber volume; higher improves efficiency but risks detonation. Valve overlap improves volumetric efficiency and cooling.</span></p>
+<p style="color:var(--t3);font-size:13px">📄 원문: ASA AMT Powerplant, Ch.2 Theory & Construction, p.26–50<span class="en-text" style="display:block">Source: ASA AMT Powerplant, pp.26–50</span></p>
+      </div></div>
+    </section>
+
+    <section id="s-faa-figures" class="comp">
           <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 1)</span></h3></div>
           <div class="comp-body">
             <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 79개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 79 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>
