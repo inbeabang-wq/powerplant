@@ -164,6 +164,49 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 }
 .fig, .fig-page, figure { max-width: 100%; overflow: hidden; }
 .src-badge{display:inline-block;margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:#34D399;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);border-radius:5px;padding:2px 7px;vertical-align:middle;}
+
+.oralx-intro{font-size:13.5px;color:var(--t2);line-height:1.7;margin-bottom:16px;
+  background:rgba(251,191,36,.05);border-left:3px solid var(--gold);padding:12px 15px;border-radius:0 8px 8px 0;}
+.oralx-intro b{color:var(--gold);}
+.oralx-group{margin:22px 0 8px;}
+.oralx-group-title{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:700;
+  color:var(--cyan);margin-bottom:4px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+.oralx-group-title .gt-en{font-size:12px;color:var(--t3);font-weight:500;font-style:italic;}
+.oralx-group-title .gt-n{margin-left:auto;font-size:11px;font-weight:500;color:var(--t3);
+  background:var(--card);border:1px solid var(--line);padding:2px 9px;border-radius:12px;white-space:nowrap;}
+.oralx-card{background:rgba(96,165,250,.04);border:1px solid var(--line);border-radius:11px;
+  margin:11px 0;overflow:hidden;transition:.15s;}
+.oralx-card.done{border-color:rgba(52,211,153,.5);background:rgba(52,211,153,.04);}
+.oralx-q{padding:14px 16px 13px;}
+.oralx-qno{display:inline-block;background:var(--gold);color:#3a2c05;font-weight:700;font-size:11px;
+  padding:2px 8px;border-radius:5px;margin-right:9px;letter-spacing:.3px;vertical-align:middle;}
+.oralx-q .qk{font-size:14.5px;line-height:1.6;color:var(--t1);font-weight:600;}
+.oralx-q .qe{display:block;margin-top:5px;font-size:13px;color:var(--t3);line-height:1.55;font-style:italic;}
+.oralx-actions{display:flex;gap:8px;padding:0 16px 14px;flex-wrap:wrap;}
+.oralx-btn{background:transparent;border:1px solid var(--cyan);color:var(--cyan);font-size:12.5px;
+  padding:7px 14px;border-radius:8px;cursor:pointer;font-family:inherit;transition:.15s;font-weight:600;}
+.oralx-btn:hover{background:var(--cyan);color:#06223f;}
+.oralx-btn.know{border-color:#34d399;color:#34d399;}
+.oralx-btn.know:hover,.oralx-btn.know.on{background:rgba(52,211,153,.16);color:#34d399;}
+.oralx-btn.again{border-color:#fbbf24;color:#fbbf24;}
+.oralx-btn.again:hover,.oralx-btn.again.on{background:rgba(251,191,36,.14);color:#fbbf24;}
+.oralx-ans{display:none;padding:0 16px 16px;}
+.oralx-ans.show{display:block;}
+.oralx-ans-inner{padding:13px 15px;background:rgba(251,191,36,.06);border-left:3px solid var(--gold);
+  border-radius:0 8px 8px 0;}
+.oralx-ans-label{font-size:10.5px;font-weight:800;color:var(--gold);letter-spacing:1px;margin-bottom:7px;}
+.oralx-ak{font-size:14px;line-height:1.7;color:#a7f3d0;}
+.oralx-ae{display:block;margin-top:9px;padding-top:9px;border-top:1px dashed var(--line);
+  font-size:12.5px;color:var(--t3);line-height:1.65;font-style:italic;}
+.oralx-ref{margin-top:11px;font-size:11px;color:var(--t3);display:flex;align-items:center;gap:6px;}
+.oralx-ref .rdot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex:0 0 auto;}
+.oralx-prog{position:sticky;bottom:0;z-index:5;margin:18px -4px 0;padding:11px 14px;
+  background:rgba(15,23,42,.94);border:1px solid var(--line);border-radius:10px;
+  display:flex;align-items:center;gap:12px;backdrop-filter:blur(6px);}
+.oralx-prog .pbar{flex:1;height:7px;border-radius:4px;background:var(--card);overflow:hidden;}
+.oralx-prog .pfill{height:100%;width:0;background:linear-gradient(90deg,var(--gold),#34d399);transition:width .3s;}
+.oralx-prog .ptxt{font-size:11.5px;color:var(--t3);font-weight:700;white-space:nowrap;}
+.oralx-prog .ptxt b{color:var(--gold);}
 </style>
 </head>
 <body>
@@ -196,6 +239,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <li><a href="#s-preservation" data-target="s-preservation">엔진 보존 · 보관 <span class="en">Engine Preservation & Storage</span></a></li>
 <li><a href="#s-shipping-storage" data-target="s-shipping-storage">수송용기 · 보관 점검 <span class="en">Shipping Containers & Stored Engine Inspection</span></a></li>
         <li><a href="#s-removal-detail-asa" data-target="s-removal-detail-asa">탈·장착 실무 상세 <span class="en">Removal Detail</span></a></li>
+<li><a href="#s-oral" data-target="s-oral" style="border-top:1px solid var(--line);margin-top:6px;padding-top:10px;">🗣 구술시험 <span class="en">Oral Exam</span></a></li>
 <li><a href="#s-faa-figures" data-target="s-faa-figures">FAA 핸드북 전체 도면 <span class="en">FAA Handbook Figures</span></a></li>
 </ul>
   </aside>
@@ -310,7 +354,77 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       </div></div>
     </section>
 
-    <section id="s-faa-figures" class="comp">
+    <section id="s-oral" class="comp">
+<div class="comp-head"><h2>🗣 ASA 구술시험 (Oral Exam) <span class="cen">Typical Oral Questions</span></h2></div>
+<div class="comp-body">
+<div class="oralx-intro">ASA Powerplant <b>Oral &amp; Practical Study Guide</b> 기반 실제 구술시험 예상질문입니다. 각 카드의 <b>답 보기</b>로 모범답안(한/영)을 확인하고, <b>✅ 알았음 / 🔄 다시</b>로 스스로 채점하세요. 하단 진행률 바에 학습 상태가 반영됩니다.</div>
+<div class="oralx-group">
+<div class="oralx-group-title">엔진 탈·장착 <span class="gt-en">Engine Removal & Installation</span><span class="gt-n">12문항</span></div>
+<div class="oralx-card" id="orx_1">
+<div class="oralx-q"><span class="oralx-qno">Q1</span><span class="qk">엔진 교환(탈착)을 결정하는 대표적 사유는?</span><span class="qe">What are typical reasons for removing an engine?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_1','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_1','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">TBO 도달, 금속 입자 과다 검출, 성능 저하, 프로펠러 충격(prop strike), 과열·과속 사건, 수리 불가능한 손상 등입니다.</div><span class="oralx-ae">Reaching TBO, excessive metal in the oil, poor performance, a prop strike, overtemp/overspeed events, or damage beyond field repair.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_2">
+<div class="oralx-q"><span class="oralx-qno">Q2</span><span class="qk">소형 삼륜식 항공기에서 엔진을 떼어낼 때 반드시 해야 할 조치는?</span><span class="qe">What must be done before removing the engine from a small tricycle-gear aircraft?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_2','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_2','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">꼬리가 극도로 무거워지므로 반드시 테일 스탠드로 꼬리를 지지합니다. 그렇지 않으면 항공기가 뒤로 주저앉습니다.</div><span class="oralx-ae">Support the tail with a stand. Without the engine the aircraft becomes extremely tail-heavy and will tip back.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_3">
+<div class="oralx-q"><span class="oralx-qno">Q3</span><span class="qk">분리한 연료·오일 라인은 어떻게 처리하는가?</span><span class="qe">How should disconnected fuel and oil lines be handled?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_3','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_3','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">전용 플러그와 캡으로 막습니다. 마스킹 테이프나 덕트 테이프로 감으면 접착제 잔류물이 계통을 오염시키므로 금지입니다.</div><span class="oralx-ae">Cap them with proper plugs and caps. Never use masking or duct tape—adhesive residue contaminates the system.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_4">
+<div class="oralx-q"><span class="oralx-qno">Q4</span><span class="qk">QECA(신속엔진교환조립체)란 무엇인가?</span><span class="qe">What is a QECA (Quick Engine Change Assembly)?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_4','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_4','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">엔진에 부속장비(마운트·배관·배선·액세서리)를 미리 조립해 둔 것으로, 교환 시간을 크게 단축합니다.</div><span class="oralx-ae">An engine pre-assembled with its mounts, plumbing, wiring, and accessories so that a change can be made quickly.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_5">
+<div class="oralx-q"><span class="oralx-qno">Q5</span><span class="qk">엔진 호이스팅 시 어디에 걸어야 하는가?</span><span class="qe">Where should the hoist be attached when lifting an engine?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_5','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_5','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">크랭크케이스의 리프팅 아이(lifting eye) 또는 제조사가 지정한 지점에만 겁니다. 다른 곳에 걸면 손상 위험이 있습니다.</div><span class="oralx-ae">Only at the lifting eye on the crankcase or the point specified by the manufacturer. Other points risk damage.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_6">
+<div class="oralx-q"><span class="oralx-qno">Q6</span><span class="qk">엔진 장착 후 최초 시동 전에 반드시 하는 예비오일(preoil)의 이유는?</span><span class="qe">Why is preoiling required before the first start after installation?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_6','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_6','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">최대 마모는 최초 시동 시 베어링에 오일이 닿기 전에 발생합니다. 압력오일러로 오일을 강제 순환시켜 오일압 포트로 나올 때까지 예비오일링합니다.</div><span class="oralx-ae">The greatest wear occurs at first start before oil reaches the bearings. Force oil through with a pressure oiler until it flows from the oil pressure port.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_7">
+<div class="oralx-q"><span class="oralx-qno">Q7</span><span class="qk">압력오일러가 없을 때 예비오일 대체 방법은?</span><span class="qe">How can you preoil without a pressure oiler?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_7','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_7','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">실린더당 스파크플러그 하나를 빼고, 오일압 게이지에 압력이 표시될 때까지 시동기로 크랭킹합니다.</div><span class="oralx-ae">Remove one spark plug per cylinder and crank with the starter until oil pressure registers on the gauge.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_8">
+<div class="oralx-q"><span class="oralx-qno">Q8</span><span class="qk">프로펠러 충격(prop strike) 후 엔진은 어떻게 처리하는가?</span><span class="qe">What must be done to an engine after a prop strike?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_8','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_8','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">제조사 서비스 불러틴에 따라 처리합니다. 대개 크랭크축 검사를 위한 분해(teardown)가 필요합니다. 육안으로 멀쩡해 보여도 내부 손상이 있을 수 있습니다.</div><span class="oralx-ae">Follow the manufacturer's service bulletin—usually a teardown inspection of the crankshaft. Internal damage may exist even if nothing looks wrong.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_9">
+<div class="oralx-q"><span class="oralx-qno">Q9</span><span class="qk">엔진 장기 보관 시 부식을 막는 방법은?</span><span class="qe">How is an engine preserved against corrosion for long-term storage?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_9','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_9','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">방청유(preservative oil)를 분무하고, 흡습제(desiccant) 플러그를 장착하며, 흡·배기구를 밀봉합니다. 나이트라이드 실린더는 특히 녹에 취약합니다.</div><span class="oralx-ae">Spray preservative oil, install desiccant plugs, and seal the intake and exhaust. Nitrided cylinders are especially rust-prone.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_10">
+<div class="oralx-q"><span class="oralx-qno">Q10</span><span class="qk">엔진 마운트 검사 시 무엇을 확인하는가?</span><span class="qe">What is checked when inspecting engine mounts?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_10','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_10','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">마운트 구조물의 균열·변형·부식, 방진 마운트(shock mount)의 경화·균열·오일 오염, 볼트 토크와 안전결선을 확인합니다.</div><span class="oralx-ae">Cracks, distortion, or corrosion in the mount structure; hardened, cracked, or oil-soaked shock mounts; and bolt torque and safety wire.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_11">
+<div class="oralx-q"><span class="oralx-qno">Q11</span><span class="qk">장착 후 지상 시운전에서 확인해야 할 주요 항목은?</span><span class="qe">What are the key items checked during ground run-up after installation?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_11','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_11','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">오일압·오일온도, 누설 여부, 마그네토 점검(RPM 강하 150 이하·좌우 차 50 이하), 아이들 RPM·혼합비, 정속 프로펠러 작동, 계기 지시입니다.</div><span class="oralx-ae">Oil pressure and temperature, leaks, magneto check (drop under 150 RPM, difference under 50), idle RPM and mixture, prop governor operation, and instrument indications.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+<div class="oralx-card" id="orx_12">
+<div class="oralx-q"><span class="oralx-qno">Q12</span><span class="qk">리깅(rigging)·조정 시 조종 케이블에서 확인할 것은?</span><span class="qe">What is checked on engine controls during rigging?</span></div>
+<div class="oralx-actions"><button class="oralx-btn" onclick="orxToggle(this)">답 보기 / 가리기</button><button class="oralx-btn know" onclick="orxGrade(this,'orx_12','know')">✅ 알았음</button><button class="oralx-btn again" onclick="orxGrade(this,'orx_12','again')">🔄 다시</button></div>
+<div class="oralx-ans"><div class="oralx-ans-inner"><div class="oralx-ans-label">MODEL ANSWER · 모범답안</div><div class="oralx-ak">스로틀·믹스처·프로펠러 컨트롤이 전 행정(full travel)을 부드럽게 움직이고, 쿠션(cushion, 여유)이 확보되며, 마찰이 없는지 확인합니다.</div><span class="oralx-ae">That throttle, mixture, and prop controls move smoothly through full travel with proper cushion and no binding.</span><div class="oralx-ref"><span class="rdot"></span>REFERENCE: AMT-P, FAA-H-8083-32, AC 43.13-1</div></div></div>
+</div>
+</div>
+<div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 12</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
+</div></section>
+
+            <section id="s-faa-figures" class="comp">
           <div class="comp-head"><h3>FAA 핸드북 전체 도면 <span class="comp-en">FAA Handbook Figures (Chapter 8)</span></h3></div>
           <div class="comp-body">
             <div class="comp-text"><p>이 챕터의 FAA 핸드북(FAA-H-8083-32B) 원본 도면 20개를 모았습니다. 이미지를 클릭하면 확대됩니다.<span class="en-text">All 20 original figures from the FAA Handbook for this chapter. Click any image to enlarge.</span></p></div>
@@ -561,5 +675,39 @@ function tbGoText(btn){
 })();
 </script>
 
+<script>
+
+// ===== 구술시험 인터랙션 =====
+(function(){
+  var orxState = {};
+  var orxTotal = document.querySelectorAll('.oralx-card').length;
+  window.orxToggle = function(btn){
+    var card = btn.closest('.oralx-card');
+    card.querySelector('.oralx-ans').classList.toggle('show');
+  };
+  window.orxGrade = function(btn,id,v){
+    var card = document.getElementById(id);
+    var knowBtn = card.querySelector('.oralx-btn.know');
+    var againBtn = card.querySelector('.oralx-btn.again');
+    if(orxState[id]===v){ orxState[id]=null; }
+    else { orxState[id]=v; }
+    knowBtn.classList.toggle('on', orxState[id]==='know');
+    againBtn.classList.toggle('on', orxState[id]==='again');
+    card.classList.toggle('done', orxState[id]==='know');
+    orxUpdate();
+  };
+  function orxUpdate(){
+    var done=0;
+    for(var k in orxState){ if(orxState[k]==='know') done++; }
+    var f=document.getElementById('orxFill'),
+        d=document.getElementById('orxDone'),
+        p=document.getElementById('orxPct');
+    if(!f) return;
+    var pct = orxTotal? Math.round(done/orxTotal*100):0;
+    f.style.width=pct+'%'; d.textContent=done; p.textContent=pct+'%';
+  }
+})();
+
+</script>
 </body>
 </html>
