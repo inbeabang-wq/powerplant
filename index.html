@@ -73,6 +73,11 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(ellipse at 75% 50%, rgba(15,23,42,0) 0%, rgba(15,23,42,.45) 70%, rgba(15,23,42,.75) 100%);}
 
 .wrap{position:relative;z-index:1;}
+
+.series{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;}
+.series a{font-family:'JetBrains Mono',monospace;font-size:12px;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--t2);transition:.15s;}
+.series a.cur{border-color:var(--gold);color:var(--gold);background:rgba(251,191,36,.08);}
+.series a:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -87,11 +92,12 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       <span class="badge">총 <b>11개 챕터</b></span>
       <span class="badge">정리 <b>한국어 + 영문 용어</b></span>
       <span class="badge">필기 문제은행 <b>977문항</b></span>
-      <span class="badge">구술 대비 <b>193문항</b></span>
+      <span class="badge">구술 대비 <b>417문항</b></span>
     </div>
+    <div class="series"><a href="https://inbeabang-wq.github.io/general/">📘 General ↗</a><a href="https://inbeabang-wq.github.io/airframe/">✈️ Airframe ↗</a><a class="cur" href="index.html">⚙️ Powerplant</a></div>
     <div class="statbar">
       <a href="mock_exam.html" class="stat"><span class="stat-n">977</span><span class="stat-l">필기 문제</span></a>
-      <a href="practical_acs.html" class="stat"><span class="stat-n">193</span><span class="stat-l">구술 문항</span></a>
+      <a href="practical_acs.html" class="stat"><span class="stat-n">417</span><span class="stat-l">구술 문항</span></a>
       <a href="practical_acs.html" class="stat"><span class="stat-n">13</span><span class="stat-l">실기 프로젝트</span></a>
       <a href="index.html" class="stat"><span class="stat-n">11</span><span class="stat-l">챕터</span></a>
     </div>
@@ -177,27 +183,27 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <script>
 var CH=[
   {no:1, ko:"항공기 엔진", en:"Aircraft Engines", file:"ch01_aircraft_engines.html", done:true,
-   desc:"왕복엔진·가스터빈 구조 / 크랭크샤프트·피스톤·실린더·밸브·압축기·터빈", quiz:120, oral:47},
+   desc:"왕복엔진·가스터빈 구조 / 크랭크샤프트·피스톤·실린더·밸브·압축기·터빈", quiz:120, oral:55},
   {no:2, ko:"엔진 연료 · 연료계량 계통", en:"Engine Fuel & Fuel Metering", file:"ch02_fuel_systems.html", done:true,
-   desc:"기화기·연료분사·연료펌프 / 터빈엔진 연료계통", quiz:132, oral:40},
+   desc:"기화기·연료분사·연료펌프 / 터빈엔진 연료계통", quiz:132, oral:48},
   {no:3, ko:"흡입 · 배기 계통", en:"Induction & Exhaust Systems", file:"ch03_induction_exhaust.html", done:true,
-   desc:"흡기계통·과급기·터보차저 / 배기계통·역추력장치", quiz:81, oral:41},
+   desc:"흡기계통·과급기·터보차저 / 배기계통·역추력장치", quiz:81, oral:50},
   {no:4, ko:"점화 · 전기 계통", en:"Ignition & Electrical Systems", file:"ch04_ignition_electrical.html", quiz:179, done:true,
-   desc:"마그네토·스파크플러그·FADEC / 터빈 점화 / 배선", oral:54},
+   desc:"마그네토·스파크플러그·FADEC / 터빈 점화 / 배선", oral:60},
   {no:5, ko:"엔진 시동 계통", en:"Engine Starting Systems", file:"ch05_starting_systems.html", done:true,
-   desc:"왕복엔진 시동 / 가스터빈 스타터·공기터빈 스타터", quiz:20},
+   desc:"왕복엔진 시동 / 가스터빈 스타터·공기터빈 스타터", quiz:20, oral:26},
   {no:6, ko:"윤활 · 냉각 계통", en:"Lubrication & Cooling", file:"ch06_lubrication_cooling.html", done:true,
-   desc:"엔진오일·윤활계통 / 건식·습식 섬프 / 엔진 냉각", quiz:109, oral:21},
+   desc:"엔진오일·윤활계통 / 건식·습식 섬프 / 엔진 냉각", quiz:109, oral:33},
   {no:7, ko:"프로펠러", en:"Propellers", file:"ch07_propellers.html", done:true,
-   desc:"프로펠러 원리·종류 / 정속프로펠러·거버너 / 점검정비", quiz:119, oral:18},
+   desc:"프로펠러 원리·종류 / 정속프로펠러·거버너 / 점검정비", quiz:119, oral:30},
   {no:8, ko:"엔진 장 · 탈착", en:"Engine Removal & Replacement", file:"ch08_engine_removal.html", done:true,
-   desc:"엔진 탈장착 절차 / 엔진마운트 / 보존·보관"},
+   desc:"엔진 탈장착 절차 / 엔진마운트 / 보존·보관", oral:28},
   {no:9, ko:"엔진 화재방지 계통", en:"Fire Protection Systems", file:"ch09_fire_protection.html", quiz:32, done:true,
-   desc:"화재감지·소화계통 / B777·APU 화재계통", oral:14},
+   desc:"화재감지·소화계통 / B777·APU 화재계통", oral:28},
   {no:10, ko:"엔진 정비 · 운용", en:"Maintenance & Operation", file:"ch10_maintenance_operation.html", done:true,
-   desc:"오버홀·검사 / 압축시험 / 터빈엔진 정비·운용", quiz:185, oral:24},
+   desc:"오버홀·검사 / 압축시험 / 터빈엔진 정비·운용", quiz:185, oral:35},
   {no:11, ko:"경량스포츠기 엔진", en:"Light-Sport Aircraft Engines", file:"ch11_lsa_engines.html", done:true,
-   desc:"Rotax·VW·Jabiru 엔진 / 경량기 정비실무"}
+   desc:"Rotax·VW·Jabiru 엔진 / 경량기 정비실무", oral:24}
 ];
 
 var grid=document.getElementById('grid');
