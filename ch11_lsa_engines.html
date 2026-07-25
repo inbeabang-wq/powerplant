@@ -612,26 +612,38 @@ function tbGoText(btn){
 
 // ===== 구술시험 인터랙션 =====
 (function(){
-  var orxState = {};
+  var KEY='orx:'+location.pathname;
+  var orxState={};
+  try{orxState=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){orxState={}}
   var orxTotal = document.querySelectorAll('.oralx-card').length;
+  function orxSave(){
+    try{
+      var o={};
+      for(var k in orxState){ if(k.indexOf('__')!==0 && orxState[k]) o[k]=orxState[k]; }
+      o.__t=orxTotal; o.__ts=Date.now();
+      localStorage.setItem(KEY, JSON.stringify(o));
+    }catch(e){}
+  }
   window.orxToggle = function(btn){
     var card = btn.closest('.oralx-card');
     card.querySelector('.oralx-ans').classList.toggle('show');
   };
-  window.orxGrade = function(btn,id,v){
-    var card = document.getElementById(id);
+  function orxApply(id){
+    var card = document.getElementById(id); if(!card) return;
     var knowBtn = card.querySelector('.oralx-btn.know');
     var againBtn = card.querySelector('.oralx-btn.again');
+    if(knowBtn) knowBtn.classList.toggle('on', orxState[id]==='know');
+    if(againBtn) againBtn.classList.toggle('on', orxState[id]==='again');
+    card.classList.toggle('done', orxState[id]==='know');
+  }
+  window.orxGrade = function(btn,id,v){
     if(orxState[id]===v){ orxState[id]=null; }
     else { orxState[id]=v; }
-    knowBtn.classList.toggle('on', orxState[id]==='know');
-    againBtn.classList.toggle('on', orxState[id]==='again');
-    card.classList.toggle('done', orxState[id]==='know');
-    orxUpdate();
+    orxApply(id); orxSave(); orxUpdate();
   };
   function orxUpdate(){
     var done=0;
-    for(var k in orxState){ if(orxState[k]==='know') done++; }
+    for(var k in orxState){ if(k.indexOf('__')===0) continue; if(orxState[k]==='know') done++; }
     var f=document.getElementById('orxFill'),
         d=document.getElementById('orxDone'),
         p=document.getElementById('orxPct');
@@ -639,6 +651,8 @@ function tbGoText(btn){
     var pct = orxTotal? Math.round(done/orxTotal*100):0;
     f.style.width=pct+'%'; d.textContent=done; p.textContent=pct+'%';
   }
+  for(var k in orxState){ if(k.indexOf('__')!==0) orxApply(k); }
+  orxSave(); orxUpdate();
 })();
 
 </script>
