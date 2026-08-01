@@ -4228,7 +4228,94 @@ function figRefToggle(el){
 <div class="quizx-exp"><span class="ek">둘 다 과전류로부터 회로를 보호하지만, 회로 차단기는 트립 후 리셋해 재사용할 수 있고 퓨즈는 용단되면 새것으로 교체해야 합니다.</span><span class="ee">Both protect circuits from overcurrent, but a circuit breaker can be reset and reused after tripping, while a fuse must be replaced once it melts open.</span><span class="acs-code">ACS PA.II.E.K4</span></div>
 </div>
 
-<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">8</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
+<div class="quizx-card" id="qz_409" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">DC 발전기의 출력 전압을 조절하는 방법은?</span><span class="quizx-qe">How is the output voltage of a DC generator controlled?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_409','A')"><span class="lt">A</span><span>전기자 회전 방향을 바꿔서</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_409','B')"><span class="lt">B</span><span>브러시 개수를 늘려서</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_409','C')"><span class="lt">C</span><span>전압 조절기로 계자 전류(계자 자속)를 조절해서</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_409','D')"><span class="lt">D</span><span>정류자 세그먼트를 절연해서</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">출력 전압은 계자 자속의 세기에 비례합니다. 전압 조절기가 계자 권선으로 흐르는 전류를 조절해 자속을, 결과적으로 출력 전압을 부하·회전수 변화와 무관하게 일정하게 유지합니다.</span><span class="ee">Output voltage is proportional to field flux strength; a voltage regulator controls the current through the field winding to adjust flux and hold output voltage constant despite load and rpm changes.</span><span class="acs-code">ACS PA.II.E.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_410" data-ans="A">
+<div class="quizx-q"><span class="quizx-qno">Q10</span><span class="quizx-qtext"><span class="quizx-qk">DC 모터에서 역기전력(CEMF, counter-EMF)의 효과는?</span><span class="quizx-qe">What is the effect of counter-EMF (CEMF) in a DC motor?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_410','A')"><span class="lt">A</span><span>회전 속도가 오를수록 커져 전기자 전류를 제한한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_410','B')"><span class="lt">B</span><span>계자 자속을 없앤다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_410','C')"><span class="lt">C</span><span>브러시를 냉각한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_410','D')"><span class="lt">D</span><span>회전 방향을 반대로 만든다</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">회전하는 전기자는 발전기처럼 인가 전압에 반대되는 역기전력을 만듭니다. 속도가 오를수록 CEMF가 커져 전기자 전류를 제한하므로, 시동 순간(속도 0, CEMF 0)에 전류가 가장 큽니다.</span><span class="ee">A spinning armature acts like a generator, producing a counter-EMF opposing the applied voltage; as speed rises CEMF grows and limits armature current, so current is highest at the instant of starting (zero speed, zero CEMF).</span><span class="acs-code">ACS PA.II.E.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_411" data-ans="D">
+<div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">직권(series) DC 모터가 항공기 시동기에 적합한 이유는?</span><span class="quizx-qe">Why is a series DC motor suited to an aircraft starter?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_411','A')"><span class="lt">A</span><span>속도가 부하와 무관하게 일정하기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_411','B')"><span class="lt">B</span><span>무부하에서 안전하게 정지하기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_411','C')"><span class="lt">C</span><span>전압 조절이 필요 없기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_411','D')"><span class="lt">D</span><span>기동 시 높은 토크를 내기 때문</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">직권 모터는 계자와 전기자가 직렬이라 기동 시 큰 전류로 높은 토크를 냅니다. 무거운 엔진을 크랭킹하는 시동기에 이상적입니다. 단, 무부하 시 과속 위험이 있어 상시 부하와 함께 씁니다.</span><span class="ee">A series motor has field and armature in series, producing high torque from large current at start—ideal for cranking a heavy engine; however it can overspeed at no load, so it is used with a constant load.</span><span class="acs-code">ACS PA.II.E.K3</span></div>
+</div>
+
+<div class="quizx-card" id="qz_412" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">마그네토의 배전기(distributor)가 크랭크축 절반 속도로 회전하는 이유는?</span><span class="quizx-qe">Why does a magneto distributor turn at half crankshaft speed?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_412','A')"><span class="lt">A</span><span>배전기를 냉각하기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_412','B')"><span class="lt">B</span><span>4행정 엔진은 크랭크축 2회전마다 각 실린더가 1회 점화되기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_412','C')"><span class="lt">C</span><span>고전압을 낮추기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_412','D')"><span class="lt">D</span><span>임펄스 커플링과 동기하기 위해</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">4행정 엔진은 크랭크축 2회전(720°)마다 각 실린더가 한 번 점화합니다. 따라서 배전기 로터는 크랭크축 절반 속도로 돌아 각 실린더에 순서대로 정확히 한 번씩 고전압을 분배합니다.</span><span class="ee">A four-stroke engine fires each cylinder once per two crankshaft revolutions (720°), so the distributor rotor turns at half crankshaft speed to deliver high voltage to each cylinder exactly once in firing order.</span><span class="acs-code">ACS PA.II.E.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_413" data-ans="A">
+<div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">스파크 플러그의 '열 범위(heat range)'는 무엇을 결정하는가?</span><span class="quizx-qe">What does a spark plug's heat range determine?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_413','A')"><span class="lt">A</span><span>플러그가 열을 방출하는 속도(자기 청소 vs 과열 경향)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_413','B')"><span class="lt">B</span><span>플러그가 만드는 스파크 전압</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_413','C')"><span class="lt">C</span><span>플러그의 나사 길이</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_413','D')"><span class="lt">D</span><span>점화 타이밍 각도</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">열 범위는 플러그가 열을 방출하는 속도를 나타냅니다. 뜨거운(hot) 플러그는 열을 천천히 방출해 자기 청소가 잘 되지만 과열·조기점화 위험이 있고, 찬(cold) 플러그는 열을 빨리 방출해 과열엔 강하나 카본 오염이 쉽습니다. 엔진에 맞는 열 범위를 써야 합니다.</span><span class="ee">Heat range indicates how fast a plug dissipates heat: a hot plug dissipates slowly for good self-cleaning but risks overheating/preignition, while a cold plug dissipates quickly, resisting overheating but fouling more easily—the correct range for the engine must be used.</span><span class="acs-code">ACS PA.II.E.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_414" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">터빈 엔진 점화 계통에서 이그나이터 플러그가 왕복엔진 스파크 플러그보다 큰 갭과 고에너지를 쓰는 이유는?</span><span class="quizx-qe">Why do turbine igniter plugs use a larger gap and higher energy than reciprocating spark plugs?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_414','A')"><span class="lt">A</span><span>연속 점화가 필요하기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_414','B')"><span class="lt">B</span><span>플러그 수가 많기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_414','C')"><span class="lt">C</span><span>분무된 연료·공기를 확실히 점화하려면 강한 고에너지 스파크가 필요하지만, 시동 중에만 짧게 쓰므로 침식 수명이 문제되지 않기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_414','D')"><span class="lt">D</span><span>고고도 플래시오버를 막기 위해</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">터빈 이그나이터는 큰 갭과 고에너지(줄 단위) 스파크로 분무 연료를 확실히 점화합니다. 점화는 시동 중에만 짧게 이뤄지므로 전극 침식이 빠르더라도 수명에 큰 문제가 되지 않습니다.</span><span class="ee">Turbine igniters use a large gap and high-energy (joule-level) spark to reliably ignite atomized fuel; since ignition occurs only briefly during starting, rapid electrode erosion is not a significant life concern.</span><span class="acs-code">ACS PA.II.E.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_415" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">항공기 전기 배선에서 색·번호가 있는 와이어 마킹과 커넥터를 표준화하는 주된 목적은?</span><span class="quizx-qe">What is the main purpose of standardized wire marking and connectors in aircraft wiring?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_415','A')"><span class="lt">A</span><span>무게를 줄이기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_415','B')"><span class="lt">B</span><span>정확한 식별·정비·고장탐구와 오결선 방지를 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_415','C')"><span class="lt">C</span><span>전압을 높이기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_415','D')"><span class="lt">D</span><span>저항을 늘리기 위해</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">표준 와이어 마킹(번호·색)과 키가 있는 커넥터는 회로를 정확히 식별하게 해 정비·고장탐구를 돕고, 커넥터의 키·핀 배열은 오결선을 물리적으로 방지합니다.</span><span class="ee">Standard wire markings (numbers, colors) and keyed connectors allow accurate circuit identification for maintenance and troubleshooting, and connector keying/pin arrangements physically prevent misconnection.</span><span class="acs-code">ACS PA.II.E.K4</span></div>
+</div>
+
+<div class="quizx-card" id="qz_416" data-ans="D">
+<div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">교류 전동기 중 유도 전동기(induction motor)가 항공기 보조 구동에 널리 쓰이는 이유는?</span><span class="quizx-qe">Why are induction motors widely used for aircraft auxiliary drives?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_416','A')"><span class="lt">A</span><span>브러시 마모가 크기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_416','B')"><span class="lt">B</span><span>직류 전원이 필요하기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_416','C')"><span class="lt">C</span><span>속도 제어가 정밀하기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_416','D')"><span class="lt">D</span><span>브러시·정류자가 없어 구조가 단순·견고하고 정비가 적기 때문</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">유도 전동기는 회전자에 전기 접속(브러시·정류자)이 없어 구조가 단순하고 견고하며 정비 요구가 적습니다. 회전 자계가 회전자에 전류를 유도해 토크를 내므로 신뢰성이 높습니다.</span><span class="ee">An induction motor has no electrical connection (brushes/commutator) to the rotor, making it simple, rugged, and low-maintenance; the rotating field induces rotor current to produce torque, giving high reliability.</span><span class="acs-code">ACS PA.II.E.K2</span></div>
+</div>
+<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">16</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
 </div>
 <script>
 // ===== ACS 객관식 퀴즈 인터랙션 =====
