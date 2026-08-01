@@ -3694,6 +3694,213 @@ function figRefToggle(el){
 </div>
 <div class="oralx-prog"><span class="ptxt">구술 학습 <b id="orxDone">0</b> / 75</span><div class="pbar"><div class="pfill" id="orxFill"></div></div><span class="ptxt" id="orxPct">0%</span></div>
 </div></section>
+<section id="s-quiz" class="comp">
+<style>
+.quizx-intro{font-size:13.5px;color:var(--t2);margin-bottom:14px;line-height:1.7;}
+.quizx-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 16px 14px;margin-bottom:14px;}
+.quizx-q{display:flex;gap:9px;align-items:flex-start;margin-bottom:12px;}
+.quizx-qno{flex:0 0 auto;font-weight:800;color:var(--gold);font-size:14px;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.35);border-radius:7px;padding:2px 8px;line-height:1.5;}
+.quizx-qtext{flex:1;}
+.quizx-qk{display:block;font-weight:700;font-size:15px;color:var(--t1);margin-bottom:3px;}
+.quizx-qe{display:block;font-size:13px;color:var(--t3);font-style:italic;}
+.quizx-opts{display:flex;flex-direction:column;gap:8px;}
+.quizx-opt{display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;
+  background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:11px 13px;
+  color:var(--t2);font-size:14px;font-family:inherit;line-height:1.55;cursor:pointer;transition:all .15s;}
+.quizx-opt:hover{border-color:var(--cyan);background:rgba(96,165,250,.08);}
+.quizx-opt .lt{flex:0 0 auto;font-weight:800;color:var(--cyan);}
+.quizx-opt.correct{border-color:#34D399;background:rgba(52,211,153,.14);color:var(--t1);}
+.quizx-opt.correct .lt{color:#34D399;}
+.quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
+.quizx-opt.wrong .lt{color:#F87171;}
+.quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
+.quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
+  background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
+  line-height:1.65;display:none;}
+.quizx-exp.show{display:block;}
+.quizx-exp .ek{display:block;color:var(--t1);margin-bottom:4px;}
+.quizx-exp .ee{display:block;color:var(--t3);font-style:italic;font-size:12.5px;}
+.quizx-exp .acs-code{display:inline-block;margin-top:7px;font-size:11.5px;font-weight:700;
+  color:var(--gold);border:1px solid rgba(251,191,36,.4);border-radius:5px;padding:1px 7px;}
+.quizx-prog{position:sticky;bottom:0;z-index:5;margin:18px -4px 0;padding:11px 14px;
+  background:rgba(15,23,42,.94);border:1px solid var(--line);border-radius:10px;
+  display:flex;align-items:center;gap:12px;backdrop-filter:blur(6px);}
+.quizx-prog .ptxt{font-size:13px;color:var(--t2);white-space:nowrap;}
+.quizx-prog .pbar{flex:1;height:7px;border-radius:4px;background:rgba(96,165,250,.15);overflow:hidden;}
+.quizx-prog .pfill{height:100%;width:0;background:linear-gradient(90deg,var(--cyan),#34D399);transition:width .3s;}
+.quizx-reset{font-size:12px;color:var(--t3);background:none;border:1px solid var(--line);
+  border-radius:6px;padding:3px 9px;cursor:pointer;font-family:inherit;}
+.quizx-reset:hover{color:var(--cyan);border-color:var(--cyan);}
+</style>
+<div class="comp-head"><h2>📝 ACS 객관식 퀴즈 <span class="cen">ACS Multiple-Choice Quiz</span></h2></div>
+<div class="comp-body">
+<div class="quizx-intro">Jeppesen 정독 내용을 기반으로 한 FAA ACS(Airman Certification Standards) 스타일 4지선다 문제입니다. 보기를 선택하면 <b>즉시 정답·해설(한/영)</b>이 표시되고 하단 진행률에 반영됩니다. ACS 코드로 해당 지식 영역을 확인하세요.</div>
+
+<div class="quizx-card" id="qz_1001" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">엔진 계기 눈금의 '레드 라인(red line)'이 뜻하는 것은?</span><span class="quizx-qe">What does a red line on an engine instrument indicate?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1001','A')"><span class="lt">A</span><span>정상 연속 작동 범위</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1001','B')"><span class="lt">B</span><span>절대 초과해서는 안 되는 최대(또는 최소) 한계</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1001','C')"><span class="lt">C</span><span>주의 범위(단시간만 허용)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1001','D')"><span class="lt">D</span><span>권장 순항 설정</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">색 코드: 녹색 호=정상 연속 작동, 황색 호=주의(단시간), 적색 선(레드 라인)=절대 초과 금지 한계입니다. 예: 오일 압력 최대, RPM 최대 등.</span><span class="ee">Color code: green arc=normal continuous operation, yellow arc=caution (short duration), red line=a limit that must never be exceeded, such as maximum oil pressure or maximum RPM.</span><span class="acs-code">ACS PA.II.F.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1002" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">마그네토 점검(런업) 중 한 마그네토에서 RPM 강하가 전혀 없다면 무엇을 의심하는가?</span><span class="quizx-qe">During a mag check, if there is zero RPM drop on one magneto, what do you suspect?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1002','A')"><span class="lt">A</span><span>정상이므로 무시한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1002','B')"><span class="lt">B</span><span>연료 혼합비가 농후하다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1002','C')"><span class="lt">C</span><span>P-lead 접지 불량(마그네토가 꺼지지 않음)일 수 있어 안전 위험이다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1002','D')"><span class="lt">D</span><span>오일 압력이 높다</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">정상적으로는 한 마그네토로 전환하면 약간의 RPM 강하가 있어야 합니다. 강하가 전혀 없으면 P-lead 접지 불량으로 마그네토가 꺼지지 않는 상태(핫 마그네토)일 수 있어, 프로펠러를 살아있는 것으로 취급해야 하는 안전 위험입니다.</span><span class="ee">Normally switching to one magneto causes a slight RPM drop; zero drop may mean a P-lead grounding fault so the magneto does not shut off (hot magneto)—a safety hazard requiring the propeller to be treated as live.</span><span class="acs-code">ACS PA.II.F.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1003" data-ans="A">
+<div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">차압 압축 시험(differential compression test)에서 입력 압력과 일반적 허용 기준은?</span><span class="quizx-qe">In a differential compression test, what is the input pressure and typical limit?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1003','A')"><span class="lt">A</span><span>80 psi 입력, 일반적으로 60 psi 미만이면 의심(약 25% 초과 손실)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1003','B')"><span class="lt">B</span><span>40 psi 입력, 20 psi 미만이면 의심</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1003','C')"><span class="lt">C</span><span>120 psi 입력, 100 psi 미만이면 의심</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1003','D')"><span class="lt">D</span><span>압력과 무관하게 소리로만 판단</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">차압 압축 시험은 80 psi를 입력하고 실린더에 남는 압력을 읽습니다. 통상 25%를 넘는 손실(즉 60 psi 미만)이면 의심합니다. 반드시 상사점에서 측정하며, 누설음 위치로 결함 부위를 진단합니다.</span><span class="ee">A differential compression test inputs 80 psi and reads the pressure held in the cylinder; a loss exceeding about 25% (below 60 psi) is questionable. Measure at top dead center and locate leaks by sound to diagnose the fault.</span><span class="acs-code">ACS PA.I.D.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1004" data-ans="D">
+<div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">차압 압축 시험 중 '배기 스택'에서 공기 누설음이 들리면 어느 부위 결함인가?</span><span class="quizx-qe">During a compression test, air leaking at the exhaust stack indicates a fault where?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1004','A')"><span class="lt">A</span><span>피스톤 링</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1004','B')"><span class="lt">B</span><span>흡기 밸브</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1004','C')"><span class="lt">C</span><span>점화 플러그</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1004','D')"><span class="lt">D</span><span>배기 밸브</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">누설음 위치로 진단합니다: 배기 스택=배기 밸브, 기화기/인젝터 입구=흡기 밸브, 크랭크케이스 브리더/오일 필러=피스톤 링. 배기 스택에서 소리가 나면 배기 밸브 밀봉 불량입니다.</span><span class="ee">Leak location diagnoses the fault: exhaust stack=exhaust valve, carburetor/injector inlet=intake valve, crankcase breather/oil filler=piston rings; sound at the exhaust stack means a leaking exhaust valve.</span><span class="acs-code">ACS PA.I.D.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1005" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">멀티프로브 EGT 시스템에서 한 실린더의 EGT가 장기간 서서히 감소하면?</span><span class="quizx-qe">In a multiprobe EGT system, a gradual EGT decrease in one cylinder over time suggests?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1005','A')"><span class="lt">A</span><span>정상적인 리닝</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1005','B')"><span class="lt">B</span><span>그 실린더의 압축 손실(링·밸브 밀봉 불량)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1005','C')"><span class="lt">C</span><span>오일 레벨 상승</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1005','D')"><span class="lt">D</span><span>배터리 방전</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">한 실린더 EGT의 점진적 감소는 압축 손실을 시사합니다(링·밸브 밀봉 불량으로 연소 온도 하락). 반면 마그네토 점검 중 갑작스러운 EGT 강하는 그 실린더의 점화 결함을 나타냅니다.</span><span class="ee">A gradual EGT decrease in one cylinder suggests loss of compression (rings/valves not sealing, lowering combustion temperature); a sudden drop during a mag check instead indicates an ignition fault in that cylinder.</span><span class="acs-code">ACS PA.II.F.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1006" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">왕복엔진이 아이들에서 백파이어(backfire)한다면 가장 유력한 원인은?</span><span class="quizx-qe">If a reciprocating engine backfires at idle, what is the most likely cause?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1006','A')"><span class="lt">A</span><span>과농 혼합기</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1006','B')"><span class="lt">B</span><span>오일 압력 부족</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1006','C')"><span class="lt">C</span><span>극도로 희박한 아이들 혼합기(혼합기를 농후하게 하면 대개 해결)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1006','D')"><span class="lt">D</span><span>배터리 결함</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">백파이어는 과희박 혼합기가 느리게 연소해 흡기 밸브가 열릴 때 흡기 매니폴드에서 폭발하는 것입니다. 아이들에서만 나타나면 극도로 희박한 아이들 혼합이 원인이며, 아이들 혼합비를 농후하게 조정하면 대개 해결됩니다.</span><span class="ee">Backfiring is an excessively lean mixture burning slowly and exploding in the intake manifold when the intake valve opens; if only at idle, an extremely lean idle mixture is the cause, usually corrected by enriching the idle mixture.</span><span class="acs-code">ACS PA.II.F.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1007" data-ans="A">
+<div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">터빈 엔진 시동 중 EGT가 급격히 한계를 초과하는 '핫 스타트(hot start)'의 대응으로 옳은 것은?</span><span class="quizx-qe">For a hot start (EGT rapidly exceeding limits) during turbine start, what is correct?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1007','A')"><span class="lt">A</span><span>즉시 연료를 차단하고 시동을 중단하며, 필요 시 드라이 모터링으로 잔류 연료를 퍼지한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1007','B')"><span class="lt">B</span><span>연료를 더 넣어 온도를 낮춘다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1007','C')"><span class="lt">C</span><span>그대로 시동을 계속한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1007','D')"><span class="lt">D</span><span>오일 압력을 높인다</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">핫 스타트는 EGT가 급상승해 한계를 넘는 상태로 터빈 손상 위험이 큽니다. 즉시 연료를 차단하고 시동을 중단하며, 잔류 연료는 드라이 모터링(연료·점화 없이 회전)으로 퍼지합니다. 이후 원인(강풍·시동 동력 부족·연료계통)을 점검합니다.</span><span class="ee">A hot start is a rapid EGT rise beyond limits risking turbine damage; immediately cut fuel and abort the start, then purge residual fuel with dry motoring (rotating without fuel/ignition), and investigate causes such as high wind, insufficient start power, or the fuel system.</span><span class="acs-code">ACS PA.II.F.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1008" data-ans="D">
+<div class="quizx-q"><span class="quizx-qno">Q8</span><span class="quizx-qtext"><span class="quizx-qk">변동하는 오일 압력이 관찰될 때 옳은 조치는?</span><span class="quizx-qe">What is the correct action when fluctuating oil pressure is observed?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1008','A')"><span class="lt">A</span><span>무시하고 비행을 계속한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1008','B')"><span class="lt">B</span><span>출력을 높여 압력을 안정시킨다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1008','C')"><span class="lt">C</span><span>오일을 더 넣고 즉시 이륙한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1008','D')"><span class="lt">D</span><span>비행 금지하고, 필터·스크린·오일을 점검·분석한다(공기 혼입·오일 속 금속 가능)</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">변동 오일 압력은 윤활 계통의 공기 혼입이나 오일 속 금속에서 비롯될 수 있고 비행 중 엔진 고장으로 이어질 수 있습니다. 비행을 금지하고 필터·스크린·오일을 점검·분석해 원인을 격리해야 합니다.</span><span class="ee">Fluctuating oil pressure may come from air in the system or metal in the oil and can lead to in-flight engine failure; ground the aircraft and inspect/analyze filters, screens, and oil to isolate the cause.</span><span class="acs-code">ACS PA.II.F.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1009" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">GED(그래픽 엔진 디스플레이)에서 모든 실린더의 EGT가 균일하게 상승하면 무엇을 의심하는가?</span><span class="quizx-qe">If a GED shows a uniform EGT rise on all cylinders, what do you suspect?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1009','A')"><span class="lt">A</span><span>한 실린더의 배기 가스켓 누설</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1009','B')"><span class="lt">B</span><span>마그네토 고장 또는 P-lead 간헐 접지(전 실린더 50~100°F 상승)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1009','C')"><span class="lt">C</span><span>한 실린더의 냉각핀 손상</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1009','D')"><span class="lt">D</span><span>한 실린더의 압축 손실</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">전 실린더의 균일한 EGT 상승(약 50~100°F)은 한 마그네토 고장을 시사합니다. 두 마그네토가 정상으로 보이면 P-lead 간헐 접지나 약한 마그네토를 점검합니다. 단일 실린더 이상은 그 실린더의 국부 결함을 뜻합니다.</span><span class="ee">A uniform EGT rise (~50–100°F) on all cylinders suggests a failed magneto; if both appear normal, check for intermittent P-lead grounding or a weak magneto. A single-cylinder anomaly instead means a localized fault in that cylinder.</span><span class="acs-code">ACS PA.II.F.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_1010" data-ans="C">
+<div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q10</span><span class="quizx-qk">고장탐구(troubleshooting)의 올바른 접근 순서는?</span><span class="quizx-qe">What is the correct approach to troubleshooting?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_1010','A')"><span class="lt">A</span><span>가장 비싼 부품부터 교체해 본다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1010','B')"><span class="lt">B</span><span>무작위로 부품을 교체하며 확인한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1010','C')"><span class="lt">C</span><span>증상→가능 원인→체계적 점검→조치의 순서로, 진단 시험으로 원인이 격리될 때까지 유력 원인을 점검한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1010','D')"><span class="lt">D</span><span>엔진을 즉시 완전 분해한다</span></button>
+</div>
+<div class="quizx-exp"><span class="ek">고장탐구는 증상 파악→가능 원인 목록화→체계적 점검→조치의 순서로 진행합니다. 조종사 인터뷰와 트렌드 자료로 시작점을 좁히고, 진단 시험으로 원인이 격리될 때까지 유력한 원인부터 점검해 비용이 큰 잘못된 가정을 피합니다.</span><span class="ee">Troubleshooting proceeds symptom→possible causes→systematic checks→action; start by narrowing with a pilot interview and trend data, then check probable causes with diagnostic tests until the fault is isolated, avoiding costly wrong assumptions.</span><span class="acs-code">ACS PA.II.F.K2</span></div>
+</div>
+
+<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">10</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
+</div>
+<script>
+(function(){
+  var KEY='quiz:'+location.pathname;
+  var st={};
+  try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){st={}}
+  var cards=document.querySelectorAll('.quizx-card');
+  var total=cards.length;
+  var tEl=document.getElementById('qzTotal'); if(tEl) tEl.textContent=total;
+  function save(){try{st.__ts=Date.now();localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+  function lock(card){card.querySelectorAll('.quizx-opt').forEach(function(o){o.classList.add('locked');});}
+  function paint(id){
+    var card=document.getElementById(id); if(!card) return;
+    var ans=card.getAttribute('data-ans');
+    var pick=st[id]; if(!pick) return;
+    card.querySelectorAll('.quizx-opt').forEach(function(o){
+      var v=o.getAttribute('onclick').match(/'([A-D])'\)/)[1];
+      if(v===ans) o.classList.add('correct');
+      if(v===pick && pick!==ans) o.classList.add('wrong');
+    });
+    lock(card);
+    var exp=card.querySelector('.quizx-exp'); if(exp) exp.classList.add('show');
+  }
+  window.qzPick=function(btn,id,v){
+    if(st[id]) return;
+    st[id]=v; paint(id); save(); update();
+  };
+  window.qzReset=function(){
+    st={}; save();
+    cards.forEach(function(card){
+      card.querySelectorAll('.quizx-opt').forEach(function(o){o.classList.remove('correct','wrong','locked');});
+      var e=card.querySelector('.quizx-exp'); if(e) e.classList.remove('show');
+    });
+    update();
+  };
+  function update(){
+    var score=0;
+    cards.forEach(function(card){
+      var id=card.id, ans=card.getAttribute('data-ans');
+      if(st[id]===ans) score++;
+    });
+    var f=document.getElementById('qzFill'),s=document.getElementById('qzScore'),p=document.getElementById('qzPct');
+    if(!f) return;
+    var answered=0; cards.forEach(function(c){if(st[c.id])answered++;});
+    var pct=total?Math.round(answered/total*100):0;
+    f.style.width=pct+'%'; s.textContent=score; p.textContent=pct+'%';
+  }
+  for(var k in st){ if(k.indexOf('__')!==0) paint(k); }
+  update();
+})();
+</script>
+</section>
+
             <section id="s-overhaul-ndi-asa" class="comp">
       <div class="comp-head"><h3>오버홀·검사·정비 핵심 기준 (A&P 필수)</h3><span class="comp-en">Overhaul, NDI & Maintenance Specs</span><span class="src-badge">📗 ASA Powerplant 보강</span></div>
       <div class="comp-body"><div class="comp-text">
