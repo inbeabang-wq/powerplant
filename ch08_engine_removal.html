@@ -443,6 +443,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
 .quizx-opt.wrong .lt{color:#F87171;}
 .quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt .opt-en{display:block;margin-top:3px;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.4;}
 .quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
 .quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
   background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
@@ -469,10 +470,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_801" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">TBO(Time Between Overhauls)에 대한 설명으로 옳은 것은?</span><span class="quizx-qe">Which statement about TBO is correct?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_801','A')"><span class="lt">A</span><span>모든 운영자가 반드시 지켜야 하는 법적 강제 한계다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_801','B')"><span class="lt">B</span><span>제조사 권장 오버홀 간격으로, 사설 소유자는 초과할 수 있으나 자주 안 날면 오히려 단축될 수 있다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_801','C')"><span class="lt">C</span><span>엔진의 절대 수명으로 도달 시 폐기해야 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_801','D')"><span class="lt">D</span><span>비행시간과 무관한 달력 기준 한계다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_801','A')"><span class="lt">A</span><span>모든 운영자가 반드시 지켜야 하는 법적 강제 한계다<span class="opt-en">A legally mandatory limit all operators must observe</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_801','B')"><span class="lt">B</span><span>제조사 권장 오버홀 간격으로, 사설 소유자는 초과할 수 있으나 자주 안 날면 오히려 단축될 수 있다<span class="opt-en">A manufacturer-recommended overhaul interval; private owners may exceed it, but infrequent flying can shorten it</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_801','C')"><span class="lt">C</span><span>엔진의 절대 수명으로 도달 시 폐기해야 한다<span class="opt-en">The absolute life of the engine, scrapped when reached</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_801','D')"><span class="lt">D</span><span>비행시간과 무관한 달력 기준 한계다<span class="opt-en">A calendar limit unrelated to flight time</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">TBO는 제조사가 권장하는 오버홀 간격입니다. 대부분의 사설 소유자에게는 강제가 아니며 초과 운용이 가능하지만, 비행이 드물면 습기·산 축적으로 실제 수명이 단축될 수 있습니다.</span><span class="ee">TBO is a manufacturer-recommended overhaul interval, not mandatory for most private owners who may exceed it, but infrequent flying can shorten actual life due to moisture and acid buildup.</span><span class="acs-code">ACS PA.I.D.K1</span></div>
 </div>
@@ -480,10 +481,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_802" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">프로펠러 급정지(sudden stoppage) 또는 프롭 스트라이크 후 반드시 고려해야 할 검사는?</span><span class="quizx-qe">What inspection must be considered after a sudden stoppage or prop strike?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_802','A')"><span class="lt">A</span><span>스파크 플러그 세척만</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_802','B')"><span class="lt">B</span><span>연료 필터 교환만</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_802','C')"><span class="lt">C</span><span>제조사 지침에 따른 크랭크축·기어·베어링 등 내부 손상 검사(때로 부분/완전 분해)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_802','D')"><span class="lt">D</span><span>타이어 공기압 점검</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_802','A')"><span class="lt">A</span><span>스파크 플러그 세척만<span class="opt-en">Only cleaning spark plugs</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_802','B')"><span class="lt">B</span><span>연료 필터 교환만<span class="opt-en">Only changing the fuel filter</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_802','C')"><span class="lt">C</span><span>제조사 지침에 따른 크랭크축·기어·베어링 등 내부 손상 검사(때로 부분/완전 분해)<span class="opt-en">Inspecting internal parts (crankshaft, gears, bearings) per manufacturer data (sometimes partial/full disassembly)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_802','D')"><span class="lt">D</span><span>타이어 공기압 점검<span class="opt-en">Checking tire pressure</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">급정지·프롭 스트라이크는 크랭크축·기어·베어링에 숨은 손상을 남길 수 있습니다. 제조사 지침에 따라 내부 검사를 수행하며, 노즈 실 오일 누설은 크랭크축 균열의 징후일 수 있습니다.</span><span class="ee">Sudden stoppage or a prop strike can leave hidden damage in the crankshaft, gears, and bearings; a manufacturer-directed internal inspection is performed, and a nose-seal oil leak may indicate a cracked crankshaft.</span><span class="acs-code">ACS PA.I.D.K1</span></div>
 </div>
@@ -491,10 +492,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_803" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">오일 필터·스크린에서 발견되는 금속 입자로 마모 부위를 추정할 때, '알루미늄' 입자는 주로 어디에서 나오는가?</span><span class="quizx-qe">Aluminum particles in the oil filter typically originate from where?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_803','A')"><span class="lt">A</span><span>피스톤</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_803','B')"><span class="lt">B</span><span>베어링 인서트</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_803','C')"><span class="lt">C</span><span>부싱</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_803','D')"><span class="lt">D</span><span>캠·기어</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_803','A')"><span class="lt">A</span><span>피스톤<span class="opt-en">Piston</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_803','B')"><span class="lt">B</span><span>베어링 인서트<span class="opt-en">Bearing insert</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_803','C')"><span class="lt">C</span><span>부싱<span class="opt-en">Bushing</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_803','D')"><span class="lt">D</span><span>캠·기어<span class="opt-en">Cam/gear</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">금속별 출처: 알루미늄=피스톤, 강/철=캠·링·기어, 청동=부싱, 배빗=베어링 인서트, 크롬=피스톤링·실린더벽. 절대량보다 증가 추세가 중요합니다.</span><span class="ee">Metal sources: aluminum=pistons, steel=cam/rings/gears, bronze=bushings, babbitt=bearing inserts, chromium=rings/cylinder walls; the growth trend matters more than absolute amount.</span><span class="acs-code">ACS PA.I.D.K2</span></div>
 </div>
@@ -502,10 +503,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_804" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">QECA(Quick Engine Change Assembly)의 목적은?</span><span class="quizx-qe">What is the purpose of a QECA?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_804','A')"><span class="lt">A</span><span>엔진 출력을 높이기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_804','B')"><span class="lt">B</span><span>연료 소비를 줄이기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_804','C')"><span class="lt">C</span><span>엔진 냉각을 개선하기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_804','D')"><span class="lt">D</span><span>부속품·배관·배선이 미리 장착된 엔진 조립체로, 교환 시간을 단축하기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_804','A')"><span class="lt">A</span><span>엔진 출력을 높이기 위해<span class="opt-en">To increase engine power</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_804','B')"><span class="lt">B</span><span>연료 소비를 줄이기 위해<span class="opt-en">To reduce fuel consumption</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_804','C')"><span class="lt">C</span><span>엔진 냉각을 개선하기 위해<span class="opt-en">To improve engine cooling</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_804','D')"><span class="lt">D</span><span>부속품·배관·배선이 미리 장착된 엔진 조립체로, 교환 시간을 단축하기 위해<span class="opt-en">An engine assembly pre-fitted with accessories, plumbing, and wiring to shorten replacement time</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">QECA(또는 QECK)는 엔진에 액세서리·배관·배선·마운트가 미리 장착된 조립체입니다. 현장에서 엔진 교환 시 이 조립체 단위로 탈·장착해 다운타임을 크게 줄입니다.</span><span class="ee">A QECA (or QECK) is an engine with accessories, plumbing, wiring, and mounts pre-installed; changing engines as this assembly greatly reduces downtime in the field.</span><span class="acs-code">ACS PA.I.D.K3</span></div>
 </div>
@@ -513,10 +514,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_805" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">다이나포컬(dynafocal) 엔진 마운트의 특징은?</span><span class="quizx-qe">What characterizes a dynafocal engine mount?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_805','A')"><span class="lt">A</span><span>진동 흡수 없이 강체로 고정한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_805','B')"><span class="lt">B</span><span>쇼크 마운트가 엔진 무게중심을 향하도록 각을 이뤄 진동을 효과적으로 흡수한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_805','C')"><span class="lt">C</span><span>오일로 진동을 감쇠한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_805','D')"><span class="lt">D</span><span>마운트가 없는 구조다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_805','A')"><span class="lt">A</span><span>진동 흡수 없이 강체로 고정한다<span class="opt-en">Rigidly mounted with no vibration absorption</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_805','B')"><span class="lt">B</span><span>쇼크 마운트가 엔진 무게중심을 향하도록 각을 이뤄 진동을 효과적으로 흡수한다<span class="opt-en">Shock mounts are angled toward the engine's center of gravity to absorb vibration effectively</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_805','C')"><span class="lt">C</span><span>오일로 진동을 감쇠한다<span class="opt-en">Damps vibration with oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_805','D')"><span class="lt">D</span><span>마운트가 없는 구조다<span class="opt-en">A mountless structure</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">다이나포컬 마운트는 각 쇼크 마운트가 엔진 무게중심(포컬 포인트)을 향하도록 기울어져 배치됩니다. 이 배치가 여러 방향의 진동을 효과적으로 흡수해 기체로의 전달을 줄입니다.</span><span class="ee">In a dynafocal mount, the shock mounts are angled so their axes point toward the engine's center of gravity (focal point), effectively absorbing vibration in multiple directions and reducing transmission to the airframe.</span><span class="acs-code">ACS PA.I.D.K3</span></div>
 </div>
@@ -524,10 +525,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_806" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">메이저 오버홀(major overhaul) 후 엔진의 '총 시간(total time)'은 어떻게 되는가?</span><span class="quizx-qe">What happens to an engine's total time after a major overhaul?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_806','A')"><span class="lt">A</span><span>0으로 리셋된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_806','B')"><span class="lt">B</span><span>절반으로 줄어든다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_806','C')"><span class="lt">C</span><span>계속 누적되며, SMOH(오버홀 후 시간)만 0에서 시작한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_806','D')"><span class="lt">D</span><span>기록이 사라진다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_806','A')"><span class="lt">A</span><span>0으로 리셋된다<span class="opt-en">Reset to zero</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_806','B')"><span class="lt">B</span><span>절반으로 줄어든다<span class="opt-en">Halved</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_806','C')"><span class="lt">C</span><span>계속 누적되며, SMOH(오버홀 후 시간)만 0에서 시작한다<span class="opt-en">Keeps accumulating; only SMOH (time since overhaul) starts from zero</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_806','D')"><span class="lt">D</span><span>기록이 사라진다<span class="opt-en">The records disappear</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">메이저 오버홀은 완전 분해·검사·수리이지만 총 시간(total time)은 계속 누적됩니다. SMOH(Since Major OverHaul)만 0에서 새로 셉니다. 제로타임은 제조사 리빌드(§91.421)에서만 발행됩니다.</span><span class="ee">A major overhaul is a full teardown, inspection, and repair, but total time keeps accumulating; only SMOH (since major overhaul) resets to zero. Zero time is issued only by a manufacturer rebuild (§91.421).</span><span class="acs-code">ACS PA.I.D.K1</span></div>
 </div>
@@ -535,10 +536,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_807" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">'리빌드(rebuild)' 엔진을 제로타임 로그북과 함께 발행할 수 있는 주체는?</span><span class="quizx-qe">Who may issue a rebuilt engine with a zero-time logbook?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_807','A')"><span class="lt">A</span><span>엔진 제조사(또는 제조사가 승인한 대리인)만</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_807','B')"><span class="lt">B</span><span>모든 A&P 정비사</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_807','C')"><span class="lt">C</span><span>항공기 소유자</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_807','D')"><span class="lt">D</span><span>어떤 수리소든 가능</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_807','A')"><span class="lt">A</span><span>엔진 제조사(또는 제조사가 승인한 대리인)만<span class="opt-en">Only the engine manufacturer (or an approved agent)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_807','B')"><span class="lt">B</span><span>모든 A&P 정비사<span class="opt-en">Any A&P mechanic</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_807','C')"><span class="lt">C</span><span>항공기 소유자<span class="opt-en">The aircraft owner</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_807','D')"><span class="lt">D</span><span>어떤 수리소든 가능<span class="opt-en">Any repair station</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">§91.421에 따라 제로타임 로그북과 함께 '리빌드' 엔진을 발행할 수 있는 것은 엔진 제조사(또는 제조사가 승인한 대리인)뿐입니다. 일반 오버홀은 제로타임을 발행할 수 없습니다.</span><span class="ee">Under §91.421, only the engine manufacturer (or its approved agency) may issue a rebuilt engine with a zero-time logbook; an ordinary overhaul cannot grant zero time.</span><span class="acs-code">ACS PA.I.D.K1</span></div>
 </div>
@@ -546,10 +547,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_808" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q8</span><span class="quizx-qtext"><span class="quizx-qk">톱 오버홀(top overhaul)에 대한 설명으로 옳은 것은?</span><span class="quizx-qe">Which statement about a top overhaul is correct?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_808','A')"><span class="lt">A</span><span>크랭크케이스를 완전히 분해한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_808','B')"><span class="lt">B</span><span>TBO를 연장시킨다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_808','C')"><span class="lt">C</span><span>제조사만 수행할 수 있다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_808','D')"><span class="lt">D</span><span>크랭크케이스를 열지 않고 실린더(및 관련 부품)만 정비한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_808','A')"><span class="lt">A</span><span>크랭크케이스를 완전히 분해한다<span class="opt-en">Fully splits the crankcase</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_808','B')"><span class="lt">B</span><span>TBO를 연장시킨다<span class="opt-en">Extends the TBO</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_808','C')"><span class="lt">C</span><span>제조사만 수행할 수 있다<span class="opt-en">Can be done only by the manufacturer</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_808','D')"><span class="lt">D</span><span>크랭크케이스를 열지 않고 실린더(및 관련 부품)만 정비한다<span class="opt-en">Services the cylinders (and related parts) without opening the crankcase</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">톱 오버홀은 크랭크케이스를 열지 않고 실린더·피스톤·밸브 등 상부 부품만 정비하는 것입니다. 하부(크랭크축·베어링)는 손대지 않으므로 TBO를 연장하지 못합니다.</span><span class="ee">A top overhaul services only the cylinders, pistons, and valves without opening the crankcase; since the lower end (crankshaft, bearings) is untouched, it does not extend TBO.</span><span class="acs-code">ACS PA.I.D.K1</span></div>
 </div>
@@ -557,10 +558,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_809" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">엔진 장탈을 준비할 때 안전을 위해 가장 먼저 확인·차단해야 할 계통은?</span><span class="quizx-qe">When preparing to remove an engine, which systems must be secured first for safety?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_809','A')"><span class="lt">A</span><span>계기 조명과 라디오</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_809','B')"><span class="lt">B</span><span>점화(마그네토 접지)·연료 차단·배터리 분리 등 점화·연료·전기 계통</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_809','C')"><span class="lt">C</span><span>객실 여압</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_809','D')"><span class="lt">D</span><span>착륙등</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_809','A')"><span class="lt">A</span><span>계기 조명과 라디오<span class="opt-en">Instrument lights and radios</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_809','B')"><span class="lt">B</span><span>점화(마그네토 접지)·연료 차단·배터리 분리 등 점화·연료·전기 계통<span class="opt-en">Ignition (mag ground), fuel shutoff, and battery disconnect—the ignition/fuel/electrical systems</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_809','C')"><span class="lt">C</span><span>객실 여압<span class="opt-en">Cabin pressurization</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_809','D')"><span class="lt">D</span><span>착륙등<span class="opt-en">Landing lights</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">장탈 준비 시 우발적 시동·화재·감전을 막기 위해 점화 계통(마그네토 접지), 연료 차단, 배터리 분리를 먼저 확실히 합니다. 이후 오일 배출 등 유체 계통을 처리합니다.</span><span class="ee">Before removal, to prevent accidental start, fire, or shock, first secure the ignition (ground the magnetos), shut off fuel, and disconnect the battery, then handle fluid systems such as draining oil.</span><span class="acs-code">ACS PA.I.D.K3</span></div>
 </div>
@@ -568,10 +569,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_810" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q10</span><span class="quizx-qk">엔진을 호이스트로 들어 올릴 때 슬링(sling)을 제조사 지정 리프팅 러그에 걸어야 하는 이유는?</span><span class="quizx-qe">Why must an engine hoist sling attach to the manufacturer-specified lifting lugs?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_810','A')"><span class="lt">A</span><span>더 빠르게 들기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_810','B')"><span class="lt">B</span><span>무게를 줄이기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_810','C')"><span class="lt">C</span><span>지정 러그가 하중을 견디도록 설계돼 있어 균형·안전을 보장하고 엔진·인원 손상을 막기 때문</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_810','D')"><span class="lt">D</span><span>페인트 손상을 막기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_810','A')"><span class="lt">A</span><span>더 빠르게 들기 위해<span class="opt-en">To lift faster</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_810','B')"><span class="lt">B</span><span>무게를 줄이기 위해<span class="opt-en">To reduce weight</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_810','C')"><span class="lt">C</span><span>지정 러그가 하중을 견디도록 설계돼 있어 균형·안전을 보장하고 엔진·인원 손상을 막기 때문<span class="opt-en">Because designated lugs are designed to carry the load, ensuring balance/safety and preventing damage to engine and personnel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_810','D')"><span class="lt">D</span><span>페인트 손상을 막기 위해<span class="opt-en">To prevent paint damage</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">제조사 지정 리프팅 러그는 엔진 하중과 균형을 견디도록 설계돼 있습니다. 임의 지점에 걸면 부품 파손·엔진 낙하·인원 부상 위험이 있으므로 반드시 지정 러그와 적절한 슬링·호이스트를 사용합니다.</span><span class="ee">Manufacturer-specified lifting lugs are designed to bear the engine's load and balance; slinging from arbitrary points risks breaking parts, dropping the engine, or injuring personnel, so always use the specified lugs with a proper sling and hoist.</span><span class="acs-code">ACS PA.I.D.K3</span></div>
 </div>
@@ -579,10 +580,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_811" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">엔진 오버홀에서 '서비스 리미트(service limit)'와 '신품 한계(new-parts limit)'의 차이는?</span><span class="quizx-qe">What is the difference between a service limit and a new-parts limit in overhaul?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_811','A')"><span class="lt">A</span><span>둘은 동일하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_811','B')"><span class="lt">B</span><span>신품 한계는 새 부품의 치수 범위, 서비스 리미트는 계속 사용 가능한 마모 최대 한계로, 이를 넘으면 교체·수리한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_811','C')"><span class="lt">C</span><span>서비스 리미트가 신품 한계보다 항상 엄격하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_811','D')"><span class="lt">D</span><span>둘 다 무시해도 된다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_811','A')"><span class="lt">A</span><span>둘은 동일하다<span class="opt-en">They are the same</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_811','B')"><span class="lt">B</span><span>신품 한계는 새 부품의 치수 범위, 서비스 리미트는 계속 사용 가능한 마모 최대 한계로, 이를 넘으면 교체·수리한다<span class="opt-en">New-parts limit is the dimension range for new parts; service limit is the max wear still usable—beyond it, replace/repair</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_811','C')"><span class="lt">C</span><span>서비스 리미트가 신품 한계보다 항상 엄격하다<span class="opt-en">The service limit is always stricter than the new-parts limit</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_811','D')"><span class="lt">D</span><span>둘 다 무시해도 된다<span class="opt-en">Both may be ignored</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">신품 한계(new-parts limit)는 새 부품이 만족해야 할 치수 범위이고, 서비스 리미트(service limit)는 사용 중 부품이 계속 사용 가능한 최대 마모 한계입니다. 측정값이 서비스 리미트를 넘으면 교체·수리해야 하며, 제조사 오버홀 매뉴얼의 표를 따릅니다.</span><span class="ee">A new-parts limit is the dimensional range a new part must meet, while a service limit is the maximum wear at which a used part may remain in service; a measurement beyond the service limit requires replacement or repair, per the manufacturer's overhaul manual tables.</span><span class="acs-code">ACS PA.I.D.K2</span></div>
 </div>
@@ -590,10 +591,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_812" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">오버홀 중 실린더 '초킹(choking)' 또는 '배럴 테이퍼' 측정으로 확인하는 것은?</span><span class="quizx-qe">What does measuring cylinder choke or barrel taper during overhaul check?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_812','A')"><span class="lt">A</span><span>밸브 타이밍</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_812','B')"><span class="lt">B</span><span>점화 순서</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_812','C')"><span class="lt">C</span><span>실린더 보어의 진원도·테이퍼·마모로, 규정 초킹(상부가 약간 좁게 설계됨)이 유지되는지와 마모 한계 초과 여부</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_812','D')"><span class="lt">D</span><span>오일 등급</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_812','A')"><span class="lt">A</span><span>밸브 타이밍<span class="opt-en">Valve timing</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_812','B')"><span class="lt">B</span><span>점화 순서<span class="opt-en">Firing order</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_812','C')"><span class="lt">C</span><span>실린더 보어의 진원도·테이퍼·마모로, 규정 초킹(상부가 약간 좁게 설계됨)이 유지되는지와 마모 한계 초과 여부<span class="opt-en">Bore roundness/taper/wear—whether the designed choke (slightly narrower top) remains and wear limits are exceeded</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_812','D')"><span class="lt">D</span><span>오일 등급<span class="opt-en">Oil grade</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">실린더는 작동 중 헤드 쪽이 더 뜨거워 팽창하므로, 상부를 약간 좁게(초크) 만들어 열팽창 후 진원이 되도록 설계합니다. 오버홀 시 보어를 여러 지점에서 측정해 테이퍼·진원도·마모가 서비스 리미트 내인지, 초킹이 유지되는지 확인합니다.</span><span class="ee">Because the head end runs hotter and expands, cylinders are made slightly narrower at the top (choke) so they become round when hot; at overhaul the bore is measured at several points to verify taper, roundness, and wear are within service limits and that the choke remains.</span><span class="acs-code">ACS PA.I.D.K2</span></div>
 </div>
@@ -601,10 +602,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_813" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">비파괴검사(NDI) 중 '자분탐상(magnetic particle)'이 적용 가능한 재료는?</span><span class="quizx-qe">Magnetic particle inspection is applicable to which materials?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_813','A')"><span class="lt">A</span><span>강자성 재료(강철 크랭크축·기어 등)에만 적용되며, 표면·표면직하 균열을 찾는다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_813','B')"><span class="lt">B</span><span>알루미늄·비자성 재료에만</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_813','C')"><span class="lt">C</span><span>모든 재료에 동일하게</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_813','D')"><span class="lt">D</span><span>플라스틱에만</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_813','A')"><span class="lt">A</span><span>강자성 재료(강철 크랭크축·기어 등)에만 적용되며, 표면·표면직하 균열을 찾는다<span class="opt-en">Applies only to ferromagnetic materials (steel crankshafts, gears), finding surface/near-surface cracks</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_813','B')"><span class="lt">B</span><span>알루미늄·비자성 재료에만<span class="opt-en">Only to aluminum/non-magnetic materials</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_813','C')"><span class="lt">C</span><span>모든 재료에 동일하게<span class="opt-en">Equally to all materials</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_813','D')"><span class="lt">D</span><span>플라스틱에만<span class="opt-en">Only to plastics</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">자분탐상은 강자성 재료(강철 크랭크축·기어·볼트 등)에만 적용됩니다. 자화시킨 후 자분을 뿌리면 균열 누설 자속에 입자가 모여 표면·표면직하 결함을 드러냅니다. 알루미늄 등 비자성재는 침투탐상(dye penetrant)이나 와전류를 씁니다. 검사 후 반드시 탈자합니다.</span><span class="ee">Magnetic particle inspection applies only to ferromagnetic materials (steel crankshafts, gears, bolts); after magnetizing, applied particles gather at flux leakage from cracks to reveal surface and near-surface defects, while non-magnetic materials like aluminum use dye penetrant or eddy current—and the part must be demagnetized afterward.</span><span class="acs-code">ACS PA.I.D.K2</span></div>
 </div>
@@ -612,10 +613,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_814" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">오버홀·조립에서 토크 렌치로 규정 토크를 지키는 것이 중요한 이유는?</span><span class="quizx-qe">Why is applying specified torque with a torque wrench important in assembly?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_814','A')"><span class="lt">A</span><span>작업 속도를 높이려고</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_814','B')"><span class="lt">B</span><span>연료를 아끼려고</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_814','C')"><span class="lt">C</span><span>소음을 줄이려고</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_814','D')"><span class="lt">D</span><span>과소 토크는 이완·누설, 과대 토크는 나사산·부품 파손을 부르므로 적정 클램프 하중을 확보하기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_814','A')"><span class="lt">A</span><span>작업 속도를 높이려고<span class="opt-en">To work faster</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_814','B')"><span class="lt">B</span><span>연료를 아끼려고<span class="opt-en">To save fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_814','C')"><span class="lt">C</span><span>소음을 줄이려고<span class="opt-en">To reduce noise</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_814','D')"><span class="lt">D</span><span>과소 토크는 이완·누설, 과대 토크는 나사산·부품 파손을 부르므로 적정 클램프 하중을 확보하기 위해<span class="opt-en">Because under-torque causes loosening/leaks and over-torque strips threads/breaks parts, so proper clamp load is needed</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">규정 토크는 적정 클램프(체결) 하중을 만듭니다. 과소 토크는 볼트 이완·피로·누설을, 과대 토크는 나사산 손상·볼트 신장·부품 파손을 일으킵니다. 토크 시퀀스(교차 조임)·윤활 여부·연장대 보정도 규정대로 지켜야 정확합니다.</span><span class="ee">Specified torque produces the correct clamp load; under-torque causes loosening, fatigue, and leaks, while over-torque strips threads, stretches bolts, or cracks parts—and the torque sequence (cross-pattern), lubrication condition, and extension corrections must follow specifications for accuracy.</span><span class="acs-code">ACS PA.I.D.K3</span></div>
 </div>
@@ -623,10 +624,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_815" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">신규·오버홀 엔진의 '런인(run-in/break-in)' 시운전 목적은?</span><span class="quizx-qe">What is the purpose of engine run-in (break-in) after overhaul?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_815','A')"><span class="lt">A</span><span>연료를 소모하려고</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_815','B')"><span class="lt">B</span><span>피스톤 링을 실린더 벽에 시팅시키고, 누설·이상을 점검하며 성능을 확인하기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_815','C')"><span class="lt">C</span><span>오일을 오염시키려고</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_815','D')"><span class="lt">D</span><span>배기를 검게 만들려고</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_815','A')"><span class="lt">A</span><span>연료를 소모하려고<span class="opt-en">To consume fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_815','B')"><span class="lt">B</span><span>피스톤 링을 실린더 벽에 시팅시키고, 누설·이상을 점검하며 성능을 확인하기 위해<span class="opt-en">To seat the piston rings against the cylinder walls and check for leaks, anomalies, and performance</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_815','C')"><span class="lt">C</span><span>오일을 오염시키려고<span class="opt-en">To contaminate the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_815','D')"><span class="lt">D</span><span>배기를 검게 만들려고<span class="opt-en">To blacken the exhaust</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">런인은 규정 프로파일로 시운전하며 피스톤 링을 실린더 벽에 시팅(브레이크인)시켜 밀봉을 확보하고, 누설·진동·온도·압력 이상과 성능을 점검합니다. 이 기간엔 광유를 쓰고 지속적 아이들·과열을 피하며, 완료 후 오일·필터를 점검합니다.</span><span class="ee">Run-in operates the engine on a specified profile to seat the piston rings against the cylinder walls (break-in) for good sealing, while checking for leaks, vibration, temperature/pressure anomalies, and performance; mineral oil is used, prolonged idle/overheat is avoided, and oil/filter are inspected afterward.</span><span class="acs-code">ACS PA.I.D.K3</span></div>
 </div>
@@ -634,10 +635,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_816" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">장기 보관(preservation)하는 엔진의 부식 방지 조치로 옳은 것은?</span><span class="quizx-qe">Which is a correct corrosion-prevention measure for engine preservation/storage?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_816','A')"><span class="lt">A</span><span>연료 탱크를 비우고 방치</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_816','B')"><span class="lt">B</span><span>오일을 모두 빼고 건조 보관만</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_816','C')"><span class="lt">C</span><span>방청유 분무·실린더 내 코팅, 건조제(디시컨트) 플러그·백, 흡배기 밀봉, 습도 지시계 부착 등 제조사 절차 준수</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_816','D')"><span class="lt">D</span><span>물을 채워 보관</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_816','A')"><span class="lt">A</span><span>연료 탱크를 비우고 방치<span class="opt-en">Empty the fuel tank and leave it</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_816','B')"><span class="lt">B</span><span>오일을 모두 빼고 건조 보관만<span class="opt-en">Drain all oil and store dry only</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_816','C')"><span class="lt">C</span><span>방청유 분무·실린더 내 코팅, 건조제(디시컨트) 플러그·백, 흡배기 밀봉, 습도 지시계 부착 등 제조사 절차 준수<span class="opt-en">Follow manufacturer procedures—corrosion-preventive spray/coating, desiccant plugs/bags, sealing intake/exhaust, humidity indicators</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_816','D')"><span class="lt">D</span><span>물을 채워 보관<span class="opt-en">Store filled with water</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">엔진 보관 시 부식 방지를 위해 방청유(코로전 프리벤티브)를 실린더·내부에 분무·코팅하고, 건조제(디시컨트) 플러그·백을 넣으며, 흡배기구를 밀봉하고 습도 지시계로 상태를 감시합니다. 보관 기간·기후에 따라 플라이어블/능동/장기 보관 등급으로 나눠 제조사 절차를 따릅니다.</span><span class="ee">For storage, corrosion is prevented by spraying/coating cylinders and internals with corrosion-preventive oil, inserting desiccant plugs/bags, sealing intake and exhaust openings, and monitoring with humidity indicators; per manufacturer procedures the level (flyable, active, or long-term) depends on duration and climate.</span><span class="acs-code">ACS PA.I.D.K3</span></div>
 </div>
