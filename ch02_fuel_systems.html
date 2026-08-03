@@ -3174,6 +3174,7 @@ function figRefToggle(el){
 .quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
 .quizx-opt.wrong .lt{color:#F87171;}
 .quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt .opt-en{display:block;margin-top:3px;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.4;}
 .quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
 .quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
   background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
@@ -3200,10 +3201,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_201" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">엔진 구동 연료 펌프가 있는데도 전기 부스트(보조) 펌프를 두는 주된 이유는?</span><span class="quizx-qe">Why is an electric boost pump provided even with an engine-driven fuel pump?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_201','A')"><span class="lt">A</span><span>연료를 냉각하기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_201','B')"><span class="lt">B</span><span>연료 소비를 줄이기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_201','C')"><span class="lt">C</span><span>시동·이륙·고고도·엔진 펌프 고장 시 연료 공급과 베이퍼 록 방지를 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_201','D')"><span class="lt">D</span><span>연료 색을 확인하기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_201','A')"><span class="lt">A</span><span>연료를 냉각하기 위해<span class="opt-en">To cool the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_201','B')"><span class="lt">B</span><span>연료 소비를 줄이기 위해<span class="opt-en">To reduce fuel consumption</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_201','C')"><span class="lt">C</span><span>시동·이륙·고고도·엔진 펌프 고장 시 연료 공급과 베이퍼 록 방지를 위해<span class="opt-en">To supply fuel and prevent vapor lock during start, takeoff, high altitude, and engine-pump failure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_201','D')"><span class="lt">D</span><span>연료 색을 확인하기 위해<span class="opt-en">To check fuel color</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">전기 부스트 펌프는 시동(엔진 펌프가 아직 안 돎)·이륙·고고도·엔진 구동 펌프 고장 시 연료 압력을 제공하고, 연료 라인을 가압해 베이퍼 록(연료 증기화)을 방지합니다.</span><span class="ee">An electric boost pump supplies fuel pressure during start (engine pump not yet turning), takeoff, high altitude, and engine-pump failure, and pressurizes the lines to prevent vapor lock.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -3211,10 +3212,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_202" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">엔진 구동 연료 펌프(베인식)의 바이패스(릴리프) 밸브 기능은?</span><span class="quizx-qe">What does the bypass/relief valve in an engine-driven vane pump do?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_202','A')"><span class="lt">A</span><span>연료를 여과한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_202','B')"><span class="lt">B</span><span>펌프 출력이 수요를 초과할 때 과잉 연료를 입구로 되돌리고, 부스트 펌프 사용 시 연료가 통과하게 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_202','C')"><span class="lt">C</span><span>연료를 가열한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_202','D')"><span class="lt">D</span><span>혼합비를 조절한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_202','A')"><span class="lt">A</span><span>연료를 여과한다<span class="opt-en">Filters the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_202','B')"><span class="lt">B</span><span>펌프 출력이 수요를 초과할 때 과잉 연료를 입구로 되돌리고, 부스트 펌프 사용 시 연료가 통과하게 한다<span class="opt-en">Returns excess fuel to the inlet when output exceeds demand, and lets fuel pass through when the boost pump is used</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_202','C')"><span class="lt">C</span><span>연료를 가열한다<span class="opt-en">Heats the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_202','D')"><span class="lt">D</span><span>혼합비를 조절한다<span class="opt-en">Adjusts the mixture</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">베인식 엔진 구동 펌프는 정용량이라 수요보다 많이 토출합니다. 릴리프(바이패스) 밸브가 과잉 연료를 펌프 입구로 되돌려 출구 압력을 조절하고, 부스트 펌프만 작동할 때는 연료가 펌프를 우회해 통과하게 합니다.</span><span class="ee">The vane-type engine-driven pump is positive-displacement and delivers more than needed; a relief/bypass valve returns excess fuel to the inlet to regulate output pressure and lets fuel pass through when only the boost pump runs.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -3222,10 +3223,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_203" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">항공가솔린(AVGAS)과 터빈 연료(제트유)의 특성 비교로 옳은 것은?</span><span class="quizx-qe">Which correctly compares avgas and turbine (jet) fuel?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_203','A')"><span class="lt">A</span><span>AVGAS는 옥탄가로 안티노크성을 표시하고 휘발성이 높으며, 제트유는 등유 기반으로 인화점이 높고 발열량·윤활성이 좋다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_203','B')"><span class="lt">B</span><span>둘은 완전히 같은 연료다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_203','C')"><span class="lt">C</span><span>제트유가 AVGAS보다 휘발성이 훨씬 높다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_203','D')"><span class="lt">D</span><span>AVGAS는 등유다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_203','A')"><span class="lt">A</span><span>AVGAS는 옥탄가로 안티노크성을 표시하고 휘발성이 높으며, 제트유는 등유 기반으로 인화점이 높고 발열량·윤활성이 좋다<span class="opt-en">Avgas is rated by octane for anti-knock and is highly volatile; jet fuel is kerosene-based with a high flash point and good energy/lubricity</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_203','B')"><span class="lt">B</span><span>둘은 완전히 같은 연료다<span class="opt-en">They are exactly the same fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_203','C')"><span class="lt">C</span><span>제트유가 AVGAS보다 휘발성이 훨씬 높다<span class="opt-en">Jet fuel is far more volatile than avgas</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_203','D')"><span class="lt">D</span><span>AVGAS는 등유다<span class="opt-en">Avgas is kerosene</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">AVGAS는 옥탄/퍼포먼스 넘버로 안티노크성을 표시하고 휘발성이 높습니다. 제트유(Jet-A 등)는 등유 기반으로 인화점이 높아 취급이 더 안전하고, 단위 체적당 발열량과 윤활성이 좋습니다. 색·첨가제로 등급을 구분합니다.</span><span class="ee">Avgas is rated by octane/performance number for anti-knock and is highly volatile; jet fuel (Jet-A) is kerosene-based with a higher flash point (safer handling) and good energy density and lubricity, with grades distinguished by color and additives.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
@@ -3233,10 +3234,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_204" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">부동식(float-type) 기화기에서 에어블리드(air bleed)의 역할은?</span><span class="quizx-qe">What is the role of the air bleed in a float-type carburetor?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_204','A')"><span class="lt">A</span><span>플로트 레벨을 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_204','B')"><span class="lt">B</span><span>연료를 가열한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_204','C')"><span class="lt">C</span><span>스로틀을 연다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_204','D')"><span class="lt">D</span><span>연료에 공기를 섞어 미립화를 돕고 넓은 rpm 범위에서 연료 계량을 안정화한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_204','A')"><span class="lt">A</span><span>플로트 레벨을 조절한다<span class="opt-en">Adjusts the float level</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_204','B')"><span class="lt">B</span><span>연료를 가열한다<span class="opt-en">Heats the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_204','C')"><span class="lt">C</span><span>스로틀을 연다<span class="opt-en">Opens the throttle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_204','D')"><span class="lt">D</span><span>연료에 공기를 섞어 미립화를 돕고 넓은 rpm 범위에서 연료 계량을 안정화한다<span class="opt-en">Mixes air into the fuel to aid atomization and stabilize metering across a wide rpm range</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">에어블리드는 메인 방출 노즐로 가는 연료에 공기를 섞어 유화(에멀전)시킵니다. 이는 연료 미립화를 촉진하고, 흡입 부압만으로는 과도해지는 연료 흐름을 완화해 넓은 rpm 범위에서 혼합비를 안정화합니다.</span><span class="ee">The air bleed mixes air into the fuel going to the main discharge nozzle, emulsifying it; this promotes atomization and moderates the fuel flow that suction alone would over-richen, stabilizing the mixture across a wide rpm range.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
@@ -3244,10 +3245,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_205" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">부동식 기화기가 압력 분사식·연료분사보다 취약한 대표적 문제는?</span><span class="quizx-qe">What problem is a float carburetor more prone to than pressure or injection systems?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_205','A')"><span class="lt">A</span><span>과열</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_205','B')"><span class="lt">B</span><span>기화기 결빙(carburetor icing)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_205','C')"><span class="lt">C</span><span>오일 소비</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_205','D')"><span class="lt">D</span><span>배터리 방전</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_205','A')"><span class="lt">A</span><span>과열<span class="opt-en">Overheating</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_205','B')"><span class="lt">B</span><span>기화기 결빙(carburetor icing)<span class="opt-en">Carburetor icing</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_205','C')"><span class="lt">C</span><span>오일 소비<span class="opt-en">Oil consumption</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_205','D')"><span class="lt">D</span><span>배터리 방전<span class="opt-en">Battery drain</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">부동식 기화기는 벤투리에서 압력·온도가 떨어지고 연료 기화 잠열로 냉각돼 습한 조건에서 기화기 결빙이 잘 생깁니다. 결빙은 흐름을 막아 출력 저하·정지를 유발하며, 카뷰레터 히트로 대응합니다. 연료분사는 이 문제에 덜 취약합니다.</span><span class="ee">A float carburetor is prone to carburetor icing because pressure/temperature drop at the venturi and fuel-vaporization cooling can form ice in humid conditions, restricting flow and causing power loss; carburetor heat counters it, and fuel injection is less susceptible.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
@@ -3255,10 +3256,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_206" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">물분사(ADI, anti-detonation injection)의 목적은?</span><span class="quizx-qe">What is the purpose of anti-detonation injection (ADI)?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_206','A')"><span class="lt">A</span><span>연료를 절약한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_206','B')"><span class="lt">B</span><span>오일을 냉각한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_206','C')"><span class="lt">C</span><span>고출력에서 물(또는 물-알코올)을 분사해 흡기 온도를 낮추고 디토네이션 없이 더 높은 출력을 내게 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_206','D')"><span class="lt">D</span><span>배기 소음을 줄인다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_206','A')"><span class="lt">A</span><span>연료를 절약한다<span class="opt-en">Saves fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_206','B')"><span class="lt">B</span><span>오일을 냉각한다<span class="opt-en">Cools the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_206','C')"><span class="lt">C</span><span>고출력에서 물(또는 물-알코올)을 분사해 흡기 온도를 낮추고 디토네이션 없이 더 높은 출력을 내게 한다<span class="opt-en">Injects water (or water-alcohol) at high power to lower charge temperature and allow more power without detonation</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_206','D')"><span class="lt">D</span><span>배기 소음을 줄인다<span class="opt-en">Reduces exhaust noise</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">ADI는 이륙 같은 고출력에서 물(또는 물-알코올 혼합)을 흡기에 분사해 온도를 낮춥니다. 이로써 과농 혼합으로 냉각하지 않고도 디토네이션을 억제해, 더 높은 매니폴드 압력·출력을 안전하게 낼 수 있습니다.</span><span class="ee">ADI injects water (or water-alcohol) into the induction at high power like takeoff to lower charge temperature, suppressing detonation without over-rich cooling, allowing higher manifold pressure and power safely.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
@@ -3266,10 +3267,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_207" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">RSA 연속류 연료분사 계통에서 연료 흐름이 무엇에 비례하도록 계량되는가?</span><span class="quizx-qe">In an RSA continuous-flow fuel injection system, fuel flow is metered in proportion to what?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_207','A')"><span class="lt">A</span><span>엔진으로 들어가는 공기 흐름(에어 미터링)에 비례</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_207','B')"><span class="lt">B</span><span>오일 압력에 비례</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_207','C')"><span class="lt">C</span><span>배기가스 온도에 비례</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_207','D')"><span class="lt">D</span><span>프로펠러 RPM에 비례</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_207','A')"><span class="lt">A</span><span>엔진으로 들어가는 공기 흐름(에어 미터링)에 비례<span class="opt-en">In proportion to airflow into the engine (air metering)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_207','B')"><span class="lt">B</span><span>오일 압력에 비례<span class="opt-en">In proportion to oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_207','C')"><span class="lt">C</span><span>배기가스 온도에 비례<span class="opt-en">In proportion to exhaust gas temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_207','D')"><span class="lt">D</span><span>프로펠러 RPM에 비례<span class="opt-en">In proportion to propeller RPM</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">RSA(Bendix/Precision) 계통은 스로틀 보디의 에어 미터링에서 감지한 공기 흐름에 비례해 연료를 계량합니다. 레귤레이터가 공기 흐름 신호로 연료 압력을 조절하고, 플로 디바이더가 각 실린더 인젝터 노즐로 균등 분배합니다.</span><span class="ee">An RSA (Bendix/Precision) system meters fuel in proportion to airflow sensed at the throttle-body air metering; the regulator sets fuel pressure from the airflow signal, and a flow divider distributes it evenly to each cylinder's injector nozzle.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
@@ -3277,10 +3278,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_208" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q8</span><span class="quizx-qtext"><span class="quizx-qk">연료분사 계통의 '플로 디바이더(flow divider)' 기능은?</span><span class="quizx-qe">What does the flow divider do in a fuel injection system?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_208','A')"><span class="lt">A</span><span>공기를 여과한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_208','B')"><span class="lt">B</span><span>연료를 가열한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_208','C')"><span class="lt">C</span><span>점화 타이밍을 맞춘다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_208','D')"><span class="lt">D</span><span>계량된 연료를 각 실린더 노즐로 균등 분배하고, 아이들 차단 시 확실한 연료 차단을 제공한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_208','A')"><span class="lt">A</span><span>공기를 여과한다<span class="opt-en">Filters air</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_208','B')"><span class="lt">B</span><span>연료를 가열한다<span class="opt-en">Heats fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_208','C')"><span class="lt">C</span><span>점화 타이밍을 맞춘다<span class="opt-en">Sets ignition timing</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_208','D')"><span class="lt">D</span><span>계량된 연료를 각 실린더 노즐로 균등 분배하고, 아이들 차단 시 확실한 연료 차단을 제공한다<span class="opt-en">Distributes metered fuel evenly to each cylinder nozzle and gives a positive shutoff at idle cutoff</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">플로 디바이더는 레귤레이터에서 온 계량 연료를 각 실린더 인젝터 노즐로 균등 분배합니다. 다이어프램·스프링 구조로, 연료 압력이 낮으면 닫혀(아이들 차단) 확실한 연료 차단을 제공하고, 고착되면 정지 지연 등 결함을 일으킵니다.</span><span class="ee">The flow divider distributes metered fuel evenly to each cylinder's injector nozzle; its spring-diaphragm closes at low fuel pressure (idle cutoff) for a positive shutoff, and if it sticks it can cause faults such as delayed shutdown.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
@@ -3288,10 +3289,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_209" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">FADEC(Full Authority Digital Engine Control)의 특징으로 옳은 것은?</span><span class="quizx-qe">Which correctly describes FADEC?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_209','A')"><span class="lt">A</span><span>기계식 케이블만으로 연료를 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_209','B')"><span class="lt">B</span><span>전자제어장치가 센서 입력으로 연료·점화 타이밍을 자동 최적화하며, 조종사는 단일 파워 레버로 제어한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_209','C')"><span class="lt">C</span><span>혼합비를 수동으로만 조절해야 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_209','D')"><span class="lt">D</span><span>점화 계통이 없다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_209','A')"><span class="lt">A</span><span>기계식 케이블만으로 연료를 조절한다<span class="opt-en">Controls fuel by mechanical cable only</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_209','B')"><span class="lt">B</span><span>전자제어장치가 센서 입력으로 연료·점화 타이밍을 자동 최적화하며, 조종사는 단일 파워 레버로 제어한다<span class="opt-en">An electronic control unit automatically optimizes fuel and ignition timing from sensors; the pilot uses a single power lever</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_209','C')"><span class="lt">C</span><span>혼합비를 수동으로만 조절해야 한다<span class="opt-en">Mixture must be adjusted manually only</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_209','D')"><span class="lt">D</span><span>점화 계통이 없다<span class="opt-en">Has no ignition system</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">FADEC는 전자제어장치(ECU)가 다수 센서(rpm·MAP·온도 등) 입력으로 연료 계량과 점화 타이밍을 자동 최적화합니다. 조종사는 단일 파워 레버로 제어하고 수동 혼합·마그네토 조작이 불필요해져, 효율·시동성·안전성이 향상됩니다.</span><span class="ee">FADEC uses an electronic control unit to automatically optimize fuel metering and ignition timing from many sensor inputs (rpm, MAP, temperature); the pilot uses a single power lever with no manual mixture or mag operation, improving efficiency, starting, and safety.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -3299,15 +3300,80 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_210" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q10</span><span class="quizx-qk">터빈 엔진의 가압·덤프(P&amp;D) 밸브(퍼지 밸브) 역할은?</span><span class="quizx-qe">What is the role of the turbine pressurizing and dump (P&amp;D) valve?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_210','A')"><span class="lt">A</span><span>오일을 배출한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_210','B')"><span class="lt">B</span><span>블리드 에어를 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_210','C')"><span class="lt">C</span><span>시동 시 연료 압력이 오르기 전 흐름을 막고(가압), 셧다운 시 매니폴드의 잔류 연료를 배출(덤프)해 코킹·후연소를 방지한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_210','D')"><span class="lt">D</span><span>배기 노즐 면적을 바꾼다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_210','A')"><span class="lt">A</span><span>오일을 배출한다<span class="opt-en">Drains the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_210','B')"><span class="lt">B</span><span>블리드 에어를 조절한다<span class="opt-en">Regulates bleed air</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_210','C')"><span class="lt">C</span><span>시동 시 연료 압력이 오르기 전 흐름을 막고(가압), 셧다운 시 매니폴드의 잔류 연료를 배출(덤프)해 코킹·후연소를 방지한다<span class="opt-en">Blocks flow until fuel pressure builds at start (pressurize) and dumps residual manifold fuel at shutdown to prevent coking/afterburning</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_210','D')"><span class="lt">D</span><span>배기 노즐 면적을 바꾼다<span class="opt-en">Changes exhaust nozzle area</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">P&D(퍼지) 밸브는 시동 시 연료 압력이 규정값에 도달할 때까지 노즐로의 흐름을 막아 확실한 라이트오프를 돕고(가압), 셧다운 시에는 연료 매니폴드의 잔류 연료를 배출(덤프)해 노즐 코킹과 후연소를 방지합니다.</span><span class="ee">The P&D (purge) valve blocks flow to the nozzles until fuel pressure reaches a set value at start for a clean light-off (pressurize), and at shutdown dumps residual fuel from the manifold (dump) to prevent nozzle coking and afterburning.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
 
-<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">10</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
+<div class="quizx-card" id="qz_211" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">베이퍼 록(vapor lock)이 발생하는 원인은?</span><span class="quizx-qe">What causes vapor lock in a fuel system?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_211','A')"><span class="lt">A</span><span>연료가 너무 차가워서<span class="opt-en">Because the fuel is too cold</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_211','B')"><span class="lt">B</span><span>오일이 연료에 섞여서<span class="opt-en">Because oil mixes into the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_211','C')"><span class="lt">C</span><span>고온·저압에서 연료가 라인 안에서 기화해 증기가 연료 흐름을 막아서<span class="opt-en">Because fuel vaporizes in the line under high heat/low pressure and vapor blocks the flow</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_211','D')"><span class="lt">D</span><span>연료 필터가 새것이라서<span class="opt-en">Because the fuel filter is new</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">베이퍼 록은 고온·저압 조건(고고도, 뜨거운 엔진실, 급상승)에서 휘발성 연료가 라인·펌프 안에서 기화해 증기 방울이 연료 흐름을 막는 현상입니다. 부스트 펌프로 라인을 가압하면 비등점을 높여 예방·해소할 수 있습니다.</span><span class="ee">Vapor lock occurs when volatile fuel vaporizes in lines or pumps under high-temperature, low-pressure conditions (high altitude, hot engine bay, rapid climb), and vapor bubbles block fuel flow; pressurizing the lines with a boost pump raises the boiling point to prevent or clear it.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_212" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">기화기의 '가속 펌프(accelerating pump)'가 필요한 이유는?</span><span class="quizx-qe">Why is an accelerating pump needed in a carburetor?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_212','A')"><span class="lt">A</span><span>아이들에서 연료를 차단하기 위해<span class="opt-en">To shut off fuel at idle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_212','B')"><span class="lt">B</span><span>스로틀 급개 시 순간적으로 희박해지는 것을 막기 위해 추가 연료를 분사한다<span class="opt-en">Injects extra fuel to prevent a momentary lean condition on rapid throttle opening</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_212','C')"><span class="lt">C</span><span>연료를 냉각하기 위해<span class="opt-en">To cool the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_212','D')"><span class="lt">D</span><span>배기를 정화하기 위해<span class="opt-en">To clean the exhaust</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">스로틀을 급히 열면 공기 흐름은 즉시 늘지만 무거운 연료는 관성으로 늦게 따라와 순간적으로 혼합기가 희박해집니다. 가속 펌프가 이때 추가 연료를 분사해 희박 스텀블(엔진 주저함)을 방지하고 부드러운 가속을 만듭니다.</span><span class="ee">On rapid throttle opening, airflow increases at once but heavier fuel lags by inertia, momentarily leaning the mixture; the accelerating pump injects extra fuel then to prevent a lean stumble and give smooth acceleration.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_213" data-ans="D">
+<div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">기화기의 '이코노마이저(economizer/power enrichment) 시스템'의 역할은?</span><span class="quizx-qe">What does the economizer (power enrichment) system do?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_213','A')"><span class="lt">A</span><span>아이들에서 혼합기를 희박하게 한다<span class="opt-en">Leans the mixture at idle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_213','B')"><span class="lt">B</span><span>연료를 여과한다<span class="opt-en">Filters the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_213','C')"><span class="lt">C</span><span>오일 압력을 조절한다<span class="opt-en">Regulates oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_213','D')"><span class="lt">D</span><span>순항에서는 경제적 희박 혼합을, 고출력에서는 추가 연료로 농후 혼합을 공급해 냉각·디토네이션을 방지한다<span class="opt-en">Keeps an economical lean mixture at cruise and adds fuel for a rich mixture at high power to prevent overheating/detonation</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">이코노마이저(파워 인리치먼트)는 순항 등 중간 출력에서는 경제적인 희박 혼합기를 유지하다가, 고출력(고스로틀)에서 추가 연료를 공급해 농후 혼합으로 실린더를 냉각하고 디토네이션을 방지합니다. 이름과 달리 고출력에서 '농후화'가 핵심 기능입니다.</span><span class="ee">The economizer (power enrichment) keeps an economical lean mixture at cruise/medium power, then supplies extra fuel at high power (wide throttle) for a rich mixture that cools the cylinders and prevents detonation—its key function is enrichment at high power despite the name.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_214" data-ans="A">
+<div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">터빈 연료의 '아이싱 인히비터(fuel system icing inhibitor, FSII)' 첨가제 목적은?</span><span class="quizx-qe">What is the purpose of a fuel system icing inhibitor (FSII) in turbine fuel?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_214','A')"><span class="lt">A</span><span>연료에 녹아든 물이 저온에서 얼어 필터를 막는 것을 방지한다<span class="opt-en">Prevents dissolved water in the fuel from freezing and clogging the filter at low temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_214','B')"><span class="lt">B</span><span>옥탄가를 높인다<span class="opt-en">Raises octane</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_214','C')"><span class="lt">C</span><span>연료 색을 바꾼다<span class="opt-en">Changes fuel color</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_214','D')"><span class="lt">D</span><span>배기 소음을 줄인다<span class="opt-en">Reduces exhaust noise</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">제트 연료에는 소량의 용해수가 있는데 고고도 저온에서 얼면 연료 필터를 막아 흐름을 차단할 수 있습니다. FSII(예: 디에틸렌글리콜 모노메틸에테르)는 이 물이 어는 것을 막아 필터 결빙을 방지합니다. 히티드 필터도 대안입니다.</span><span class="ee">Jet fuel contains dissolved water that can freeze at high-altitude low temperatures and clog the fuel filter, blocking flow; FSII (e.g., diethylene glycol monomethyl ether) prevents this water from freezing to avoid filter icing, with heated filters as an alternative.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_215" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">연료 계통 정비에서 '수분·침전물 배출(sump drain/water check)'을 정기적으로 하는 이유는?</span><span class="quizx-qe">Why regularly drain sumps to check for water and sediment?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_215','A')"><span class="lt">A</span><span>연료량을 늘리기 위해<span class="opt-en">To increase fuel quantity</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_215','B')"><span class="lt">B</span><span>옥탄가를 높이기 위해<span class="opt-en">To raise octane</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_215','C')"><span class="lt">C</span><span>탱크 바닥에 모인 물·이물이 엔진으로 유입돼 출력 상실·정지를 일으키는 것을 막기 위해<span class="opt-en">To keep water/debris settled at the tank bottom from reaching the engine and causing power loss or stoppage</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_215','D')"><span class="lt">D</span><span>연료 색을 확인하기 위해서만<span class="opt-en">Only to check fuel color</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">응결·급유로 유입된 물은 연료보다 무거워 탱크 바닥(섬프)에 모입니다. 이 물·침전물이 엔진에 들어가면 출력 상실·정지를 일으키므로, 비행 전 각 섬프 드레인에서 배출해 물·이물이 없는지 확인합니다. 연료 색·등급 확인도 겸합니다.</span><span class="ee">Water from condensation or fueling is heavier than fuel and collects at the tank bottom (sump); if it reaches the engine it can cause power loss or stoppage, so each sump drain is checked before flight for water and sediment, also confirming fuel color/grade.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_216" data-ans="B">
+<div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">연료 노즐(인젝터)이 부분적으로 막히면 나타나는 대표적 증상은?</span><span class="quizx-qe">What is a typical symptom of a partially clogged fuel nozzle/injector?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_216','A')"><span class="lt">A</span><span>모든 실린더가 균등하게 농후해진다<span class="opt-en">All cylinders richen evenly</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_216','B')"><span class="lt">B</span><span>해당 실린더가 희박해져 EGT 상승·거친 작동을 보인다(계통에 따라 다름)<span class="opt-en">That cylinder leans out, showing higher EGT and rough running (varies by system)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_216','C')"><span class="lt">C</span><span>오일 압력이 오른다<span class="opt-en">Oil pressure rises</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_216','D')"><span class="lt">D</span><span>아무 증상이 없다<span class="opt-en">No symptoms at all</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">노즐이 부분 막히면 그 실린더의 연료가 줄어 희박해지고, 멀티프로브 계기에서 해당 실린더 EGT 상승과 거친 작동으로 나타납니다. 노즐 세척·유량 시험으로 진단하며, 균등 분배 회복이 목표입니다(계통·조건에 따라 증상은 달라질 수 있음).</span><span class="ee">A partially clogged nozzle reduces fuel to that cylinder, leaning it and showing as a higher EGT on that cylinder and rough running on multiprobe instruments; nozzle cleaning and flow testing diagnose it, aiming to restore even distribution (symptoms vary by system and condition).</span><span class="acs-code">ACS PA.II.B.K1</span></div>
+</div>
+<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">16</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
 </div>
 <script>
 (function(){
