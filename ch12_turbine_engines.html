@@ -1924,6 +1924,7 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 .quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
 .quizx-opt.wrong .lt{color:#F87171;}
 .quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt .opt-en{display:block;margin-top:3px;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.4;}
 .quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
 .quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
   background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
@@ -1950,10 +1951,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1201" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">가스터빈 엔진의 추력은 어떤 물리 원리로 발생하는가?</span><span class="quizx-qe">By what physical principle does a gas turbine engine produce thrust?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1201','A')"><span class="lt">A</span><span>베르누이 정리에 의한 날개 양력</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1201','B')"><span class="lt">B</span><span>뉴턴 제3법칙(작용-반작용)에 의해 가속된 배기 가스의 반작용</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1201','C')"><span class="lt">C</span><span>파스칼 원리에 의한 유압 전달</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1201','D')"><span class="lt">D</span><span>아르키메데스 부력</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1201','A')"><span class="lt">A</span><span>베르누이 정리에 의한 날개 양력<span class="opt-en">Wing lift by Bernoulli's principle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1201','B')"><span class="lt">B</span><span>뉴턴 제3법칙(작용-반작용)에 의해 가속된 배기 가스의 반작용<span class="opt-en">Reaction of accelerated exhaust gas by Newton's third law (action-reaction)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1201','C')"><span class="lt">C</span><span>파스칼 원리에 의한 유압 전달<span class="opt-en">Hydraulic transmission by Pascal's principle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1201','D')"><span class="lt">D</span><span>아르키메데스 부력<span class="opt-en">Archimedes' buoyancy</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터빈 엔진은 공기를 가속해 뒤로 밀어내고, 그 반작용으로 앞으로 나아가는 추력을 얻습니다. 이는 뉴턴 제3법칙(모든 작용에는 크기가 같고 방향이 반대인 반작용)의 직접적 적용입니다.</span><span class="ee">A turbine engine accelerates air rearward and gains forward thrust from the reaction, a direct application of Newton's third law (every action has an equal and opposite reaction).</span><span class="acs-code">ACS PA.II.A.K1</span></div>
 </div>
@@ -1961,10 +1962,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1202" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">EPR(Engine Pressure Ratio)은 무엇을 나타내는가?</span><span class="quizx-qe">What does EPR (engine pressure ratio) represent?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1202','A')"><span class="lt">A</span><span>압축기 입구와 출구의 온도비</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1202','B')"><span class="lt">B</span><span>연료 유량과 공기 유량의 비</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1202','C')"><span class="lt">C</span><span>터빈 배출 총압과 압축기 입구 총압의 비로, 엔진 추력의 지표</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1202','D')"><span class="lt">D</span><span>바이패스 공기와 코어 공기의 비</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1202','A')"><span class="lt">A</span><span>압축기 입구와 출구의 온도비<span class="opt-en">Ratio of compressor inlet to outlet temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1202','B')"><span class="lt">B</span><span>연료 유량과 공기 유량의 비<span class="opt-en">Ratio of fuel flow to air flow</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1202','C')"><span class="lt">C</span><span>터빈 배출 총압과 압축기 입구 총압의 비로, 엔진 추력의 지표<span class="opt-en">Ratio of turbine discharge total pressure to compressor inlet total pressure—an indicator of thrust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1202','D')"><span class="lt">D</span><span>바이패스 공기와 코어 공기의 비<span class="opt-en">Ratio of bypass air to core air</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">EPR은 터빈 배출부 총압을 압축기 입구 총압으로 나눈 값으로, 많은 터보제트·터보팬에서 추력 설정의 주 지표로 쓰입니다. 두 지점의 압력 프로브로 측정합니다.</span><span class="ee">EPR is turbine discharge total pressure divided by compressor inlet total pressure, used on many turbojets and turbofans as the primary thrust-setting indicator, measured by pressure probes at the two stations.</span><span class="acs-code">ACS PA.II.A.K2</span></div>
 </div>
@@ -1972,10 +1973,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1203" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">고바이패스 터보팬이 저바이패스보다 연료 효율이 높은 이유는?</span><span class="quizx-qe">Why is a high-bypass turbofan more fuel efficient than a low-bypass one?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1203','A')"><span class="lt">A</span><span>많은 양의 공기를 비교적 낮은 속도로 가속해 추진 효율이 높기 때문</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1203','B')"><span class="lt">B</span><span>연소 온도가 훨씬 낮기 때문</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1203','C')"><span class="lt">C</span><span>압축기 단수가 적기 때문</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1203','D')"><span class="lt">D</span><span>애프터버너를 상시 사용하기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1203','A')"><span class="lt">A</span><span>많은 양의 공기를 비교적 낮은 속도로 가속해 추진 효율이 높기 때문<span class="opt-en">Because it accelerates a large mass of air at relatively low velocity, giving high propulsive efficiency</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1203','B')"><span class="lt">B</span><span>연소 온도가 훨씬 낮기 때문<span class="opt-en">Because combustion temperature is much lower</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1203','C')"><span class="lt">C</span><span>압축기 단수가 적기 때문<span class="opt-en">Because it has fewer compressor stages</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1203','D')"><span class="lt">D</span><span>애프터버너를 상시 사용하기 때문<span class="opt-en">Because the afterburner is always used</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">추진 효율은 배기 속도가 항공기 속도에 가까울수록 높아집니다. 고바이패스는 큰 팬으로 많은 공기를 완만히 가속하므로 배기 속도가 낮아 추진 효율과 연료 효율이 좋고 소음도 적습니다.</span><span class="ee">Propulsive efficiency rises as exhaust velocity approaches aircraft speed; a high-bypass fan accelerates a large mass of air gently, giving lower exhaust velocity, better propulsive and fuel efficiency, and less noise.</span><span class="acs-code">ACS PA.II.A.K2</span></div>
 </div>
@@ -1983,10 +1984,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1204" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">원심류 압축기와 축류 압축기의 대표적 특성 비교로 옳은 것은?</span><span class="quizx-qe">Which correctly compares centrifugal and axial-flow compressors?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1204','A')"><span class="lt">A</span><span>축류는 단당 압력비가 높고 전면적이 크다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1204','B')"><span class="lt">B</span><span>원심류는 다단 직렬 연결로 매우 높은 압력비를 쉽게 얻는다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1204','C')"><span class="lt">C</span><span>둘의 효율과 형상은 동일하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1204','D')"><span class="lt">D</span><span>원심류는 튼튼하고 단당 압력비가 높으나 전면적이 크고, 축류는 전면적이 작고 다단으로 높은 압력비를 얻어 대형 엔진에 유리하다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1204','A')"><span class="lt">A</span><span>축류는 단당 압력비가 높고 전면적이 크다<span class="opt-en">Axial flow has high pressure ratio per stage and large frontal area</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1204','B')"><span class="lt">B</span><span>원심류는 다단 직렬 연결로 매우 높은 압력비를 쉽게 얻는다<span class="opt-en">Centrifugal flow easily gets very high pressure ratio by series multi-staging</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1204','C')"><span class="lt">C</span><span>둘의 효율과 형상은 동일하다<span class="opt-en">Their efficiency and shape are identical</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1204','D')"><span class="lt">D</span><span>원심류는 튼튼하고 단당 압력비가 높으나 전면적이 크고, 축류는 전면적이 작고 다단으로 높은 압력비를 얻어 대형 엔진에 유리하다<span class="opt-en">Centrifugal is rugged with high per-stage ratio but large frontal area; axial has small frontal area and multi-stages for high ratio—favored on large engines</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">원심류는 구조가 튼튼하고 단당 압력비가 높지만 전면적이 크고 다단 연결이 비효율적입니다. 축류는 전면적이 작아 항력이 낮고 여러 단을 쌓아 높은 압력비를 얻어 대형·고성능 엔진에 주로 쓰입니다.</span><span class="ee">Centrifugal compressors are rugged with high pressure ratio per stage but a large frontal area and inefficient staging; axial compressors have a small frontal area (low drag) and stack many stages for high pressure ratio, favored in large, high-performance engines.</span><span class="acs-code">ACS PA.II.A.K1</span></div>
 </div>
@@ -1994,10 +1995,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1205" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">압축기 실속(compressor stall)의 근본 원인은?</span><span class="quizx-qe">What is the fundamental cause of a compressor stall?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1205','A')"><span class="lt">A</span><span>연료 압력이 너무 높을 때</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1205','B')"><span class="lt">B</span><span>압축기 블레이드의 받음각이 과도해져 공기 흐름이 블레이드에서 박리될 때</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1205','C')"><span class="lt">C</span><span>배기가스 온도가 너무 낮을 때</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1205','D')"><span class="lt">D</span><span>오일 압력이 낮을 때</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1205','A')"><span class="lt">A</span><span>연료 압력이 너무 높을 때<span class="opt-en">When fuel pressure is too high</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1205','B')"><span class="lt">B</span><span>압축기 블레이드의 받음각이 과도해져 공기 흐름이 블레이드에서 박리될 때<span class="opt-en">When compressor blade angle of attack becomes excessive and airflow separates from the blades</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1205','C')"><span class="lt">C</span><span>배기가스 온도가 너무 낮을 때<span class="opt-en">When exhaust gas temperature is too low</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1205','D')"><span class="lt">D</span><span>오일 압력이 낮을 때<span class="opt-en">When oil pressure is low</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">압축기 블레이드는 작은 날개(에어포일)입니다. 흡입 공기 흐름과 로터 속도의 불균형으로 받음각이 과도해지면 흐름이 블레이드에서 박리(실속)되어 압축이 무너집니다. VSV·블리드 밸브·다중 스풀이 이를 방지합니다.</span><span class="ee">Compressor blades are small airfoils; if an imbalance between inlet airflow and rotor speed makes the angle of attack excessive, flow separates (stalls) from the blades and compression breaks down—VSVs, bleed valves, and multiple spools prevent it.</span><span class="acs-code">ACS PA.II.A.K1</span></div>
 </div>
@@ -2005,10 +2006,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1206" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">연소실에서 1차 공기(primary air)와 2차 공기(secondary air)의 역할은?</span><span class="quizx-qe">What are the roles of primary and secondary air in the combustor?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1206','A')"><span class="lt">A</span><span>둘 다 연소에만 쓰인다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1206','B')"><span class="lt">B</span><span>1차는 냉각, 2차는 연소에 쓰인다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1206','C')"><span class="lt">C</span><span>1차 공기(약 25%)는 연료와 섞여 연소에 참여하고, 2차 공기(약 75%)는 화염을 중심에 가두고 연소실 벽·가스를 냉각한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1206','D')"><span class="lt">D</span><span>2차 공기는 압축기로 되돌아간다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1206','A')"><span class="lt">A</span><span>둘 다 연소에만 쓰인다<span class="opt-en">Both are used only for combustion</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1206','B')"><span class="lt">B</span><span>1차는 냉각, 2차는 연소에 쓰인다<span class="opt-en">Primary is for cooling, secondary for combustion</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1206','C')"><span class="lt">C</span><span>1차 공기(약 25%)는 연료와 섞여 연소에 참여하고, 2차 공기(약 75%)는 화염을 중심에 가두고 연소실 벽·가스를 냉각한다<span class="opt-en">Primary air (~25%) mixes with fuel for combustion; secondary air (~75%) centers the flame and cools the liner/gas</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1206','D')"><span class="lt">D</span><span>2차 공기는 압축기로 되돌아간다<span class="opt-en">Secondary air returns to the compressor</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">1차 공기는 약 25%로 연료와 혼합해 연소를 지원하고, 2차(희석) 공기는 약 75%로 화염을 라이너 중심에 가두며 연소 가스와 라이너 벽을 냉각해 터빈이 견딜 온도로 낮춥니다.</span><span class="ee">Primary air (~25%) mixes with fuel to support combustion, while secondary (dilution) air (~75%) centers the flame in the liner and cools the gases and liner walls to a temperature the turbine can tolerate.</span><span class="acs-code">ACS PA.II.A.K1</span></div>
 </div>
@@ -2016,10 +2017,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1207" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">터빈 노즐 가이드 베인(디퓨저/노즐)이 터빈 로터 앞에서 하는 역할은?</span><span class="quizx-qe">What do the turbine nozzle guide vanes do ahead of the turbine rotor?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1207','A')"><span class="lt">A</span><span>가스를 가속하고 최적 각도로 방향을 잡아 터빈 블레이드에 효율적으로 부딪히게 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1207','B')"><span class="lt">B</span><span>가스를 감속시켜 압력을 높인다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1207','C')"><span class="lt">C</span><span>연료를 분사한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1207','D')"><span class="lt">D</span><span>배기 소음을 줄인다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1207','A')"><span class="lt">A</span><span>가스를 가속하고 최적 각도로 방향을 잡아 터빈 블레이드에 효율적으로 부딪히게 한다<span class="opt-en">Accelerates the gas and aims it at the optimal angle to strike the turbine blades efficiently</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1207','B')"><span class="lt">B</span><span>가스를 감속시켜 압력을 높인다<span class="opt-en">Decelerates the gas to raise pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1207','C')"><span class="lt">C</span><span>연료를 분사한다<span class="opt-en">Injects fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1207','D')"><span class="lt">D</span><span>배기 소음을 줄인다<span class="opt-en">Reduces exhaust noise</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터빈 노즐(가이드 베인)은 수렴 통로로 연소 가스를 가속하고, 터빈 로터 블레이드에 최적 받음각으로 향하도록 흐름 방향을 정렬해 에너지 추출 효율을 높입니다.</span><span class="ee">The turbine nozzle (guide vanes) forms convergent passages that accelerate the combustion gas and align its direction to strike the rotor blades at the optimum angle for efficient energy extraction.</span><span class="acs-code">ACS PA.II.A.K1</span></div>
 </div>
@@ -2027,10 +2028,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1208" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q8</span><span class="quizx-qtext"><span class="quizx-qk">터빈 블레이드의 '크리프(creep)'란 무엇인가?</span><span class="quizx-qe">What is turbine blade creep?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1208','A')"><span class="lt">A</span><span>블레이드 표면의 부식</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1208','B')"><span class="lt">B</span><span>블레이드에 쌓이는 카본</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1208','C')"><span class="lt">C</span><span>블레이드 뿌리의 진동 균열</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1208','D')"><span class="lt">D</span><span>고온·고원심력에 장시간 노출되어 블레이드가 영구적으로 늘어나는 현상</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1208','A')"><span class="lt">A</span><span>블레이드 표면의 부식<span class="opt-en">Corrosion of the blade surface</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1208','B')"><span class="lt">B</span><span>블레이드에 쌓이는 카본<span class="opt-en">Carbon buildup on the blades</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1208','C')"><span class="lt">C</span><span>블레이드 뿌리의 진동 균열<span class="opt-en">Vibration cracks at the blade root</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1208','D')"><span class="lt">D</span><span>고온·고원심력에 장시간 노출되어 블레이드가 영구적으로 늘어나는 현상<span class="opt-en">Permanent blade elongation from prolonged exposure to high heat and centrifugal force</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">크리프는 높은 온도와 원심 하중을 오래 받은 터빈 블레이드가 서서히 영구 신장되는 현상입니다. 누적되면 블레이드 팁이 케이스에 닿을 수 있어, 블레이드 길이·간극을 검사해 관리합니다.</span><span class="ee">Creep is the gradual permanent elongation of turbine blades under prolonged high temperature and centrifugal load; if excessive, tips can contact the case, so blade length and clearances are inspected.</span><span class="acs-code">ACS PA.II.A.K3</span></div>
 </div>
@@ -2038,10 +2039,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1209" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">배기가스 온도(EGT)를 감시하는 주된 이유는?</span><span class="quizx-qe">Why is exhaust gas temperature (EGT) monitored?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1209','A')"><span class="lt">A</span><span>연료 잔량을 추정하기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1209','B')"><span class="lt">B</span><span>터빈 입구 온도를 간접 지시해 과열로부터 터빈을 보호하기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1209','C')"><span class="lt">C</span><span>객실 여압을 조절하기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1209','D')"><span class="lt">D</span><span>오일 온도를 대체하기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1209','A')"><span class="lt">A</span><span>연료 잔량을 추정하기 위해<span class="opt-en">To estimate remaining fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1209','B')"><span class="lt">B</span><span>터빈 입구 온도를 간접 지시해 과열로부터 터빈을 보호하기 위해<span class="opt-en">To indirectly indicate turbine inlet temperature and protect the turbine from overheating</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1209','C')"><span class="lt">C</span><span>객실 여압을 조절하기 위해<span class="opt-en">To regulate cabin pressurization</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1209','D')"><span class="lt">D</span><span>오일 온도를 대체하기 위해<span class="opt-en">To substitute for oil temperature</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터빈 입구 온도(TIT)는 직접 측정이 어려워, 하류의 EGT로 간접 지시합니다. EGT는 터빈이 견딜 수 있는 최고 온도의 지표이므로, 한계 초과 시 터빈 손상을 막기 위해 감시합니다.</span><span class="ee">Turbine inlet temperature is hard to measure directly, so downstream EGT indicates it; EGT reflects the limit the turbine can tolerate, so it is monitored to prevent turbine damage when exceeded.</span><span class="acs-code">ACS PA.II.A.K2</span></div>
 </div>
@@ -2049,10 +2050,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1210" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q10</span><span class="quizx-qk">터빈 엔진의 모듈러(modular) 구조가 정비에 주는 이점은?</span><span class="quizx-qe">What maintenance advantage does a modular turbine engine construction provide?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1210','A')"><span class="lt">A</span><span>연료 소비를 줄인다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1210','B')"><span class="lt">B</span><span>추력을 증가시킨다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1210','C')"><span class="lt">C</span><span>손상된 모듈만 개별 교체·정비할 수 있어 전체 분해 없이 정비 시간을 단축한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1210','D')"><span class="lt">D</span><span>압축기 압력비를 높인다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1210','A')"><span class="lt">A</span><span>연료 소비를 줄인다<span class="opt-en">Reduces fuel consumption</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1210','B')"><span class="lt">B</span><span>추력을 증가시킨다<span class="opt-en">Increases thrust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1210','C')"><span class="lt">C</span><span>손상된 모듈만 개별 교체·정비할 수 있어 전체 분해 없이 정비 시간을 단축한다<span class="opt-en">Lets only the damaged module be replaced/serviced individually, shortening maintenance without full disassembly</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1210','D')"><span class="lt">D</span><span>압축기 압력비를 높인다<span class="opt-en">Raises compressor pressure ratio</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">모듈러 구조는 엔진을 팬·압축기·연소·터빈 등 독립 모듈로 나눕니다. 손상된 모듈만 교체·오버홀할 수 있어 전체 엔진을 분해하지 않고 정비할 수 있고, 다운타임과 비용을 크게 줄입니다.</span><span class="ee">Modular construction divides the engine into independent modules (fan, compressor, combustor, turbine); only the affected module is replaced or overhauled without tearing down the whole engine, greatly reducing downtime and cost.</span><span class="acs-code">ACS PA.II.A.K3</span></div>
 </div>
@@ -2060,10 +2061,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1211" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">2스풀(twin-spool) 터빈 엔진에서 N1과 N2가 뜻하는 것은?</span><span class="quizx-qe">On a twin-spool turbine, what do N1 and N2 represent?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1211','A')"><span class="lt">A</span><span>연료 유량과 오일 압력</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1211','B')"><span class="lt">B</span><span>배기가스 온도와 흡기 온도</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1211','C')"><span class="lt">C</span><span>저압 스풀(N1: LP 압축기-터빈)과 고압 스풀(N2: HP 압축기-터빈)의 회전수</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1211','D')"><span class="lt">D</span><span>1번·2번 엔진의 출력</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1211','A')"><span class="lt">A</span><span>연료 유량과 오일 압력<span class="opt-en">Fuel flow and oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1211','B')"><span class="lt">B</span><span>배기가스 온도와 흡기 온도<span class="opt-en">Exhaust gas temperature and intake temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1211','C')"><span class="lt">C</span><span>저압 스풀(N1: LP 압축기-터빈)과 고압 스풀(N2: HP 압축기-터빈)의 회전수<span class="opt-en">Speeds of the low-pressure spool (N1: LP compressor-turbine) and high-pressure spool (N2: HP compressor-turbine)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1211','D')"><span class="lt">D</span><span>1번·2번 엔진의 출력<span class="opt-en">Output of engines No. 1 and No. 2</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">2스풀 엔진은 독립적으로 회전하는 두 축을 갖습니다. N1은 저압(LP) 스풀—LP 압축기와 이를 구동하는 LP 터빈—의 회전수이고, N2는 고압(HP) 스풀의 회전수입니다. 두 스풀은 서로 다른 최적 속도로 돌며 기계적으로 연결돼 있지 않습니다.</span><span class="ee">A twin-spool engine has two independently rotating shafts: N1 is the speed of the low-pressure (LP) spool—the LP compressor and the LP turbine driving it—and N2 is the high-pressure (HP) spool speed; the spools turn at different optimal speeds and are not mechanically linked.</span><span class="acs-code">ACS PA.I.A.K2</span></div>
 </div>
@@ -2071,10 +2072,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1212" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">압축기 '서지(surge)/스톨(stall)'이란 무엇이며 무엇을 위협하는가?</span><span class="quizx-qe">What is compressor surge/stall and what does it threaten?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1212','A')"><span class="lt">A</span><span>오일 압력 상승 현상</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1212','B')"><span class="lt">B</span><span>압축기 블레이드의 받음각이 과대해져 실속하며 공기 흐름이 무너지는 것으로, 진동·과열·손상을 유발한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1212','C')"><span class="lt">C</span><span>정상적 순항 상태</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1212','D')"><span class="lt">D</span><span>연료 절약 모드</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1212','A')"><span class="lt">A</span><span>오일 압력 상승 현상<span class="opt-en">A rise in oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1212','B')"><span class="lt">B</span><span>압축기 블레이드의 받음각이 과대해져 실속하며 공기 흐름이 무너지는 것으로, 진동·과열·손상을 유발한다<span class="opt-en">Compressor blades stall from excessive angle of attack, collapsing airflow and causing vibration/overheating/damage</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1212','C')"><span class="lt">C</span><span>정상적 순항 상태<span class="opt-en">A normal cruise condition</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1212','D')"><span class="lt">D</span><span>연료 절약 모드<span class="opt-en">A fuel-saving mode</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">압축기 스톨/서지는 블레이드 받음각이 과대해져 실속하면서 축류 공기 흐름이 무너지고 심하면 역류하는 현상입니다. 급가속·손상·오염·흡기 왜곡 등이 유발하며, 진동·굉음·EGT 급등·과열·블레이드 손상을 부릅니다. VSV·블리드 밸브·2스풀 구성이 이를 방지합니다.</span><span class="ee">Compressor stall/surge occurs when blade angle of attack becomes excessive and the blades stall, collapsing the axial airflow and, if severe, reversing it; caused by rapid acceleration, damage, fouling, or inlet distortion, it produces vibration, bangs, EGT spikes, overheating, and blade damage—prevented by VSVs, bleed valves, and multi-spool design.</span><span class="acs-code">ACS PA.I.A.K2</span></div>
 </div>
@@ -2082,10 +2083,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1213" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">가변 정익(VSV)과 블리드(스타트) 밸브가 압축기 스톨을 방지하는 원리는?</span><span class="quizx-qe">How do variable stator vanes (VSV) and bleed valves prevent compressor stall?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1213','A')"><span class="lt">A</span><span>VSV는 정익 각도를 조절해 받음각을 적정 유지하고, 블리드 밸브는 저속·시동 시 중간단 공기를 빼내 앞단의 흐름 막힘을 완화한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1213','B')"><span class="lt">B</span><span>연료를 더 넣는다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1213','C')"><span class="lt">C</span><span>오일을 냉각한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1213','D')"><span class="lt">D</span><span>배기 노즐을 닫는다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1213','A')"><span class="lt">A</span><span>VSV는 정익 각도를 조절해 받음각을 적정 유지하고, 블리드 밸브는 저속·시동 시 중간단 공기를 빼내 앞단의 흐름 막힘을 완화한다<span class="opt-en">VSVs adjust vane angle to keep proper angle of attack; bleed valves dump mid-stage air at low speed/start to relieve front-stage choking</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1213','B')"><span class="lt">B</span><span>연료를 더 넣는다<span class="opt-en">Add more fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1213','C')"><span class="lt">C</span><span>오일을 냉각한다<span class="opt-en">Cool the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1213','D')"><span class="lt">D</span><span>배기 노즐을 닫는다<span class="opt-en">Close the exhaust nozzle</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">저속·시동 시 앞단과 뒷단의 공기 유량이 맞지 않아 스톨이 잘 생깁니다. VSV(가변 정익)는 정익 각도를 회전수에 맞게 조절해 블레이드 받음각을 적정하게 유지하고, 블리드(스타트) 밸브는 중간단 공기를 방출해 앞단의 흐름 막힘(초킹)을 완화함으로써 스톨을 방지합니다.</span><span class="ee">At low speed/start, front and rear stage airflows mismatch and stall easily; VSVs adjust stator vane angle with rpm to keep blade angle of attack proper, while bleed (start) valves dump mid-stage air to relieve front-stage choking, together preventing stall.</span><span class="acs-code">ACS PA.I.A.K2</span></div>
 </div>
@@ -2093,10 +2094,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1214" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">터빈 엔진 연소실 형식으로 옳게 짝지어진 것은?</span><span class="quizx-qe">Which correctly lists turbine combustor types?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1214','A')"><span class="lt">A</span><span>웻섬프·드라이섬프·복합형</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1214','B')"><span class="lt">B</span><span>캐스케이드·클램셸·버킷</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1214','C')"><span class="lt">C</span><span>웻·드라이·리치</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1214','D')"><span class="lt">D</span><span>캔형(can)·애뉼러형(annular)·캔-애뉼러형(can-annular)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1214','A')"><span class="lt">A</span><span>웻섬프·드라이섬프·복합형<span class="opt-en">Wet-sump, dry-sump, hybrid</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1214','B')"><span class="lt">B</span><span>캐스케이드·클램셸·버킷<span class="opt-en">Cascade, clamshell, bucket</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1214','C')"><span class="lt">C</span><span>웻·드라이·리치<span class="opt-en">Wet, dry, rich</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1214','D')"><span class="lt">D</span><span>캔형(can)·애뉼러형(annular)·캔-애뉼러형(can-annular)<span class="opt-en">Can, annular, and can-annular</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터빈 연소실은 캔형(개별 연소통), 애뉼러형(단일 환형 연소실), 캔-애뉼러형(환형 케이스 안에 개별 라이너)으로 나뉩니다. 애뉼러형은 가볍고 효율적이며 현대 엔진에 흔하고, 캔형은 정비·검사가 쉬운 특징이 있습니다.</span><span class="ee">Turbine combustors are can (individual burner cans), annular (a single ring-shaped chamber), and can-annular (individual liners within an annular case); annular types are light and efficient and common on modern engines, while can types are easier to maintain and inspect.</span><span class="acs-code">ACS PA.I.A.K2</span></div>
 </div>
@@ -2104,10 +2105,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1215" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">터빈 점화 계통의 '이그나이터(igniter)'가 왕복엔진 점화 플러그와 다른 점은?</span><span class="quizx-qe">How does a turbine igniter differ from a reciprocating spark plug?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1215','A')"><span class="lt">A</span><span>차이가 없다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1215','B')"><span class="lt">B</span><span>훨씬 높은 에너지의 스파크를 시동 시에만 간헐적으로 방출하며, 점화 후에는 연속 연소라 꺼진다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1215','C')"><span class="lt">C</span><span>매 사이클마다 점화한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1215','D')"><span class="lt">D</span><span>연료를 분사한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1215','A')"><span class="lt">A</span><span>차이가 없다<span class="opt-en">There is no difference</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1215','B')"><span class="lt">B</span><span>훨씬 높은 에너지의 스파크를 시동 시에만 간헐적으로 방출하며, 점화 후에는 연속 연소라 꺼진다<span class="opt-en">Discharges a much higher-energy spark only intermittently at start, then turns off since combustion is continuous</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1215','C')"><span class="lt">C</span><span>매 사이클마다 점화한다<span class="opt-en">Fires every cycle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1215','D')"><span class="lt">D</span><span>연료를 분사한다<span class="opt-en">Injects fuel</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터빈 이그나이터는 익사이터에서 축적한 고에너지를 강력한 스파크로 방출해 시동 시 연료-공기를 점화합니다. 왕복엔진 플러그가 매 사이클 점화하는 것과 달리, 터빈은 일단 라이트오프되면 연속 연소가 자립하므로 이그나이터를 끕니다(악천후·착빙 시 연속 점화 사용).</span><span class="ee">A turbine igniter discharges high energy stored in an exciter as a powerful spark to light the fuel-air at start; unlike a recip plug that fires every cycle, a turbine sustains continuous combustion once lit, so the igniter is turned off (continuous ignition is used in bad weather or icing).</span><span class="acs-code">ACS PA.II.E.K2</span></div>
 </div>
@@ -2115,10 +2116,10 @@ body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 <div class="quizx-card" id="qz_1216" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">터빈 엔진 '워터워시(water wash)/컴프레서 워시'를 수행하는 목적은?</span><span class="quizx-qe">What is the purpose of a turbine engine water wash (compressor wash)?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_1216','A')"><span class="lt">A</span><span>연료를 절약하려고</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1216','B')"><span class="lt">B</span><span>오일을 교환하려고</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1216','C')"><span class="lt">C</span><span>압축기 블레이드에 쌓인 오염물(염분·먼지·오일)을 씻어 효율·EGT 마진을 회복하고 부식을 줄이려고</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_1216','D')"><span class="lt">D</span><span>배기 소음을 줄이려고</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1216','A')"><span class="lt">A</span><span>연료를 절약하려고<span class="opt-en">To save fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1216','B')"><span class="lt">B</span><span>오일을 교환하려고<span class="opt-en">To change the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1216','C')"><span class="lt">C</span><span>압축기 블레이드에 쌓인 오염물(염분·먼지·오일)을 씻어 효율·EGT 마진을 회복하고 부식을 줄이려고<span class="opt-en">To wash fouling (salt/dust/oil) off compressor blades, restoring efficiency/EGT margin and reducing corrosion</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_1216','D')"><span class="lt">D</span><span>배기 소음을 줄이려고<span class="opt-en">To reduce exhaust noise</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">압축기 블레이드에 염분·먼지·오일이 쌓이면 공력 성능이 떨어져 효율 저하·EGT 상승·출력 감소가 생깁니다. 워터워시는 승인된 세정수(필요 시 세제)를 분무해 오염을 제거함으로써 압축기 효율과 EGT 마진을 회복하고, 특히 해안·먼지 환경의 부식을 줄입니다. 제조사 절차·간격을 따릅니다.</span><span class="ee">Salt, dust, and oil buildup on compressor blades degrade aerodynamic performance, lowering efficiency and raising EGT with less power; a water wash sprays approved fluid (with detergent if needed) to remove the fouling, restoring compressor efficiency and EGT margin and reducing corrosion—especially in coastal/dusty environments—per manufacturer procedures and intervals.</span><span class="acs-code">ACS PA.I.A.K2</span></div>
 </div>
