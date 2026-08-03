@@ -2257,6 +2257,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 .quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
 .quizx-opt.wrong .lt{color:#F87171;}
 .quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt .opt-en{display:block;margin-top:3px;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.4;}
 .quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
 .quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
   background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
@@ -2283,10 +2284,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_301" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">'얼터네이트 에어(alternate air)' 도어의 목적은?</span><span class="quizx-qe">What is the purpose of an alternate air door?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_301','A')"><span class="lt">A</span><span>배기 가스를 재순환한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_301','B')"><span class="lt">B</span><span>연료를 가열한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_301','C')"><span class="lt">C</span><span>흡기 필터·에어 인테이크가 막히면 여과되지 않은 대체 공기(보통 가온된 엔진실 공기)를 엔진에 공급한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_301','D')"><span class="lt">D</span><span>객실을 여압한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_301','A')"><span class="lt">A</span><span>배기 가스를 재순환한다<span class="opt-en">Recirculates exhaust gas</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_301','B')"><span class="lt">B</span><span>연료를 가열한다<span class="opt-en">Heats the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_301','C')"><span class="lt">C</span><span>흡기 필터·에어 인테이크가 막히면 여과되지 않은 대체 공기(보통 가온된 엔진실 공기)를 엔진에 공급한다<span class="opt-en">Supplies unfiltered alternate air (usually warm engine-bay air) when the filter/intake is blocked</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_301','D')"><span class="lt">D</span><span>객실을 여압한다<span class="opt-en">Pressurizes the cabin</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">얼터네이트 에어는 주 흡기(필터·인테이크)가 얼음·이물로 막혔을 때 여과되지 않은 대체 공기를 엔진으로 보내 출력 상실을 막습니다. 연료분사기의 얼터네이트 에어는 기화기 히트에 대응하는 역할입니다.</span><span class="ee">Alternate air supplies unfiltered replacement air to the engine when the main induction (filter/intake) is blocked by ice or debris, preventing power loss; on injected engines it serves the role carburetor heat does on carbureted ones.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
@@ -2294,10 +2295,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_302" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">기화기 공기 온도(CAT) 게이지가 정비·운용에 유용한 이유는?</span><span class="quizx-qe">Why is a carburetor air temperature (CAT) gauge useful?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_302','A')"><span class="lt">A</span><span>오일 온도를 표시한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_302','B')"><span class="lt">B</span><span>기화기 결빙이 발생하기 쉬운 온도 범위를 감시하고 카뷰레터 히트 사용을 판단하게 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_302','C')"><span class="lt">C</span><span>배기가스 온도를 표시한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_302','D')"><span class="lt">D</span><span>연료 압력을 표시한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_302','A')"><span class="lt">A</span><span>오일 온도를 표시한다<span class="opt-en">Displays oil temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_302','B')"><span class="lt">B</span><span>기화기 결빙이 발생하기 쉬운 온도 범위를 감시하고 카뷰레터 히트 사용을 판단하게 한다<span class="opt-en">Monitors the icing-prone temperature range to guide use of carburetor heat</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_302','C')"><span class="lt">C</span><span>배기가스 온도를 표시한다<span class="opt-en">Displays exhaust gas temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_302','D')"><span class="lt">D</span><span>연료 압력을 표시한다<span class="opt-en">Displays fuel pressure</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">CAT 게이지는 기화기 입구 공기 온도를 표시합니다. 결빙 위험 온도 범위(대략 결빙 밴드)를 감시해 조종사가 카뷰레터 히트를 적절히 사용하고, 과열(디토네이션 위험)도 피하도록 돕습니다.</span><span class="ee">The CAT gauge shows carburetor inlet air temperature; monitoring the icing-risk band helps the pilot apply carburetor heat appropriately and also avoid excessive heat that risks detonation.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
@@ -2305,10 +2306,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_303" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">슈퍼차저(supercharger)와 터보차저(turbocharger)의 구동 방식 차이는?</span><span class="quizx-qe">How do a supercharger and turbocharger differ in how they are driven?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_303','A')"><span class="lt">A</span><span>둘 다 배기로 구동된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_303','B')"><span class="lt">B</span><span>둘 다 크랭크축으로 구동된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_303','C')"><span class="lt">C</span><span>슈퍼차저는 전기로, 터보차저는 오일로 구동된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_303','D')"><span class="lt">D</span><span>슈퍼차저는 크랭크축(기어)으로 기계 구동, 터보차저는 배기가스로 터빈을 돌려 구동한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_303','A')"><span class="lt">A</span><span>둘 다 배기로 구동된다<span class="opt-en">Both are exhaust-driven</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_303','B')"><span class="lt">B</span><span>둘 다 크랭크축으로 구동된다<span class="opt-en">Both are crankshaft-driven</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_303','C')"><span class="lt">C</span><span>슈퍼차저는 전기로, 터보차저는 오일로 구동된다<span class="opt-en">The supercharger is electric, the turbocharger oil-driven</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_303','D')"><span class="lt">D</span><span>슈퍼차저는 크랭크축(기어)으로 기계 구동, 터보차저는 배기가스로 터빈을 돌려 구동한다<span class="opt-en">A supercharger is mechanically gear-driven from the crankshaft; a turbocharger is driven by exhaust gas spinning a turbine</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">슈퍼차저는 크랭크축에서 기어로 기계 구동되어 엔진 출력을 소비합니다. 터보차저는 버려지는 배기가스 에너지로 터빈-압축기를 돌려 흡기를 가압하므로 더 효율적입니다. 둘 다 고고도에서 매니폴드 압력을 회복시킵니다.</span><span class="ee">A supercharger is mechanically gear-driven from the crankshaft, consuming engine power, while a turbocharger uses otherwise-wasted exhaust energy to spin a turbine-compressor, making it more efficient; both restore manifold pressure at altitude.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -2316,10 +2317,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_304" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">터보차저 계통에서 웨이스트게이트(wastegate)의 역할은?</span><span class="quizx-qe">What is the role of the wastegate in a turbocharger system?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_304','A')"><span class="lt">A</span><span>배기가스 일부를 터빈으로 보내거나 우회시켜 터보 속도(부스트)를 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_304','B')"><span class="lt">B</span><span>연료를 계량한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_304','C')"><span class="lt">C</span><span>오일을 여과한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_304','D')"><span class="lt">D</span><span>점화 타이밍을 조절한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_304','A')"><span class="lt">A</span><span>배기가스 일부를 터빈으로 보내거나 우회시켜 터보 속도(부스트)를 조절한다<span class="opt-en">Routes exhaust to or bypasses the turbine to control turbo speed (boost)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_304','B')"><span class="lt">B</span><span>연료를 계량한다<span class="opt-en">Meters fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_304','C')"><span class="lt">C</span><span>오일을 여과한다<span class="opt-en">Filters oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_304','D')"><span class="lt">D</span><span>점화 타이밍을 조절한다<span class="opt-en">Sets ignition timing</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">웨이스트게이트는 배기가스를 터빈으로 얼마나 보낼지(또는 우회시킬지)를 조절하는 밸브입니다. 닫히면 더 많은 배기가 터빈을 돌려 부스트가 오르고, 열리면 배기를 우회해 부스트가 내려갑니다. 컨트롤러가 이를 자동 조절해 과급을 관리합니다.</span><span class="ee">The wastegate is a valve that controls how much exhaust goes to (or bypasses) the turbine: closing it sends more exhaust to spin the turbine for higher boost, opening it bypasses exhaust to lower boost, with a controller managing it automatically.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -2327,10 +2328,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_305" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">왕복엔진 배기 계통 검사에서 특히 중요한 안전 점검 항목은?</span><span class="quizx-qe">What is an especially important safety check when inspecting a reciprocating exhaust system?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_305','A')"><span class="lt">A</span><span>배기관 색상만 확인</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_305','B')"><span class="lt">B</span><span>배기음 크기만 확인</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_305','C')"><span class="lt">C</span><span>배기 누설·균열, 특히 히트 머프(heat muff) 부위 균열로 인한 배기가스(CO)의 객실 유입 위험</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_305','D')"><span class="lt">D</span><span>배기관 무게</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_305','A')"><span class="lt">A</span><span>배기관 색상만 확인<span class="opt-en">Check exhaust pipe color only</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_305','B')"><span class="lt">B</span><span>배기음 크기만 확인<span class="opt-en">Check exhaust sound level only</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_305','C')"><span class="lt">C</span><span>배기 누설·균열, 특히 히트 머프(heat muff) 부위 균열로 인한 배기가스(CO)의 객실 유입 위험<span class="opt-en">Exhaust leaks/cracks—especially heat-muff cracks admitting CO (carbon monoxide) into the cabin</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_305','D')"><span class="lt">D</span><span>배기관 무게<span class="opt-en">Exhaust pipe weight</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">배기 균열·누설은 화재 위험과 함께, 히트 머프(캐빈 히트용 열교환기) 부위 균열 시 일산화탄소(CO)가 객실로 유입돼 승무원 중독을 일으킬 수 있어 매우 위험합니다. 균열·이완·변색·배기 흔적을 면밀히 검사합니다.</span><span class="ee">Exhaust cracks/leaks pose a fire risk and, at the heat muff (cabin-heat heat exchanger), can admit carbon monoxide into the cabin and poison occupants—so inspect carefully for cracks, looseness, discoloration, and exhaust trails.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -2338,10 +2339,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_306" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">터보팬·터보프롭에서 역추력장치(thrust reverser)의 목적은?</span><span class="quizx-qe">What is the purpose of a thrust reverser on a turbofan/turboprop?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_306','A')"><span class="lt">A</span><span>이륙 추력을 증가시킨다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_306','B')"><span class="lt">B</span><span>착륙 후 배기·팬 기류를 전방으로 편향시켜 감속을 도와 제동거리를 줄인다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_306','C')"><span class="lt">C</span><span>연료를 절약한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_306','D')"><span class="lt">D</span><span>객실을 여압한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_306','A')"><span class="lt">A</span><span>이륙 추력을 증가시킨다<span class="opt-en">Increases takeoff thrust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_306','B')"><span class="lt">B</span><span>착륙 후 배기·팬 기류를 전방으로 편향시켜 감속을 도와 제동거리를 줄인다<span class="opt-en">Deflects exhaust/fan airflow forward after landing to aid deceleration and shorten stopping distance</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_306','C')"><span class="lt">C</span><span>연료를 절약한다<span class="opt-en">Saves fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_306','D')"><span class="lt">D</span><span>객실을 여압한다<span class="opt-en">Pressurizes the cabin</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">역추력장치는 착륙(또는 이륙 중단) 후 배기·팬 기류를 전방으로 편향시켜 역방향 힘을 만들어 감속을 돕습니다. 브레이크·타이어 마모를 줄이고 젖은·짧은 활주로에서 제동거리를 단축합니다. 캐스케이드식·클램셸(버킷)식이 있습니다.</span><span class="ee">A thrust reverser deflects exhaust/fan airflow forward after landing (or a rejected takeoff) to create a rearward-opposing force that aids deceleration, reducing brake/tire wear and stopping distance on wet or short runways; types include cascade and clamshell (bucket).</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -2349,10 +2350,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_307" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">터빈 배기 소음 억제(노이즈 서프레션)의 기본 원리는?</span><span class="quizx-qe">What is the basic principle of turbine exhaust noise suppression?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_307','A')"><span class="lt">A</span><span>배기 온도를 높인다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_307','B')"><span class="lt">B</span><span>배기 속도를 크게 높인다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_307','C')"><span class="lt">C</span><span>배기를 한 점에 집중시킨다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_307','D')"><span class="lt">D</span><span>고속 배기와 주위 공기의 급격한 속도차(전단)를 줄이고 혼합을 촉진해 저주파 소음을 줄인다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_307','A')"><span class="lt">A</span><span>배기 온도를 높인다<span class="opt-en">Raises exhaust temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_307','B')"><span class="lt">B</span><span>배기 속도를 크게 높인다<span class="opt-en">Greatly increases exhaust velocity</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_307','C')"><span class="lt">C</span><span>배기를 한 점에 집중시킨다<span class="opt-en">Concentrates exhaust at one point</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_307','D')"><span class="lt">D</span><span>고속 배기와 주위 공기의 급격한 속도차(전단)를 줄이고 혼합을 촉진해 저주파 소음을 줄인다<span class="opt-en">Reduces the sharp velocity difference (shear) between fast exhaust and surrounding air and promotes mixing to cut low-frequency noise</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">제트 소음은 고속 배기가 정지된 대기와 만나 생기는 급격한 전단·난류에서 발생합니다. 소음 억제는 로브·튜브형 믹서나 고바이패스로 배기와 주위 공기의 속도차를 줄이고 혼합을 촉진해, 특히 저주파 소음을 줄입니다.</span><span class="ee">Jet noise comes from the violent shear/turbulence where high-velocity exhaust meets still air; suppression uses lobed/multi-tube mixers or high bypass to reduce the velocity difference and promote mixing, cutting especially low-frequency noise.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -2360,10 +2361,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_308" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q8</span><span class="quizx-qtext"><span class="quizx-qk">터보차저 장착 엔진에서 '인터쿨러(intercooler)'의 기능은?</span><span class="quizx-qe">What does an intercooler do on a turbocharged engine?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_308','A')"><span class="lt">A</span><span>압축으로 뜨거워진 흡기를 냉각해 밀도를 높이고 디토네이션 위험을 낮춘다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_308','B')"><span class="lt">B</span><span>오일을 냉각한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_308','C')"><span class="lt">C</span><span>배기를 냉각한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_308','D')"><span class="lt">D</span><span>연료를 가열한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_308','A')"><span class="lt">A</span><span>압축으로 뜨거워진 흡기를 냉각해 밀도를 높이고 디토네이션 위험을 낮춘다<span class="opt-en">Cools the compression-heated charge to raise density and lower detonation risk</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_308','B')"><span class="lt">B</span><span>오일을 냉각한다<span class="opt-en">Cools the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_308','C')"><span class="lt">C</span><span>배기를 냉각한다<span class="opt-en">Cools the exhaust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_308','D')"><span class="lt">D</span><span>연료를 가열한다<span class="opt-en">Heats the fuel</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터보차저가 흡기를 압축하면 온도가 올라 밀도가 떨어지고 디토네이션 위험이 커집니다. 인터쿨러(공랭 열교환기)는 압축된 흡기를 실린더 유입 전에 냉각해 밀도(출력)를 높이고 디토네이션 여유를 확보합니다.</span><span class="ee">Turbocharging heats the induction air, lowering density and raising detonation risk; the intercooler (an air-to-air heat exchanger) cools the compressed charge before the cylinders to raise density (power) and improve detonation margin.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -2371,10 +2372,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_309" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">'터보 래그(turbo lag)'와 '부트스트래핑(bootstrapping)'에 관한 설명으로 옳은 것은?</span><span class="quizx-qe">Which correctly describes turbo lag and bootstrapping?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_309','A')"><span class="lt">A</span><span>둘 다 정상 순항의 바람직한 특성이다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_309','B')"><span class="lt">B</span><span>래그는 부스트 반응 지연, 부트스트래핑은 웨이스트게이트가 조절 범위 밖일 때 매니폴드 압력이 스스로 오르내리는 불안정 현상</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_309','C')"><span class="lt">C</span><span>둘 다 연료 누설을 뜻한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_309','D')"><span class="lt">D</span><span>둘 다 점화 계통 고장이다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_309','A')"><span class="lt">A</span><span>둘 다 정상 순항의 바람직한 특성이다<span class="opt-en">Both are desirable traits of normal cruise</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_309','B')"><span class="lt">B</span><span>래그는 부스트 반응 지연, 부트스트래핑은 웨이스트게이트가 조절 범위 밖일 때 매니폴드 압력이 스스로 오르내리는 불안정 현상<span class="opt-en">Lag is delayed boost response; bootstrapping is unstable self-cycling of manifold pressure when the wastegate is outside its range</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_309','C')"><span class="lt">C</span><span>둘 다 연료 누설을 뜻한다<span class="opt-en">Both mean fuel leakage</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_309','D')"><span class="lt">D</span><span>둘 다 점화 계통 고장이다<span class="opt-en">Both are ignition faults</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터보 래그는 스로틀 조작 후 터보가 가속해 부스트가 형성되기까지의 지연입니다. 부트스트래핑은 웨이스트게이트가 유효 조절 범위를 벗어난 저출력 등에서 매니폴드 압력이 스스로 오르내리는 불안정한 진동으로, 조종사가 스로틀을 부드럽게 다뤄 완화합니다.</span><span class="ee">Turbo lag is the delay before boost builds after a throttle change; bootstrapping is an unstable self-cycling of manifold pressure when the wastegate is outside its effective control range (e.g., low power), mitigated by smooth throttle handling.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
 </div>
@@ -2382,15 +2383,80 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_310" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q10</span><span class="quizx-qk">왕복엔진 흡기 계통의 공기 필터가 막히면 나타나는 영향은?</span><span class="quizx-qe">What is the effect of a clogged induction air filter on a reciprocating engine?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_310','A')"><span class="lt">A</span><span>출력이 증가한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_310','B')"><span class="lt">B</span><span>아무 영향이 없다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_310','C')"><span class="lt">C</span><span>흡기 제한으로 체적효율·출력이 떨어지고 혼합기가 농후해질 수 있다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_310','D')"><span class="lt">D</span><span>오일 압력이 오른다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_310','A')"><span class="lt">A</span><span>출력이 증가한다<span class="opt-en">Power increases</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_310','B')"><span class="lt">B</span><span>아무 영향이 없다<span class="opt-en">No effect at all</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_310','C')"><span class="lt">C</span><span>흡기 제한으로 체적효율·출력이 떨어지고 혼합기가 농후해질 수 있다<span class="opt-en">Intake restriction lowers volumetric efficiency and power and can richen the mixture</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_310','D')"><span class="lt">D</span><span>오일 압력이 오른다<span class="opt-en">Oil pressure rises</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">막힌 필터는 흡입 공기를 제한해 체적효율과 출력을 떨어뜨리고, 공기량 감소로 혼합기가 농후해질 수 있습니다(기화기 계통). 그래서 필터 청결 유지와 막힘 시 얼터네이트 에어 확보가 중요합니다.</span><span class="ee">A clogged filter restricts intake air, lowering volumetric efficiency and power, and can richen the mixture from reduced airflow (in carbureted systems)—so keeping filters clean and having alternate air available matters.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
 </div>
 
-<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">10</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
+<div class="quizx-card" id="qz_311" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">기화기 결빙 중 '스로틀 아이싱(throttle icing)'이 가장 잘 생기는 조건은?</span><span class="quizx-qe">Under what condition is throttle (carburetor) icing most likely?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_311','A')"><span class="lt">A</span><span>매우 춥고 건조한 날, 전개 스로틀<span class="opt-en">Very cold, dry day at full throttle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_311','B')"><span class="lt">B</span><span>기온이 온화하고 습도가 높은 날, 부분 스로틀(순항·강하)<span class="opt-en">Mild, humid day at partial throttle (cruise/descent)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_311','C')"><span class="lt">C</span><span>사막 같은 저습 환경<span class="opt-en">Low-humidity environment like a desert</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_311','D')"><span class="lt">D</span><span>결빙은 온도와 무관하다<span class="opt-en">Icing is independent of temperature</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">기화기 결빙은 벤투리 압력 강하와 연료 기화 잠열로 공기가 최대 약 20°C까지 냉각되며 생깁니다. 그래서 습도가 높고 기온이 온화한(영상) 날, 부분 스로틀(순항·강하)에서 스로틀 판 주변에 얼음이 특히 잘 낍니다.</span><span class="ee">Carburetor icing forms as venturi pressure drop and fuel-vaporization cooling chill the air by up to ~20°C, so it is most likely on humid, mild (above-freezing) days at partial throttle (cruise/descent), where ice builds around the throttle plate.</span><span class="acs-code">ACS PA.II.B.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_312" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">터보차저 계통의 '컨트롤러(differential/absolute pressure controller)'가 조절하는 것은?</span><span class="quizx-qe">What does a turbocharger controller regulate?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_312','A')"><span class="lt">A</span><span>연료 혼합비<span class="opt-en">Fuel mixture</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_312','B')"><span class="lt">B</span><span>오일 등급<span class="opt-en">Oil grade</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_312','C')"><span class="lt">C</span><span>웨이스트게이트를 구동하는 오일 압력을 조절해 부스트(매니폴드 압력)를 목표값으로 유지한다<span class="opt-en">Regulates the oil pressure driving the wastegate to hold boost (manifold pressure) at target</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_312','D')"><span class="lt">D</span><span>점화 순서<span class="opt-en">Firing order</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">터보 컨트롤러는 웨이스트게이트 액추에이터로 가는 오일 압력을 조절해 웨이스트게이트 개도를, 결과적으로 부스트(매니폴드 압력)를 목표값으로 유지합니다. 절대압·차압식 등이 있으며, 고도 변화에도 설정 출력을 유지하도록 자동 보정합니다.</span><span class="ee">A turbo controller regulates the oil pressure to the wastegate actuator, setting wastegate position and thus holding boost (manifold pressure) at target; absolute- and differential-pressure types automatically compensate to maintain set power as altitude changes.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_313" data-ans="A">
+<div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">'크리티컬 알티튜드(critical altitude)'란 무엇인가?</span><span class="quizx-qe">What is critical altitude?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_313','A')"><span class="lt">A</span><span>웨이스트게이트가 완전히 닫힌 상태로 더 이상 정격 매니폴드 압력을 유지할 수 없는 최고 고도<span class="opt-en">The highest altitude at which rated manifold pressure can no longer be maintained with the wastegate fully closed</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_313','B')"><span class="lt">B</span><span>엔진이 최대 냉각되는 고도<span class="opt-en">The altitude of maximum engine cooling</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_313','C')"><span class="lt">C</span><span>연료가 어는 고도<span class="opt-en">The altitude where fuel freezes</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_313','D')"><span class="lt">D</span><span>객실 여압 한계 고도<span class="opt-en">The cabin pressurization limit altitude</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">크리티컬 알티튜드는 과급 엔진이 웨이스트게이트를 완전히 닫은 채 정격 매니폴드 압력(정격 출력)을 유지할 수 있는 최고 고도입니다. 이보다 높이 올라가면 배기 에너지가 부족해 부스트가 떨어지고 출력이 감소합니다.</span><span class="ee">Critical altitude is the highest altitude at which a turbocharged engine can maintain rated manifold pressure (rated power) with the wastegate fully closed; above it, insufficient exhaust energy causes boost and power to fall off.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_314" data-ans="D">
+<div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">배기 계통의 '오그멘터 튜브(augmentor tube)'가 하는 일은?</span><span class="quizx-qe">What does an augmentor tube in an exhaust system do?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_314','A')"><span class="lt">A</span><span>연료를 분사한다<span class="opt-en">Injects fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_314','B')"><span class="lt">B</span><span>점화 타이밍을 조절한다<span class="opt-en">Sets ignition timing</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_314','C')"><span class="lt">C</span><span>배기를 재연소한다<span class="opt-en">Re-burns exhaust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_314','D')"><span class="lt">D</span><span>배기 흐름으로 주위 냉각 공기를 빨아들여(이젝터 효과) 엔진 냉각을 보조한다<span class="opt-en">Uses exhaust flow to draw in surrounding cooling air (ejector effect) to aid engine cooling</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">오그멘터 튜브는 배기 가스를 벤투리형 튜브로 통과시켜 주위 냉각 공기를 흡입(이젝터 효과)합니다. 이렇게 유도된 공기가 엔진 냉각을 보조하고, 일부 설계는 캐빈 히트·제빙에도 이 열을 활용합니다.</span><span class="ee">An augmentor tube passes exhaust through a venturi-shaped duct to draw in surrounding cooling air (ejector effect); this induced airflow aids engine cooling, and some designs use the heat for cabin heat or anti-icing.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_315" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">캐스케이드식(cascade)과 클램셸(버킷)식 역추력장치의 차이는?</span><span class="quizx-qe">How do cascade and clamshell (bucket) thrust reversers differ?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_315','A')"><span class="lt">A</span><span>둘은 동일하다<span class="opt-en">They are identical</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_315','B')"><span class="lt">B</span><span>캐스케이드식은 블로커 도어로 팬 기류를 베인으로 편향하고(고바이패스에 흔함), 클램셸식은 배기 후방에 버킷을 펼쳐 배기류 전체를 편향한다<span class="opt-en">Cascade uses blocker doors to deflect fan air through vanes (common on high-bypass); clamshell deploys buckets aft to deflect the whole exhaust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_315','C')"><span class="lt">C</span><span>캐스케이드식만 소음을 낸다<span class="opt-en">Only cascade type makes noise</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_315','D')"><span class="lt">D</span><span>클램셸식은 팬만 편향한다<span class="opt-en">Clamshell deflects only the fan</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">캐스케이드식은 블로커 도어로 팬 덕트 기류를 막고 캐스케이드 베인으로 전방 편향하며, 대부분의 추력이 팬에서 나오는 고바이패스 터보팬에 흔합니다. 클램셸(버킷)식은 배기 노즐 뒤에 버킷 도어를 펼쳐 배기류 전체를 전방으로 편향합니다.</span><span class="ee">A cascade reverser uses blocker doors to close the fan duct and cascade vanes to deflect fan air forward—common on high-bypass turbofans where most thrust is from the fan—while a clamshell (bucket) reverser deploys bucket doors behind the nozzle to deflect the entire exhaust stream forward.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_316" data-ans="C">
+<div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">왕복엔진 배기 계통의 '히트 머프(heat muff)' 검사에서 균열을 특히 중시하는 이유는?</span><span class="quizx-qe">Why is cracking especially critical when inspecting an exhaust heat muff?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_316','A')"><span class="lt">A</span><span>소음이 커지기 때문<span class="opt-en">Because noise increases</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_316','B')"><span class="lt">B</span><span>연비가 나빠지기 때문<span class="opt-en">Because fuel economy worsens</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_316','C')"><span class="lt">C</span><span>머프 내부 배기관 균열 시 일산화탄소(CO)가 캐빈 히트 공기로 유입돼 승무원 중독을 일으킬 수 있어서<span class="opt-en">Because a crack in the muff's internal pipe can admit CO into cabin-heat air and poison occupants</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_316','D')"><span class="lt">D</span><span>배기 온도가 낮아지기 때문<span class="opt-en">Because exhaust temperature drops</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">히트 머프는 배기관을 감싸 캐빈 히트용 공기를 데우는 열교환기입니다. 내부 배기관에 균열이 생기면 일산화탄소(CO)가 가온 공기와 함께 객실로 들어가 승무원 중독을 일으킬 수 있어 매우 위험합니다. 압력·비눗물·CO 검출로 누설을 확인합니다.</span><span class="ee">A heat muff is a heat exchanger around the exhaust that warms cabin-heat air; a crack in the internal exhaust pipe lets carbon monoxide enter the cabin with the heated air and can poison occupants, so leaks are checked by pressure, soap solution, or CO detection.</span><span class="acs-code">ACS PA.II.B.K2</span></div>
+</div>
+<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">16</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
 </div>
 <script>
 (function(){
