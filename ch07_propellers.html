@@ -2772,6 +2772,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 .quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
 .quizx-opt.wrong .lt{color:#F87171;}
 .quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt .opt-en{display:block;margin-top:3px;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.4;}
 .quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
 .quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
   background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
@@ -2798,10 +2799,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_701" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">프로펠러 '블레이드 각(blade angle)'과 '피치(pitch)'의 관계로 옳은 것은?</span><span class="quizx-qe">Which correctly relates propeller blade angle and pitch?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_701','A')"><span class="lt">A</span><span>블레이드 각이 클수록 저피치가 된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_701','B')"><span class="lt">B</span><span>블레이드 각이 클수록 고피치로, 회전당 더 멀리 전진하려 하고 저RPM·고속에 적합하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_701','C')"><span class="lt">C</span><span>피치는 블레이드 각과 무관하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_701','D')"><span class="lt">D</span><span>고피치는 이륙에 가장 적합하다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_701','A')"><span class="lt">A</span><span>블레이드 각이 클수록 저피치가 된다<span class="opt-en">A larger blade angle gives lower pitch</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_701','B')"><span class="lt">B</span><span>블레이드 각이 클수록 고피치로, 회전당 더 멀리 전진하려 하고 저RPM·고속에 적합하다<span class="opt-en">A larger blade angle is higher pitch, trying to advance farther per revolution—suited to low RPM/high speed</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_701','C')"><span class="lt">C</span><span>피치는 블레이드 각과 무관하다<span class="opt-en">Pitch is unrelated to blade angle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_701','D')"><span class="lt">D</span><span>고피치는 이륙에 가장 적합하다<span class="opt-en">High pitch is best for takeoff</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">블레이드 각이 클수록 고피치입니다. 고피치는 회전당 더 멀리 전진하려 해 순항·고속에 유리하고 RPM이 낮으며, 저피치는 이륙·상승처럼 높은 RPM과 큰 추력이 필요할 때 유리합니다.</span><span class="ee">A larger blade angle is higher pitch; high pitch tries to advance farther per revolution—good for cruise/high speed at lower RPM—while low pitch suits takeoff/climb needing high RPM and thrust.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2809,10 +2810,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_702" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">정속 프로펠러(constant-speed propeller)에서 거버너(governor)의 역할은?</span><span class="quizx-qe">What does the governor do in a constant-speed propeller?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_702','A')"><span class="lt">A</span><span>연료 유량을 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_702','B')"><span class="lt">B</span><span>블레이드를 고정한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_702','C')"><span class="lt">C</span><span>플라이웨이트와 파일럿 밸브로 오일 흐름을 조절해 블레이드 각을 바꿔 설정 RPM을 유지한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_702','D')"><span class="lt">D</span><span>점화 타이밍을 맞춘다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_702','A')"><span class="lt">A</span><span>연료 유량을 조절한다<span class="opt-en">Regulates fuel flow</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_702','B')"><span class="lt">B</span><span>블레이드를 고정한다<span class="opt-en">Locks the blades</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_702','C')"><span class="lt">C</span><span>플라이웨이트와 파일럿 밸브로 오일 흐름을 조절해 블레이드 각을 바꿔 설정 RPM을 유지한다<span class="opt-en">Uses flyweights and a pilot valve to control oil flow, changing blade angle to hold the set RPM</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_702','D')"><span class="lt">D</span><span>점화 타이밍을 맞춘다<span class="opt-en">Sets ignition timing</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">거버너는 플라이웨이트와 파일럿(스풀) 밸브로 프로펠러로 가는 오일 흐름을 조절합니다. RPM이 설정값(온스피드)을 벗어나면 블레이드 각을 조절해 다시 설정 RPM을 유지합니다. 오버스피드=피치 증가, 언더스피드=피치 감소.</span><span class="ee">The governor uses flyweights and a pilot (spool) valve to control oil flow to the propeller; when RPM deviates from the on-speed setting, it changes blade angle to restore the set RPM—overspeed increases pitch, underspeed decreases it.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2820,10 +2821,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_703" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">프로펠러 '페더링(feathering)'이란 무엇이며 왜 필요한가?</span><span class="quizx-qe">What is propeller feathering and why is it needed?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_703','A')"><span class="lt">A</span><span>블레이드를 기류와 평행(약 90°)으로 세워 항력과 풍차 회전을 최소화하는 것으로, 엔진 정지 시 필요</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_703','B')"><span class="lt">B</span><span>블레이드를 최저피치로 만드는 것</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_703','C')"><span class="lt">C</span><span>역추력을 만드는 것</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_703','D')"><span class="lt">D</span><span>프로펠러를 잠그는 것</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_703','A')"><span class="lt">A</span><span>블레이드를 기류와 평행(약 90°)으로 세워 항력과 풍차 회전을 최소화하는 것으로, 엔진 정지 시 필요<span class="opt-en">Turning blades parallel to the airflow (~90°) to minimize drag and windmilling—needed when the engine stops</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_703','B')"><span class="lt">B</span><span>블레이드를 최저피치로 만드는 것<span class="opt-en">Setting blades to the lowest pitch</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_703','C')"><span class="lt">C</span><span>역추력을 만드는 것<span class="opt-en">Creating reverse thrust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_703','D')"><span class="lt">D</span><span>프로펠러를 잠그는 것<span class="opt-en">Locking the propeller</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">페더링은 블레이드를 기류와 거의 평행(약 90°)으로 세우는 것입니다. 다발기에서 엔진이 고장 나면 페더링해 프로펠러 항력과 풍차 회전(윈드밀링)을 최소화함으로써 항력·진동·추가 손상을 줄입니다.</span><span class="ee">Feathering turns the blades nearly parallel to the airflow (about 90°); on a multi-engine aircraft, feathering a failed engine's propeller minimizes drag and windmilling, reducing drag, vibration, and further damage.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2831,10 +2832,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_704" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">단발 정속 프로펠러(예: Hartzell 컴팩트)에서 블레이드를 저피치·고RPM으로 미는 힘과 고피치로 미는 힘의 일반적 배치는?</span><span class="quizx-qe">In a typical single-engine constant-speed propeller, what moves the blades to low vs high pitch?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_704','A')"><span class="lt">A</span><span>전기 모터가 양방향을 구동한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_704','B')"><span class="lt">B</span><span>수동 케이블만으로 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_704','C')"><span class="lt">C</span><span>오일 압력이 고피치, 공기압만 저피치로 민다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_704','D')"><span class="lt">D</span><span>거버너 오일 압력이 블레이드를 저피치·고RPM으로, 공기·스프링·역추력 모멘트가 고피치·저RPM(페더)으로 민다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_704','A')"><span class="lt">A</span><span>전기 모터가 양방향을 구동한다<span class="opt-en">An electric motor drives both directions</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_704','B')"><span class="lt">B</span><span>수동 케이블만으로 조절한다<span class="opt-en">Controlled only by a manual cable</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_704','C')"><span class="lt">C</span><span>오일 압력이 고피치, 공기압만 저피치로 민다<span class="opt-en">Oil pressure drives high pitch, air pressure alone drives low pitch</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_704','D')"><span class="lt">D</span><span>거버너 오일 압력이 블레이드를 저피치·고RPM으로, 공기·스프링·역추력 모멘트가 고피치·저RPM(페더)으로 민다<span class="opt-en">Governor oil pressure drives blades to low pitch/high RPM; air, spring, and counterweight moments drive high pitch/low RPM (feather)</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">일반적 단발 정속 프로펠러(Hartzell 컴팩트 등)는 거버너 오일 압력이 블레이드를 저피치·고RPM으로 밀고, 반대로 공기 압력·스프링·역추력(카운터웨이트) 모멘트가 고피치·저RPM(페더 방향)으로 밉니다. 오일 압력 상실 시 페더로 이동합니다.</span><span class="ee">In a typical single-engine constant-speed propeller, governor oil pressure drives blades to low pitch/high RPM, while air pressure, springs, and counterweight moments drive them to high pitch/low RPM (toward feather); loss of oil pressure moves them to feather.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2842,10 +2843,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_705" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">터보프롭에서 '베타 모드(beta mode)'란?</span><span class="quizx-qe">What is beta mode on a turboprop?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_705','A')"><span class="lt">A</span><span>순항 중 거버너가 자동으로 RPM을 유지하는 모드</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_705','B')"><span class="lt">B</span><span>조종사가 블레이드 각을 직접 제어하는 영역으로, 지상 활주·역추력에 사용된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_705','C')"><span class="lt">C</span><span>페더 위치를 뜻한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_705','D')"><span class="lt">D</span><span>연료 차단 모드</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_705','A')"><span class="lt">A</span><span>순항 중 거버너가 자동으로 RPM을 유지하는 모드<span class="opt-en">A mode where the governor automatically holds RPM in cruise</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_705','B')"><span class="lt">B</span><span>조종사가 블레이드 각을 직접 제어하는 영역으로, 지상 활주·역추력에 사용된다<span class="opt-en">The region where the pilot directly controls blade angle, used for ground taxi and reverse thrust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_705','C')"><span class="lt">C</span><span>페더 위치를 뜻한다<span class="opt-en">It means the feather position</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_705','D')"><span class="lt">D</span><span>연료 차단 모드<span class="opt-en">A fuel shutoff mode</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">베타 모드는 조종사가 블레이드 각을 직접 제어하는 영역으로, 지상 활주·후진·역추력(리버스)에 씁니다. 반대로 알파(비행) 모드에서는 거버너가 RPM을 자동 유지합니다. 베타 튜브가 블레이드 각 피드백을 제공합니다.</span><span class="ee">Beta mode is the region where the pilot directly controls blade angle, used for ground taxi, backing, and reverse thrust; in alpha (flight) mode the governor maintains RPM automatically, and a beta tube provides blade-angle feedback.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2853,10 +2854,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_706" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">프로펠러 블레이드 '트래킹(tracking)' 점검의 목적은?</span><span class="quizx-qe">What is the purpose of propeller blade tracking?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_706','A')"><span class="lt">A</span><span>블레이드 각을 측정한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_706','B')"><span class="lt">B</span><span>오일 누설을 찾는다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_706','C')"><span class="lt">C</span><span>각 블레이드 팁이 회전면에서 서로 규정 허용치 내로 같은 궤적을 도는지 확인해 진동·불균형을 방지한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_706','D')"><span class="lt">D</span><span>페더 작동을 시험한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_706','A')"><span class="lt">A</span><span>블레이드 각을 측정한다<span class="opt-en">Measures blade angle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_706','B')"><span class="lt">B</span><span>오일 누설을 찾는다<span class="opt-en">Finds oil leaks</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_706','C')"><span class="lt">C</span><span>각 블레이드 팁이 회전면에서 서로 규정 허용치 내로 같은 궤적을 도는지 확인해 진동·불균형을 방지한다<span class="opt-en">Verifies each blade tip follows the same path within tolerance in the plane of rotation, preventing vibration/imbalance</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_706','D')"><span class="lt">D</span><span>페더 작동을 시험한다<span class="opt-en">Tests feather operation</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">트래킹은 각 블레이드 팁이 회전면에서 서로 규정 허용치(보통 소량) 이내로 같은 궤적을 도는지 확인하는 것입니다. 트랙 불량은 진동·불균형·응력을 유발하므로, 허용치를 벗어나면 장착·블레이드를 점검합니다.</span><span class="ee">Tracking verifies that each blade tip follows the same path in the plane of rotation within a small allowable tolerance; out-of-track causes vibration, imbalance, and stress, so exceeding limits calls for inspecting the installation and blades.</span><span class="acs-code">ACS PA.II.C.K2</span></div>
 </div>
@@ -2864,10 +2865,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_707" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">알루미늄 프로펠러 블레이드 앞전의 작은 긁힘·니크(nick)를 처리하는 올바른 방법은?</span><span class="quizx-qe">How should small nicks on an aluminum propeller blade leading edge be treated?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_707','A')"><span class="lt">A</span><span>규정 한계 내에서 매끄럽게 블렌딩해 응력 집중을 제거한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_707','B')"><span class="lt">B</span><span>그대로 두고 페인트만 칠한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_707','C')"><span class="lt">C</span><span>용접으로 메운다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_707','D')"><span class="lt">D</span><span>드릴로 구멍을 낸다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_707','A')"><span class="lt">A</span><span>규정 한계 내에서 매끄럽게 블렌딩해 응력 집중을 제거한다<span class="opt-en">Blend it smooth within specified limits to remove the stress concentration</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_707','B')"><span class="lt">B</span><span>그대로 두고 페인트만 칠한다<span class="opt-en">Leave it and just paint over it</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_707','C')"><span class="lt">C</span><span>용접으로 메운다<span class="opt-en">Fill it by welding</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_707','D')"><span class="lt">D</span><span>드릴로 구멍을 낸다<span class="opt-en">Drill a hole in it</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">니크·긁힘은 응력 집중원이 되어 피로 균열로 발전할 수 있습니다. 규정 한계(깊이·폭·위치) 내에서 매끄럽게 블렌딩(파일·연마)해 응력 집중을 제거합니다. 한계를 넘거나 균열이 있으면 인가 정비 시설로 보내야 합니다.</span><span class="ee">Nicks are stress concentrators that can grow into fatigue cracks; within specified limits (depth, width, location) they are smoothly blended (filed/polished) to remove the concentration—beyond limits or with cracks, the blade goes to an authorized facility.</span><span class="acs-code">ACS PA.II.C.K2</span></div>
 </div>
@@ -2875,10 +2876,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_708" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q8</span><span class="quizx-qtext"><span class="quizx-qk">목재 프로펠러 검사에서 '수리 불가'로 판단하는 대표적 결함은?</span><span class="quizx-qe">Which is a typical non-repairable defect in a wood propeller?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_708','A')"><span class="lt">A</span><span>표면의 얕은 흠집</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_708','B')"><span class="lt">B</span><span>마감 도료의 변색</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_708','C')"><span class="lt">C</span><span>팁 페브릭의 경미한 마모</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_708','D')"><span class="lt">D</span><span>접착층 분리(디라미네이션), 데드 우드, 가로 방향 균열 등 구조적 결함</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_708','A')"><span class="lt">A</span><span>표면의 얕은 흠집<span class="opt-en">A shallow surface scratch</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_708','B')"><span class="lt">B</span><span>마감 도료의 변색<span class="opt-en">Discoloration of the finish coat</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_708','C')"><span class="lt">C</span><span>팁 페브릭의 경미한 마모<span class="opt-en">Minor wear of the tip fabric</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_708','D')"><span class="lt">D</span><span>접착층 분리(디라미네이션), 데드 우드, 가로 방향 균열 등 구조적 결함<span class="opt-en">Structural defects such as delamination, dead wood, or a crack across the blade</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">목재 프로펠러의 접착층 분리(디라미네이션), 데드 우드, 블레이드를 가로지르는 균열, 심한 뒤틀림 등은 구조적 무결성을 해쳐 수리 불가로 폐기 대상입니다. 반면 얕은 표면 흠집·마감 손상은 규정에 따라 수리할 수 있습니다.</span><span class="ee">Delamination of glue joints, dead wood, cracks across the blade, and severe warping compromise structural integrity and render a wood propeller non-repairable; shallow surface marks or finish damage, however, can be repaired per specifications.</span><span class="acs-code">ACS PA.II.C.K2</span></div>
 </div>
@@ -2886,10 +2887,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_709" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">스플라인 샤프트 프로펠러 장착에서 '콘 보터밍(cone bottoming)'이란?</span><span class="quizx-qe">What is cone bottoming in a splined-shaft propeller installation?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_709','A')"><span class="lt">A</span><span>프로펠러가 정상적으로 안착된 상태</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_709','B')"><span class="lt">B</span><span>프론트 콘이 스플라인 끝에 먼저 닿아 허브가 제대로 안착되지 못하는 부적절한 상태</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_709','C')"><span class="lt">C</span><span>블레이드 각이 맞지 않는 것</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_709','D')"><span class="lt">D</span><span>오일 압력이 낮은 것</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_709','A')"><span class="lt">A</span><span>프로펠러가 정상적으로 안착된 상태<span class="opt-en">The propeller is properly seated</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_709','B')"><span class="lt">B</span><span>프론트 콘이 스플라인 끝에 먼저 닿아 허브가 제대로 안착되지 못하는 부적절한 상태<span class="opt-en">An improper condition where the front cone contacts the spline end first, preventing the hub from seating</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_709','C')"><span class="lt">C</span><span>블레이드 각이 맞지 않는 것<span class="opt-en">The blade angle is off</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_709','D')"><span class="lt">D</span><span>오일 압력이 낮은 것<span class="opt-en">Oil pressure is low</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">콘 보터밍은 프론트 콘이 스플라인 샤프트 끝(랜드)에 먼저 닿아 리어 콘·허브가 제대로 안착되지 못하는 상태입니다. 이러면 프로펠러가 헐거워지고 진동·손상을 유발하므로, 콘 접촉·안착을 확인(블루잉 체크 등)하고 스페이서로 교정합니다.</span><span class="ee">Cone bottoming is when the front cone contacts the end (land) of the splined shaft first, preventing the rear cone/hub from seating properly; this loosens the propeller and causes vibration, so cone seating is checked (bluing) and corrected with a spacer.</span><span class="acs-code">ACS PA.II.C.K2</span></div>
 </div>
@@ -2897,10 +2898,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_710" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q10</span><span class="quizx-qk">프로펠러 검사·정비를 수행하고 승인 복귀시킬 수 있는 인가 정비 인원에 대한 설명으로 옳은 것은?</span><span class="quizx-qe">Which is correct about who may inspect, maintain, and return a propeller to service?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_710','A')"><span class="lt">A</span><span>누구나 제한 없이 가능하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_710','B')"><span class="lt">B</span><span>조종사만 가능하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_710','C')"><span class="lt">C</span><span>작업 범위에 따라 적절한 자격(A&P, IA, 인가 수리소)이 있어야 하며, 주요 수리·개조는 더 높은 인가가 필요하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_710','D')"><span class="lt">D</span><span>제조사만 어떤 작업이든 가능하다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_710','A')"><span class="lt">A</span><span>누구나 제한 없이 가능하다<span class="opt-en">Anyone may do it without restriction</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_710','B')"><span class="lt">B</span><span>조종사만 가능하다<span class="opt-en">Only a pilot may do it</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_710','C')"><span class="lt">C</span><span>작업 범위에 따라 적절한 자격(A&P, IA, 인가 수리소)이 있어야 하며, 주요 수리·개조는 더 높은 인가가 필요하다<span class="opt-en">Credentials must match the scope (A&P, IA, authorized repair station); major repairs/alterations need higher authorization</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_710','D')"><span class="lt">D</span><span>제조사만 어떤 작업이든 가능하다<span class="opt-en">Only the manufacturer may do any work</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">프로펠러 작업은 범위에 따라 자격이 다릅니다. 일반 정비·소규모 수리는 A&P가, 연차 검사 승인 등은 IA가, 주요 수리·개조나 블레이드 재가공 같은 작업은 인가된 프로펠러 수리소가 수행·복귀시킵니다. 규정과 제조사 지침을 따릅니다.</span><span class="ee">Propeller work requires credentials matching its scope: an A&P for general maintenance and minor repairs, an IA to approve annual inspections, and an authorized propeller repair station for major repairs, alterations, or blade rework—following regulations and manufacturer data.</span><span class="acs-code">ACS PA.II.C.K2</span></div>
 </div>
@@ -2908,10 +2909,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_711" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">'지오메트릭 피치(geometric pitch)'와 '이펙티브 피치(effective pitch)'의 차이인 '슬립(slip)'이란?</span><span class="quizx-qe">What is slip, the difference between geometric and effective pitch?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_711','A')"><span class="lt">A</span><span>블레이드가 미끄러지는 고장</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_711','B')"><span class="lt">B</span><span>이론상 전진 거리(지오메트릭)와 실제 전진 거리(이펙티브)의 차이로, 공기의 유동성 때문에 생긴다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_711','C')"><span class="lt">C</span><span>거버너 오일 누설</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_711','D')"><span class="lt">D</span><span>블레이드 각과 무관하다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_711','A')"><span class="lt">A</span><span>블레이드가 미끄러지는 고장<span class="opt-en">A failure where the blade slips</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_711','B')"><span class="lt">B</span><span>이론상 전진 거리(지오메트릭)와 실제 전진 거리(이펙티브)의 차이로, 공기의 유동성 때문에 생긴다<span class="opt-en">The difference between theoretical (geometric) and actual (effective) advance, caused by the yielding of air</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_711','C')"><span class="lt">C</span><span>거버너 오일 누설<span class="opt-en">Governor oil leakage</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_711','D')"><span class="lt">D</span><span>블레이드 각과 무관하다<span class="opt-en">Unrelated to blade angle</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">지오메트릭 피치는 프로펠러가 고체를 파고들 듯 1회전에 이론상 전진하는 거리이고, 이펙티브 피치는 공기 중에서 실제로 전진하는 거리입니다. 공기가 유동적이라 실제가 더 짧으며, 그 차이가 슬립입니다.</span><span class="ee">Geometric pitch is the theoretical distance a propeller would advance per revolution as if in a solid, while effective pitch is the actual distance advanced in air; because air yields, the actual is shorter, and the difference is slip.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2919,10 +2920,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_712" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">프로펠러 블레이드가 '비틀린(twisted)' 형상을 갖는 이유는?</span><span class="quizx-qe">Why is a propeller blade twisted along its length?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_712','A')"><span class="lt">A</span><span>무게를 줄이기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_712','B')"><span class="lt">B</span><span>제조 편의를 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_712','C')"><span class="lt">C</span><span>팁은 빠르고 루트는 느리므로, 스팬 전체에서 받음각을 고르게 하려고 루트로 갈수록 블레이드 각을 크게 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_712','D')"><span class="lt">D</span><span>소음을 늘리기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_712','A')"><span class="lt">A</span><span>무게를 줄이기 위해<span class="opt-en">To reduce weight</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_712','B')"><span class="lt">B</span><span>제조 편의를 위해<span class="opt-en">For ease of manufacture</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_712','C')"><span class="lt">C</span><span>팁은 빠르고 루트는 느리므로, 스팬 전체에서 받음각을 고르게 하려고 루트로 갈수록 블레이드 각을 크게 한다<span class="opt-en">Because the tip is fast and root is slow, blade angle is increased toward the root to keep angle of attack even across the span</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_712','D')"><span class="lt">D</span><span>소음을 늘리기 위해<span class="opt-en">To increase noise</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">회전하는 블레이드는 팁으로 갈수록 선속도가 커집니다. 각 단면의 받음각(효율)을 스팬 전체에서 고르게 하려면 회전 속도가 느린 루트 쪽 블레이드 각을 크게, 빠른 팁 쪽을 작게 해야 하므로 블레이드가 비틀린 형상(블레이드 트위스트)을 갖습니다.</span><span class="ee">A rotating blade has higher linear speed toward the tip; to keep the angle of attack (efficiency) even across the span, the blade angle is larger at the slower root and smaller at the faster tip, giving the blade its twist.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2930,10 +2931,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_713" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">다발기 프로펠러의 '언페더링(unfeathering)' 방법으로 흔히 쓰이는 것은?</span><span class="quizx-qe">What is a common method to unfeather a multi-engine propeller?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_713','A')"><span class="lt">A</span><span>어큐뮬레이터에 저장한 오일 압력을 방출하거나 엔진을 재시동해 오일 압력을 회복시킨다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_713','B')"><span class="lt">B</span><span>블레이드를 손으로 돌린다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_713','C')"><span class="lt">C</span><span>연료를 차단한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_713','D')"><span class="lt">D</span><span>불가능하다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_713','A')"><span class="lt">A</span><span>어큐뮬레이터에 저장한 오일 압력을 방출하거나 엔진을 재시동해 오일 압력을 회복시킨다<span class="opt-en">Release oil pressure stored in an accumulator, or restart the engine to restore oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_713','B')"><span class="lt">B</span><span>블레이드를 손으로 돌린다<span class="opt-en">Turn the blades by hand</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_713','C')"><span class="lt">C</span><span>연료를 차단한다<span class="opt-en">Shut off the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_713','D')"><span class="lt">D</span><span>불가능하다<span class="opt-en">It is impossible</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">페더 상태에서 벗어나려면 프로펠러를 저피치로 미는 오일 압력이 필요합니다. 언페더링 어큐뮬레이터에 저장해 둔 오일 압력을 방출하거나, 엔진을 재시동해 거버너 오일 압력을 회복시켜 블레이드를 정상 범위로 되돌립니다.</span><span class="ee">To leave feather, oil pressure is needed to drive the propeller toward low pitch; releasing oil pressure stored in an unfeathering accumulator, or restarting the engine to restore governor oil pressure, returns the blades to the normal range.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2941,10 +2942,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_714" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">프로펠러 '스태틱 밸런싱(static balancing)'에서 확인하는 불균형은?</span><span class="quizx-qe">What imbalance does propeller static balancing address?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_714','A')"><span class="lt">A</span><span>블레이드 각</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_714','B')"><span class="lt">B</span><span>회전 중 진동만</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_714','C')"><span class="lt">C</span><span>오일 압력</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_714','D')"><span class="lt">D</span><span>정지 상태에서 무게중심이 회전축과 일치하는지(수평·수직 불균형)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_714','A')"><span class="lt">A</span><span>블레이드 각<span class="opt-en">Blade angle</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_714','B')"><span class="lt">B</span><span>회전 중 진동만<span class="opt-en">Vibration during rotation only</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_714','C')"><span class="lt">C</span><span>오일 압력<span class="opt-en">Oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_714','D')"><span class="lt">D</span><span>정지 상태에서 무게중심이 회전축과 일치하는지(수평·수직 불균형)<span class="opt-en">Whether the center of gravity aligns with the axis while stationary (horizontal/vertical imbalance)</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">스태틱 밸런싱은 프로펠러가 정지한 상태에서 어느 위치에 놓아도 스스로 돌지 않는지 확인해, 무게중심이 회전축과 일치하는지(수평·수직 정적 불균형)를 봅니다. 불균형이 있으면 규정 위치에 밸런스 웨이트를 추가해 교정합니다. 동적 밸런싱은 장착 상태 진동을 다룹니다.</span><span class="ee">Static balancing checks that a stationary propeller has no tendency to rotate to any position, verifying the center of gravity aligns with the rotational axis (horizontal/vertical static imbalance); imbalance is corrected with balance weights at specified locations, while dynamic balancing addresses installed vibration.</span><span class="acs-code">ACS PA.II.C.K2</span></div>
 </div>
@@ -2952,10 +2953,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_715" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">프로펠러 '디아이싱(deicing)'과 '안티아이싱(anti-icing)' 계통의 차이는?</span><span class="quizx-qe">What is the difference between propeller deicing and anti-icing systems?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_715','A')"><span class="lt">A</span><span>둘은 동일하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_715','B')"><span class="lt">B</span><span>디아이싱은 이미 형성된 얼음을 제거(주로 전열 부트로 주기 가열), 안티아이싱은 얼음 형성 자체를 방지(주로 방빙액 분사)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_715','C')"><span class="lt">C</span><span>디아이싱은 얼음을 예방한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_715','D')"><span class="lt">D</span><span>안티아이싱은 얼음을 제거한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_715','A')"><span class="lt">A</span><span>둘은 동일하다<span class="opt-en">They are the same</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_715','B')"><span class="lt">B</span><span>디아이싱은 이미 형성된 얼음을 제거(주로 전열 부트로 주기 가열), 안티아이싱은 얼음 형성 자체를 방지(주로 방빙액 분사)<span class="opt-en">Deicing removes ice already formed (usually cycling electrothermal boots); anti-icing prevents ice from forming (usually spraying fluid)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_715','C')"><span class="lt">C</span><span>디아이싱은 얼음을 예방한다<span class="opt-en">Deicing prevents ice</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_715','D')"><span class="lt">D</span><span>안티아이싱은 얼음을 제거한다<span class="opt-en">Anti-icing removes ice</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">디아이싱은 이미 붙은 얼음을 제거하는 것으로, 전열 부트를 주기적으로 가열해 얼음 접착을 끊고 원심력·기류로 떨어냅니다. 안티아이싱은 얼음 형성 자체를 막는 것으로, 이소프로필알코올 같은 방빙액을 블레이드 앞전에 분사하는 방식이 흔합니다.</span><span class="ee">Deicing removes ice already formed—typically cycling electrothermal boots to break the ice bond so centrifugal force and airflow shed it—while anti-icing prevents ice from forming, commonly by spraying a fluid such as isopropyl alcohol onto the blade leading edges.</span><span class="acs-code">ACS PA.II.C.K1</span></div>
 </div>
@@ -2963,10 +2964,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_716" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">복합재(컴포지트) 프로펠러 블레이드 검사에서 중시하는 결함은?</span><span class="quizx-qe">What defect is emphasized when inspecting composite propeller blades?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_716','A')"><span class="lt">A</span><span>표면 광택만</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_716','B')"><span class="lt">B</span><span>페인트 색만</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_716','C')"><span class="lt">C</span><span>디라미네이션(층간 분리)·수분 침투·에로전 실드/앞전 손상, 코인 태핑·탐상으로 확인</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_716','D')"><span class="lt">D</span><span>블레이드 개수</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_716','A')"><span class="lt">A</span><span>표면 광택만<span class="opt-en">Only surface gloss</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_716','B')"><span class="lt">B</span><span>페인트 색만<span class="opt-en">Only paint color</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_716','C')"><span class="lt">C</span><span>디라미네이션(층간 분리)·수분 침투·에로전 실드/앞전 손상, 코인 태핑·탐상으로 확인<span class="opt-en">Delamination, moisture ingress, erosion-shield/leading-edge damage—checked by coin tapping and inspection</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_716','D')"><span class="lt">D</span><span>블레이드 개수<span class="opt-en">The number of blades</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">복합재 블레이드는 층간 분리(디라미네이션), 코어 수분 침투, 앞전 에로전 실드·팁 캡 손상이 주요 결함입니다. 코인 태핑(두드려 소리 변화 확인)이나 초음파·탐상으로 내부 분리를 찾고, 제조사 절차·한계에 따라 수리·교체를 결정합니다.</span><span class="ee">Composite blades are chiefly inspected for delamination, moisture ingress into the core, and damage to the leading-edge erosion shield or tip cap; coin tapping (listening for a change in sound) or ultrasonic inspection finds internal separation, and repair/replacement follows manufacturer procedures and limits.</span><span class="acs-code">ACS PA.II.C.K2</span></div>
 </div>
