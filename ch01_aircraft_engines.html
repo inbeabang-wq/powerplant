@@ -1547,6 +1547,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 .quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
 .quizx-opt.wrong .lt{color:#F87171;}
 .quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt .opt-en{display:block;margin-top:3px;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.4;}
 .quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
 .quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
   background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
@@ -1573,10 +1574,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_101" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">4행정 오토 사이클의 다섯 가지 이벤트를 올바른 순서로 나열한 것은?</span><span class="quizx-qe">What is the correct order of the five events of the four-stroke Otto cycle?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_101','A')"><span class="lt">A</span><span>압축→흡입→점화→동력→배기</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_101','B')"><span class="lt">B</span><span>흡입→압축→점화(연소)→동력(팽창)→배기</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_101','C')"><span class="lt">C</span><span>흡입→점화→압축→배기→동력</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_101','D')"><span class="lt">D</span><span>배기→흡입→압축→동력→점화</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_101','A')"><span class="lt">A</span><span>압축→흡입→점화→동력→배기<span class="opt-en">Compression → intake → ignition → power → exhaust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_101','B')"><span class="lt">B</span><span>흡입→압축→점화(연소)→동력(팽창)→배기<span class="opt-en">Intake → compression → ignition (combustion) → power (expansion) → exhaust</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_101','C')"><span class="lt">C</span><span>흡입→점화→압축→배기→동력<span class="opt-en">Intake → ignition → compression → exhaust → power</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_101','D')"><span class="lt">D</span><span>배기→흡입→압축→동력→점화<span class="opt-en">Exhaust → intake → compression → power → ignition</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">오토 사이클의 다섯 이벤트는 흡입(intake)→압축(compression)→점화(ignition)→동력(power)→배기(exhaust)입니다. 4행정은 이 사이클을 크랭크축 2회전(피스톤 4행정)에 완결합니다.</span><span class="ee">The five events are intake→compression→ignition→power→exhaust; a four-stroke engine completes this cycle in two crankshaft revolutions (four piston strokes).</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1584,10 +1585,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_102" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">압축비(compression ratio)의 정의는?</span><span class="quizx-qe">What is the definition of compression ratio?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_102','A')"><span class="lt">A</span><span>흡기 압력 ÷ 배기 압력</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_102','B')"><span class="lt">B</span><span>상사점 체적 ÷ 하사점 체적</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_102','C')"><span class="lt">C</span><span>하사점(피스톤 최하) 실린더 체적 ÷ 상사점(피스톤 최상) 체적</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_102','D')"><span class="lt">D</span><span>연료 유량 ÷ 공기 유량</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_102','A')"><span class="lt">A</span><span>흡기 압력 ÷ 배기 압력<span class="opt-en">Intake pressure ÷ exhaust pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_102','B')"><span class="lt">B</span><span>상사점 체적 ÷ 하사점 체적<span class="opt-en">TDC volume ÷ BDC volume</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_102','C')"><span class="lt">C</span><span>하사점(피스톤 최하) 실린더 체적 ÷ 상사점(피스톤 최상) 체적<span class="opt-en">Cylinder volume at BDC (piston lowest) ÷ volume at TDC (piston highest)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_102','D')"><span class="lt">D</span><span>연료 유량 ÷ 공기 유량<span class="opt-en">Fuel flow ÷ air flow</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">압축비는 피스톤이 하사점(BDC)일 때 실린더 총 체적을 상사점(TDC)일 때 체적으로 나눈 값입니다. 예: 140:20 = 7:1. 높을수록 출력이 커지지만 연료의 임계압을 넘으면 디토네이션 위험이 커집니다.</span><span class="ee">Compression ratio is the total cylinder volume at bottom dead center divided by the volume at top dead center (e.g., 140:20 = 7:1); higher increases power but risks detonation beyond the fuel's critical pressure.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1595,10 +1596,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_103" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">밸브 오버랩(valve overlap)이 주는 이점은?</span><span class="quizx-qe">What is the benefit of valve overlap?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_103','A')"><span class="lt">A</span><span>체적효율을 높이고 실린더 냉각과 배기 소기를 돕는다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_103','B')"><span class="lt">B</span><span>압축비를 낮춘다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_103','C')"><span class="lt">C</span><span>점화 타이밍을 지각시킨다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_103','D')"><span class="lt">D</span><span>오일 소비를 줄인다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_103','A')"><span class="lt">A</span><span>체적효율을 높이고 실린더 냉각과 배기 소기를 돕는다<span class="opt-en">Improves volumetric efficiency and aids cylinder cooling and exhaust scavenging</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_103','B')"><span class="lt">B</span><span>압축비를 낮춘다<span class="opt-en">Lowers the compression ratio</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_103','C')"><span class="lt">C</span><span>점화 타이밍을 지각시킨다<span class="opt-en">Retards ignition timing</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_103','D')"><span class="lt">D</span><span>오일 소비를 줄인다<span class="opt-en">Reduces oil consumption</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">밸브 오버랩은 흡·배기 밸브가 동시에 열려 있는 구간입니다. 배기 가스의 관성이 신선한 혼합기를 끌어들여 체적효율을 높이고, 흐르는 혼합기가 연소실을 냉각하며 배기 소기를 돕습니다.</span><span class="ee">Valve overlap is when both valves are open together; exhaust gas inertia draws in fresh charge to raise volumetric efficiency, and the flowing charge cools the chamber and aids exhaust scavenging.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1606,10 +1607,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_104" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">디토네이션(detonation)과 조기점화(preignition)의 차이로 옳은 것은?</span><span class="quizx-qe">Which correctly distinguishes detonation from preignition?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_104','A')"><span class="lt">A</span><span>둘은 완전히 같은 현상이다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_104','B')"><span class="lt">B</span><span>디토네이션은 스파크 전 점화, 조기점화는 폭발적 연소다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_104','C')"><span class="lt">C</span><span>디토네이션은 저온에서만 발생한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_104','D')"><span class="lt">D</span><span>디토네이션은 점화 후 혼합기의 통제되지 않은 폭발적 연소, 조기점화는 스파크 이전에 핫스팟이 혼합기를 점화하는 것</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_104','A')"><span class="lt">A</span><span>둘은 완전히 같은 현상이다<span class="opt-en">They are exactly the same phenomenon</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_104','B')"><span class="lt">B</span><span>디토네이션은 스파크 전 점화, 조기점화는 폭발적 연소다<span class="opt-en">Detonation is pre-spark ignition; pre-ignition is explosive burning</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_104','C')"><span class="lt">C</span><span>디토네이션은 저온에서만 발생한다<span class="opt-en">Detonation only occurs at low temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_104','D')"><span class="lt">D</span><span>디토네이션은 점화 후 혼합기의 통제되지 않은 폭발적 연소, 조기점화는 스파크 이전에 핫스팟이 혼합기를 점화하는 것<span class="opt-en">Detonation is uncontrolled explosive burning after ignition; pre-ignition is a hot spot igniting the mixture before the spark</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">디토네이션은 정상 점화 후 남은 혼합기가 통제 없이 폭발적으로 연소하는 것(노크·해머링). 조기점화는 스파크 플러그가 발화하기 전에 카본·과열밸브 등 핫스팟이 혼합기를 점화하는 것입니다. 둘은 동시에 발생하거나 서로를 유발할 수 있습니다.</span><span class="ee">Detonation is the uncontrolled explosive burning of the remaining charge after normal ignition (knock/hammering); preignition is a hot spot (carbon, overheated valve) igniting the charge before the plug fires—they can occur together or cause one another.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1617,10 +1618,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_105" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">크랭크샤프트의 다이내믹 댐퍼(dynamic damper)의 목적은?</span><span class="quizx-qe">What is the purpose of a crankshaft dynamic damper?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_105','A')"><span class="lt">A</span><span>크랭크축 회전 속도를 높인다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_105','B')"><span class="lt">B</span><span>비틀림 진동을 흡수·감쇠한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_105','C')"><span class="lt">C</span><span>오일 압력을 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_105','D')"><span class="lt">D</span><span>밸브 타이밍을 맞춘다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_105','A')"><span class="lt">A</span><span>크랭크축 회전 속도를 높인다<span class="opt-en">Increases crankshaft speed</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_105','B')"><span class="lt">B</span><span>비틀림 진동을 흡수·감쇠한다<span class="opt-en">Absorbs and damps torsional vibration</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_105','C')"><span class="lt">C</span><span>오일 압력을 조절한다<span class="opt-en">Regulates oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_105','D')"><span class="lt">D</span><span>밸브 타이밍을 맞춘다<span class="opt-en">Sets valve timing</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">동력 임펄스는 크랭크축에 비틀림 진동을 일으킵니다. 다이내믹 댐퍼(펜듈럼 방식 카운터웨이트)는 이 비틀림 진동을 흡수·감쇠해 크랭크축 파손을 막고 부드러운 작동을 돕습니다.</span><span class="ee">Power impulses induce torsional vibration in the crankshaft; a dynamic damper (pendulum-type counterweight) absorbs and dampens this vibration to prevent crankshaft failure and promote smooth operation.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1628,10 +1629,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_106" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">체적효율(volumetric efficiency)이 100%보다 낮아지는 원인이 아닌 것은?</span><span class="quizx-qe">Which is NOT a cause of volumetric efficiency below 100%?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_106','A')"><span class="lt">A</span><span>흡기 계통의 굽은 관로·마찰에 의한 압력 손실</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_106','B')"><span class="lt">B</span><span>고온에 의한 흡입 공기 밀도 저하</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_106','C')"><span class="lt">C</span><span>과급기(터보차저)로 매니폴드 압력을 대기압 이상으로 올림</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_106','D')"><span class="lt">D</span><span>부분 스로틀에 의한 흡기 제한</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_106','A')"><span class="lt">A</span><span>흡기 계통의 굽은 관로·마찰에 의한 압력 손실<span class="opt-en">Pressure loss from bends/friction in the induction system</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_106','B')"><span class="lt">B</span><span>고온에 의한 흡입 공기 밀도 저하<span class="opt-en">Reduced intake air density from high temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_106','C')"><span class="lt">C</span><span>과급기(터보차저)로 매니폴드 압력을 대기압 이상으로 올림<span class="opt-en">A supercharger/turbocharger raising manifold pressure above atmospheric</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_106','D')"><span class="lt">D</span><span>부분 스로틀에 의한 흡기 제한<span class="opt-en">Induction restriction from partial throttle</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">체적효율은 실제 흡입 장약을 이론 최대와 비교한 값입니다. 흡기 관로 손실·고온·부분 스로틀은 이를 낮춥니다. 반대로 과급기는 매니폴드 압력을 대기압 이상으로 올려 체적효율을 100% 이상으로 만들 수 있습니다(따라서 저하 원인이 아님).</span><span class="ee">Volumetric efficiency compares the actual charge to the theoretical maximum; intake losses, high temperature, and partial throttle lower it, whereas a supercharger raises manifold pressure above atmospheric and can push it over 100% (so it is not a cause of reduction).</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1639,10 +1640,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_107" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">디젤(압축착화) 항공엔진이 가솔린 엔진과 다른 핵심 특징은?</span><span class="quizx-qe">What is a key difference of a diesel (compression-ignition) aero engine from a gasoline engine?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_107','A')"><span class="lt">A</span><span>스로틀·점화플러그·연료계량장치 없이, 높은 압축비(16~22:1)로 공기를 압축해 자연 착화시킨다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_107','B')"><span class="lt">B</span><span>가솔린보다 낮은 압축비를 쓴다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_107','C')"><span class="lt">C</span><span>두 개의 스파크 플러그가 필요하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_107','D')"><span class="lt">D</span><span>휘발유만 사용할 수 있다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_107','A')"><span class="lt">A</span><span>스로틀·점화플러그·연료계량장치 없이, 높은 압축비(16~22:1)로 공기를 압축해 자연 착화시킨다<span class="opt-en">No throttle, spark plugs, or fuel-metering device; high compression (16–22:1) ignites the air charge by itself</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_107','B')"><span class="lt">B</span><span>가솔린보다 낮은 압축비를 쓴다<span class="opt-en">Uses a lower compression ratio than gasoline</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_107','C')"><span class="lt">C</span><span>두 개의 스파크 플러그가 필요하다<span class="opt-en">Requires two spark plugs</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_107','D')"><span class="lt">D</span><span>휘발유만 사용할 수 있다<span class="opt-en">Can use only gasoline</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">디젤은 스로틀·점화플러그·연료계량장치가 없습니다. 공기를 16~22:1(가솔린 6.5~9.5:1보다 훨씬 높음)로 압축해 고온을 만들고, 분사된 연료가 자연 착화합니다. 제트-A(디젤)를 쓰며 낮은 BSFC로 연료 효율이 높습니다.</span><span class="ee">A diesel has no throttle, spark plugs, or fuel-metering device; it compresses air at 16–22:1 (far above gasoline's 6.5–9.5:1) to create heat, and injected fuel ignites spontaneously—it runs on Jet-A with low BSFC for high efficiency.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1650,10 +1651,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_108" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q8</span><span class="quizx-qtext"><span class="quizx-qk">왕복엔진 명명법에서 'IO-360'의 'I'와 'O'는 각각 무엇을 뜻하는가?</span><span class="quizx-qe">In engine designation IO-360, what do the letters I and O mean?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_108','A')"><span class="lt">A</span><span>I=inline, O=옥탄</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_108','B')"><span class="lt">B</span><span>I=ignition, O=oil</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_108','C')"><span class="lt">C</span><span>I=intercooled, O=overhauled</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_108','D')"><span class="lt">D</span><span>I=fuel injected(연료분사), O=opposed(대향형), 360=배기량(입방인치)</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_108','A')"><span class="lt">A</span><span>I=inline, O=옥탄<span class="opt-en">I = inline, O = octane</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_108','B')"><span class="lt">B</span><span>I=ignition, O=oil<span class="opt-en">I = ignition, O = oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_108','C')"><span class="lt">C</span><span>I=intercooled, O=overhauled<span class="opt-en">I = intercooled, O = overhauled</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_108','D')"><span class="lt">D</span><span>I=fuel injected(연료분사), O=opposed(대향형), 360=배기량(입방인치)<span class="opt-en">I = fuel injected, O = opposed, 360 = displacement (cubic inches)</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">문자 코드: I=연료분사(injected), O=대향형(opposed), R=성형(radial), V=V형, T=터보차저, S=슈퍼차저, G=기어드, L=좌회전. 숫자는 배기량(입방인치)입니다. 예: IO-360 = 연료분사 대향형 360 in³.</span><span class="ee">Letter codes: I=fuel injected, O=opposed, R=radial, V=V-type, T=turbocharged, S=supercharged, G=geared, L=left-turning; the number is displacement in cubic inches (IO-360 = injected, opposed, 360 in³).</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1661,10 +1662,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_109" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">피스톤 링 중 '오일 컨트롤 링(oil control ring)'의 역할은?</span><span class="quizx-qe">What is the role of the oil control ring among piston rings?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_109','A')"><span class="lt">A</span><span>연소 압력을 밀봉하는 것이 주 역할이다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_109','B')"><span class="lt">B</span><span>실린더 벽의 과잉 오일을 긁어내려 연소실 유입을 막고 오일 소비를 제어한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_109','C')"><span class="lt">C</span><span>피스톤을 냉각하는 것이 유일한 역할이다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_109','D')"><span class="lt">D</span><span>점화 타이밍을 조절한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_109','A')"><span class="lt">A</span><span>연소 압력을 밀봉하는 것이 주 역할이다<span class="opt-en">Its main role is sealing combustion pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_109','B')"><span class="lt">B</span><span>실린더 벽의 과잉 오일을 긁어내려 연소실 유입을 막고 오일 소비를 제어한다<span class="opt-en">Scrapes excess oil off the cylinder wall to prevent it entering the chamber and control oil consumption</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_109','C')"><span class="lt">C</span><span>피스톤을 냉각하는 것이 유일한 역할이다<span class="opt-en">Its only role is cooling the piston</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_109','D')"><span class="lt">D</span><span>점화 타이밍을 조절한다<span class="opt-en">Controls ignition timing</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">컴프레션 링은 연소 압력을 밀봉하고, 오일 컨트롤 링은 실린더 벽의 과잉 오일을 긁어내려 크랭크케이스로 되돌립니다. 오일 링이 제대로 작동하지 않으면 오일이 연소실로 들어가 오일 소비 증가와 카본 축적을 일으킵니다.</span><span class="ee">Compression rings seal combustion pressure, while the oil control ring scrapes excess oil from the cylinder wall back to the crankcase; if it fails, oil enters the combustion chamber, raising consumption and causing carbon buildup.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
@@ -1672,15 +1673,80 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_110" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q10</span><span class="quizx-qk">4실린더 대향형 엔진(예: Continental O-200)의 일반적 점화 순서는?</span><span class="quizx-qe">What is a typical firing order for a four-cylinder opposed engine (e.g., Continental O-200)?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_110','A')"><span class="lt">A</span><span>1-2-3-4</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_110','B')"><span class="lt">B</span><span>1-4-2-3</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_110','C')"><span class="lt">C</span><span>1-3-2-4 (제조사마다 실린더 번호 매김이 다르므로 매뉴얼 확인 필요)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_110','D')"><span class="lt">D</span><span>4-3-2-1</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_110','A')"><span class="lt">A</span><span>1-2-3-4<span class="opt-en">1-2-3-4</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_110','B')"><span class="lt">B</span><span>1-4-2-3<span class="opt-en">1-4-2-3</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_110','C')"><span class="lt">C</span><span>1-3-2-4 (제조사마다 실린더 번호 매김이 다르므로 매뉴얼 확인 필요)<span class="opt-en">1-3-2-4 (cylinder numbering varies by manufacturer, so check the manual)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_110','D')"><span class="lt">D</span><span>4-3-2-1<span class="opt-en">4-3-2-1</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">점화 순서는 진동을 줄이도록 설계됩니다. 4실린더 Continental O-200-A는 1-3-2-4입니다. Lycoming도 같은 순서를 쓰지만 실린더 번호 매김이 달라, 항상 해당 엔진 매뉴얼에서 특정 정보를 확인해야 합니다.</span><span class="ee">Firing order is designed to reduce vibration; the four-cylinder Continental O-200-A fires 1-3-2-4, and Lycoming uses the same order but numbers cylinders differently, so always confirm the specific engine's manual.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
 </div>
 
-<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">10</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
+<div class="quizx-card" id="qz_111" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">성형(radial) 엔진에서 마스터 로드(master rod)와 아티큘레이팅 로드(articulating rod)의 구성은?</span><span class="quizx-qe">How are the master rod and articulating rods arranged in a radial engine?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_111','A')"><span class="lt">A</span><span>모든 실린더가 각자 크랭크핀에 직접 연결된다<span class="opt-en">Every cylinder connects directly to its own crankpin</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_111','B')"><span class="lt">B</span><span>한 실린더의 마스터 로드가 크랭크핀에 연결되고, 나머지 실린더의 아티큘레이팅 로드가 마스터 로드의 너클 핀에 연결된다<span class="opt-en">One cylinder's master rod connects to the crankpin, and the other cylinders' articulating rods connect to knuckle pins on the master rod</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_111','C')"><span class="lt">C</span><span>로드가 없다<span class="opt-en">There are no rods</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_111','D')"><span class="lt">D</span><span>모든 로드가 하나로 용접돼 있다<span class="opt-en">All rods are welded into one</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">성형 엔진은 한 실린더의 마스터 로드가 크랭크핀에 연결되고, 나머지 실린더의 아티큘레이팅 로드가 마스터 로드의 너클 핀에 힌지로 연결됩니다. 이 구조 때문에 실린더별 피스톤 행정이 미세하게 달라집니다.</span><span class="ee">In a radial engine, one cylinder's master rod connects to the crankpin, and the other cylinders' articulating rods hinge to knuckle pins on the master rod; this arrangement slightly varies piston stroke among cylinders.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_112" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">밸브 간극(valve clearance/lash)이 규정보다 너무 크면 나타나는 영향은?</span><span class="quizx-qe">What results if valve clearance (lash) is too large?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_112','A')"><span class="lt">A</span><span>밸브가 더 오래 열린다<span class="opt-en">The valve opens longer</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_112','B')"><span class="lt">B</span><span>압축비가 높아진다<span class="opt-en">The compression ratio increases</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_112','C')"><span class="lt">C</span><span>밸브가 늦게 열리고 일찍 닫혀 개방 기간이 짧아지고, 밸브트레인 소음·마모가 커진다<span class="opt-en">The valve opens late and closes early, shortening the open period and increasing valve-train noise and wear</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_112','D')"><span class="lt">D</span><span>점화 타이밍이 빨라진다<span class="opt-en">Ignition timing advances</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">간극이 과대하면 밸브가 늦게 열리고 일찍 닫혀 유효 개방 기간이 짧아지고, 태핏·로커의 충격으로 소음·마모가 커집니다. 반대로 간극이 너무 작으면 밸브가 완전히 닫히지 않아 밀봉 불량·소손이 생길 수 있습니다.</span><span class="ee">Excess clearance makes the valve open late and close early, shortening effective open duration and increasing valve-train noise and wear from impact; too little clearance can keep the valve from fully closing, causing leakage and burning.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_113" data-ans="A">
+<div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">일부 배기 밸브 내부에 금속 나트륨(sodium)을 채우는 이유는?</span><span class="quizx-qe">Why are some exhaust valves partially filled with metallic sodium?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_113','A')"><span class="lt">A</span><span>작동 중 녹아 흔들리며 밸브 헤드의 열을 스템으로 전달해 냉각을 돕는다<span class="opt-en">It melts and sloshes in operation, carrying heat from the valve head to the stem to aid cooling</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_113','B')"><span class="lt">B</span><span>밸브 무게를 늘리기 위해<span class="opt-en">To increase valve weight</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_113','C')"><span class="lt">C</span><span>연료를 연소시키기 위해<span class="opt-en">To burn the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_113','D')"><span class="lt">D</span><span>밸브를 밀봉하기 위해<span class="opt-en">To seal the valve</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">중공 배기 밸브에 넣은 금속 나트륨은 작동 온도에서 녹아 밸브가 왕복할 때 안에서 흔들립니다. 이 나트륨이 뜨거운 밸브 헤드의 열을 흡수해 스템으로 전달하고, 가이드를 통해 방출함으로써 밸브 헤드를 냉각합니다.</span><span class="ee">Metallic sodium in a hollow exhaust valve melts at operating temperature and sloshes as the valve reciprocates, absorbing heat from the hot valve head and carrying it to the stem to be dissipated through the guide, cooling the head.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_114" data-ans="D">
+<div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">유압 밸브 리프터(hydraulic valve lifter/tappet)의 이점은?</span><span class="quizx-qe">What is the advantage of a hydraulic valve lifter?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_114','A')"><span class="lt">A</span><span>압축비를 높인다<span class="opt-en">Raises the compression ratio</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_114','B')"><span class="lt">B</span><span>연료를 계량한다<span class="opt-en">Meters the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_114','C')"><span class="lt">C</span><span>점화를 강화한다<span class="opt-en">Boosts ignition</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_114','D')"><span class="lt">D</span><span>오일 압력으로 간극을 자동 '제로'로 유지해 정기적 밸브 간극 조정이 필요 없고 소음·마모가 준다<span class="opt-en">Uses oil pressure to keep clearance automatically at zero, eliminating periodic adjustment and reducing noise/wear</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">유압 리프터는 엔진 오일 압력으로 밸브트레인 간극을 자동으로 '제로'로 유지합니다. 덕분에 주기적 간극 조정이 불필요하고, 충격이 완충돼 소음·마모가 줄며 온도 변화에도 일정한 밸브 타이밍을 유지합니다.</span><span class="ee">A hydraulic lifter uses engine oil pressure to automatically maintain zero valve-train clearance, eliminating periodic adjustment, cushioning impact to reduce noise and wear, and keeping consistent valve timing across temperature changes.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_115" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">지시마력(IHP)과 제동마력(BHP)의 차이를 설명하는 것은?</span><span class="quizx-qe">What distinguishes indicated horsepower (IHP) from brake horsepower (BHP)?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_115','A')"><span class="lt">A</span><span>둘은 같다<span class="opt-en">They are the same</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_115','B')"><span class="lt">B</span><span>IHP는 실린더 내에서 발생한 총 동력, BHP는 마찰 손실을 뺀 실제 축 출력이며 그 차이가 마찰마력(FHP)<span class="opt-en">IHP is total power developed in the cylinders; BHP is actual shaft output after friction loss, the difference being friction horsepower (FHP)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_115','C')"><span class="lt">C</span><span>BHP가 IHP보다 항상 크다<span class="opt-en">BHP is always greater than IHP</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_115','D')"><span class="lt">D</span><span>IHP는 프로펠러 출력이다<span class="opt-en">IHP is propeller output</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">지시마력(IHP)은 연소로 실린더 내에서 발생한 총 동력이고, 제동마력(BHP)은 마찰·펌핑 손실을 뺀 크랭크축의 실제 유효 출력입니다. 그 차이가 마찰마력(FHP)이며, 기계효율 = BHP/IHP로 표현됩니다.</span><span class="ee">IHP is the total power developed in the cylinders by combustion, while BHP is the actual useful shaft output after friction and pumping losses; their difference is friction horsepower (FHP), and mechanical efficiency = BHP/IHP.</span><span class="acs-code">ACS PA.I.A.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_116" data-ans="C">
+<div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">2행정 사이클이 4행정 대비 같은 배기량·rpm에서 이론상 더 많은 동력을 낼 수 있는 이유는?</span><span class="quizx-qe">Why can a two-stroke theoretically produce more power than a four-stroke of the same displacement and rpm?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_116','A')"><span class="lt">A</span><span>압축비가 훨씬 높기 때문<span class="opt-en">Because the compression ratio is much higher</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_116','B')"><span class="lt">B</span><span>연료를 덜 쓰기 때문<span class="opt-en">Because it uses less fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_116','C')"><span class="lt">C</span><span>크랭크축 매 회전마다 동력 행정이 있어(4행정은 2회전당 1회), 같은 rpm에서 동력 행정 빈도가 2배이기 때문<span class="opt-en">Because it has a power stroke every crankshaft revolution (four-stroke has one per two revolutions), twice the frequency at the same rpm</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_116','D')"><span class="lt">D</span><span>밸브가 더 많기 때문<span class="opt-en">Because it has more valves</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">2행정은 크랭크축 매 회전마다 동력 행정이 있어, 4행정(2회전당 1회)보다 같은 rpm에서 동력 행정 빈도가 두 배입니다. 이로써 이론상 더 큰 출력·출력 대 중량비를 냅니다(실제로는 소기 손실 등으로 이상보다 낮음).</span><span class="ee">A two-stroke has a power stroke every crankshaft revolution, twice the frequency of a four-stroke (one per two revolutions) at the same rpm, so it can theoretically make more power and a higher power-to-weight ratio (though scavenging losses reduce this in practice).</span><span class="acs-code">ACS PA.I.A.K1</span></div>
+</div>
+<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">16</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
 </div>
 <script>
 (function(){
