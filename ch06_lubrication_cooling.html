@@ -2649,6 +2649,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 .quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
 .quizx-opt.wrong .lt{color:#F87171;}
 .quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt .opt-en{display:block;margin-top:3px;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.4;}
 .quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
 .quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
   background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
@@ -2675,10 +2676,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_601" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">엔진 오일의 주요 기능이 아닌 것은?</span><span class="quizx-qe">Which is NOT a primary function of engine oil?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_601','A')"><span class="lt">A</span><span>윤활(마찰·마모 감소)과 냉각(열 제거)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_601','B')"><span class="lt">B</span><span>밀봉(피스톤 링-실린더 벽)과 청정(슬러지 운반)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_601','C')"><span class="lt">C</span><span>부식 방지와 완충(하중 분산)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_601','D')"><span class="lt">D</span><span>연료의 옥탄가를 높임</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_601','A')"><span class="lt">A</span><span>윤활(마찰·마모 감소)과 냉각(열 제거)<span class="opt-en">Lubrication (reducing friction/wear) and cooling (removing heat)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_601','B')"><span class="lt">B</span><span>밀봉(피스톤 링-실린더 벽)과 청정(슬러지 운반)<span class="opt-en">Sealing (ring-to-wall) and cleaning (carrying sludge)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_601','C')"><span class="lt">C</span><span>부식 방지와 완충(하중 분산)<span class="opt-en">Corrosion protection and cushioning (load distribution)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_601','D')"><span class="lt">D</span><span>연료의 옥탄가를 높임<span class="opt-en">Raising the fuel's octane</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">엔진 오일의 기능은 윤활·냉각·밀봉·청정(세척)·부식 방지·완충(하중 분산)입니다. 연료의 옥탄가와는 무관합니다. 오일은 마찰부 열을 흡수해 오일 쿨러로 운반하고, 링-벽 밀봉을 도와 압축을 유지합니다.</span><span class="ee">Oil functions include lubrication, cooling, sealing, cleaning, corrosion protection, and cushioning; it has nothing to do with fuel octane. Oil absorbs heat from friction surfaces and carries it to the cooler, and aids ring-to-wall sealing to maintain compression.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
 </div>
@@ -2686,10 +2687,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_602" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">신품·오버홀 직후 왕복엔진에 '광유(mineral oil)'를 쓰는 이유는?</span><span class="quizx-qe">Why is straight mineral oil used in a new or freshly overhauled reciprocating engine?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_602','A')"><span class="lt">A</span><span>더 저렴하기 때문</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_602','B')"><span class="lt">B</span><span>첨가제(AD)가 링의 초기 시팅(브레이크인)을 방해하므로, 시팅될 때까지 광유를 쓴다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_602','C')"><span class="lt">C</span><span>합성유가 금지돼 있기 때문</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_602','D')"><span class="lt">D</span><span>점도가 더 높기 때문</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_602','A')"><span class="lt">A</span><span>더 저렴하기 때문<span class="opt-en">Because it is cheaper</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_602','B')"><span class="lt">B</span><span>첨가제(AD)가 링의 초기 시팅(브레이크인)을 방해하므로, 시팅될 때까지 광유를 쓴다<span class="opt-en">Because AD additives hinder ring break-in, so mineral oil is used until the rings seat</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_602','C')"><span class="lt">C</span><span>합성유가 금지돼 있기 때문<span class="opt-en">Because synthetic oil is prohibited</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_602','D')"><span class="lt">D</span><span>점도가 더 높기 때문<span class="opt-en">Because it has higher viscosity</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">애시리스 분산제(AD) 첨가제는 실린더 벽을 너무 매끄럽게 해 피스톤 링의 초기 시팅(브레이크인)을 방해할 수 있습니다. 그래서 신품·오버홀 엔진은 링이 시팅될 때까지 광유(straight mineral oil)를 쓰고, 이후 AD유로 전환합니다.</span><span class="ee">Ashless dispersant (AD) additives can prevent proper break-in by keeping cylinder walls too slick, so new or overhauled engines use straight mineral oil until the rings seat, then switch to AD oil.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
 </div>
@@ -2697,10 +2698,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_603" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">웻섬프(wet sump)와 드라이섬프(dry sump) 윤활 계통의 핵심 차이는?</span><span class="quizx-qe">What is the key difference between wet-sump and dry-sump lubrication?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_603','A')"><span class="lt">A</span><span>웻섬프는 합성유만, 드라이섬프는 광유만 쓴다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_603','B')"><span class="lt">B</span><span>드라이섬프는 오일 펌프가 없다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_603','C')"><span class="lt">C</span><span>웻섬프는 크랭크케이스 저부에 오일을 저장하고, 드라이섬프는 별도 외부 탱크에 저장하며 스캐빈지 펌프로 회수한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_603','D')"><span class="lt">D</span><span>둘은 완전히 동일하다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_603','A')"><span class="lt">A</span><span>웻섬프는 합성유만, 드라이섬프는 광유만 쓴다<span class="opt-en">Wet sump uses only synthetic oil, dry sump only mineral oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_603','B')"><span class="lt">B</span><span>드라이섬프는 오일 펌프가 없다<span class="opt-en">A dry sump has no oil pump</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_603','C')"><span class="lt">C</span><span>웻섬프는 크랭크케이스 저부에 오일을 저장하고, 드라이섬프는 별도 외부 탱크에 저장하며 스캐빈지 펌프로 회수한다<span class="opt-en">A wet sump stores oil in the crankcase bottom; a dry sump stores it in a separate tank with scavenge pumps returning it</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_603','D')"><span class="lt">D</span><span>둘은 완전히 동일하다<span class="opt-en">They are exactly the same</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">웻섬프는 크랭크케이스 저부(섬프)에 오일을 저장합니다. 드라이섬프는 별도 외부 탱크에 저장하고, 스캐빈지 펌프가 케이스에 모인 오일을 탱크로 회수합니다. 드라이섬프는 곡예비행·대형·터빈 엔진에 유리합니다.</span><span class="ee">A wet sump stores oil in the crankcase bottom (sump); a dry sump stores it in a separate external tank, with scavenge pumps returning oil collected in the case to the tank—favored for aerobatic, large, and turbine engines.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
 </div>
@@ -2708,10 +2709,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_604" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">오일 압력 릴리프 밸브(relief valve)의 역할은?</span><span class="quizx-qe">What does the oil pressure relief valve do?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_604','A')"><span class="lt">A</span><span>계통 오일 압력을 설정 한계로 제한해 과압으로부터 부품·실을 보호한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_604','B')"><span class="lt">B</span><span>오일을 여과한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_604','C')"><span class="lt">C</span><span>오일 온도를 측정한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_604','D')"><span class="lt">D</span><span>오일을 냉각한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_604','A')"><span class="lt">A</span><span>계통 오일 압력을 설정 한계로 제한해 과압으로부터 부품·실을 보호한다<span class="opt-en">Limits system oil pressure to a set value, protecting parts and seals from overpressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_604','B')"><span class="lt">B</span><span>오일을 여과한다<span class="opt-en">Filters the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_604','C')"><span class="lt">C</span><span>오일 온도를 측정한다<span class="opt-en">Measures oil temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_604','D')"><span class="lt">D</span><span>오일을 냉각한다<span class="opt-en">Cools the oil</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">정용량 오일 펌프는 rpm에 따라 압력이 과도해질 수 있습니다. 릴리프 밸브가 설정 한계를 넘는 오일을 펌프 입구나 섬프로 되돌려 계통 압력을 제한함으로써 오일 쿨러·실·통로를 과압 손상으로부터 보호합니다.</span><span class="ee">A positive-displacement oil pump can build excessive pressure with rpm; the relief valve returns oil above the set limit to the pump inlet or sump to cap system pressure, protecting the cooler, seals, and passages from overpressure damage.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
 </div>
@@ -2719,10 +2720,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_605" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">오일 쿨러의 온도 조절 밸브(oil temperature/thermostatic valve, 바이패스)가 하는 일은?</span><span class="quizx-qe">What does the oil cooler's thermostatic (bypass) valve do?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_605','A')"><span class="lt">A</span><span>항상 오일을 쿨러로만 보낸다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_605','B')"><span class="lt">B</span><span>오일이 차가우면 쿨러를 우회시키고, 뜨거우면 쿨러로 통과시켜 온도를 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_605','C')"><span class="lt">C</span><span>오일 압력을 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_605','D')"><span class="lt">D</span><span>오일을 여과한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_605','A')"><span class="lt">A</span><span>항상 오일을 쿨러로만 보낸다<span class="opt-en">Always sends oil only to the cooler</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_605','B')"><span class="lt">B</span><span>오일이 차가우면 쿨러를 우회시키고, 뜨거우면 쿨러로 통과시켜 온도를 조절한다<span class="opt-en">Bypasses the cooler when oil is cold and routes it through when hot, regulating temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_605','C')"><span class="lt">C</span><span>오일 압력을 조절한다<span class="opt-en">Regulates oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_605','D')"><span class="lt">D</span><span>오일을 여과한다<span class="opt-en">Filters the oil</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">서모스탯(바이패스) 밸브는 오일 온도에 따라 흐름을 나눕니다. 차가운 오일은 쿨러를 우회해 빨리 데워지게 하고, 뜨거운 오일은 쿨러(코어)를 통과시켜 냉각합니다. 이로써 오일을 적정 작동 온도로 유지합니다.</span><span class="ee">The thermostatic (bypass) valve routes flow by oil temperature: cold oil bypasses the cooler to warm quickly, while hot oil passes through the cooler core to be cooled, keeping oil at proper operating temperature.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
 </div>
@@ -2730,10 +2731,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_606" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">터빈 엔진 윤활 계통의 '칩 디텍터(chip detector)'가 감지하는 것은?</span><span class="quizx-qe">What does a chip detector in a turbine oil system detect?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_606','A')"><span class="lt">A</span><span>오일 온도</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_606','B')"><span class="lt">B</span><span>오일 압력</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_606','C')"><span class="lt">C</span><span>오일에 섞인 강자성 금속 입자(베어링·기어 마모 지표)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_606','D')"><span class="lt">D</span><span>연료 오염</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_606','A')"><span class="lt">A</span><span>오일 온도<span class="opt-en">Oil temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_606','B')"><span class="lt">B</span><span>오일 압력<span class="opt-en">Oil pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_606','C')"><span class="lt">C</span><span>오일에 섞인 강자성 금속 입자(베어링·기어 마모 지표)<span class="opt-en">Ferrous metal particles in the oil (indicating bearing/gear wear)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_606','D')"><span class="lt">D</span><span>연료 오염<span class="opt-en">Fuel contamination</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">칩 디텍터는 자석식 프로브로 오일 속 강자성 금속 입자를 포집합니다. 입자가 두 전극을 연결하면 경보를 주어 베어링·기어 마모나 임박한 고장을 조기에 알립니다. 일부는 오경보를 줄이는 펄스(퍼지) 기능을 갖습니다.</span><span class="ee">A chip detector is a magnetic probe that captures ferrous particles in the oil; when particles bridge two electrodes it triggers a warning, giving early indication of bearing or gear wear or impending failure—some have a pulse (fuzz-burn) feature to reduce false alarms.</span><span class="acs-code">ACS PA.I.C.K2</span></div>
 </div>
@@ -2741,10 +2742,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_607" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">터빈 엔진 오일을 교환할 때 '플러싱'보다 완전 배출·재보급을 신중히 다뤄야 하는 이유와 관련해 옳은 것은?</span><span class="quizx-qe">Regarding turbine oil changes, which statement is correct?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_607','A')"><span class="lt">A</span><span>합성 터빈 오일은 종류·브랜드 혼용에 제한이 있어, 제조사 승인 오일만 규정 절차로 보급해야 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_607','B')"><span class="lt">B</span><span>아무 오일이나 섞어도 된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_607','C')"><span class="lt">C</span><span>오일은 교환할 필요가 없다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_607','D')"><span class="lt">D</span><span>물로 플러싱한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_607','A')"><span class="lt">A</span><span>합성 터빈 오일은 종류·브랜드 혼용에 제한이 있어, 제조사 승인 오일만 규정 절차로 보급해야 한다<span class="opt-en">Synthetic turbine oils have compatibility limits, so only manufacturer-approved oil is serviced per specified procedures</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_607','B')"><span class="lt">B</span><span>아무 오일이나 섞어도 된다<span class="opt-en">Any oils may be mixed</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_607','C')"><span class="lt">C</span><span>오일은 교환할 필요가 없다<span class="opt-en">Oil never needs changing</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_607','D')"><span class="lt">D</span><span>물로 플러싱한다<span class="opt-en">Flush with water</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터빈 합성 오일은 화학적 성질상 종류·브랜드 혼용에 제한이 있어, 반드시 제조사가 승인한 오일만 규정 절차로 보급합니다. 혼용은 첨가제 반응·성능 저하를 일으킬 수 있어, 오일 변경 시 제조사 지침(필요 시 플러싱)을 따릅니다.</span><span class="ee">Turbine synthetic oils have chemical compatibility limits, so only manufacturer-approved oil is serviced per specified procedures; mixing types/brands can cause additive reactions and degradation, so follow manufacturer guidance (flushing if required) when changing oils.</span><span class="acs-code">ACS PA.I.C.K2</span></div>
 </div>
@@ -2752,10 +2753,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_608" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q8</span><span class="quizx-qtext"><span class="quizx-qk">공랭식 왕복엔진에서 실린더 '배플(baffle)'과 카울 플랩(cowl flap)의 역할은?</span><span class="quizx-qe">What do cylinder baffles and cowl flaps do on an air-cooled engine?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_608','A')"><span class="lt">A</span><span>연료를 계량한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_608','B')"><span class="lt">B</span><span>점화 타이밍을 조절한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_608','C')"><span class="lt">C</span><span>오일을 여과한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_608','D')"><span class="lt">D</span><span>배플은 냉각 공기를 실린더 냉각핀 사이로 강제 유도하고, 카울 플랩은 배출 공기량을 조절해 냉각을 제어한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_608','A')"><span class="lt">A</span><span>연료를 계량한다<span class="opt-en">Meters fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_608','B')"><span class="lt">B</span><span>점화 타이밍을 조절한다<span class="opt-en">Sets ignition timing</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_608','C')"><span class="lt">C</span><span>오일을 여과한다<span class="opt-en">Filters oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_608','D')"><span class="lt">D</span><span>배플은 냉각 공기를 실린더 냉각핀 사이로 강제 유도하고, 카울 플랩은 배출 공기량을 조절해 냉각을 제어한다<span class="opt-en">Baffles force cooling air between the cylinder fins; cowl flaps control the exiting air volume to manage cooling</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">배플(과 디플렉터)은 냉각 공기를 실린더 냉각핀 사이·뒤쪽으로 강제 유도해 고른 냉각을 만듭니다. 카울 플랩은 카울 밖으로 나가는 공기량을 조절해, 지상·상승 시 더 열고 순항 시 닫아 실린더 온도(CHT)를 제어합니다.</span><span class="ee">Baffles (and deflectors) force cooling air between and around the cylinder fins for even cooling, while cowl flaps regulate the volume of air exiting the cowl—opened more on the ground/climb, closed in cruise—to control cylinder head temperature.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
 </div>
@@ -2763,10 +2764,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_609" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">실린더 냉각핀(cooling fin)에 균열·파손이 발견되면 정비 조치는?</span><span class="quizx-qe">If cooling fins are cracked or broken, what is the maintenance consideration?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_609','A')"><span class="lt">A</span><span>항상 무시해도 된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_609','B')"><span class="lt">B</span><span>규정된 면적·개수 한계 내에서만 손상 냉각핀을 정리(스톱드릴·컨투어링)할 수 있고, 한계를 넘으면 실린더 교체가 필요하다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_609','C')"><span class="lt">C</span><span>모든 냉각핀을 제거한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_609','D')"><span class="lt">D</span><span>용접으로 즉시 메운다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_609','A')"><span class="lt">A</span><span>항상 무시해도 된다<span class="opt-en">They can always be ignored</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_609','B')"><span class="lt">B</span><span>규정된 면적·개수 한계 내에서만 손상 냉각핀을 정리(스톱드릴·컨투어링)할 수 있고, 한계를 넘으면 실린더 교체가 필요하다<span class="opt-en">Damaged fins may be dressed (stop-drill/contour) only within specified area/count limits; beyond limits the cylinder must be replaced</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_609','C')"><span class="lt">C</span><span>모든 냉각핀을 제거한다<span class="opt-en">Remove all cooling fins</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_609','D')"><span class="lt">D</span><span>용접으로 즉시 메운다<span class="opt-en">Fill immediately by welding</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">냉각핀 손상은 국부 과열의 원인이 됩니다. 제조사 규정(제거 가능한 면적·인접 손상 한계) 내에서 손상부를 매끄럽게 정리(스톱드릴·컨투어링)하되, 한계를 넘는 손실은 냉각 성능·응력 문제로 실린더 교체가 필요합니다.</span><span class="ee">Fin damage causes local overheating; within manufacturer limits (removable area, adjacent-damage limits) the damage is dressed smooth (stop-drill, contour), but losses beyond limits require cylinder replacement due to cooling and stress concerns.</span><span class="acs-code">ACS PA.I.C.K2</span></div>
 </div>
@@ -2774,15 +2775,80 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')tbmClose();}
 <div class="quizx-card" id="qz_610" data-ans="C">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q10</span><span class="quizx-qk">터빈 엔진의 터빈 블레이드 냉각에 흔히 쓰이는 방식은?</span><span class="quizx-qe">What cooling method is commonly used for turbine blades?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_610','A')"><span class="lt">A</span><span>오일을 블레이드에 직접 분사</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_610','B')"><span class="lt">B</span><span>물 재킷 순환</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_610','C')"><span class="lt">C</span><span>압축기에서 뽑은 블리드 에어를 블레이드 내부 통로로 흘리고 표면 홀로 배출하는 공랭(내부 대류·필름 쿨링)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_610','D')"><span class="lt">D</span><span>연료로 냉각</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_610','A')"><span class="lt">A</span><span>오일을 블레이드에 직접 분사<span class="opt-en">Spraying oil directly on the blades</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_610','B')"><span class="lt">B</span><span>물 재킷 순환<span class="opt-en">Circulating a water jacket</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_610','C')"><span class="lt">C</span><span>압축기에서 뽑은 블리드 에어를 블레이드 내부 통로로 흘리고 표면 홀로 배출하는 공랭(내부 대류·필름 쿨링)<span class="opt-en">Air cooling—compressor bleed air through internal passages, exiting surface holes (internal convection and film cooling)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_610','D')"><span class="lt">D</span><span>연료로 냉각<span class="opt-en">Cooling with fuel</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">터빈 블레이드는 연소 가스 온도가 재료 한계를 넘으므로 공랭합니다. 압축기 블리드 에어를 블레이드 내부 통로로 통과시켜 대류 냉각하고, 표면의 작은 홀로 배출해 얇은 보호 공기막(필름 쿨링)을 만들어 열을 차단합니다.</span><span class="ee">Turbine blades are air-cooled because gas temperatures exceed material limits: compressor bleed air passes through internal passages for convection cooling and exits small surface holes to form a protective film (film cooling) that shields the blade from heat.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
 </div>
 
-<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">10</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
+<div class="quizx-card" id="qz_611" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">항공 피스톤 엔진 오일의 'SAE 등급'과 상용(commercial) 번호의 관계로 옳은 것은?</span><span class="quizx-qe">Which correctly relates aviation piston oil SAE grade and commercial number?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_611','A')"><span class="lt">A</span><span>둘은 무관하다<span class="opt-en">They are unrelated</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_611','B')"><span class="lt">B</span><span>항공 상용 번호는 대략 SAE 점도의 약 2배(예: 상용 100 ≈ SAE 50, 80 ≈ SAE 40)로 표기된다<span class="opt-en">Aviation commercial numbers are roughly twice the SAE viscosity (e.g., commercial 100 ≈ SAE 50, 80 ≈ SAE 40)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_611','C')"><span class="lt">C</span><span>상용 번호가 SAE보다 항상 작다<span class="opt-en">The commercial number is always smaller than SAE</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_611','D')"><span class="lt">D</span><span>상용 번호는 색을 뜻한다<span class="opt-en">The commercial number means color</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">항공 피스톤 오일의 상용 번호는 대략 SAE 점도의 약 두 배로 매겨집니다. 예: 상용 80≈SAE 40, 100≈SAE 50, 120≈SAE 60. 계절·기온에 맞는 점도를 선택하며, 다점도유(예: 15W-50)는 넓은 온도 범위에 대응합니다.</span><span class="ee">Aviation piston oil commercial numbers are roughly twice the SAE viscosity: commercial 80≈SAE 40, 100≈SAE 50, 120≈SAE 60; viscosity is chosen for season/temperature, and multigrade oils (e.g., 15W-50) cover a wide temperature range.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_612" data-ans="C">
+<div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">분광 오일 분석(SOAP, spectrometric oil analysis)이 정비에 주는 가치는?</span><span class="quizx-qe">What is the maintenance value of spectrometric oil analysis (SOAP)?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_612','A')"><span class="lt">A</span><span>오일 색을 판정한다<span class="opt-en">Judges oil color</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_612','B')"><span class="lt">B</span><span>오일 양을 측정한다<span class="opt-en">Measures oil quantity</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_612','C')"><span class="lt">C</span><span>오일 속 미세 마모 금속의 종류·농도를 추세로 분석해 내부 마모·임박한 고장을 조기에 예측한다<span class="opt-en">Trends the types/concentrations of fine wear metals in the oil to predict internal wear or impending failure early</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_612','D')"><span class="lt">D</span><span>연료 옥탄가를 측정한다<span class="opt-en">Measures fuel octane</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">SOAP은 오일에 떠 있는 미세 마모 금속의 종류와 농도(ppm)를 측정합니다. 정기 시료의 추세를 비교해 특정 금속의 급증을 포착하면 해당 부품(베어링·기어 등)의 마모나 임박한 고장을 조기에 예측할 수 있습니다. 절대값보다 추세가 중요합니다.</span><span class="ee">SOAP measures the types and concentrations (ppm) of fine wear metals suspended in the oil; comparing trends of periodic samples flags a spike in a specific metal, giving early prediction of wear or impending failure in the related part (bearings, gears)—the trend matters more than absolute value.</span><span class="acs-code">ACS PA.I.C.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_613" data-ans="A">
+<div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">드라이섬프 계통의 '스캐빈지 펌프(scavenge pump)'가 압력 펌프보다 용량이 큰 이유는?</span><span class="quizx-qe">Why does a dry-sump scavenge pump have greater capacity than the pressure pump?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_613','A')"><span class="lt">A</span><span>회수 오일이 공기·거품과 섞여 부피가 커지므로, 케이스에 오일이 고이지 않게 더 많이 퍼내야 하기 때문<span class="opt-en">Because returning oil mixes with air/foam and expands, it must pump more so oil doesn't pool in the case</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_613','B')"><span class="lt">B</span><span>더 높은 압력을 만들기 위해<span class="opt-en">To create higher pressure</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_613','C')"><span class="lt">C</span><span>오일을 냉각하기 위해<span class="opt-en">To cool the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_613','D')"><span class="lt">D</span><span>연료를 공급하기 위해<span class="opt-en">To supply fuel</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">스캐빈지 펌프가 회수하는 오일은 크랭크케이스에서 공기·거품과 섞여 부피가 팽창합니다. 압력 펌프가 보낸 것보다 더 많은 부피를 퍼내야 케이스에 오일이 고이지 않으므로, 스캐빈지 펌프 용량을 더 크게 설계합니다.</span><span class="ee">Oil returning to the scavenge pump is mixed with air and foam in the crankcase and expands in volume; it must pump more volume than the pressure pump delivered so oil does not pool in the case, so the scavenge pump is sized larger.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_614" data-ans="D">
+<div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">엔진 오일 온도는 정상인데 오일 압력이 서서히 낮아지는 추세라면 우선 의심할 것은?</span><span class="quizx-qe">If oil temperature is normal but oil pressure trends gradually lower, what to suspect first?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_614','A')"><span class="lt">A</span><span>배터리 방전<span class="opt-en">Battery drain</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_614','B')"><span class="lt">B</span><span>점화 타이밍 오류<span class="opt-en">Ignition timing error</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_614','C')"><span class="lt">C</span><span>연료 오염<span class="opt-en">Fuel contamination</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_614','D')"><span class="lt">D</span><span>베어링 마모로 인한 내부 누설, 릴리프 밸브 이상, 오일 펌프 마모, 또는 점도 저하 등<span class="opt-en">Internal leakage from bearing wear, a faulty relief valve, a worn oil pump, or reduced viscosity</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">온도가 정상인데 압력이 점진적으로 낮아지면 베어링 간극 증가(내부 누설), 릴리프 밸브 스프링 약화·고착, 오일 펌프 마모, 오일 점도 저하(연료 희석 등)를 의심합니다. 게이지·센서 결함도 배제해야 하며, 추세 자료와 함께 원인을 격리합니다.</span><span class="ee">With normal temperature but a gradual pressure decline, suspect increased bearing clearance (internal leakage), a weak/sticking relief valve, a worn oil pump, or reduced viscosity (fuel dilution); also rule out gauge/sensor faults, isolating the cause with trend data.</span><span class="acs-code">ACS PA.I.C.K2</span></div>
+</div>
+
+<div class="quizx-card" id="qz_615" data-ans="B">
+<div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">터빈 엔진 오일 계통의 '디에어레이터(deaerator)'가 하는 일은?</span><span class="quizx-qe">What does a deaerator do in a turbine oil system?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_615','A')"><span class="lt">A</span><span>오일을 가열한다<span class="opt-en">Heats the oil</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_615','B')"><span class="lt">B</span><span>스캐빈지 오일에서 공기를 분리해 오일 안정과 정확한 계량·냉각을 돕는다<span class="opt-en">Separates air from scavenge oil to stabilize it and aid accurate metering and cooling</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_615','C')"><span class="lt">C</span><span>연료를 여과한다<span class="opt-en">Filters fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_615','D')"><span class="lt">D</span><span>오일 압력을 높인다<span class="opt-en">Raises oil pressure</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">디에어레이터는 탱크로 돌아온 스캐빈지 오일에 섞인 공기·거품을 분리합니다. 공기가 빠진 오일은 냉각·윤활 효율이 좋아지고 정확히 계량되며, 분리된 공기는 브리더로 배출됩니다. 이는 터빈 오일 계통의 안정적 순환에 필수적입니다.</span><span class="ee">A deaerator separates air and foam from scavenge oil returned to the tank; de-aerated oil cools and lubricates more effectively and is metered accurately, with separated air vented through the breather—essential for stable turbine oil circulation.</span><span class="acs-code">ACS PA.I.C.K1</span></div>
+</div>
+
+<div class="quizx-card" id="qz_616" data-ans="C">
+<div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">공랭 왕복엔진에서 실린더별 CHT(실린더헤드온도)가 유독 한 실린더만 높다면 우선 점검할 것은?</span><span class="quizx-qe">If one cylinder's CHT reads much higher than the others, what to check first?</span></span></div>
+<div class="quizx-opts">
+<button class="quizx-opt" onclick="qzPick(this,'qz_616','A')"><span class="lt">A</span><span>배터리 전압<span class="opt-en">Battery voltage</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_616','B')"><span class="lt">B</span><span>프로펠러 트래킹<span class="opt-en">Propeller tracking</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_616','C')"><span class="lt">C</span><span>그 실린더의 배플·디플렉터 손상·누락, 냉각핀 손상, 또는 희박 혼합(막힌 노즐 등)<span class="opt-en">Damaged/missing baffles or deflectors on that cylinder, fin damage, or a lean mixture (clogged nozzle, etc.)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_616','D')"><span class="lt">D</span><span>타이어 공기압<span class="opt-en">Tire pressure</span></span></button>
+</div>
+<div class="quizx-exp"><span class="ek">한 실린더만 CHT가 높으면 그 실린더의 배플·디플렉터 손상·누락으로 냉각 공기가 새거나, 냉각핀 손상, 또는 희박 혼합(막힌 인젝터 노즐·흡기 누설)을 의심합니다. 계기·프로브 결함도 배제하고, 배플 밀착과 노즐 유량을 점검합니다.</span><span class="ee">A single high CHT suggests damaged/missing baffles or deflectors on that cylinder leaking cooling air, fin damage, or a lean mixture (clogged injector nozzle, intake leak); rule out gauge/probe faults and check baffle sealing and nozzle flow.</span><span class="acs-code">ACS PA.I.C.K2</span></div>
+</div>
+<div class="quizx-prog"><span class="ptxt">퀴즈 정답 <b id="qzScore">0</b> / <span id="qzTotal">16</span></span><div class="pbar"><div class="pfill" id="qzFill"></div></div><span class="ptxt" id="qzPct">0%</span><button class="quizx-reset" onclick="qzReset()">초기화</button></div>
 </div>
 <script>
 (function(){
