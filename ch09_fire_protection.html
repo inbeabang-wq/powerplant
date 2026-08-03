@@ -1241,6 +1241,7 @@ function figRefToggle(el){
 .quizx-opt.wrong{border-color:#F87171;background:rgba(248,113,113,.13);color:var(--t1);}
 .quizx-opt.wrong .lt{color:#F87171;}
 .quizx-opt.locked{cursor:default;pointer-events:none;opacity:.62;}
+.quizx-opt .opt-en{display:block;margin-top:3px;font-size:11.5px;color:var(--t3);font-style:italic;line-height:1.4;}
 .quizx-opt.locked.correct,.quizx-opt.locked.wrong{opacity:1;}
 .quizx-exp{margin-top:11px;padding:11px 13px;border-left:3px solid var(--gold);
   background:rgba(251,191,36,.06);border-radius:0 8px 8px 0;font-size:13px;color:var(--t2);
@@ -1267,10 +1268,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_901" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q1</span><span class="quizx-qtext"><span class="quizx-qk">서멀 스위치(thermal switch) 화재 감지 계통은 무엇에 반응하는가?</span><span class="quizx-qe">What does a thermal switch fire detection system respond to?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_901','A')"><span class="lt">A</span><span>온도 상승률(급격한 변화)에만 반응한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_901','B')"><span class="lt">B</span><span>연기 농도에 반응한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_901','C')"><span class="lt">C</span><span>미리 정해진 특정 온도에 도달하면 접점이 닫혀 경보한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_901','D')"><span class="lt">D</span><span>화염의 자외선 복사에 반응한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_901','A')"><span class="lt">A</span><span>온도 상승률(급격한 변화)에만 반응한다<span class="opt-en">Responds only to the rate of temperature rise (rapid change)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_901','B')"><span class="lt">B</span><span>연기 농도에 반응한다<span class="opt-en">Responds to smoke concentration</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_901','C')"><span class="lt">C</span><span>미리 정해진 특정 온도에 도달하면 접점이 닫혀 경보한다<span class="opt-en">Closes contacts and alarms when a preset specific temperature is reached</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_901','D')"><span class="lt">D</span><span>화염의 자외선 복사에 반응한다<span class="opt-en">Responds to ultraviolet radiation from flame</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">서멀 스위치는 바이메탈이나 팽창 요소가 설정 온도에 도달하면 접점을 닫아 경보 회로를 완성합니다. 특정 과열 온도(overheat) 방식입니다.</span><span class="ee">A thermal switch closes its contacts to complete the alarm circuit when a bimetallic or expanding element reaches a preset temperature—an overheat (spot-temperature) system.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1278,10 +1279,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_902" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q2</span><span class="quizx-qtext"><span class="quizx-qk">서모커플(thermocouple) 화재 감지 계통이 반응하는 조건은?</span><span class="quizx-qe">What condition does a thermocouple fire detection system respond to?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_902','A')"><span class="lt">A</span><span>절대 온도가 설정값을 넘을 때</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_902','B')"><span class="lt">B</span><span>급격한 온도 상승률(rate-of-rise)에 반응한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_902','C')"><span class="lt">C</span><span>연기 입자 농도</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_902','D')"><span class="lt">D</span><span>화염의 적외선 복사</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_902','A')"><span class="lt">A</span><span>절대 온도가 설정값을 넘을 때<span class="opt-en">When absolute temperature exceeds a set value</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_902','B')"><span class="lt">B</span><span>급격한 온도 상승률(rate-of-rise)에 반응한다<span class="opt-en">Responds to a rapid rate-of-rise in temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_902','C')"><span class="lt">C</span><span>연기 입자 농도<span class="opt-en">Smoke particle concentration</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_902','D')"><span class="lt">D</span><span>화염의 적외선 복사<span class="opt-en">Infrared radiation from flame</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">서모커플 계통은 급격한 온도 상승률에 반응합니다. 활성 접점과 기준 접점의 온도차가 클 때(빠른 상승) 기전력이 생겨 경보하며, 완만한 전체 가열에는 반응하지 않습니다.</span><span class="ee">A thermocouple system responds to a rapid rate of temperature rise—an EMF is generated when the active and reference junctions differ greatly (fast rise); slow overall heating does not trigger it.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1289,10 +1290,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_903" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q3</span><span class="quizx-qtext"><span class="quizx-qk">Fenwal·Kidde 연속 루프(continuous-loop) 계통은 어떤 방식으로 화재를 감지하는가?</span><span class="quizx-qe">How does a Fenwal or Kidde continuous-loop system detect fire?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_903','A')"><span class="lt">A</span><span>가열되면 코어 재료의 전기 저항이 변해 감지한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_903','B')"><span class="lt">B</span><span>튜브 내 가스 압력 상승으로 다이어프램 스위치를 작동한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_903','C')"><span class="lt">C</span><span>광섬유로 화염 빛을 전달한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_903','D')"><span class="lt">D</span><span>연기 감지 셀을 사용한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_903','A')"><span class="lt">A</span><span>가열되면 코어 재료의 전기 저항이 변해 감지한다<span class="opt-en">When heated, the core material's electrical resistance changes and is sensed</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_903','B')"><span class="lt">B</span><span>튜브 내 가스 압력 상승으로 다이어프램 스위치를 작동한다<span class="opt-en">Rising gas pressure in the tube operates a diaphragm switch</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_903','C')"><span class="lt">C</span><span>광섬유로 화염 빛을 전달한다<span class="opt-en">Transmits flame light through optical fiber</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_903','D')"><span class="lt">D</span><span>연기 감지 셀을 사용한다<span class="opt-en">Uses a smoke-detection cell</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">Fenwal·Kidde는 저항식(전기식) 연속 루프입니다. 온도가 오르면 코어 재료(써미스터 유형)의 저항이 변하고, 이를 제어 장치가 감지해 경보합니다. 공압식(Lindberg·Systron-Donner)은 가스 압력을 씁니다.</span><span class="ee">Fenwal and Kidde are resistance (electrical) continuous loops: rising temperature changes the resistance of the core material, which the control unit senses to alarm; pneumatic types (Lindberg, Systron-Donner) use gas pressure instead.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1300,10 +1301,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_904" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q4</span><span class="quizx-qtext"><span class="quizx-qk">Systron-Donner(공압식) 연속 루프 감지기의 작동 원리는?</span><span class="quizx-qe">How does a Systron-Donner (pneumatic) continuous-loop detector work?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_904','A')"><span class="lt">A</span><span>코어 저항 변화를 측정한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_904','B')"><span class="lt">B</span><span>자외선 센서로 화염을 본다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_904','C')"><span class="lt">C</span><span>바이메탈 접점을 닫는다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_904','D')"><span class="lt">D</span><span>튜브 내 가스가 가열되어 팽창하면 압력이 다이어프램 스위치를 작동시킨다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_904','A')"><span class="lt">A</span><span>코어 저항 변화를 측정한다<span class="opt-en">Measures core resistance change</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_904','B')"><span class="lt">B</span><span>자외선 센서로 화염을 본다<span class="opt-en">Sees flame with a UV sensor</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_904','C')"><span class="lt">C</span><span>바이메탈 접점을 닫는다<span class="opt-en">Closes a bimetallic contact</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_904','D')"><span class="lt">D</span><span>튜브 내 가스가 가열되어 팽창하면 압력이 다이어프램 스위치를 작동시킨다<span class="opt-en">When gas in the tube heats and expands, the pressure operates a diaphragm switch</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">공압식 감지기는 튜브 안에 채운 가스와 코어의 수소 충전재를 이용합니다. 과열 시 가스 압력이 상승해 다이어프램 스위치를 닫아 경보하며, 평균 과열(전체)과 국부 이산(discrete) 화재 모두 감지합니다.</span><span class="ee">Pneumatic detectors use gas in a tube with a hydrogen-charged core: on heating, gas pressure rises and closes a diaphragm switch to alarm, sensing both averaging overheat and discrete (localized) fires.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1311,10 +1312,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_905" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q5</span><span class="quizx-qtext"><span class="quizx-qk">화재 감지 계통이 갖춰야 할 기본 요건으로 옳은 것은?</span><span class="quizx-qe">Which is a basic requirement of a fire detection system?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_905','A')"><span class="lt">A</span><span>화재가 진압된 후에만 경보를 표시해야 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_905','B')"><span class="lt">B</span><span>화재가 존재할 때 정확히 지시하고, 없을 때 오경보를 내지 않아야 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_905','C')"><span class="lt">C</span><span>엔진 정지 후에만 작동해야 한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_905','D')"><span class="lt">D</span><span>정비사만 리셋할 수 있어야 한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_905','A')"><span class="lt">A</span><span>화재가 진압된 후에만 경보를 표시해야 한다<span class="opt-en">Should indicate an alarm only after the fire is suppressed</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_905','B')"><span class="lt">B</span><span>화재가 존재할 때 정확히 지시하고, 없을 때 오경보를 내지 않아야 한다<span class="opt-en">Should indicate accurately when a fire exists and not give false alarms when none exists</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_905','C')"><span class="lt">C</span><span>엔진 정지 후에만 작동해야 한다<span class="opt-en">Should operate only after engine shutdown</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_905','D')"><span class="lt">D</span><span>정비사만 리셋할 수 있어야 한다<span class="opt-en">Should be resettable only by a mechanic</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">감지 계통은 화재가 있을 때 정확·신속히 지시하고, 화재가 없을 때는 오경보를 내지 않아야 하며, 화재 진화 후 정확히 소멸 표시를 하고 재점검(테스트)이 가능해야 합니다.</span><span class="ee">A detection system must accurately and promptly indicate a fire when present, give no false alarms when absent, correctly show when the fire is out, and allow testing.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1322,10 +1323,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_906" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q6</span><span class="quizx-qtext"><span class="quizx-qk">소화 병(extinguisher bottle)의 충전 상태를 현장에서 확인하는 대표적 방법은?</span><span class="quizx-qe">What is a common way to verify an extinguisher bottle's charge in the field?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_906','A')"><span class="lt">A</span><span>병을 흔들어 소리로 판단한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_906','B')"><span class="lt">B</span><span>병을 열어 내용물을 육안으로 본다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_906','C')"><span class="lt">C</span><span>압력 게이지 지시를 온도 보정 차트와 대조한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_906','D')"><span class="lt">D</span><span>디스차지 카트리지를 임의로 발사해 본다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_906','A')"><span class="lt">A</span><span>병을 흔들어 소리로 판단한다<span class="opt-en">Shake the bottle and judge by sound</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_906','B')"><span class="lt">B</span><span>병을 열어 내용물을 육안으로 본다<span class="opt-en">Open the bottle and view the contents</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_906','C')"><span class="lt">C</span><span>압력 게이지 지시를 온도 보정 차트와 대조한다<span class="opt-en">Compare the pressure gauge reading against a temperature-correction chart</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_906','D')"><span class="lt">D</span><span>디스차지 카트리지를 임의로 발사해 본다<span class="opt-en">Randomly fire the discharge cartridge to test</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">소화 병은 압력 게이지 지시를 주위 온도-압력 차트와 대조해 충전 상태를 확인합니다. 온도에 따라 정상 압력 범위가 달라지므로 반드시 온도 보정이 필요합니다.</span><span class="ee">An extinguisher bottle's charge is verified by comparing its pressure gauge reading against an ambient temperature-pressure chart, since the normal pressure range varies with temperature.</span><span class="acs-code">ACS PA.II.G.K2</span></div>
 </div>
@@ -1333,10 +1334,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_907" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q7</span><span class="quizx-qtext"><span class="quizx-qk">소화 병의 디스차지 방식에서 '스퀴브(squib)' 또는 카트리지의 역할은?</span><span class="quizx-qe">What is the role of the squib or cartridge in bottle discharge?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_907','A')"><span class="lt">A</span><span>전기 신호로 점화되어 디스크(씰)를 파열시켜 소화제를 방출한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_907','B')"><span class="lt">B</span><span>소화제를 냉각한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_907','C')"><span class="lt">C</span><span>화재 온도를 측정한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_907','D')"><span class="lt">D</span><span>병의 압력을 서서히 낮춘다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_907','A')"><span class="lt">A</span><span>전기 신호로 점화되어 디스크(씰)를 파열시켜 소화제를 방출한다<span class="opt-en">Is electrically ignited to rupture a disk (seal) and release the agent</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_907','B')"><span class="lt">B</span><span>소화제를 냉각한다<span class="opt-en">Cools the agent</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_907','C')"><span class="lt">C</span><span>화재 온도를 측정한다<span class="opt-en">Measures fire temperature</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_907','D')"><span class="lt">D</span><span>병의 압력을 서서히 낮춘다<span class="opt-en">Slowly lowers the bottle pressure</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">스퀴브(전기 폭발식 카트리지)는 조종석 스위치의 전기 신호로 점화되어 병 출구의 씰 디스크를 파열시키고, 저장 압력으로 소화제를 배관을 통해 엔진 나셀로 방출합니다.</span><span class="ee">A squib (electrically fired cartridge) is ignited by a cockpit switch signal to rupture the seal disk at the bottle outlet, and stored pressure discharges the agent through plumbing into the engine nacelle.</span><span class="acs-code">ACS PA.II.G.K2</span></div>
 </div>
@@ -1344,10 +1345,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_908" data-ans="D">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q8</span><span class="quizx-qk">보잉 727 같은 다발기의 소화 계통에서 '2-샷(two-shot)' 구성이 뜻하는 것은?</span><span class="quizx-qe">In a transport fire system, what does a two-shot configuration mean?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_908','A')"><span class="lt">A</span><span>두 종류의 소화제를 동시에 방출한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_908','B')"><span class="lt">B</span><span>감지 루프가 두 개다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_908','C')"><span class="lt">C</span><span>소화병이 두 개의 엔진에만 연결된다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_908','D')"><span class="lt">D</span><span>한 엔진에 두 번 방출할 수 있어, 1차 방출로 진화 안 되면 2차 병을 같은 엔진으로 보낼 수 있다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_908','A')"><span class="lt">A</span><span>두 종류의 소화제를 동시에 방출한다<span class="opt-en">Discharges two agents simultaneously</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_908','B')"><span class="lt">B</span><span>감지 루프가 두 개다<span class="opt-en">Has two detection loops</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_908','C')"><span class="lt">C</span><span>소화병이 두 개의 엔진에만 연결된다<span class="opt-en">Bottles connect to only two engines</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_908','D')"><span class="lt">D</span><span>한 엔진에 두 번 방출할 수 있어, 1차 방출로 진화 안 되면 2차 병을 같은 엔진으로 보낼 수 있다<span class="opt-en">Allows two shots to one engine—if the first doesn't extinguish it, a second bottle can be directed to the same engine</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">2-샷 구성은 한 엔진에 두 번의 소화 방출 기회를 줍니다. 1차 병 방출로 진화되지 않으면 크로스피드 배관을 통해 2차 병을 같은 엔진 나셀로 방출할 수 있습니다.</span><span class="ee">A two-shot configuration gives an engine two discharge opportunities: if the first bottle does not extinguish the fire, a second bottle can be routed through crossfeed plumbing to the same engine nacelle.</span><span class="acs-code">ACS PA.II.G.K2</span></div>
 </div>
@@ -1355,10 +1356,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_909" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q9</span><span class="quizx-qtext"><span class="quizx-qk">항공기 엔진 소화 계통에 널리 쓰여 온 소화제 할론(Halon 1301)의 소화 원리는?</span><span class="quizx-qe">How does Halon 1301, long used in aircraft engine fire systems, extinguish fire?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_909','A')"><span class="lt">A</span><span>물로 냉각한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_909','B')"><span class="lt">B</span><span>연소의 화학 연쇄 반응을 방해(억제)해 불을 끈다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_909','C')"><span class="lt">C</span><span>연료를 흡수한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_909','D')"><span class="lt">D</span><span>산소를 공급한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_909','A')"><span class="lt">A</span><span>물로 냉각한다<span class="opt-en">Cools with water</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_909','B')"><span class="lt">B</span><span>연소의 화학 연쇄 반응을 방해(억제)해 불을 끈다<span class="opt-en">Interrupts (inhibits) the chemical chain reaction of combustion to put out the fire</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_909','C')"><span class="lt">C</span><span>연료를 흡수한다<span class="opt-en">Absorbs the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_909','D')"><span class="lt">D</span><span>산소를 공급한다<span class="opt-en">Supplies oxygen</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">할론은 연소의 화학적 연쇄 반응을 방해해 불을 끕니다. 잔류물이 거의 없고 소량으로 효과적이라 항공기 엔진·화물칸에 널리 쓰였으나, 오존층 문제로 대체제가 개발되고 있습니다.</span><span class="ee">Halon interrupts the chemical chain reaction of combustion; it leaves little residue and is effective in small amounts, long used in aircraft engines and cargo bays, though replacements are being developed due to ozone concerns.</span><span class="acs-code">ACS PA.II.G.K2</span></div>
 </div>
@@ -1366,10 +1367,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_910" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q10</span><span class="quizx-qtext"><span class="quizx-qk">화재 감지 계통의 '테스트' 회로가 확인하는 것은?</span><span class="quizx-qe">What does the test circuit of a fire detection system verify?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_910','A')"><span class="lt">A</span><span>실제로 불을 붙여 본다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_910','B')"><span class="lt">B</span><span>소화제 잔량만 확인한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_910','C')"><span class="lt">C</span><span>감지 루프·배선·경보 회로의 연속성과 작동을 화재 없이 점검한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_910','D')"><span class="lt">D</span><span>연료량을 측정한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_910','A')"><span class="lt">A</span><span>실제로 불을 붙여 본다<span class="opt-en">Actually starts a fire to test</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_910','B')"><span class="lt">B</span><span>소화제 잔량만 확인한다<span class="opt-en">Only checks the remaining agent</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_910','C')"><span class="lt">C</span><span>감지 루프·배선·경보 회로의 연속성과 작동을 화재 없이 점검한다<span class="opt-en">Checks continuity and operation of the detection loop, wiring, and alarm circuit without a fire</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_910','D')"><span class="lt">D</span><span>연료량을 측정한다<span class="opt-en">Measures fuel quantity</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">테스트 회로는 실제 화재 없이 감지 루프·배선·경보 회로의 연속성과 작동을 점검합니다. 조종사가 비행 전 스위치로 계통 건전성을 확인할 수 있게 하는 것이 감지 계통의 기본 요건 중 하나입니다.</span><span class="ee">The test circuit checks the continuity and operation of the detection loop, wiring, and alarm circuit without an actual fire, letting the pilot verify system integrity before flight—one of the basic requirements of a detection system.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1377,10 +1378,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_911" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q11</span><span class="quizx-qtext"><span class="quizx-qk">화재 구역(fire zone) 분류에서 A급 구역의 특징은?</span><span class="quizx-qe">What characterizes a Class A fire zone?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_911','A')"><span class="lt">A</span><span>규칙적으로 배열된 장애물 주위로 상당한 공기 흐름이 지나가는 구역(예: 실린더 파워 섹션)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_911','B')"><span class="lt">B</span><span>공기 흐름이 전혀 없는 밀폐 구역</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_911','C')"><span class="lt">C</span><span>연료가 없는 구역</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_911','D')"><span class="lt">D</span><span>객실 내부</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_911','A')"><span class="lt">A</span><span>규칙적으로 배열된 장애물 주위로 상당한 공기 흐름이 지나가는 구역(예: 실린더 파워 섹션)<span class="opt-en">A zone with significant airflow past regularly arranged obstructions (e.g., cylinder power section)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_911','B')"><span class="lt">B</span><span>공기 흐름이 전혀 없는 밀폐 구역<span class="opt-en">A sealed zone with no airflow at all</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_911','C')"><span class="lt">C</span><span>연료가 없는 구역<span class="opt-en">A zone with no fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_911','D')"><span class="lt">D</span><span>객실 내부<span class="opt-en">The cabin interior</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">화재 구역은 공기 흐름 특성으로 분류됩니다. A급은 실린더 파워 섹션처럼 규칙적 장애물 주위로 상당한 공기가 흐르는 구역입니다. 구역 특성에 따라 감지기 배치와 소화 설계가 달라집니다.</span><span class="ee">Fire zones are classified by airflow characteristics; Class A has substantial airflow past regularly arranged obstructions, such as the cylinder power section—zone characteristics drive detector placement and extinguishing design.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1388,10 +1389,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_912" data-ans="D">
 <div class="quizx-q"><span class="quizx-qno">Q12</span><span class="quizx-qtext"><span class="quizx-qk">연속 루프 감지기가 나셀 내에서 '지지 클램프(support clamp)'로 일정 간격 고정되어야 하는 이유는?</span><span class="quizx-qe">Why must a continuous-loop detector be secured at intervals by support clamps in the nacelle?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_912','A')"><span class="lt">A</span><span>전압을 높이기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_912','B')"><span class="lt">B</span><span>무게를 늘리기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_912','C')"><span class="lt">C</span><span>가열을 촉진하기 위해</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_912','D')"><span class="lt">D</span><span>진동에 의한 마모·피로 파손과 오경보·계통 손상을 막기 위해</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_912','A')"><span class="lt">A</span><span>전압을 높이기 위해<span class="opt-en">To increase voltage</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_912','B')"><span class="lt">B</span><span>무게를 늘리기 위해<span class="opt-en">To add weight</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_912','C')"><span class="lt">C</span><span>가열을 촉진하기 위해<span class="opt-en">To promote heating</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_912','D')"><span class="lt">D</span><span>진동에 의한 마모·피로 파손과 오경보·계통 손상을 막기 위해<span class="opt-en">To prevent vibration-induced wear/fatigue failure and false alarms/system damage</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">감지기 튜브가 느슨하면 진동으로 인접 구조에 마모·피로 파손이 생겨 오경보나 계통 손상을 유발합니다. 제조사 지정 간격과 클램프·그로밋으로 확실히 지지하고, 검사 시 마모·찍힘·꺾임을 확인합니다.</span><span class="ee">A loose sensing tube can chafe and fatigue against structure from vibration, causing false alarms or system damage; secure it with specified clamps and grommets at intervals and inspect for chafing, dents, and kinks.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1399,10 +1400,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_913" data-ans="B">
 <div class="quizx-q"><span class="quizx-qno">Q13</span><span class="quizx-qtext"><span class="quizx-qk">소화 병에 장착된 '열 방출 디스크(thermal discharge indicator)'가 방출(파열)되면 무엇을 뜻하는가?</span><span class="quizx-qe">If a bottle's thermal discharge indicator has blown, what does it mean?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_913','A')"><span class="lt">A</span><span>조종사가 정상적으로 소화 스위치를 작동했다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_913','B')"><span class="lt">B</span><span>과열로 인한 과압 때문에 병이 자동으로 방출됐다(통상 빨간 디스크)</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_913','C')"><span class="lt">C</span><span>병이 완충됐다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_913','D')"><span class="lt">D</span><span>감지 계통이 정상이다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_913','A')"><span class="lt">A</span><span>조종사가 정상적으로 소화 스위치를 작동했다<span class="opt-en">The pilot operated the discharge switch normally</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_913','B')"><span class="lt">B</span><span>과열로 인한 과압 때문에 병이 자동으로 방출됐다(통상 빨간 디스크)<span class="opt-en">The bottle discharged automatically due to overpressure from overheating (usually a red disk)</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_913','C')"><span class="lt">C</span><span>병이 완충됐다<span class="opt-en">The bottle was recharged</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_913','D')"><span class="lt">D</span><span>감지 계통이 정상이다<span class="opt-en">The detection system is normal</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">소화 병에는 두 개의 방출 표시가 있습니다. 정상 방출(노란/황색 디스크)은 조종사 작동을 뜻하고, 열 방출(빨간 디스크)은 과열에 의한 과압으로 병이 자동 방출됐음을 뜻합니다. 빨간 디스크가 없어졌으면 과열 방출을 조사합니다.</span><span class="ee">Bottles have two discharge indicators: normal discharge (yellow disk) means pilot actuation, and thermal discharge (red disk) means the bottle auto-vented from overpressure due to overheat; a missing red disk prompts investigation of a thermal discharge.</span><span class="acs-code">ACS PA.II.G.K2</span></div>
 </div>
@@ -1410,10 +1411,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_914" data-ans="C">
 <div class="quizx-q"><span class="quizx-qno">Q14</span><span class="quizx-qtext"><span class="quizx-qk">화염 감지기(flame detector)가 감지에 이용하는 것은?</span><span class="quizx-qe">What does a flame detector use to sense fire?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_914','A')"><span class="lt">A</span><span>튜브 내 가스 압력</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_914','B')"><span class="lt">B</span><span>코어 저항 변화</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_914','C')"><span class="lt">C</span><span>화염이 방출하는 자외선(UV) 또는 적외선(IR) 복사</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_914','D')"><span class="lt">D</span><span>바이메탈 팽창</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_914','A')"><span class="lt">A</span><span>튜브 내 가스 압력<span class="opt-en">Gas pressure in the tube</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_914','B')"><span class="lt">B</span><span>코어 저항 변화<span class="opt-en">Core resistance change</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_914','C')"><span class="lt">C</span><span>화염이 방출하는 자외선(UV) 또는 적외선(IR) 복사<span class="opt-en">Ultraviolet (UV) or infrared (IR) radiation emitted by flame</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_914','D')"><span class="lt">D</span><span>바이메탈 팽창<span class="opt-en">Bimetallic expansion</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">화염 감지기는 화염이 내는 자외선(UV) 또는 적외선(IR) 복사를 광학 센서로 감지합니다. 화염을 '직접' 보는 방식이라 반응이 빠르며, 시야가 확보되는 구역(예: APU·엔진 나셀)에 쓰입니다.</span><span class="ee">A flame detector uses an optical sensor to detect ultraviolet (UV) or infrared (IR) radiation emitted by flames; sensing the flame directly gives a fast response, used where a line of sight exists such as APU or engine nacelles.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
@@ -1421,10 +1422,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_915" data-ans="A">
 <div class="quizx-q"><span class="quizx-qno">Q15</span><span class="quizx-qtext"><span class="quizx-qk">엔진 나셀에 CO2(이산화탄소) 소화 계통을 쓸 때의 소화 원리는?</span><span class="quizx-qe">How does a CO2 extinguishing system put out a fire?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_915','A')"><span class="lt">A</span><span>산소를 밀어내(질식) 냉각까지 병행해 연소를 멈춘다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_915','B')"><span class="lt">B</span><span>연료를 점화한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_915','C')"><span class="lt">C</span><span>전기를 흘려보낸다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_915','D')"><span class="lt">D</span><span>화염을 밝게 만든다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_915','A')"><span class="lt">A</span><span>산소를 밀어내(질식) 냉각까지 병행해 연소를 멈춘다<span class="opt-en">Displaces oxygen (smothering) with some cooling to stop combustion</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_915','B')"><span class="lt">B</span><span>연료를 점화한다<span class="opt-en">Ignites the fuel</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_915','C')"><span class="lt">C</span><span>전기를 흘려보낸다<span class="opt-en">Passes electricity</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_915','D')"><span class="lt">D</span><span>화염을 밝게 만든다<span class="opt-en">Brightens the flame</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">CO2는 산소를 밀어내 연소를 질식시키고, 방출 시 팽창·기화로 냉각 효과도 줍니다. 잔류물이 없고 전기 화재에도 안전하지만, 밀폐 구역에서 인원 질식 위험과 확산이 빠른 개방 구역에서의 효율 한계가 있습니다.</span><span class="ee">CO2 displaces oxygen to smother combustion and cools as it expands and vaporizes on discharge; it leaves no residue and is safe on electrical fires, but poses asphyxiation risk in enclosed spaces and is less effective in open, well-ventilated areas.</span><span class="acs-code">ACS PA.II.G.K2</span></div>
 </div>
@@ -1432,10 +1433,10 @@ function figRefToggle(el){
 <div class="quizx-card" id="qz_916" data-ans="D">
 <div class="quizx-q"><span class="quizx-qtext"><span class="quizx-qno" style="margin-right:9px;">Q16</span><span class="quizx-qk">화재 경보가 울렸다가 곧 꺼졌을 때 정비사가 취할 올바른 태도는?</span><span class="quizx-qe">If a fire warning illuminates then goes out, what is the correct maintenance attitude?</span></span></div>
 <div class="quizx-opts">
-<button class="quizx-opt" onclick="qzPick(this,'qz_916','A')"><span class="lt">A</span><span>오경보로 단정하고 무시한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_916','B')"><span class="lt">B</span><span>즉시 감지기를 모두 폐기한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_916','C')"><span class="lt">C</span><span>경보 회로를 영구히 차단한다</span></button>
-<button class="quizx-opt" onclick="qzPick(this,'qz_916','D')"><span class="lt">D</span><span>실제 과열/화재 여부와 감지 계통 결함(단락·오작동)을 모두 조사한다</span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_916','A')"><span class="lt">A</span><span>오경보로 단정하고 무시한다<span class="opt-en">Assume a false alarm and ignore it</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_916','B')"><span class="lt">B</span><span>즉시 감지기를 모두 폐기한다<span class="opt-en">Immediately discard all detectors</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_916','C')"><span class="lt">C</span><span>경보 회로를 영구히 차단한다<span class="opt-en">Permanently disable the alarm circuit</span></span></button>
+<button class="quizx-opt" onclick="qzPick(this,'qz_916','D')"><span class="lt">D</span><span>실제 과열/화재 여부와 감지 계통 결함(단락·오작동)을 모두 조사한다<span class="opt-en">Investigate both an actual overheat/fire and a detection-system fault (short/malfunction)</span></span></button>
 </div>
 <div class="quizx-exp"><span class="ek">순간적 화재 경보는 실제 과열/화재의 초기 징후일 수도, 감지 계통의 간헐 단락·오작동일 수도 있습니다. 어느 쪽도 단정하지 말고 실제 열원과 계통 결함(배선 마모·단락·습기)을 모두 조사해 원인을 격리해야 합니다.</span><span class="ee">A momentary fire warning may be an early sign of real overheat/fire or an intermittent short/malfunction of the detection system; assume neither—investigate both an actual heat source and system faults (chafed wiring, shorts, moisture) to isolate the cause.</span><span class="acs-code">ACS PA.II.G.K1</span></div>
 </div>
