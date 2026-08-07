@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAA Powerplant 2026 업데이트 — Test Guide Update</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0F172A;--panel:#13203b;--panel2:#1a2a4a;--cyan:#60A5FA;--gold:#FBBF24;--green:#34D399;--t1:#F1F5F9;--t2:#CBD5E1;--t3:#7c8db0;--line:#24344f;}
+*{box-sizing:border-box;} body{margin:0;background:var(--bg);color:var(--t1);font-family:'Noto Sans KR',sans-serif;line-height:1.6;}
+.wrap{max-width:920px;margin:0 auto;padding:32px 20px 80px;}
+.top-link{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cyan);text-decoration:none;}
+.top-link:hover{text-decoration:underline;}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--gold);letter-spacing:1px;margin:18px 0 6px;}
+h1{font-family:'Space Grotesk',sans-serif;font-size:30px;margin:0 0 6px;display:flex;align-items:center;gap:10px;}
+.sub{color:var(--cyan);font-size:15px;margin-bottom:18px;}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;}
+.chip{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 14px;font-size:13px;color:var(--t2);}
+.chip b{color:var(--t1);}
+.legend{display:flex;gap:14px;margin-bottom:20px;font-size:13px;color:var(--t3);}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle;}
+.dot.new{background:var(--green);} .dot.rev{background:var(--gold);}
+.search{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--t1);font-family:'Noto Sans KR';font-size:15px;margin-bottom:22px;}
+.search::placeholder{color:var(--t3);}
+.card{background:rgba(19,32,59,.95);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;border-left:4px solid var(--green);}
+.card.rev{border-left-color:var(--gold);}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
+.qno{font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:600;color:var(--cyan);}
+.badge{font-size:11px;font-family:'JetBrains Mono',monospace;padding:3px 9px;border-radius:20px;font-weight:600;}
+.badge.new{background:rgba(52,211,153,.15);color:var(--green);border:1px solid rgba(52,211,153,.4);}
+.badge.rev{background:rgba(251,191,36,.15);color:var(--gold);border:1px solid rgba(251,191,36,.4);}
+.qtext{font-size:15.5px;font-weight:500;margin-bottom:4px;}
+.qtext-en{font-size:13.5px;color:var(--t3);font-style:italic;margin-bottom:14px;}
+.opts{display:flex;flex-direction:column;gap:8px;margin-bottom:14px;}
+.opt{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:11px 14px;font-size:14px;}
+.opt.correct{border-color:var(--green);background:rgba(52,211,153,.1);}
+.opt .lt{font-family:'JetBrains Mono',monospace;font-weight:600;color:var(--cyan);margin-right:8px;}
+.opt.correct .lt{color:var(--green);}
+.opt-en{display:block;color:var(--t3);font-size:12.5px;margin-top:2px;font-style:italic;}
+.ans{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--green);font-weight:600;margin-bottom:10px;}
+.exp{background:rgba(96,165,250,.07);border:1px solid rgba(96,165,250,.2);border-radius:9px;padding:13px 15px;font-size:14px;color:var(--t2);}
+.exp-en{color:var(--t3);font-size:12.5px;font-style:italic;margin-top:8px;}
+.tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;}
+.tag{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--t3);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:3px 8px;}
+.count{color:var(--green);font-size:14px;font-family:'JetBrains Mono',monospace;margin-bottom:14px;}
+.noresult{color:var(--t3);text-align:center;padding:40px;display:none;}
+.disclaimer{margin-top:30px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:10px;font-size:12.5px;color:var(--t3);line-height:1.7;}
+</style></head>
+<body><div class="wrap">
+<a class="top-link" href="index.html">← 전체 목차 (Master Index)</a>
+<div class="kicker">Powerplant Mechanic Test Guide 2026 (ASA-AMP-26) · July 2026</div>
+<h1>🔄 2026 업데이트</h1>
+<div class="sub">Powerplant Test Guide Update — 신규 추가 및 수정 문제</div>
+<div class="meta">
+<span class="chip">출처 <b>ASA Powerplant 2026</b></span>
+<span class="chip">신규 추가 <b>4문항</b></span>
+<span class="chip">수정 <b>0문항</b></span>
+<span class="chip">기준 <b>FAA-CT-8080-4G</b></span>
+</div>
+<div class="legend"><span><span class="dot new"></span>신규 추가</span><span><span class="dot rev"></span>기존 문제 수정</span></div>
+<input class="search" id="q" placeholder="🔍 문제번호·키워드 검색 (예: 8613, 토크, EGT, corrosion)">
+<div class="count" id="count"></div>
+<div id="list"></div>
+<div class="noresult" id="noresult">검색 결과가 없습니다.</div>
+<div class="disclaimer">⚠️ 본 페이지는 ASA 2026 Test Guide Update(July 2026)를 학습용으로 정리한 것입니다. FAA 시험은 "closed test"로 실제 문제은행은 공개되지 않으며, 실제 시험에서는 보기 순서(A·B·C)가 바뀔 수 있습니다. 정답 암기보다 내용 이해를 권장합니다.</div>
+</div>
+<script>
+var DATA = [{"type": "new", "q": "8133-1", "ans": "A", "acs": "AM.III.B.K4", "ref": "FAA-H-8083-32", "page": 29, "question_ko": "\ud130\ube48\uc5d4\uc9c4 \uc815\ube44 \ud6c4 \uc2dc\uc6b4\uc804 \uc911 \uac00\uc18d \uc2dc EGT\uac00 \ud55c\uacc4\ub85c \uae09\uc0c1\uc2b9\ud558\ub098 RPM\u00b7\uc5f0\ub8cc\uc720\ub7c9\uc740 \uc815\uc0c1 \ubc94\uc704, \ube44\uc815\uc0c1 \uc9c4\ub3d9 \uc5c6\uc74c. \uac00\uc7a5 \uc720\ub825\ud55c \uc6d0\uc778\uc740?", "question_en": "During a post-maintenance run on a turbine engine, EGT rises rapidly toward limits during acceleration while RPM and fuel flow remain normal, with no abnormal vibration. Most likely cause?", "opts": [["A", "\ud130\ube48\ubd80 \uc190\uc0c1 \ub610\ub294 \ub0c9\uac01\ud6a8\uc728 \uc800\ud558", "Turbine section damage or reduced cooling efficiency"], ["B", "\ubd80\uc815\ud655 RPM\uc744 \uc9c0\uc2dc\ud558\ub294 \uacb0\ud568 \ud0c0\ucf54\ubbf8\ud130", "Faulty tachometer indicating inaccurate RPM"], ["C", "\uc5f0\ub8cc\uc81c\uc5b4\uc7a5\uce58\ub85c\uc758 \ub0ae\uc740 \uc5f0\ub8cc\uc555", "Low fuel pressure to the FCU"]], "exp_ko": "\ud130\ube48 \ube14\ub808\uc774\ub4dc \uc190\uc0c1\uc774\ub098 \ub0c9\uac01\uae30\ub958 \uac10\uc18c\ub294 \ud130\ube48\ubd80 \uad6d\ubd80 \uacfc\uc5f4\uc744 \uc77c\uc73c\ucf1c, RPM\u00b7\uc5f0\ub8cc\uc720\ub7c9 \ubcc0\ud654 \uc5c6\uc774 EGT\ub9cc \uae09\uc0c1\uc2b9\uc2dc\ud0a8\ub2e4. RPM\u00b7\uc5f0\ub8cc\uac00 \uc815\uc0c1\uc774\ubbc0\ub85c \uc5f0\ub8cc/\uc555\ucd95\uae30 \ubb38\uc81c\uac00 \uc544\ub2c8\ub77c \ud130\ube48\ubd80\uc758 \uc5f4 \uacac\ub524\u00b7\ubc29\ucd9c \ub2a5\ub825 \ubb38\uc81c\ub2e4.", "exp_en": "Turbine blade damage or reduced cooling airflow causes localized overheating, raising EGT without RPM/fuel changes. Since RPM and fuel are normal, the issue is the turbine section\u2019s heat tolerance, not fuel/compressor."}, {"type": "new", "q": "8206-1", "ans": "A", "acs": "AM.III.B.K4", "ref": "FAA-H-8083-32", "page": 29, "question_ko": "\ud130\ube48\uc5d4\uc9c4 \uc815\uc0c1\uc6b4\uc804 \uc911 \uc77c\uc815 \ucd9c\ub825\uc5d0\uc11c EGT\uac00 \uc810\uc9c4 \uc0c1\uc2b9\ud558\uba70 RPM\uc774 \uc57d\uac04 \uac10\uc18c. \uac00\uc7a5 \uc720\ub825\ud55c \uc6d0\uc778\uc740?", "question_en": "During normal turbine operation at constant power, EGT gradually increases with a slight RPM decrease. Most likely cause?", "opts": [["A", "\uc555\ucd95\uae30 \ube14\ub808\uc774\ub4dc \uce68\uc2dd/\uc624\uc5fc", "Compressor blade erosion or contamination"], ["B", "\uc810\ud654\uacc4\ud1b5 \uace0\uc7a5", "Malfunctioning ignition system"], ["C", "\uacfc\ub18d \uc5f0\ub8cc-\uacf5\uae30\ube44", "Excessively rich fuel-to-air ratio"]], "exp_ko": "\uc555\ucd95\uae30 \ube14\ub808\uc774\ub4dc \uce68\uc2dd\u00b7\uc624\uc5fc\uc740 \uc555\ucd95\uae30 \ud6a8\uc728\uc744 \ub5a8\uc5b4\ub728\ub824 \uacf5\uae30\uc720\ub7c9\u00b7\uc555\ub825\uc744 \uac10\uc18c\uc2dc\ud0a8\ub2e4. \uac19\uc740 \ucd9c\ub825\uc744 \ub0b4\ub824\uba74 \uc5d4\uc9c4\uc740 \ub354 \ub192\uc740 EGT\ub85c, \ub354 \ub0ae\uc740 RPM\uc5d0\uc11c \uc791\ub3d9\ud55c\ub2e4. \uc555\ucd95\uae30 \uc5f4\ud654\uc758 \ub300\ud45c \uc9c0\ud45c\ub2e4.", "exp_en": "Compressor blade erosion/contamination reduces compressor efficiency and airflow. To hold the same power, the engine runs at higher EGT and fewer RPM \u2014 a key indicator of compressor degradation."}, {"type": "new", "q": "9022", "ans": "C", "acs": "AM.III.B.K7", "ref": "FAA-H-8083-32", "page": 34, "question_ko": "\uc815\ube44 \uc2dc\uc6b4\uc804 \uc911 \uc9c0\uc815 RPM\uc5d0\uc11c \ud130\ube48\uc5d4\uc9c4\uc774 \uc608\uc0c1\ubcf4\ub2e4 \ub0ae\uc740 \ucd94\ub825\uacfc \ub192\uc740 EGT\ub97c \ub0b8\ub2e4. \uac00\uc7a5 \uc720\ub825\ud55c \uc6d0\uc778\uc740?", "question_en": "During a maintenance run, a turbine engine produces lower-than-expected thrust and higher-than-normal EGT at specified RPM. Most likely cause?", "opts": [["A", "\uacb0\ud568 \uc5f0\ub8cc\uc720\ub7c9 \uc1a1\uc2e0\uae30", "Faulty fuel flow transmitter"], ["B", "\ub0ae\uc740 \uc624\uc77c\uc555", "Low oil pressure"], ["C", "\uc5f0\ub8cc\uc81c\uc5b4\uc7a5\uce58 \uc870\uc815 \ubd88\ub7c9", "Fuel control unit out of adjustment"]], "exp_ko": "\uc5f0\ub8cc\uc81c\uc5b4\uac00 \uc798\ubabb \uc870\uc815\ub418\uba74 \uc9c0\uc815 RPM\uc5d0\uc11c \uc694\uad6c EGT/EPR\uc744 \ubabb \ub0b8\ub2e4. \uc2dc\uc6b4\uc804 \uc911 \ub192\uc740 EGT\uc640 \uc131\ub2a5 \uc800\ud558\ub294 \uc5f0\ub8cc \uc2a4\ucf00\uc904\ub9c1 \ubd88\ub7c9\uc744 \uc2dc\uc0ac\ud558\uba70, \uc81c\uc791\uc0ac \uc5d4\uc9c4 \ud2b8\ub9ac\ubc0d \uc808\ucc28\uc5d0 \ub530\ub77c \uc2dc\uc815\ud574\uc57c \ud55c\ub2e4.", "exp_en": "If the fuel control is misadjusted, the engine can\u2019t produce required EGT/EPR at a set RPM. High EGT with reduced performance indicates improper fuel scheduling; correct per the manufacturer\u2019s engine trimming procedures."}, {"type": "new", "q": "9023", "ans": "A", "acs": "AM.III.B.K8", "ref": "FAA-H-8083-32", "page": 34, "question_ko": "\uc5d4\uc9c4 \uc131\ub2a5\uc810\uac80\uc5d0\uc11c N1\u00b7N2\ub294 \uc815\uc0c1\uc774\ub098 \uc120\ud0dd \ucd9c\ub825\uc5d0\uc11c \ucd94\ub825\uc774 \ub0ae\uace0 \uc5f0\ub8cc\uc720\ub7c9\uc774 \ub192\ub2e4. \uac00\uc7a5 \uc720\ub825\ud55c \uc6d0\uc778\uc740?", "question_en": "During a performance check, N1/N2 are normal but thrust is low and fuel flow high for the selected power. Most likely cause?", "opts": [["A", "\uacf5\uc555\uacc4\ud1b5\uc758 \ube14\ub9ac\ub4dc\uc5d0\uc5b4 \ub204\ucd9c", "A bleed air leak in the pneumatic system"], ["B", "\uacb0\ud568 N2 \ud0c0\ucf54\ubbf8\ud130 \uc9c0\uc2dc", "A faulty N2 tachometer indication"], ["C", "\ubd80\uc815\ud655 \uc810\ud654 \ud0c0\uc774\ubc0d", "Improper ignition timing"]], "exp_ko": "\ube14\ub9ac\ub4dc\uc5d0\uc5b4 \ub204\ucd9c\uc740 \uc555\ucd95\uacf5\uae30\uac00 \uc5f0\uc18c\u00b7\ud130\ube48 \uacfc\uc815\uc5d0 \uc644\uc804\ud788 \uc4f0\uc774\uae30 \uc804\uc5d0 \uc0c8\uc5b4\ub098\uac00\uac8c \ud55c\ub2e4. N1/N2\ub294 \uc815\uc0c1\uc73c\ub85c \ubcf4\uc77c \uc218 \uc788\uc73c\ub098 \ud6a8\uc728\u00b7\ucd94\ub825\uc774 \ub5a8\uc5b4\uc9c0\uace0, \uc120\ud0dd \ucd9c\ub825\uc744 \uc720\uc9c0\ud558\ub824 \uc5f0\ub8cc\uc720\ub7c9\uc774 \uc99d\uac00\ud55c\ub2e4. \uacc4\ud1b5 \uc810\uac80\u00b7\ucd94\uc138 \uac10\uc2dc\ub85c \ubc1c\uacac\ub41c\ub2e4. \uc9c0\uc2dc \uc624\ub958\ub294 \uc2e4\uc81c \ucd94\ub825 \uc190\uc2e4/\uc5f0\ub8cc \uc99d\uac00\ub97c \ub9cc\ub4e4\uc9c0 \uc54a\uc73c\uba70, \ud130\ube48\uc5d4\uc9c4 \uc810\ud654\ub294 \uc8fc\ub85c \uc2dc\ub3d9\uc6a9\uc774\ub77c \uc655\ubcf5\uc5d4\uc9c4\uc2dd \uc810\ud654 \ud0c0\uc774\ubc0d\uacfc \ub2e4\ub974\ub2e4.", "exp_en": "A bleed air leak lets compressed air escape before full use in combustion/turbine. N1/N2 may look normal, but efficiency and thrust drop while fuel flow rises to hold power. Found via system checks/trend monitoring. An indication error wouldn\u2019t cause real thrust loss; turbine ignition is mainly for starting."}];
+var list=document.getElementById('list'), cnt=document.getElementById('count'), nr=document.getElementById('noresult');
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function render(items){
+  list.innerHTML='';
+  if(!items.length){nr.style.display='block';cnt.textContent='';return;}
+  nr.style.display='none';
+  cnt.textContent='총 '+items.length+'문항';
+  items.forEach(function(it){
+    var isNew = it.type==='new';
+    var optsHtml='';
+    if(it.opts && it.opts.length){
+      optsHtml='<div class="opts">'+it.opts.map(function(o){
+        var correct = o[0]===it.ans ? ' correct':'';
+        return '<div class="opt'+correct+'"><span class="lt">'+o[0]+'</span>'+esc(o[1])+'<span class="opt-en">'+esc(o[2])+'</span></div>';
+      }).join('')+'</div>';
+    }
+    var tags='';
+    if(it.acs) tags+='<span class="tag">'+esc(it.acs)+'</span>';
+    if(it.ref) tags+='<span class="tag">'+esc(it.ref)+'</span>';
+    if(it.page) tags+='<span class="tag">p.'+it.page+'</span>';
+    var card='<div class="card'+(isNew?'':' rev')+'">'
+      +'<div class="card-top"><span class="qno">Q '+esc(it.q)+'</span>'
+      +'<span class="badge '+(isNew?'new':'rev')+'">'+(isNew?'신규 추가':'수정')+'</span></div>'
+      +'<div class="qtext">'+esc(it.question_ko)+'</div>'
+      +(it.question_en?'<div class="qtext-en">'+esc(it.question_en)+'</div>':'')
+      +optsHtml
+      +(isNew && it.ans?'<div class="ans">✓ 정답: '+esc(it.ans)+'</div>':'')
+      +'<div class="exp">'+esc(it.exp_ko)+(it.exp_en?'<div class="exp-en">'+esc(it.exp_en)+'</div>':'')+'</div>'
+      +(tags?'<div class="tags">'+tags+'</div>':'')
+      +'</div>';
+    list.insertAdjacentHTML('beforeend', card);
+  });
+}
+function doSearch(){
+  var q=document.getElementById('q').value.trim().toLowerCase();
+  if(!q){render(DATA);return;}
+  var f=DATA.filter(function(it){
+    var hay=(it.q+' '+it.question_ko+' '+it.question_en+' '+(it.acs||'')+' '+(it.exp_ko||'')+' '+(it.exp_en||'')).toLowerCase();
+    return hay.indexOf(q)>=0;
+  });
+  render(f);
+}
+document.getElementById('q').addEventListener('input',doSearch);
+render(DATA);
+</script></body></html>
