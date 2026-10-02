@@ -82,7 +82,8 @@ select{background:var(--panel2);color:var(--t1);border:1px solid var(--line);bor
       <select id="chSel"></select>
     </div>
     <div class="optrow" id="cntRow">
-      <span class="chip" data-c="30">30문항 &middot; 36분</span>
+      <span class="chip" data-c="10">⚡ 10문항 &middot; 12분 (퀵)</span>
+        <span class="chip" data-c="30">30문항 &middot; 36분</span>
       <span class="chip on" data-c="50">50문항 &middot; 60분</span>
       <span class="chip" data-c="100">100문항 &middot; 120분 (실전)</span>
     </div>
@@ -147,7 +148,7 @@ function lsSet(k,v){localStorage.setItem(k,JSON.stringify(v));}
   var hist=lsGet('pp_mock_history',[]);
   if(hist.length){var ul=$('#histList');ul.innerHTML='';hist.slice(-5).reverse().forEach(function(h){
     var li=document.createElement('li');
-    li.innerHTML='<span>'+h.date+' &middot; '+h.mode+'</span><span style="color:'+(h.pct>=70?'var(--green)':'var(--red)')+'">'+h.pct+'% ('+h.correct+'/'+h.total+')</span>';
+    li.innerHTML='<span>'+h.date+' · '+h.mode+'</span><span style="color:'+(h.pct>=70?'var(--green)':'var(--red)')+'">'+h.pct+'% ('+h.correct+'/'+h.total+')</span>';
     ul.appendChild(li);});}
   $('#modeRow').addEventListener('click',function(e){var c=e.target.closest('.chip');if(!c||c.classList.contains('dis'))return;
     $$('#modeRow .chip').forEach(function(x){x.classList.remove('on');});c.classList.add('on');mode=c.dataset.m;
@@ -186,7 +187,7 @@ function tick(){
 }
 function render(){
   var q=qs[cur],p=perms[cur];
-  var h='<div class="qtag"><span>Q'+(cur+1)+' / '+qs.length+' &middot; CH'+String(q.ch).padStart(2,'0')+' '+q.chko+'</span>'
+  var h='<div class="qtag"><span>Q'+(cur+1)+' / '+qs.length+' · CH'+String(q.ch).padStart(2,'0')+' '+q.chko+'</span>'
      +'<span class="flagbtn'+(flags[cur]?' on':'')+'" onclick="toggleFlag()">&#128681;</span></div>';
   if(lang==='en'){h+='<div class="qtext">'+q.en+'</div>';}
   else{h+='<div class="qtext">'+q.ko+'</div><div class="qen">'+q.en+'</div>';}
@@ -236,7 +237,7 @@ function doSubmit(timeout){
   $('#rpct').style.color=pct>=70?'var(--green)':'var(--red)';
   $('#rbadge').innerHTML='<span class="badge '+(pct>=70?'pass">PASS':'fail">FAIL')+'</span>';
   var el=Math.round((Date.now()-startT)/60000);
-  $('#rmeta').textContent=(timeout?'시간 초과 자동 제출 &middot; ':'')+correct+' / '+qs.length+' 정답 &middot; 소요 '+el+'분 &middot; 합격선 70% &middot; 오답노트 '+w.length+'문항';
+  $('#rmeta').textContent=(timeout?'시간 초과 자동 제출 · ':'')+correct+' / '+qs.length+' 정답 · 소요 '+el+'분 · 합격선 70% · 오답노트 '+w.length+'문항';
   var cs='';Object.keys(chAgg).sort(function(a,b){return a-b;}).forEach(function(n){
     var a=chAgg[n];var col=(a.c===a.t)?'var(--green)':(a.c/a.t>=.7?'var(--t2)':'var(--red)');
     cs+='<div style="color:'+col+'">CH'+String(n).padStart(2,'0')+' '+a.k+' &mdash; '+a.c+'/'+a.t+'</div>';});
@@ -255,7 +256,7 @@ function renderReview(f){
     var my=(myDi<0)?'(미답)':(lang==='en'?q.oe[perms[i][myDi]]:q.ok[perms[i][myDi]]);
     var cor=(lang==='en'?q.oe[q.ans]:q.ok[q.ans]);
     h+='<div class="rv'+(ok?'':' wrong')+'">'
-      +'<div class="qtag">Q'+(i+1)+' &middot; CH'+String(q.ch).padStart(2,'0')+' '+q.chko+'</div>'
+      +'<div class="qtag">Q'+(i+1)+' · CH'+String(q.ch).padStart(2,'0')+' '+q.chko+'</div>'
       +'<div class="rq">'+(lang==='en'?q.en:q.ko)+'</div>'
       +(q.fg?'<img src="'+q.fg+'" style="max-width:100%;display:block;border-radius:8px;margin:6px 0;background:#fff;">':'')
       +'<div class="ra '+(ok?'ok':'no')+'">내 답: '+my+'</div>'
