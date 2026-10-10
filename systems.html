@@ -58,7 +58,7 @@ a{color:inherit;}
 .scrolltop{position:fixed;bottom:26px;right:26px;width:44px;height:44px;border-radius:50%;background:var(--panel2);border:1px solid var(--line);color:var(--cyan);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:60;}
 @media(max-width:860px){.sidebar{display:none;}.layout{padding:16px 14px 50px;}.goto-ch{margin-left:0;}}
 </style>
-</head>
+<style id="acs-rel-css">.acs-mini{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.04em;color:#34D399;border:1px solid rgba(52,211,153,.4);border-radius:5px;padding:0 5px;margin-right:6px;vertical-align:1px;font-style:normal}.acs-rel{margin:16px 0 4px;padding:12px 14px;border:1px dashed rgba(52,211,153,.35);border-radius:10px;background:rgba(52,211,153,.05)}.acs-rel-h{font-size:12.5px;font-weight:700;color:#34D399;margin-bottom:8px}.acs-rel-h span{font-weight:400;color:var(--t3);margin-left:6px;font-size:11.5px}.acs-rel-list{display:flex;flex-wrap:wrap;gap:6px 8px}.acs-rel-list a{font-size:12.5px;line-height:1.4;color:var(--t2);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 10px;background:rgba(15,23,42,.35);max-width:100%;overflow-wrap:anywhere}.acs-rel-list a i{font-style:normal;color:var(--t3)}.acs-rel-list a:hover{border-color:#34D399;color:#F1F5F9}.acs-rel-list a b{font-family:"JetBrains Mono",monospace;font-size:10.5px;color:#34D399;margin-right:6px}</style></head>
 <body>
 <div class="topbar">
   <a class="home" href="index.html">← 전체 목차 (Master Index)</a>
@@ -123,9 +123,19 @@ a{color:inherit;}
           <td class="ts-sym"><b>베이퍼록 (고온 시 연료공급 중단)</b><span class="ts-en">Vapor lock</span></td>
           <td class="ts-cause">연료라인 과열, 부스트펌프 미작동, 휘발성 연료</td>
           <td class="ts-act">부스트펌프 ON, 연료라인 냉각·재배치 확인, 정상 연료 사용</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>연료 유량 지시가 평소보다 높음</b><span class="ts-en">Fuel flow indicates higher than normal</span></td>
+          <td class="ts-cause">분사 노즐 막힘(분배기 압력 상승)</td>
+          <td class="ts-act">노즐을 용제로 세척(철사 금지), 유량 시험으로 노즐별 비교</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>연료 펌프 드레인에서 연료가 계속 나옴</b><span class="ts-en">Fuel continuously drains from the pump drain</span></td>
+          <td class="ts-cause">펌프 실 누설</td>
+          <td class="ts-act">매뉴얼 허용량과 비교, 넘으면 펌프 교환</td>
         </tr></tbody>
         </table>
       </div>
+
+      <div class="acs-rel"><div class="acs-rel-h">🔗 관련 ACS 보강 주제<span>Related ACS topics</span></div><div class="acs-rel-list"><a href="ch02_fuel_systems.html#s-acs-fcu-handling"><b>CH02</b>연료 조절 장치 취급·탈착과 터빈 과회전 검사·연료 히터 고장탐구</a><a href="ch02_fuel_systems.html#s-acs-fuel-controls"><b>CH02</b>조종석 연료 조절 레버·연료 선택 밸브·원격 연료 밸브 점검과 플래카드</a><a href="ch02_fuel_systems.html#s-fuel-injection"><b>CH02</b>연료분사 계통<i> · 연속 분사식 연료 분사 계통 검사·고장탐구·수리</i></a><a href="ch02_fuel_systems.html#s-fuel-pump"><b>CH02</b>연료펌프<i> · 엔진 구동 연료 펌프 탈착·장착과 압력 조정</i></a><a href="ch02_fuel_systems.html#s-fuel-nozzle"><b>CH02</b>연료노즐<i> · 터빈 연료 노즐 탈착·검사·장착과 분무 형태 판정</i></a><a href="ch02_fuel_systems.html#s-carb-overhaul"><b>CH02</b>기화기 오버홀·정비<i> · 왕복 엔진 연료 조절 조정, 연료 계통 정비 시 고려 사항, 기화기 연료 입구 스크린·기화기 탈착</i></a></div></div>
 
       <div class="block-label">📝 연계 기출 키워드 <span>Related Exam Topics</span></div>
       <div class="kw-row">
@@ -170,9 +180,19 @@ a{color:inherit;}
           <td class="ts-sym"><b>부스트 과다 (오버부스트)</b><span class="ts-en">Overboost</span></td>
           <td class="ts-cause">웨이스트게이트 고착(닫힘), 컨트롤러 불량</td>
           <td class="ts-act">웨이스트게이트 자유작동 확인, 컨트롤러·액추에이터 점검</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>매니폴드 압력 초과(overboost)</b><span class="ts-en">Overboost</span></td>
+          <td class="ts-cause">웨이스트 게이트 축 걸림·탄소 퇴적, 조절기 설정</td>
+          <td class="ts-act">웨이스트 게이트 작동·링키지 점검, 조절기 설정을 매뉴얼대로 확인</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>객실 CO 위험·히터 냄새</b><span class="ts-en">Cabin CO risk / exhaust odor from heater</span></td>
+          <td class="ts-cause">배기 열교환기·머플러 균열</td>
+          <td class="ts-act">덮개를 떼고 균열 검사, 배기 계통 압력 누설 시험</td>
         </tr></tbody>
         </table>
       </div>
+
+      <div class="acs-rel"><div class="acs-rel-h">🔗 관련 ACS 보강 주제<span>Related ACS topics</span></div><div class="acs-rel-list"><a href="ch03_induction_exhaust.html#s-turbocharger"><b>CH03</b>터보차저<i> · 터보차저 정비의 위험과 웨이스트 게이트 점검·정비</i></a><a href="ch03_induction_exhaust.html#s-exhaust-turbo"><b>CH03</b>터보차저 배기계통<i> · 터보차저 누설·장착 상태 점검</i></a><a href="ch03_induction_exhaust.html#s-exhaust-inspect"><b>CH03</b>배기계통 검사<i> · 배기 내부 배플·디퓨저와 배기 열교환기 검사, 배기 계통 압력 누설 시험</i></a><a href="ch03_induction_exhaust.html#s-recip-induction"><b>CH03</b>왕복엔진 흡기계통<i> · 흡기 계통 드레인의 작동 점검</i></a><a href="ch03_induction_exhaust.html#s-thrust-reverser"><b>CH03</b>역추력장치<i> · 터빈 역추력 장치의 시험·고장탐구 절차 찾기</i></a><a href="ch03_induction_exhaust.html#s-jep-turb5-deice-cat"><b>CH03</b>흡기 제빙·얼터네이트 에어·CAT 게이지 심화<i> · 터빈 엔진 방빙 계통의 구성과 흡입구 방빙 점검</i></a></div></div>
 
       <div class="block-label">📝 연계 기출 키워드 <span>Related Exam Topics</span></div>
       <div class="kw-row">
@@ -217,9 +237,19 @@ a{color:inherit;}
           <td class="ts-sym"><b>엔진 점화 시기 불량 (디토네이션)</b><span class="ts-en">Improper ignition timing</span></td>
           <td class="ts-cause">마그네토 내부·엔진 타이밍 어긋남</td>
           <td class="ts-act">타이밍 라이트로 점화시기 재설정, 내부 타이밍 확인</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>마그 체크 때 회전수 강하가 전혀 없음</b><span class="ts-en">No rpm drop on one magneto during mag check</span></td>
+          <td class="ts-cause">P-리드 끊어짐(핫 마그)</td>
+          <td class="ts-act">프로펠러 위험 경고, P-리드·점화 스위치 회로 점검</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>시동 때 임펄스 커플링 소리가 없음</b><span class="ts-en">No impulse coupling 'click' on start</span></td>
+          <td class="ts-cause">플라이웨이트·멈춤 핀 마모, 스프링 불량</td>
+          <td class="ts-act">마그네토 제작사 주기 점검으로 커플링 검사</td>
         </tr></tbody>
         </table>
       </div>
+
+      <div class="acs-rel"><div class="acs-rel-h">🔗 관련 ACS 보강 주제<span>Related ACS topics</span></div><div class="acs-rel-list"><a href="ch04_ignition_electrical.html#s-acs-schematic-ts"><b>CH04</b>배선도를 이용한 전기 고장탐구와 경고·주의등 대응</a><a href="ch04_ignition_electrical.html#s-acs-gen-parallel"><b>CH04</b>쌍발 발전기 병렬 운전과 전기 정비 시 극성</a><a href="ch04_ignition_electrical.html#s-magneto-check"><b>CH04</b>마그네토 점검과 안전점검<i> · 점화 스위치 회로 고장탐구</i></a><a href="ch04_ignition_electrical.html#s-aux-ignition"><b>CH04</b>보조 점화장치<i> · 고체(전자식) 점화 계통과 임펄스 커플링 검사</i></a><a href="ch04_ignition_electrical.html#s-jep-elec-magneto-maint-sparkplug"><b>CH04</b>마그네토 정비·타이밍·점화 하니스와 스파크 플러그 심화<i> · 마그네토 브레이커 포인트 검사와 점화 계통 고장탐구</i></a><a href="ch04_ignition_electrical.html#s-electrical"><b>CH04</b>파워플랜트 전기계통<i> · 통전된 회로 작업의 위험 관리</i></a></div></div>
 
       <div class="block-label">📝 연계 기출 키워드 <span>Related Exam Topics</span></div>
       <div class="kw-row">
@@ -264,9 +294,19 @@ a{color:inherit;}
           <td class="ts-sym"><b>시동기 물림 불량</b><span class="ts-en">Starter fails to engage</span></td>
           <td class="ts-cause">드라이브 커플링·클러치 마모, 물림기구 고장</td>
           <td class="ts-act">드라이브 커플링·피니언 점검·교환, 물림 솔레노이드 점검</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>스타터-제너레이터 과열 흔적</b><span class="ts-en">Signs of starter-generator overheating</span></td>
+          <td class="ts-cause">시동기 사용 주기(duty cycle) 초과, 냉각 공기 부족</td>
+          <td class="ts-act">사용 주기·냉각 시간 준수, 냉각 덕트·팬과 브러시 점검</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>구동 스플라인 마모</b><span class="ts-en">Worn drive spline</span></td>
+          <td class="ts-cause">스플라인 윤활 부족(습식·건식 구분 오류)</td>
+          <td class="ts-act">지정 윤활(습식은 엔진 오일, 건식은 지정 그리스), 마모 한계 확인</td>
         </tr></tbody>
         </table>
       </div>
+
+      <div class="acs-rel"><div class="acs-rel-h">🔗 관련 ACS 보강 주제<span>Related ACS topics</span></div><div class="acs-rel-list"><a href="ch05_starting_systems.html#s-electric-start"><b>CH05</b>전기식 시동·스타터제너레이터<i> · 터빈 엔진 스타터-제너레이터 검사</i></a><a href="ch04_ignition_electrical.html#s-acs-gen-parallel"><b>CH04</b>쌍발 발전기 병렬 운전과 전기 정비 시 극성</a><a href="ch04_ignition_electrical.html#s-electrical"><b>CH04</b>파워플랜트 전기계통<i> · 통전된 회로 작업의 위험 관리</i></a></div></div>
 
       <div class="block-label">📝 연계 기출 키워드 <span>Related Exam Topics</span></div>
       <div class="kw-row">
@@ -311,9 +351,19 @@ a{color:inherit;}
           <td class="ts-sym"><b>오일필터 금속입자 발견</b><span class="ts-en">Metal particles in filter</span></td>
           <td class="ts-cause">내부 부품 마모·손상 (베어링·기어 등)</td>
           <td class="ts-act">금속 종류 분석(자석 테스트), 분광분석(SOAP), 필요시 엔진 탈거</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>칩 경고등 점등</b><span class="ts-en">Chip light illuminates</span></td>
+          <td class="ts-cause">베어링·기어 손상으로 생긴 금속 입자</td>
+          <td class="ts-act">칩 디텍터를 떼어 입자 양·모양 판정(가는 가루 vs 조각), 필터 검사</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>한두 실린더만 온도가 높음</b><span class="ts-en">Only one or two cylinders run hot</span></td>
+          <td class="ts-cause">주변 배플·배플 실 손상·이탈</td>
+          <td class="ts-act">배플 균열(정지 구멍·덧판), 실 방향(고압 쪽) 확인</td>
         </tr></tbody>
         </table>
       </div>
+
+      <div class="acs-rel"><div class="acs-rel-h">🔗 관련 ACS 보강 주제<span>Related ACS topics</span></div><div class="acs-rel-list"><a href="ch06_lubrication_cooling.html#s-jep-lube-turbine-system"><b>CH06</b>터빈 엔진 윤활 계통·칩 디텍터와 정비 심화<i> · 엔진 칩 디텍터 탈착·검사</i></a><a href="ch06_lubrication_cooling.html#s-turbine-lube-comp"><b>CH06</b>터빈 윤활계통 부품<i> · 터빈 엔진 오일 필터 바이패스 지시기 식별</i></a><a href="ch06_lubrication_cooling.html#s-jep-lube-gauges-maintenance"><b>CH06</b>오일 압력·온도 게이지와 윤활 계통 정비 심화<i> · 오일 온도 계통 고장탐구, 오일 온도 프로브 검사, 저유압 경고 계통 수리</i></a><a href="ch06_lubrication_cooling.html#s-lube-maint"><b>CH06</b>윤활계통 정비 · 오일교환<i> · 사용한 윤활유의 취급·보관·폐기</i></a><a href="ch06_lubrication_cooling.html#s-jep-cool-fins-baffles"><b>CH06</b>실린더 냉각핀·배플·카울 플랩의 검사와 수리 심화<i> · 실린더 배플 수리</i></a><a href="ch06_lubrication_cooling.html#s-acs-turbine-cooling"><b>CH06</b>터빈 엔진 배플·실·단열 블랭킷·냉각 덕트</a></div></div>
 
       <div class="block-label">📝 연계 기출 키워드 <span>Related Exam Topics</span></div>
       <div class="kw-row">
@@ -358,9 +408,19 @@ a{color:inherit;}
           <td class="ts-sym"><b>프로펠러 진동</b><span class="ts-en">Propeller vibration</span></td>
           <td class="ts-cause">블레이드 불균형, 트랙 어긋남, 블레이드 각도 차이</td>
           <td class="ts-act">트래킹 점검, 정적·동적 밸런싱, 블레이드 각도 확인</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>제빙 계통 전류계가 주기적으로 움직이지 않음</b><span class="ts-en">Deice ammeter does not cycle</span></td>
+          <td class="ts-cause">타이머, 슬립 링·브러시, 가열 소자 단선</td>
+          <td class="ts-act">소자 저항·슬립 링·브러시 점검, 손으로 부츠가 차례로 데워지는지 확인</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>블레이드 앞전 찍힘</b><span class="ts-en">Nick on a blade leading edge</span></td>
+          <td class="ts-cause">지상 운전 중 자갈·이물질</td>
+          <td class="ts-act">한계 안이면 완만하게 다듬고 염료 침투로 확인, 넘으면 프로펠러 정비 조직</td>
         </tr></tbody>
         </table>
       </div>
+
+      <div class="acs-rel"><div class="acs-rel-h">🔗 관련 ACS 보강 주제<span>Related ACS topics</span></div><div class="acs-rel-list"><a href="ch07_propellers.html#s-aux-system"><b>CH07</b>프로펠러 보조계통<i> · 프로펠러 방빙·제빙 계통 검사와 수리</i></a><a href="ch07_propellers.html#s-jep-prop-inspect"><b>CH07</b>프로펠러 검사·정비<i> · 금속 프로펠러 블레이드의 소수리</i></a><a href="ch07_propellers.html#s-removal"><b>CH07</b>프로펠러 탈·장착 · 서비싱<i> · 프로펠러 윤활</i></a><a href="ch07_propellers.html#s-turboprop"><b>CH07</b>터보프롭 프로펠러 제어<i> · 프로펠러 운용 범위 식별</i></a><a href="ch07_propellers.html#s-jep-prop-maint-regulations"><b>CH07</b>프로펠러 검사·정비 규정과 인가 정비 인원 심화<i> · 프로펠러 TCDS와 허용되는 소개조 판단</i></a><a href="ch07_propellers.html#s-inspection"><b>CH07</b>프로펠러 점검·정비<i> · 프로펠러 지상 운전의 위험</i></a></div></div>
 
       <div class="block-label">📝 연계 기출 키워드 <span>Related Exam Topics</span></div>
       <div class="kw-row">
@@ -405,9 +465,19 @@ a{color:inherit;}
           <td class="ts-sym"><b>소화 카트리지 만료</b><span class="ts-en">Expired cartridge</span></td>
           <td class="ts-cause">방출 카트리지 수명 도래</td>
           <td class="ts-act">만료일 확인, 카트리지 교체 (폭발성 — 취급 주의)</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>시험 없이 화재 경고 점등(오경보)</b><span class="ts-en">Fire warning without a fire (false warning)</span></td>
+          <td class="ts-cause">커넥터 습기, 꺾이거나 눌린 감지 루프</td>
+          <td class="ts-act">루프 저항·절연 측정으로 구간을 좁혀 수리</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>외부의 붉은 방출 디스크가 없음</b><span class="ts-en">Red discharge disc missing</span></td>
+          <td class="ts-cause">과열로 용기가 열 방출됨</td>
+          <td class="ts-act">용기 교환·재충전, 원인 확인 후 기록</td>
         </tr></tbody>
         </table>
       </div>
+
+      <div class="acs-rel"><div class="acs-rel-h">🔗 관련 ACS 보강 주제<span>Related ACS topics</span></div><div class="acs-rel-list"><a href="ch09_fire_protection.html#s-detect-maint"><b>CH09</b>화재감지 계통 정비·고장탐구<i> · 화재 경고 시험 스위치 점검과 고장탐구</i></a><a href="ch09_fire_protection.html#s-exting-maint"><b>CH09</b>소화계통 정비<i> · 방출 카트리지(squib) 취급과 방출 회로 정비</i></a><a href="ch09_fire_protection.html#s-jep-fire-sd-inspection-flame"><b>CH09</b>Systron-Donner·Meggitt 동작과 감지 계통 검사·화염 감지기 심화<i> · 불꽃 감지기 작동 검사</i></a><a href="ch09_fire_protection.html#s-apu"><b>CH09</b>APU 화재 감지·소화계통<i> · 보조 동력 장치(APU)</i></a></div></div>
 
       <div class="block-label">📝 연계 기출 키워드 <span>Related Exam Topics</span></div>
       <div class="kw-row">
@@ -452,9 +522,19 @@ a{color:inherit;}
           <td class="ts-sym"><b>실린더헤드온도(CHT) 과열</b><span class="ts-en">High CHT</span></td>
           <td class="ts-cause">과희박 혼합, 냉각 공기 부족, 배플 손상, 점화 불량</td>
           <td class="ts-act">혼합비·냉각계통 점검, 배플·카울플랩 확인, 점화시기 점검</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>시동 중 테일파이프 화재</b><span class="ts-en">Tailpipe fire during start</span></td>
+          <td class="ts-cause">연소실에 고인 연료가 탐</td>
+          <td class="ts-act">연료·점화 차단 후 시동기로 계속 돌려(motoring) 불을 불어 냄</td>
+        </tr><tr>
+          <td class="ts-sym"><span class="acs-mini">ACS</span><b>오일 소모가 허용치를 넘음</b><span class="ts-en">Oil consumption exceeds the limit</span></td>
+          <td class="ts-cause">왕복: 링·밸브 가이드 마모 / 터빈: 베어링 실 누설</td>
+          <td class="ts-act">비행시간당 보충량 추세, 압축 시험·오일 분석으로 원인 좁힘</td>
         </tr></tbody>
         </table>
       </div>
+
+      <div class="acs-rel"><div class="acs-rel-h">🔗 관련 ACS 보강 주제<span>Related ACS topics</span></div><div class="acs-rel-list"><a href="ch10_maintenance_operation.html#s-acs-ground-ops"><b>CH10</b>엔진 지상 운전의 위험 관리와 정비 중 FOD 예방</a><a href="ch10_maintenance_operation.html#s-acs-accessory-parts"><b>CH10</b>엔진 보기 부품 상태 검사와 부품번호로 교환품·장착 적합성 판단</a><a href="ch10_maintenance_operation.html#s-acs-fuel-flow-ind"><b>CH10</b>연료 유량 송신기·지시계와 연료 압력 경고등 점검</a><a href="ch10_maintenance_operation.html#s-jep-ts-turbine-start"><b>CH10</b>터빈엔진 고장탐구·시동 결함 격리 심화<i> · 터빈 엔진 화재 때의 조치</i></a><a href="ch10_maintenance_operation.html#s-jep-ts-lubrication-faults"><b>CH10</b>윤활 계통 결함 상세: 콜드 오일·변동 압력·브리더 벤트·오일 중량 심화<i> · 과도한 엔진 오일 소모</i></a><a href="ch10_maintenance_operation.html#s-jep-ops-warmup-magsafety"><b>CH10</b>엔진 워밍업과 마그네토 안전점검 심화<i> · 프로펠러를 돌려야 하는 정비의 위험 관리</i></a></div></div>
 
       <div class="block-label">📝 연계 기출 키워드 <span>Related Exam Topics</span></div>
       <div class="kw-row">
